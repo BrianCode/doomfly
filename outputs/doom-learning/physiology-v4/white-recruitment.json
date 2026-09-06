@@ -1,0 +1,110 @@
+[
+  {
+    "type": "KCab-s",
+    "cells": 657,
+    "active": 214,
+    "spikes": 702
+  },
+  {
+    "type": "KCab-c",
+    "cells": 488,
+    "active": 190,
+    "spikes": 813
+  },
+  {
+    "type": "KCg-m",
+    "cells": 1342,
+    "active": 782,
+    "spikes": 5037
+  },
+  {
+    "type": "KCa'b'-ap2",
+    "cells": 291,
+    "active": 10,
+    "spikes": 31
+  },
+  {
+    "type": "KCg-s1",
+    "cells": 2,
+    "active": 2,
+    "spikes": 9
+  },
+  {
+    "type": "KCg-d",
+    "cells": 206,
+    "active": 3,
+    "spikes": 3
+  },
+  {
+    "type": "KCg-s2",
+    "cells": 2,
+    "active": 0,
+    "spikes": 0
+  },
+  {
+    "type": "KCab-m",
+    "cells": 536,
+    "active": 252,
+    "spikes": 1173
+  },
+  {
+    "type": "KCa'b'-ap1",
+    "cells": 199,
+    "active": 8,
+    "spikes": 24
+  },
+  {
+    "type": "KCab-p",
+    "cells": 129,
+    "active": 0,
+    "spikes": 0
+  },
+  {
+    "type": "KCa'b'-m",
+    "cells": 205,
+    "active": 8,
+    "spikes": 21
+  },
+  {
+    "type": "KCg",
+    "cells": 1,
+    "active": 0,
+    "spikes": 0
+  },
+  {
+    "type": "KCg-s3",
+    "cells": 2,
+    "active": 2,
+    "spikes": 21
+  },
+  {
+    "type": "KCg-s4",
+    "cells": 2,
+    "active": 2,
+    "spikes": 6
+  },
+  {
+    "type": "KC",
+    "cells": 2,
+    "active": 2,
+    "spikes": 20
+  },
+  {
+    "type": "APL",
+    "cells": 2,
+    "active": 2,
+    "spikes": 425
+  },
+  {
+    "type": "DPM",
+    "cells": 2,
+    "active": 2,
+    "spikes": 9
+  },
+  {
+    "type": "aMe12",
+    "cells": 6,
+    "active": 6,
+    "spikes": 731
+  }
+]

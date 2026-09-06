@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "summary": {
+    "seed": 61041,
+    "seconds_limit": 8.0,
+    "learning_enabled": false,
+    "weights_frozen": true,
+    "vision": false,
+    "game_tics": 256,
+    "brain_seconds": 7.3143,
+    "survival_seconds": 7.314285714285714,
+    "dead": true,
+    "right_censored": false,
+    "end_health": 0.0,
+    "damage_total": 80.0,
+    "US_tics": 0,
+    "US_ms": 0.0,
+    "before": {
+      "plastic_edges": 4184,
+      "changed_edges": 1862,
+      "mean_efficacy": 1.0163156986236572,
+      "minimum_efficacy": 0.6859009265899658,
+      "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+      "model": "adaptive-centered-v6"
+    },
+    "after": {
+      "plastic_edges": 4184,
+      "changed_edges": 1862,
+      "mean_efficacy": 1.0163156986236572,
+      "minimum_efficacy": 0.6859009265899658,
+      "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+      "model": "adaptive-centered-v6"
+    },
+    "timing": {
+      "wall_seconds": 23.100998459151015,
+      "kernel_seconds": 18.709908613702282,
+      "brain_seconds_including_warmup": 9.3143,
+      "speed": 0.40319902260806045
+    }
+  }
+}

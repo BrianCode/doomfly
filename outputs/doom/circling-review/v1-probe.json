@@ -1,0 +1,112 @@
+{
+  "purpose": "environment QA; fixed controller, not neural behavior or learning",
+  "wad_sha256": "75723435a57366811436e2506cc294572a023e504888639b67e5e59d87b4edff",
+  "action": {
+    "turn": 0.772,
+    "forward": 19.226,
+    "attack": true
+  },
+  "observation_cap_game_seconds": 300,
+  "development_seeds": [
+    41027,
+    41028,
+    41029
+  ],
+  "held_out_seeds": [
+    41030,
+    41031,
+    41032,
+    41033,
+    41034
+  ],
+  "runs": [
+    {
+      "seed": 41027,
+      "game_seconds": 15.371428571428572,
+      "dead": true,
+      "censored": false,
+      "health": -11,
+      "kills": 2,
+      "enemies": 7,
+      "imps": null,
+      "zombies": null
+    },
+    {
+      "seed": 41028,
+      "game_seconds": 13.6,
+      "dead": true,
+      "censored": false,
+      "health": -8,
+      "kills": 2,
+      "enemies": 6,
+      "imps": null,
+      "zombies": null
+    },
+    {
+      "seed": 41029,
+      "game_seconds": 300.0,
+      "dead": false,
+      "censored": true,
+      "health": 16,
+      "kills": 7,
+      "enemies": 8,
+      "imps": null,
+      "zombies": null
+    },
+    {
+      "seed": 41030,
+      "game_seconds": 300.0,
+      "dead": false,
+      "censored": true,
+      "health": 49,
+      "kills": 7,
+      "enemies": 8,
+      "imps": null,
+      "zombies": null
+    },
+    {
+      "seed": 41031,
+      "game_seconds": 300.0,
+      "dead": false,
+      "censored": true,
+      "health": 10,
+      "kills": 9,
+      "enemies": 8,
+      "imps": null,
+      "zombies": null
+    },
+    {
+      "seed": 41032,
+      "game_seconds": 42.94285714285714,
+      "dead": true,
+      "censored": false,
+      "health": -11,
+      "kills": 9,
+      "enemies": 8,
+      "imps": null,
+      "zombies": null
+    },
+    {
+      "seed": 41033,
+      "game_seconds": 300.0,
+      "dead": false,
+      "censored": true,
+      "health": 43,
+      "kills": 7,
+      "enemies": 8,
+      "imps": null,
+      "zombies": null
+    },
+    {
+      "seed": 41034,
+      "game_seconds": 44.34285714285714,
+      "dead": true,
+      "censored": false,
+      "health": -5,
+      "kills": 9,
+      "enemies": 7,
+      "imps": null,
+      "zombies": null
+    }
+  ]
+}

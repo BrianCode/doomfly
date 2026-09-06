@@ -1,0 +1,43 @@
+{
+  "run_id": "53bd55cb-daa0-4cdd-b00b-c9e27285d7a2",
+  "age_seconds": 1.2,
+  "game": {
+    "episode": 2,
+    "tick": 434,
+    "finished": false,
+    "health": 94,
+    "kills": 1,
+    "ammo": 69,
+    "score": 0.0,
+    "enemies": 7,
+    "enemies_spawned": 8,
+    "ammo_pickups": 0,
+    "ammo_spawned": 4,
+    "imps": 4,
+    "zombies": 3
+  },
+  "completed_rounds": [
+    {
+      "episode": 1,
+      "tick": 2066,
+      "finished": true,
+      "health": -5,
+      "kills": 13,
+      "ammo": 0,
+      "score": -1.0,
+      "enemies": 7,
+      "enemies_spawned": 20,
+      "ammo_pickups": 0,
+      "ammo_spawned": 4,
+      "imps": 4,
+      "zombies": 3
+    }
+  ],
+  "reward": {
+    "mode": "off",
+    "sugar_pulses": 0,
+    "active": false,
+    "plasticity": false
+  },
+  "phase": "baseline"
+}

@@ -1,0 +1,60 @@
+{
+  "started_at": "2026-09-05T20:46:41.934240+00:00",
+  "started_epoch": 1788641201.934159,
+  "scheduled_end_epoch": 1788644801.934159,
+  "requested_wall_seconds": 3600.0,
+  "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+  "initial_sequence": 6855,
+  "initial_game": {
+    "episode": 5,
+    "tick": 1034,
+    "finished": false,
+    "health": 100,
+    "kills": 0,
+    "ammo": 0,
+    "score": 0.0
+  },
+  "initial_clocks": {
+    "wall_seconds": 1568.727,
+    "neural_seconds": 269.5429,
+    "game_seconds": 269.5429,
+    "speed": 0.172,
+    "brain_step_ms": 113.012
+  },
+  "condition": "intact",
+  "decoder": "bci",
+  "reward": {
+    "mode": "off",
+    "sugar_pulses": 0,
+    "active": false,
+    "plasticity": false
+  },
+  "snapshot_interval_seconds": 5,
+  "frame_interval_seconds": 30,
+  "public_check_interval_seconds": 60,
+  "audit_capture": "all appended per-tic events",
+  "existing_run_continues": true,
+  "neural_state_not_reset": true,
+  "frozen_configuration": true,
+  "observation_only": true,
+  "planned_checks": [
+    "clock alignment",
+    "neural-to-action decoder reconstruction",
+    "frame digest",
+    "finite/bounded telemetry",
+    "input/raster/population consistency",
+    "audit continuity",
+    "complete episode outcomes versus censored episodes",
+    "early/late descriptive activity and game performance",
+    "public-feed availability",
+    "source and graph stability",
+    "no plasticity or learning claims"
+  ],
+  "limits": [
+    "One ongoing reconstructed male, no randomized intervention in this hour.",
+    "Read-only telemetry is not a restartable full membrane/synapse checkpoint.",
+    "No access to live weight arrays; disk hashes and reviewed source are separate evidence.",
+    "An hour of wall time is not an hour of neural time.",
+    "Performance trends alone cannot demonstrate learning or biological validity."
+  ]
+}

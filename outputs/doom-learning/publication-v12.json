@@ -1,0 +1,34 @@
+[
+  {
+    "path": "/learning",
+    "status": "200",
+    "bytes": 62131
+  },
+  {
+    "path": "/learning-results.json",
+    "status": "200",
+    "bytes": 39144,
+    "status_of_record": "complete",
+    "learning_demonstrated": false,
+    "episodes": 22
+  },
+  {
+    "path": "/learning-source.zip",
+    "status": "200",
+    "bytes": 1661373,
+    "source_matches": true
+  },
+  {
+    "path": "/api/live",
+    "status": "200",
+    "bytes": 164515,
+    "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+    "reward": {
+      "mode": "off",
+      "sugar_pulses": 0,
+      "active": false,
+      "plasticity": false
+    },
+    "state": "running"
+  }
+]

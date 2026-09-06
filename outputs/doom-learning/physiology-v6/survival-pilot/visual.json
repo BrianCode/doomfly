@@ -1,0 +1,19 @@
+{
+  "model": "r8-rgb-ame12-v1",
+  "mapped_R8p": 330,
+  "mapped_R8y": 481,
+  "known_unmapped": 0,
+  "projection_confidence_median": 1.0,
+  "projection_below_80_percent": 22,
+  "corrected_existing_edges": 390,
+  "corrected_edge_sha256": "64916a520f2d1e7daf30bfd027a67d53ceb0f8270097b17c0635572ce2db658d",
+  "coordinate_inference": "Modal column of all outgoing contacts to any column-annotated target; same viewport transform as R1-R6.",
+  "spectrum": "Linear sRGB B for R8p; G for R8y. Display proxy, not calibrated photon flux or spectral sensitivity. R7, dorsal and untyped R8 receive no invented optical drive.",
+  "physiology": "R8 to aMe12 net sign positive; original contact magnitudes retained. Other R8 targets retain baseline sign. Photoreceptors still use a LIF rate proxy, not graded in-vivo dynamics.",
+  "evidence": [
+    "https://doi.org/10.1038/s41586-023-06681-6",
+    "https://doi.org/10.1038/s41467-024-49616-z",
+    "https://doi.org/10.7554/eLife.71858"
+  ],
+  "validated": false
+}

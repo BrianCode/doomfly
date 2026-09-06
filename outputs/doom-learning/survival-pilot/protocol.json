@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "model": "gamma1-eligibility-ltd-v1",
+  "parameters": {
+    "eligibility_tau_ms": 1000.0,
+    "eta_per_pair": 0.001,
+    "minimum_efficacy_fraction": 0.1,
+    "dopamine_trace_tau_ms": 100.0,
+    "dt_ms": 0.1,
+    "interpretation": "Chosen phenomenological parameters, not fitted to fly physiology or Doom performance. LTD-only; no consolidation, recovery, extinction or prediction-error circuit."
+  },
+  "train_seeds": [
+    41031,
+    41032
+  ],
+  "eval_seeds": [
+    61031,
+    61032
+  ],
+  "train_episodes": 1,
+  "episode_seconds": 12.0,
+  "retention_rest_seconds": 2.0,
+  "conditions": [
+    "plastic",
+    "frozen",
+    "shuffled"
+  ],
+  "scenario": "health_gathering",
+  "controls": "Same fixed DNp20/DNpe017 BCI in every arm. No trained or game-state-driven decoder.",
+  "reinforcement": "A health decrease schedules 200 ms of +30 mV-equivalent PPL101 current starting next game tic.",
+  "shuffling": "Circular shift of paired-arm delivered-US booleans, chosen with an independent seeded RNG. Actual delivered exposure is checked; early deaths can prevent dose matching.",
+  "headless": "No sleep, viewer, compressed video or high-rate full-state serialization. RGB generated and sampled every tic.",
+  "experimental_unit": "Independent game seeds and reset copies of one reconstructed male; not independent biological flies.",
+  "evaluation": "Plasticity and all imposed reinforcement off; matched held-out seeds. Neural dynamics reset between episodes; learned efficacies retained.",
+  "retention": "Quiet zero-drive simulated interval followed by reset of fast neural state. LTD-only persistence is a model property, not measured biological retention.",
+  "claim_gate": "Vision pathway, conditioning, dose-matched comparisons, held-out improvement and reset control must all pass. A working runner is not proof of learning."
+}

@@ -1,0 +1,48 @@
+{
+  "model": "centered-antihebbian-v5",
+  "eta": 0.001,
+  "parameters": {
+    "trace_kc_seconds": 1.0,
+    "trace_dan_seconds": 1.0,
+    "memory_decay_seconds": 1800.0,
+    "weight_filter_seconds": 0.05,
+    "minimum_fraction": 0.1,
+    "maximum_fraction": 2.0,
+    "maximum_rate_bin_ms": 10.0,
+    "source": "https://doi.org/10.1038/s41586-024-07819-w",
+    "interpretation": "Baseline-centered anti-Hebbian rate-rule adaptation on the full graph. Tonic currents calibrated to published baseline rates; associative gain and trace constants remain hypotheses. No game-based parameter fitting.",
+    "neural_dt_ms": 0.1,
+    "modulator_delivery_trace_ms": 100.0
+  },
+  "cue_names": [
+    "left_blue",
+    "right_blue"
+  ],
+  "conditions": [
+    "paired",
+    "backward",
+    "frozen",
+    "no_imposed_US"
+  ],
+  "warmup_ms": 2000,
+  "CS_ms": 1000,
+  "US_current": 4.0,
+  "US_width_ms": 200,
+  "forward_US_starts_ms": [
+    200,
+    700,
+    1200,
+    1700
+  ],
+  "backward_US_starts_ms": [
+    0,
+    500,
+    1000,
+    1500
+  ],
+  "backward_CS_start_ms": 2200,
+  "post_training_dark_ms": 2000,
+  "evaluation": "Same 2 s warmup followed by 1 s cue and 0.4 s dark; all efficacies held fixed during tests.",
+  "development_gate": "Both counterbalances require positive paired cue-selectivity exceeding backward and no-US; frozen and memory reset responses must equal pre-training.",
+  "status": "Development assay, not independent replication and not a survival experiment."
+}

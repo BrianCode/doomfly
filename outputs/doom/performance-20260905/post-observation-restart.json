@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-05T21:49:30.595300+00:00",
+  "baseline_observation_complete": "2026-09-05T21:46:42.232174+00:00",
+  "old_run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+  "new_run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+  "change": "OPENBLAS_NUM_THREADS=1 before NumPy import using doom/run_broadcast.sh",
+  "neural_equations_changed": false,
+  "graph_changed": false,
+  "model_files_changed": false,
+  "new_run_has_fresh_state": true,
+  "old_observation_preserved": true
+}

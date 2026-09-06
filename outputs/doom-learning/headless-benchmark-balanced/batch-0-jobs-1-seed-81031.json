@@ -1,0 +1,13 @@
+{
+  "seed": 81031,
+  "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+  "setup_seconds": 5.597302666865289,
+  "timing": {
+    "wall_seconds": 2.8334327498450875,
+    "neural_seconds": 1.0,
+    "speed": 0.3529287928413593,
+    "kernel_seconds": 2.3639880842529237,
+    "sensory_seconds": 0.039942622650414705,
+    "game_seconds": 0.1653637532144785
+  }
+}

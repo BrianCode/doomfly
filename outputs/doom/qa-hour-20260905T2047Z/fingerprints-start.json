@@ -1,0 +1,19 @@
+{
+  "doom/__init__.py": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+  "doom/audit_data.py": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+  "doom/audit_experiments.py": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+  "doom/audit_remote.py": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+  "doom/audit_retina.py": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+  "doom/build_kernel.py": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+  "doom/engine.py": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+  "doom/game.py": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d",
+  "doom/native.py": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+  "doom/prepare.py": "56cfed3ebefef2d637277fcbbc3074698e5016a01f44965cbcce3e4ee46986a8",
+  "doom/provenance.py": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+  "doom/reward.py": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+  "doom/server.py": "db2c5f3e10b6abf90e7e3f19ed198d4a407333c8438d33e296fc2f83f8d01cad",
+  "doom/validate.py": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+  "doom/validate_bci.py": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+  "doom/kernel.cpp": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+  "outputs/doom/malecns_v1/graph.npz": "346b8af85a11af13b8324e18669812c1924569e7d1adcb4e6f45cc461a2c344b"
+}

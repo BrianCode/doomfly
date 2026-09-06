@@ -1,0 +1,163 @@
+{
+  "generation": "c7758e3dc3d244688f3996b66847f6e2",
+  "record": {
+    "run_id": "0ef47fcb-967b-4fab-96b7-f202fbf4ff41",
+    "study_id": "0ef47fcb-967b-4fab-96b7-f202fbf4ff41",
+    "tick": 1580,
+    "total_actions": 1580,
+    "episodes": [
+      {
+        "episode": 1,
+        "tick": 158,
+        "finished": true,
+        "health": -14,
+        "kills": 0,
+        "ammo": 94,
+        "score": -1.0,
+        "enemies": 5,
+        "enemies_spawned": 5,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4,
+        "imps": 3,
+        "zombies": 2
+      },
+      {
+        "episode": 2,
+        "tick": 199,
+        "finished": true,
+        "health": -5,
+        "kills": 0,
+        "ammo": 95,
+        "score": -1.0,
+        "enemies": 5,
+        "enemies_spawned": 5,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4,
+        "imps": 3,
+        "zombies": 2
+      },
+      {
+        "episode": 3,
+        "tick": 169,
+        "finished": true,
+        "health": -8,
+        "kills": 0,
+        "ammo": 95,
+        "score": -1.0,
+        "enemies": 5,
+        "enemies_spawned": 5,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4,
+        "imps": 3,
+        "zombies": 2
+      },
+      {
+        "episode": 4,
+        "tick": 183,
+        "finished": true,
+        "health": -2,
+        "kills": 0,
+        "ammo": 97,
+        "score": -1.0,
+        "enemies": 5,
+        "enemies_spawned": 5,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4,
+        "imps": 3,
+        "zombies": 2
+      },
+      {
+        "episode": 5,
+        "tick": 194,
+        "finished": true,
+        "health": -11,
+        "kills": 0,
+        "ammo": 95,
+        "score": -1.0,
+        "enemies": 5,
+        "enemies_spawned": 5,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4,
+        "imps": 3,
+        "zombies": 2
+      },
+      {
+        "episode": 6,
+        "tick": 201,
+        "finished": true,
+        "health": -2,
+        "kills": 0,
+        "ammo": 97,
+        "score": -1.0,
+        "enemies": 5,
+        "enemies_spawned": 5,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4,
+        "imps": 3,
+        "zombies": 2
+      },
+      {
+        "episode": 7,
+        "tick": 197,
+        "finished": true,
+        "health": -2,
+        "kills": 0,
+        "ammo": 94,
+        "score": -1.0,
+        "enemies": 5,
+        "enemies_spawned": 5,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4,
+        "imps": 3,
+        "zombies": 2
+      },
+      {
+        "episode": 8,
+        "tick": 206,
+        "finished": true,
+        "health": -17,
+        "kills": 0,
+        "ammo": 94,
+        "score": -1.0,
+        "enemies": 6,
+        "enemies_spawned": 6,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4,
+        "imps": 3,
+        "zombies": 3
+      }
+    ],
+    "reward": {
+      "enabled": false,
+      "until_ms": 0.0,
+      "pulses": 0
+    },
+    "training": {
+      "until": 450571,
+      "events": 64,
+      "delivered_steps": 109429,
+      "last_steps": 0,
+      "terminal_events": 8,
+      "cancelled_steps": 1429
+    }
+  },
+  "game": {
+    "episode": 9,
+    "tick": 73,
+    "finished": false,
+    "health": 94,
+    "kills": 0,
+    "ammo": 99,
+    "score": 0.0,
+    "enemies": 4,
+    "enemies_spawned": 4,
+    "ammo_pickups": 0,
+    "ammo_spawned": 4,
+    "imps": 2,
+    "zombies": 2
+  },
+  "sha256": {
+    "brain.npz": "4ba56a0379d7213f5e42fe20bbf1f28aa88c2260a9b9b9911da6267639474ceb",
+    "decoder.npy": "260bfd8b7cd4b63bba8851bb7cf8143df1dab057387a4975a602738ef9b28371"
+  }
+}

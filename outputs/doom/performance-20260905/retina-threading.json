@@ -1,0 +1,117 @@
+{
+  "scope": "Retinal conversion only, 8 saved JPEG frames, separate processes; live brain unchanged. Timings under concurrent live-run load, not an end-to-end speedup.",
+  "measurements": [
+    {
+      "threads": 1,
+      "rows": [
+        {
+          "ms": 0.4497501067817211,
+          "sha256": "c227b5ed48144f2f9ced120108e1a143884f0950c938b326e9b3cb0727e9b5cd"
+        },
+        {
+          "ms": 0.5399580113589764,
+          "sha256": "de610176a639016db398e727b81aae3b711dc3451dfcfc882cdceb11b50f5bf6"
+        },
+        {
+          "ms": 0.5442078690975904,
+          "sha256": "585a4f34742f684c6978851b315cb7dca4053217341e53278a304d98c4949745"
+        },
+        {
+          "ms": 0.4715421237051487,
+          "sha256": "c3ea15e41d20ba229d128c823b518ff5c8fcd8c207d9704eea5306446fb9de43"
+        },
+        {
+          "ms": 0.4713749513030052,
+          "sha256": "c8912a3668a8a76c94e5740bd11981617d2b755946b82e69ae3e2ccadd291d0a"
+        },
+        {
+          "ms": 0.46712509356439114,
+          "sha256": "5b555eeba4e158613682f83fa627a801f00a1b4b19cc748aaae6e8a88abebaa0"
+        },
+        {
+          "ms": 0.5314170848578215,
+          "sha256": "5ae3b83f8010716dd3677b3942192dffbd4fe1dfaa74e0037f60af5563c900bd"
+        },
+        {
+          "ms": 0.4667921457439661,
+          "sha256": "141b313579c67f1a65107d75acaa659238002501c14674f64126728e5f1f7b6c"
+        }
+      ]
+    },
+    {
+      "threads": 10,
+      "rows": [
+        {
+          "ms": 115.28283404186368,
+          "sha256": "c227b5ed48144f2f9ced120108e1a143884f0950c938b326e9b3cb0727e9b5cd"
+        },
+        {
+          "ms": 14.35937499627471,
+          "sha256": "de610176a639016db398e727b81aae3b711dc3451dfcfc882cdceb11b50f5bf6"
+        },
+        {
+          "ms": 31.59616608172655,
+          "sha256": "585a4f34742f684c6978851b315cb7dca4053217341e53278a304d98c4949745"
+        },
+        {
+          "ms": 18.40183394961059,
+          "sha256": "c3ea15e41d20ba229d128c823b518ff5c8fcd8c207d9704eea5306446fb9de43"
+        },
+        {
+          "ms": 16.07404206879437,
+          "sha256": "c8912a3668a8a76c94e5740bd11981617d2b755946b82e69ae3e2ccadd291d0a"
+        },
+        {
+          "ms": 19.410999957472086,
+          "sha256": "5b555eeba4e158613682f83fa627a801f00a1b4b19cc748aaae6e8a88abebaa0"
+        },
+        {
+          "ms": 25.210750056430697,
+          "sha256": "5ae3b83f8010716dd3677b3942192dffbd4fe1dfaa74e0037f60af5563c900bd"
+        },
+        {
+          "ms": 64.18425007723272,
+          "sha256": "141b313579c67f1a65107d75acaa659238002501c14674f64126728e5f1f7b6c"
+        }
+      ]
+    },
+    {
+      "threads": 1,
+      "rows": [
+        {
+          "ms": 1.4951250050216913,
+          "sha256": "c227b5ed48144f2f9ced120108e1a143884f0950c938b326e9b3cb0727e9b5cd"
+        },
+        {
+          "ms": 0.8012920152395964,
+          "sha256": "de610176a639016db398e727b81aae3b711dc3451dfcfc882cdceb11b50f5bf6"
+        },
+        {
+          "ms": 0.5770840216428041,
+          "sha256": "585a4f34742f684c6978851b315cb7dca4053217341e53278a304d98c4949745"
+        },
+        {
+          "ms": 0.5233748815953732,
+          "sha256": "c3ea15e41d20ba229d128c823b518ff5c8fcd8c207d9704eea5306446fb9de43"
+        },
+        {
+          "ms": 0.5522500723600388,
+          "sha256": "c8912a3668a8a76c94e5740bd11981617d2b755946b82e69ae3e2ccadd291d0a"
+        },
+        {
+          "ms": 0.6193749140948057,
+          "sha256": "5b555eeba4e158613682f83fa627a801f00a1b4b19cc748aaae6e8a88abebaa0"
+        },
+        {
+          "ms": 0.825291033834219,
+          "sha256": "5ae3b83f8010716dd3677b3942192dffbd4fe1dfaa74e0037f60af5563c900bd"
+        },
+        {
+          "ms": 1.7458749935030937,
+          "sha256": "141b313579c67f1a65107d75acaa659238002501c14674f64126728e5f1f7b6c"
+        }
+      ]
+    }
+  ],
+  "exact_across_thread_counts": true
+}

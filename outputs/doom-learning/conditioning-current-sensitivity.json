@@ -1,0 +1,41 @@
+{
+  "purpose": "Diagnostic current sensitivity, not fitted or validated physiology. No game involved.",
+  "results": [
+    {
+      "KC_current_mv_equivalent": 7.2,
+      "imposed_cells": 64,
+      "imposed_spikes": 2369,
+      "all_KC_spikes": 4066,
+      "active_KCs": 161,
+      "DAN_spikes": 223,
+      "MBON_spikes": [
+        1,
+        100
+      ]
+    },
+    {
+      "KC_current_mv_equivalent": 8.0,
+      "imposed_cells": 64,
+      "imposed_spikes": 3237,
+      "all_KC_spikes": 5659,
+      "active_KCs": 154,
+      "DAN_spikes": 235,
+      "MBON_spikes": [
+        1,
+        127
+      ]
+    },
+    {
+      "KC_current_mv_equivalent": 10.5,
+      "imposed_cells": 64,
+      "imposed_spikes": 4300,
+      "all_KC_spikes": 7214,
+      "active_KCs": 172,
+      "DAN_spikes": 245,
+      "MBON_spikes": [
+        0,
+        142
+      ]
+    }
+  ]
+}

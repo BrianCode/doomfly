@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "batches": [
+    {
+      "jobs": 1,
+      "batch_wall_seconds": 19.693644083105028,
+      "aggregate_brain_seconds_per_wall_second": 0.10155560807132588,
+      "runs": [
+        {
+          "seed": 81031,
+          "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+          "setup_seconds": 5.78434145799838,
+          "timing": {
+            "wall_seconds": 4.468410250032321,
+            "neural_seconds": 1.0,
+            "speed": 0.22379323832066828,
+            "kernel_seconds": 3.6657033753581345,
+            "sensory_seconds": 0.044312415877357125,
+            "game_seconds": 0.5723931635729969
+          }
+        },
+        {
+          "seed": 81032,
+          "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+          "setup_seconds": 4.227489083074033,
+          "timing": {
+            "wall_seconds": 2.5959794998634607,
+            "neural_seconds": 1.0,
+            "speed": 0.38521105426780006,
+            "kernel_seconds": 2.1319097876548767,
+            "sensory_seconds": 0.0348795426543802,
+            "game_seconds": 0.3676312535535544
+          }
+        }
+      ]
+    },
+    {
+      "jobs": 2,
+      "batch_wall_seconds": 7.0220695422030985,
+      "aggregate_brain_seconds_per_wall_second": 0.28481631917483424,
+      "runs": [
+        {
+          "seed": 81031,
+          "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+          "setup_seconds": 2.0003482080064714,
+          "timing": {
+            "wall_seconds": 3.1372231249697506,
+            "neural_seconds": 1.0,
+            "speed": 0.31875322862464306,
+            "kernel_seconds": 2.5445038322359324,
+            "sensory_seconds": 0.039399706525728106,
+            "game_seconds": 0.4459054567851126
+          }
+        },
+        {
+          "seed": 81032,
+          "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+          "setup_seconds": 1.9941708750557154,
+          "timing": {
+            "wall_seconds": 4.004635874880478,
+            "neural_seconds": 1.0,
+            "speed": 0.24971059323336006,
+            "kernel_seconds": 3.1653036267962307,
+            "sensory_seconds": 0.15003699925728142,
+            "game_seconds": 0.4259593696333468
+          }
+        }
+      ]
+    }
+  ],
+  "identical_traces_across_scheduling": true,
+  "limits": "Short full-graph benchmark including process/graph setup, on a shared host. Not a steady-state hardware benchmark or evidence of learning. Parallel jobs require independent full neural and game state."
+}

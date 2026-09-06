@@ -1,0 +1,76 @@
+{
+  "run_id": "dcaea589-c5f3-43a6-82de-05f34c75b90a",
+  "age_seconds": 0.9,
+  "phase": "training",
+  "game": {
+    "episode": 10,
+    "tick": 136,
+    "finished": false,
+    "health": 40,
+    "kills": 0,
+    "ammo": 94,
+    "score": 0.0,
+    "enemies": 5,
+    "enemies_spawned": 5,
+    "ammo_pickups": 0,
+    "ammo_spawned": 4,
+    "imps": 3,
+    "zombies": 2
+  },
+  "learning": {
+    "plastic_edges": 4184,
+    "changed_edges": 2017,
+    "mean_efficacy": 0.9941341876983643,
+    "minimum_efficacy": 0.2322455793619156,
+    "sha256": "e253be2a53bd70f864a149428abb63513b88331b614162852c47d00a8a7c4272",
+    "model": "adaptive-centered-v6",
+    "enabled": true,
+    "validated": false,
+    "maximum_efficacy": 1.0915799140930176,
+    "mean_absolute_change": 0.01323714479804039,
+    "bound_edges": 0,
+    "efficacy_histogram": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      300,
+      3823,
+      58,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "histogram_range": [
+      0.1,
+      2.0
+    ],
+    "damage_events": 70,
+    "delivered_ms": 12000.0,
+    "stimulus_active": false,
+    "stimulus_steps_last_tic": 0,
+    "terminal_events_excluded": 8,
+    "cancelled_ms_at_round_reset": 142.9,
+    "KC_spikes_last_tic": 272,
+    "DAN_spikes_last_tic": [
+      3,
+      3
+    ],
+    "MBON_spikes_last_tic": [
+      0,
+      0
+    ]
+  },
+  "recovery": "learned and fast neural state retained; new arena; interrupted round censored",
+  "continuation_of": "0ef47fcb-967b-4fab-96b7-f202fbf4ff41"
+}

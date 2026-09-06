@@ -1,0 +1,12 @@
+{
+  "public_site_verified": true,
+  "run_id": "2ea17d55-a282-4f8b-8089-adb3885e20bb",
+  "frames_in_segment": 7,
+  "immutable_segment": true,
+  "source_matches": true,
+  "phase": "baseline",
+  "capture_fps_cap": 8,
+  "buffer_ms": 2500,
+  "segment_bytes": 505249,
+  "cloud_worker_deployed": false
+}

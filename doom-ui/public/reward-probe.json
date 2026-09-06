@@ -1,0 +1,50 @@
+{
+  "run_id": "5aac5225-5a59-4d95-a2c0-215c1569af70",
+  "condition": "intact",
+  "decoder": "bci",
+  "game": {
+    "episode": 4,
+    "tick": 252,
+    "finished": false,
+    "health": 64,
+    "kills": 0,
+    "ammo": 26,
+    "score": 0.0
+  },
+  "reward": {
+    "mode": "sugar",
+    "sugar_pulses": 1,
+    "active": false,
+    "plasticity": false
+  },
+  "window_spikes": 24598,
+  "total_action_ticks": 652,
+  "clocks": {
+    "wall_seconds": 356.391,
+    "neural_seconds": 30.8571,
+    "game_seconds": 30.8571,
+    "speed": 0.087,
+    "brain_step_ms": 300.383
+  },
+  "neuron_voltage_mv": {
+    "10331": -49.54,
+    "10360": -224.236,
+    "10763": -84.451,
+    "10783": -200.417,
+    "11177": -137.523,
+    "11288": -75.104,
+    "11332": -78.344,
+    "12348": -87.983,
+    "16949": -51.492,
+    "523769": -94.834,
+    "10059": -66.602,
+    "10162": -66.944,
+    "10527": -144.719,
+    "555871": -172.345
+  },
+  "interpretation": "Single exploratory reward-enabled run. One sugar pulse preceded later suppression of the BCI readouts. This uncontrolled comparison does not establish the pulse as the sole cause. It does not demonstrate learning.",
+  "legacy": true,
+  "model_revision": "pre-review-r1",
+  "superseded_by": "/audit-experiments.json",
+  "review_note": "Historical result from the solver before the refractory-input correction; not validation of the current model."
+}

@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-09-05T20:25:48Z",
+  "site": "https://doomfly.example/",
+  "review_http_status": 200,
+  "public_results_match": true,
+  "live_run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+  "model_revision": "lif-r2-refractory-write-protection",
+  "source_commit": "ffc69326b4ed6a6ffe30cbf9e214da291099b39e",
+  "tests_passed": 23,
+  "live_schema_tests_passed": true,
+  "jpeg_hash_checked": true,
+  "clocks_aligned": true,
+  "biological_validation": false,
+  "learning": false
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "2ea17d55-a282-4f8b-8089-adb3885e20bb",
+  "continuation_of": "fdfeb7c8-21bf-42d1-856d-1644346d0a7c",
+  "saved_brain_seconds": 89.14290000000176,
+  "current_brain_seconds": 111.3429,
+  "game": {
+    "episode": 3,
+    "tick": 777,
+    "finished": false,
+    "health": 67,
+    "kills": 3,
+    "ammo": 46,
+    "score": 0.0,
+    "enemies": 7,
+    "enemies_spawned": 10,
+    "ammo_pickups": 0,
+    "ammo_spawned": 4
+  },
+  "recovery": "neural state retained; new arena; interrupted round is censored",
+  "speed": 0.639,
+  "checks_passed": true
+}

@@ -1,0 +1,36 @@
+{
+  "task": "blue-floor-survival-v1",
+  "seed": 41041,
+  "hazard_left": true,
+  "spawn": [
+    -171.89915199850472,
+    101.05154485642751,
+    228
+  ],
+  "damage": 20,
+  "damage_interval_tics": 32,
+  "textures": {
+    "hazard": {
+      "palette_index": 200,
+      "actual_srgb": [
+        0,
+        0,
+        255
+      ]
+    },
+    "safe": {
+      "palette_index": 101,
+      "actual_srgb": [
+        99,
+        99,
+        99
+      ]
+    }
+  },
+  "wad_sha256": "36654d53b815cf30999b9ecc99e79f35527c3c6f90d3069aefb6e5e055424aab",
+  "iwad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+  "engine": "1.3.0",
+  "engine_hz": 35,
+  "source": "https://github.com/ZDoom/gzdoom/blob/master/specs/udmf_zdoom.txt",
+  "limits": "Engine hazard, not a biological environment. A 60-second cap is censored survival, not an escape or learning claim."
+}

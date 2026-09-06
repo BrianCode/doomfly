@@ -1,0 +1,721 @@
+{
+  "status": "complete_descriptive_analysis",
+  "protocol": {
+    "started_at": "2026-09-05T20:46:41.934240+00:00",
+    "started_epoch": 1788641201.934159,
+    "scheduled_end_epoch": 1788644801.934159,
+    "requested_wall_seconds": 3600.0,
+    "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+    "initial_sequence": 6855,
+    "initial_game": {
+      "episode": 5,
+      "tick": 1034,
+      "finished": false,
+      "health": 100,
+      "kills": 0,
+      "ammo": 0,
+      "score": 0.0
+    },
+    "initial_clocks": {
+      "wall_seconds": 1568.727,
+      "neural_seconds": 269.5429,
+      "game_seconds": 269.5429,
+      "speed": 0.172,
+      "brain_step_ms": 113.012
+    },
+    "condition": "intact",
+    "decoder": "bci",
+    "reward": {
+      "mode": "off",
+      "sugar_pulses": 0,
+      "active": false,
+      "plasticity": false
+    },
+    "snapshot_interval_seconds": 5,
+    "frame_interval_seconds": 30,
+    "public_check_interval_seconds": 60,
+    "audit_capture": "all appended per-tic events",
+    "existing_run_continues": true,
+    "neural_state_not_reset": true,
+    "frozen_configuration": true,
+    "observation_only": true,
+    "planned_checks": [
+      "clock alignment",
+      "neural-to-action decoder reconstruction",
+      "frame digest",
+      "finite/bounded telemetry",
+      "input/raster/population consistency",
+      "audit continuity",
+      "complete episode outcomes versus censored episodes",
+      "early/late descriptive activity and game performance",
+      "public-feed availability",
+      "source and graph stability",
+      "no plasticity or learning claims"
+    ],
+    "limits": [
+      "One ongoing reconstructed male, no randomized intervention in this hour.",
+      "Read-only telemetry is not a restartable full membrane/synapse checkpoint.",
+      "No access to live weight arrays; disk hashes and reviewed source are separate evidence.",
+      "An hour of wall time is not an hour of neural time.",
+      "Performance trends alone cannot demonstrate learning or biological validity."
+    ]
+  },
+  "collector": {
+    "status": "complete",
+    "completed_at": "2026-09-05T21:46:42.232174+00:00",
+    "observed_wall_seconds": 3600.3129202499986,
+    "snapshots": 716,
+    "frames": 110,
+    "audit_events": 22050,
+    "public_checks": 0,
+    "errors": 59
+  },
+  "coverage": {
+    "snapshots": 716,
+    "audit_events": 22050,
+    "run_ids": [
+      "67708368-3b24-439e-b45c-dd09d277eeef"
+    ],
+    "snapshot_wall_seconds": 3599.9904542909935,
+    "neural_seconds": 629.9714,
+    "window_speed": 0.1749925195632417,
+    "max_sample_gap_seconds": 17.65750537486747,
+    "tick_gaps": [],
+    "saved_frames": 110,
+    "first_event_tick": 9437,
+    "last_event_tick": 31486
+  },
+  "checks": {
+    "violations": {},
+    "examples": {},
+    "decoder_max_absolute_error": {
+      "turn": 0.00011875363966518115,
+      "forward": 0.000396289258876692
+    },
+    "filter_max_absolute_error_hz": 0.000872523033898176,
+    "source_matches_running_provenance": true,
+    "graph_matches_running_provenance": true,
+    "disk_fingerprints_unchanged": true,
+    "runtime_provenance_variants": 1,
+    "full_live_weight_array_recorded": false,
+    "full_live_voltage_state_recorded": false
+  },
+  "game": {
+    "episode_count_including_censored": 11,
+    "complete_episodes": 9,
+    "complete_episode_kills": {
+      "n": 9,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.2222222222222222,
+      "max": 1.0
+    },
+    "complete_episode_duration_seconds": {
+      "n": 9,
+      "min": 60.0,
+      "median": 60.0,
+      "mean": 60.0,
+      "max": 60.0
+    },
+    "known_window_kill_increment": 3,
+    "snapshot_empty_ammo_fraction": 0.8435754189944135,
+    "snapshot_attack_with_empty_ammo_fraction": 0.7639664804469274,
+    "episodes": [
+      {
+        "episode": 5,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 0,
+        "ammo": 0,
+        "score": 0.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": true,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": false
+      },
+      {
+        "episode": 6,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 0,
+        "ammo": 0,
+        "score": 0.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 7,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 0,
+        "ammo": 0,
+        "score": 0.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 8,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 0,
+        "ammo": 0,
+        "score": 0.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 9,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 0,
+        "ammo": 0,
+        "score": 0.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 10,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 0,
+        "ammo": 0,
+        "score": 0.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 11,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 1,
+        "ammo": 0,
+        "score": 1.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 12,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 0,
+        "ammo": 0,
+        "score": 0.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 13,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 1,
+        "ammo": 0,
+        "score": 1.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 14,
+        "tick": 2100,
+        "finished": true,
+        "health": 100,
+        "kills": 0,
+        "ammo": 0,
+        "score": 0.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": false,
+        "duration_neural_seconds": 60.0,
+        "complete_in_window": true
+      },
+      {
+        "episode": 15,
+        "tick": 2085,
+        "finished": false,
+        "health": 100,
+        "kills": 1,
+        "ammo": 0,
+        "score": 1.0,
+        "run_id": "67708368-3b24-439e-b45c-dd09d277eeef",
+        "last_seen_wall_seconds": 3600.0053543329705,
+        "left_censored": false,
+        "right_censored": true,
+        "duration_neural_seconds": 59.57142857142857,
+        "complete_in_window": false
+      }
+    ]
+  },
+  "neural": {
+    "total_spike_increment": 338074144,
+    "mean_spikes_per_neuron_hz": 3.2192560744007905,
+    "snapshot_population_rate": {
+      "n": 716,
+      "min": 2.944674223050127,
+      "median": 3.2144969607477107,
+      "mean": 3.216990718717911,
+      "max": 3.4344180115025944
+    },
+    "snapshot_luminance": {
+      "n": 716,
+      "min": 0.07683165413297503,
+      "median": 0.1005254193885479,
+      "mean": 0.10178986734463089,
+      "max": 0.13190359688240155
+    },
+    "distinct_sampled_input_frames": 715,
+    "event_attack_fraction": 0.9299319727891157,
+    "event_turn_saturation_fraction": 0,
+    "event_move_saturation_fraction": 0.35079365079365077,
+    "neural_time_thirds": [
+      {
+        "third": 1,
+        "event_count": 7349,
+        "attack_fraction": 0.9304667301673697,
+        "turn": {
+          "n": 7349,
+          "min": -1.414443525211568,
+          "median": 0.49414487710107863,
+          "mean": 0.539551948070233,
+          "max": 2.911693111564723
+        },
+        "forward": {
+          "n": 7349,
+          "min": 13.72467590083471,
+          "median": 19.2558386084603,
+          "mean": 18.83182590973932,
+          "max": 20.0
+        },
+        "game_reward_sum": 0.0,
+        "interpretation": "Descriptive only: no learning intervention, reward sum is not kill count."
+      },
+      {
+        "third": 2,
+        "event_count": 7350,
+        "attack_fraction": 0.9274829931972789,
+        "turn": {
+          "n": 7350,
+          "min": -1.1050762519027109,
+          "median": 0.49564509855485483,
+          "mean": 0.5486075324084677,
+          "max": 3.0161749535836626
+        },
+        "forward": {
+          "n": 7350,
+          "min": 13.733731755776427,
+          "median": 19.270187181612624,
+          "mean": 18.84822746210052,
+          "max": 20.0
+        },
+        "game_reward_sum": 1.0,
+        "interpretation": "Descriptive only: no learning intervention, reward sum is not kill count."
+      },
+      {
+        "third": 3,
+        "event_count": 7349,
+        "attack_fraction": 0.9318274595183018,
+        "turn": {
+          "n": 7349,
+          "min": -1.0579236736724453,
+          "median": 0.48463110904140333,
+          "mean": 0.53639680442918,
+          "max": 2.8669228157241062
+        },
+        "forward": {
+          "n": 7349,
+          "min": 13.622532033517558,
+          "median": 19.19320210848028,
+          "mean": 18.80692799004797,
+          "max": 20.0
+        },
+        "game_reward_sum": 2.0,
+        "interpretation": "Descriptive only: no learning intervention, reward sum is not kill count."
+      }
+    ]
+  },
+  "public_feed": {
+    "curl_samples": 59,
+    "curl_successes": 58,
+    "curl_failures": [
+      {
+        "received_at": "2026-09-05T21:17:46.256186+00:00",
+        "received_epoch": 1788643066.263676,
+        "transport": "curl",
+        "elapsed_wall_seconds": 1864.329988002777,
+        "ok": false,
+        "error": "Command '['curl', '--fail', '--silent', '--show-error', '--max-time', '8', 'https://doomfly.example/api/live']' returned non-zero exit status 56.",
+        "request_seconds": 1.557666749926284
+      }
+    ],
+    "curl_latency_seconds": {
+      "n": 59,
+      "min": 0.25443641701713204,
+      "median": 0.8903985000215471,
+      "mean": 1.028866885648251,
+      "max": 5.219540292164311
+    },
+    "curl_run_ids": [
+      "67708368-3b24-439e-b45c-dd09d277eeef"
+    ],
+    "curl_frame_age_at_response_seconds": {
+      "n": 58,
+      "min": 0.11941409111022949,
+      "median": 0.2938729524612427,
+      "mean": 0.4760733349569913,
+      "max": 2.4788711071014404
+    },
+    "local_snapshot_age_seconds": {
+      "n": 716,
+      "min": 0.00832177734375,
+      "median": 0.1337364501953125,
+      "mean": 0.3847052960102785,
+      "max": 9.90810107421875
+    },
+    "primary_collector_errors": [
+      {
+        "at": "2026-09-05T20:46:42.282288+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:47:42.143419+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:48:47.132292+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:49:52.085258+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:50:57.054993+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:52:02.090466+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:53:07.130889+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:54:07.130879+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:55:12.053341+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:56:12.070345+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:57:12.119585+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:58:17.078160+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T20:59:17.049104+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:00:17.107851+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:01:22.106505+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:02:22.035170+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:03:24.778260+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:04:29.815201+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:05:34.712009+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:06:34.873976+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:07:39.690338+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:08:39.710857+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:09:39.930363+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:10:39.770667+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:11:45.793659+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:12:49.741561+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:13:50.119390+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:15:02.786799+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:15:59.128122+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:17:04.723304+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:18:05.758874+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:19:10.593442+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:20:10.730048+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:21:15.623043+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:22:20.876075+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:23:25.524576+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:24:25.559740+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:25:31.508479+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:26:35.517035+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:27:36.514920+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:28:40.627527+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:29:45.552819+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:30:50.588540+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:31:50.803738+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:32:55.624673+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:33:56.102899+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:34:57.860710+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:36:01.345813+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:37:05.775994+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:38:10.585312+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:39:10.544572+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:40:10.558913+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:41:15.574427+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:42:20.653114+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:43:20.723017+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:44:25.544204+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:45:30.531791+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:46:35.903878+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "at": "2026-09-05T21:46:42.019284+00:00",
+        "stage": "public_sample",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "interpretation": "Minute samples cannot prove continuous uptime. urllib 403 is a client transport result."
+  },
+  "learning": {
+    "plasticity_implemented": false,
+    "learning_established": false,
+    "expected_progress": "No training-driven improvement is predicted. Activity and episode variation are not learning."
+  },
+  "scientific_verdict": "These checks evaluate an approximate connectome-driven BCI; they cannot establish a literal fly brain, correct fly vision, understanding or learning."
+}

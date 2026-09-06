@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "recovery": "neural-state-with-new-arena",
+  "identity": {
+    "provenance": {
+      "model_revision": "lif-r2-refractory-write-protection",
+      "kernel": {
+        "kernel_source_sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+        "binary_sha256": "806a5eda4de320520674ed6b60488eec303ada046fe5f7b28ab0ab632132f588",
+        "model_revision": "lif-r2-refractory-write-protection",
+        "compile_flags": [
+          "-O3",
+          "-std=c++17",
+          "-shared",
+          "-fPIC"
+        ]
+      },
+      "graph_sha256": "346b8af85a11af13b8324e18669812c1924569e7d1adcb4e6f45cc461a2c344b",
+      "source_sha256": {
+        "doom/__init__.py": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+        "doom/analyze_observation.py": "97db9ca40fc27413910ea61c9ca40f3f5ebe242246dedf46cbd6e891d61fce26",
+        "doom/archive.py": "0fd393e832cba4c262db878e7fd1f95dc4bd5e12586f7ade54b0d41fc3db040d",
+        "doom/audit_data.py": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+        "doom/audit_experiments.py": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+        "doom/audit_remote.py": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+        "doom/audit_retina.py": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+        "doom/broadcast.py": "c98e1f787a4cb4e3ad9bc9bfb7c6ab8fcea4826fbbbf65d3fb6c6034ae5071db",
+        "doom/build_kernel.py": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+        "doom/checkpoint.py": "5249f22d19e1cd5dd2522e9339778b5ce0b5715f58a090bc69cf347e0afb93ec",
+        "doom/combat_arena.py": "e25e1940d346cb1c172ec880dd8fe4c4fee470ccf1bb7d4c827ef40a85c8c7b8",
+        "doom/engine.py": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+        "doom/game.py": "00f693269824548678fc222aaf07a51ebd49bdaa112220c7a51a8affe23d722f",
+        "doom/native.py": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+        "doom/observe.py": "4814881738de67294a081659143f6bb29eccdbcbab610e4b6ac3240588df512f",
+        "doom/observe_public.py": "7bd2776c6a24fd2858f94e6c0edf0e432e8aa097aeed6efacf8c4d193964f593",
+        "doom/prepare.py": "56cfed3ebefef2d637277fcbbc3074698e5016a01f44965cbcce3e4ee46986a8",
+        "doom/provenance.py": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+        "doom/reward.py": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+        "doom/server.py": "c5930ae36044e028fdfa0cf09fa1d8ff3865679e97d3b306d05426babfde9249",
+        "doom/validate.py": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+        "doom/validate_bci.py": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+        "doom/kernel.cpp": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337"
+      },
+      "assets": {
+        "vizdoom_version": "1.3.0",
+        "scenario": "combat_survival",
+        "sha256": {
+          "combat_survival.cfg": "bd2160dd42e997db16f8ba0ab38244a672c06416226a21b1ebd198d3a584d943",
+          "combat_survival.wad": "75723435a57366811436e2506cc294572a023e504888639b67e5e59d87b4edff",
+          "freedoom2.wad": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+        },
+        "rules": {
+          "revision": "combat-survival-v1",
+          "arena_size_units": [
+            768,
+            768
+          ],
+          "initial_enemies": 4,
+          "maximum_alive_enemies": 8,
+          "spawn_interval_game_seconds": 3,
+          "spawn_rule": "One attempt every 105 engine tics; occupied pads are skipped. At most eight living enemies.",
+          "enemy": "Alternating DoomImp (30 health, native projectile/melee AI, Clip drop) and native Zombieman (20 health, hitscan attacks, Clip drop)",
+          "ammo": "Four ClipBox pickup pads; each respawns eight game seconds after collection. Enemy kills drop a Clip.",
+          "initial_bullets": 100,
+          "episode_end": "player death only; no time limit or level exit",
+          "neural_state": "preserved across arena resets; baseline synaptic weights are fixed",
+          "observation_boundary": "Enemy counts, item counters and other engine state are spectator telemetry only. Controller input remains RGB pixels.",
+          "comparison": "New environment; do not pool results with defend_the_center or blue-floor learning experiments.",
+          "sources": [
+            "https://github.com/ZDoom/acc",
+            "https://vizdoom.farama.org/"
+          ],
+          "sha256": {
+            "combat_arena.py": "e25e1940d346cb1c172ec880dd8fe4c4fee470ccf1bb7d4c827ef40a85c8c7b8",
+            "combat_survival.acs": "634300ab5ce7dc581c8da4a8881fb3a2753cad36c014f81b1d0070d8adcd6387",
+            "combat_survival.decorate": "268d72045a392501b1a0647ff5b06e53c890d2b19a34874fa494fb9e37970ff6",
+            "combat_survival.cfg": "bd2160dd42e997db16f8ba0ab38244a672c06416226a21b1ebd198d3a584d943",
+            "combat_survival.wad": "75723435a57366811436e2506cc294572a023e504888639b67e5e59d87b4edff"
+          },
+          "compiler": {
+            "source": "https://github.com/ZDoom/acc",
+            "commit": "bdb9bc4d2c5aee7ca3ff8da985d73aaf83af0557"
+          }
+        }
+      },
+      "data_audit_sha256": "911bd10fe8cc881b64fc51a45aa237323b838d41253ccf2d9fce1a6642129181"
+    },
+    "seed": 41027,
+    "decoder": "bci",
+    "condition": "intact",
+    "reward": "off"
+  },
+  "record": {
+    "run_id": "fdfeb7c8-21bf-42d1-856d-1644346d0a7c",
+    "study_id": "fdfeb7c8-21bf-42d1-856d-1644346d0a7c",
+    "tick": 3120,
+    "total_actions": 3120,
+    "episodes": [
+      {
+        "episode": 1,
+        "tick": 1443,
+        "finished": true,
+        "health": -2,
+        "kills": 6,
+        "ammo": 2,
+        "score": -1.0,
+        "enemies": 7,
+        "enemies_spawned": 13,
+        "ammo_pickups": 0,
+        "ammo_spawned": 4
+      }
+    ],
+    "reward": {
+      "enabled": false,
+      "until_ms": 0.0,
+      "pulses": 0
+    }
+  },
+  "game": {
+    "episode": 2,
+    "tick": 1677,
+    "finished": false,
+    "health": 10,
+    "kills": 10,
+    "ammo": 0,
+    "score": 0.0,
+    "enemies": 7,
+    "enemies_spawned": 17,
+    "ammo_pickups": 0,
+    "ammo_spawned": 4
+  },
+  "brain": {
+    "cursor": 891429,
+    "sim_ms": 89142.90000000175,
+    "total_spikes": 47549768
+  },
+  "sha256": {
+    "brain.npz": "9130571311e66128f308545e2269bd74c1e8409e79f3925da07e6c316191037a"
+  }
+}

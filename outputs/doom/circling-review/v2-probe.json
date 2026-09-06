@@ -1,0 +1,112 @@
+{
+  "purpose": "environment QA; fixed controller, not neural behavior or learning",
+  "wad_sha256": "40350fd06042e0d610c258345b90e0db69037562d1f2302d850d8cd6ee9d184b",
+  "action": {
+    "turn": 0.772,
+    "forward": 19.226,
+    "attack": true
+  },
+  "observation_cap_game_seconds": 300,
+  "development_seeds": [
+    41027,
+    41028,
+    41029
+  ],
+  "held_out_seeds": [
+    41030,
+    41031,
+    41032,
+    41033,
+    41034
+  ],
+  "runs": [
+    {
+      "seed": 41027,
+      "game_seconds": 16.285714285714285,
+      "dead": true,
+      "censored": false,
+      "health": -5,
+      "kills": 2,
+      "enemies": 7,
+      "imps": 4,
+      "zombies": 3
+    },
+    {
+      "seed": 41028,
+      "game_seconds": 13.6,
+      "dead": true,
+      "censored": false,
+      "health": -8,
+      "kills": 2,
+      "enemies": 6,
+      "imps": 4,
+      "zombies": 2
+    },
+    {
+      "seed": 41029,
+      "game_seconds": 42.8,
+      "dead": true,
+      "censored": false,
+      "health": -5,
+      "kills": 7,
+      "enemies": 8,
+      "imps": 4,
+      "zombies": 4
+    },
+    {
+      "seed": 41030,
+      "game_seconds": 43.4,
+      "dead": true,
+      "censored": false,
+      "health": -8,
+      "kills": 8,
+      "enemies": 8,
+      "imps": 4,
+      "zombies": 4
+    },
+    {
+      "seed": 41031,
+      "game_seconds": 26.714285714285715,
+      "dead": true,
+      "censored": false,
+      "health": -2,
+      "kills": 5,
+      "enemies": 7,
+      "imps": 4,
+      "zombies": 3
+    },
+    {
+      "seed": 41032,
+      "game_seconds": 44.25714285714286,
+      "dead": true,
+      "censored": false,
+      "health": -2,
+      "kills": 10,
+      "enemies": 6,
+      "imps": 4,
+      "zombies": 2
+    },
+    {
+      "seed": 41033,
+      "game_seconds": 71.82857142857142,
+      "dead": true,
+      "censored": false,
+      "health": -14,
+      "kills": 18,
+      "enemies": 7,
+      "imps": 4,
+      "zombies": 3
+    },
+    {
+      "seed": 41034,
+      "game_seconds": 38.714285714285715,
+      "dead": true,
+      "censored": false,
+      "health": -11,
+      "kills": 7,
+      "enemies": 6,
+      "imps": 4,
+      "zombies": 2
+    }
+  ]
+}

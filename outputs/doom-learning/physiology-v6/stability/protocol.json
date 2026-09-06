@@ -1,0 +1,14 @@
+{
+  "warmup_seconds": 2,
+  "cue_seconds": 1,
+  "recovery_seconds": 3,
+  "cues": [
+    "black",
+    "left_blue",
+    "right_blue",
+    "white"
+  ],
+  "learning": false,
+  "weights": "frozen",
+  "interpretation": "Physiological diagnostic, not a conditioning or survival test. No parameters fit to these outcomes."
+}

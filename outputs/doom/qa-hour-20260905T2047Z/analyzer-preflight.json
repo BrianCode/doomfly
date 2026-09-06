@@ -1,0 +1,26 @@
+{
+  "scope": "Analyzer preflight only, not the one-hour result",
+  "tested_snapshots": 52,
+  "tested_audit_events": 2118,
+  "recorded_segment_checks": {
+    "violations": {},
+    "examples": {},
+    "decoder_max_absolute_error": {
+      "turn": 0.00011683870590989409,
+      "forward": 0.0003887029327351854
+    },
+    "filter_max_absolute_error_hz": 0.0008697401782651326,
+    "source_matches_running_provenance": true,
+    "graph_matches_running_provenance": true,
+    "disk_fingerprints_unchanged": true,
+    "runtime_provenance_variants": 1,
+    "full_live_weight_array_recorded": false,
+    "full_live_voltage_state_recorded": false
+  },
+  "negative_test": "A single altered turn in an isolated copy was detected; original recording untouched",
+  "negative_test_violations": {
+    "requested_applied": 1,
+    "decoder_turn": 1
+  },
+  "plot_export_verified": true
+}

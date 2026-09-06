@@ -1,0 +1,1203 @@
+{
+  "created_at": "2026-09-05T20:15:45Z",
+  "build": {
+    "kernel_source_sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+    "binary_sha256": "806a5eda4de320520674ed6b60488eec303ada046fe5f7b28ab0ab632132f588",
+    "model_revision": "lif-r2-refractory-write-protection",
+    "compile_flags": [
+      "-O3",
+      "-std=c++17",
+      "-shared",
+      "-fPIC"
+    ]
+  },
+  "assets": {
+    "vizdoom_version": "1.3.0",
+    "scenario": "defend_the_center",
+    "sha256": {
+      "defend_the_center.cfg": "f9661ee9cac79fc1e90c971ff9ad030c648a5205a8fdd8b9dce7e81b5bba40d1",
+      "defend_the_center.wad": "eb3f8d3b3f456bbef32a1d41f847189dd83cc1d4e320157ba92b75a9b0d8d5bb",
+      "freedoom2.wad": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    }
+  },
+  "data_audit_sha256": "911bd10fe8cc881b64fc51a45aa237323b838d41253ccf2d9fce1a6642129181",
+  "fixed_frame_tests": [
+    {
+      "condition": "intact",
+      "simulation_ms": 514.3000000000002,
+      "frame_intervals": 18,
+      "input_sha256": "33e0bae604caef22a4304728f21f5f2121e596999ae1495ca6203b71bc6379ab",
+      "spikes_sha256": "2a81e067e05d204615d8a73c65afab4e3f792867f40d4516c73842d030d0b80d",
+      "total_spikes": 250260,
+      "active_neurons": 9554,
+      "receptor_spikes": 132841,
+      "voltage_min_mv": -98.2956771850586,
+      "voltage_max_mv": -45.002525329589844,
+      "action_at_end": {
+        "turn": 1.6776992163979991,
+        "forward": 17.660133443443023,
+        "attack": true
+      },
+      "readouts": [
+        {
+          "index": 306,
+          "id": "10331",
+          "type": "MN9",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 332,
+          "id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 706,
+          "id": "10763",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 725,
+          "id": "10783",
+          "type": "DNp09",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1087,
+          "id": "11177",
+          "type": "DNp09",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1196,
+          "id": "11288",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1240,
+          "id": "11332",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 2194,
+          "id": "12348",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 6367,
+          "id": "16949",
+          "type": "MN9",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 131957,
+          "id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 48,
+          "id": "10059",
+          "type": "DNp20",
+          "side": "R",
+          "spikes": 1,
+          "rate_hz": 39.185
+        },
+        {
+          "index": 146,
+          "id": "10162",
+          "type": "DNp20",
+          "side": "L",
+          "spikes": 1,
+          "rate_hz": 25.204
+        },
+        {
+          "index": 489,
+          "id": "10527",
+          "type": "DNpe017",
+          "side": "L",
+          "spikes": 1,
+          "rate_hz": 26.849
+        },
+        {
+          "index": 142493,
+          "id": "555871",
+          "type": "DNpe017",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 17.301
+        }
+      ],
+      "weights_unchanged": true,
+      "wall_seconds": 2.8061658339574933
+    },
+    {
+      "condition": "blank_vision",
+      "simulation_ms": 514.3000000000002,
+      "frame_intervals": 18,
+      "input_sha256": "c411c207fb379b3beccac216c633ae620c51f23c78971c7d028d0266aee0cdc7",
+      "spikes_sha256": "f79d340e514d64811d5ea4ae342ab103065f589e597baeeacb3a81a50d21c9ce",
+      "total_spikes": 139346,
+      "active_neurons": 8647,
+      "receptor_spikes": 0,
+      "voltage_min_mv": -102.58332824707031,
+      "voltage_max_mv": -45.00176239013672,
+      "action_at_end": {
+        "turn": 0.9079522532620401,
+        "forward": 6.992230450028848,
+        "attack": false
+      },
+      "readouts": [
+        {
+          "index": 306,
+          "id": "10331",
+          "type": "MN9",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 332,
+          "id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 706,
+          "id": "10763",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 725,
+          "id": "10783",
+          "type": "DNp09",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1087,
+          "id": "11177",
+          "type": "DNp09",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1196,
+          "id": "11288",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1240,
+          "id": "11332",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 2194,
+          "id": "12348",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 6367,
+          "id": "16949",
+          "type": "MN9",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 131957,
+          "id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 48,
+          "id": "10059",
+          "type": "DNp20",
+          "side": "R",
+          "spikes": 1,
+          "rate_hz": 17.968
+        },
+        {
+          "index": 146,
+          "id": "10162",
+          "type": "DNp20",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 10.401
+        },
+        {
+          "index": 489,
+          "id": "10527",
+          "type": "DNpe017",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 10.494
+        },
+        {
+          "index": 142493,
+          "id": "555871",
+          "type": "DNpe017",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 6.987
+        }
+      ],
+      "weights_unchanged": true,
+      "wall_seconds": 2.610948875080794
+    },
+    {
+      "condition": "retina_disconnected",
+      "simulation_ms": 514.3000000000002,
+      "frame_intervals": 18,
+      "input_sha256": "33e0bae604caef22a4304728f21f5f2121e596999ae1495ca6203b71bc6379ab",
+      "spikes_sha256": "beb9a2616504fc7bb668ce20ca652b9bc38c655bdac3261f8b6ec2239c6a37e5",
+      "total_spikes": 272198,
+      "active_neurons": 10882,
+      "receptor_spikes": 132852,
+      "voltage_min_mv": -102.58332824707031,
+      "voltage_max_mv": -45.00176239013672,
+      "action_at_end": {
+        "turn": 0.9079522532620401,
+        "forward": 6.992230450028848,
+        "attack": false
+      },
+      "readouts": [
+        {
+          "index": 306,
+          "id": "10331",
+          "type": "MN9",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 332,
+          "id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 706,
+          "id": "10763",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 725,
+          "id": "10783",
+          "type": "DNp09",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1087,
+          "id": "11177",
+          "type": "DNp09",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1196,
+          "id": "11288",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1240,
+          "id": "11332",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 2194,
+          "id": "12348",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 6367,
+          "id": "16949",
+          "type": "MN9",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 131957,
+          "id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 48,
+          "id": "10059",
+          "type": "DNp20",
+          "side": "R",
+          "spikes": 1,
+          "rate_hz": 17.968
+        },
+        {
+          "index": 146,
+          "id": "10162",
+          "type": "DNp20",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 10.401
+        },
+        {
+          "index": 489,
+          "id": "10527",
+          "type": "DNpe017",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 10.494
+        },
+        {
+          "index": 142493,
+          "id": "555871",
+          "type": "DNpe017",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 6.987
+        }
+      ],
+      "weights_unchanged": true,
+      "wall_seconds": 5.4620295411441475
+    },
+    {
+      "condition": "all_edges_disconnected",
+      "simulation_ms": 514.3000000000002,
+      "frame_intervals": 18,
+      "input_sha256": "33e0bae604caef22a4304728f21f5f2121e596999ae1495ca6203b71bc6379ab",
+      "spikes_sha256": "99e8149ac5e1f47dd59d3bcead814d9e9fe183c129b06abf995cbe9ef9f0e3ee",
+      "total_spikes": 317815,
+      "active_neurons": 9349,
+      "receptor_spikes": 132851,
+      "voltage_min_mv": -52.0,
+      "voltage_max_mv": -45.011756896972656,
+      "action_at_end": {
+        "turn": 0.0,
+        "forward": 0.0,
+        "attack": false
+      },
+      "readouts": [
+        {
+          "index": 306,
+          "id": "10331",
+          "type": "MN9",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 332,
+          "id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 706,
+          "id": "10763",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 725,
+          "id": "10783",
+          "type": "DNp09",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1087,
+          "id": "11177",
+          "type": "DNp09",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1196,
+          "id": "11288",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1240,
+          "id": "11332",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 2194,
+          "id": "12348",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 6367,
+          "id": "16949",
+          "type": "MN9",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 131957,
+          "id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 48,
+          "id": "10059",
+          "type": "DNp20",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 146,
+          "id": "10162",
+          "type": "DNp20",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 489,
+          "id": "10527",
+          "type": "DNpe017",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 142493,
+          "id": "555871",
+          "type": "DNpe017",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        }
+      ],
+      "weights_unchanged": true,
+      "wall_seconds": 2.155933083035052
+    },
+    {
+      "condition": "no_external_drive",
+      "simulation_ms": 514.3000000000002,
+      "frame_intervals": 18,
+      "input_sha256": "c411c207fb379b3beccac216c633ae620c51f23c78971c7d028d0266aee0cdc7",
+      "spikes_sha256": "82dba2ccacd519455579208551100f050d621df48cdd21f7961e562673c0e333",
+      "total_spikes": 0,
+      "active_neurons": 0,
+      "receptor_spikes": 0,
+      "voltage_min_mv": -52.0,
+      "voltage_max_mv": -52.0,
+      "action_at_end": {
+        "turn": 0.0,
+        "forward": 0.0,
+        "attack": false
+      },
+      "readouts": [
+        {
+          "index": 306,
+          "id": "10331",
+          "type": "MN9",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 332,
+          "id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 706,
+          "id": "10763",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 725,
+          "id": "10783",
+          "type": "DNp09",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1087,
+          "id": "11177",
+          "type": "DNp09",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1196,
+          "id": "11288",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1240,
+          "id": "11332",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 2194,
+          "id": "12348",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 6367,
+          "id": "16949",
+          "type": "MN9",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 131957,
+          "id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 48,
+          "id": "10059",
+          "type": "DNp20",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 146,
+          "id": "10162",
+          "type": "DNp20",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 489,
+          "id": "10527",
+          "type": "DNpe017",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 142493,
+          "id": "555871",
+          "type": "DNpe017",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        }
+      ],
+      "weights_unchanged": true,
+      "wall_seconds": 0.23227445897646248
+    },
+    {
+      "condition": "no_lamina_bias",
+      "simulation_ms": 514.3000000000002,
+      "frame_intervals": 18,
+      "input_sha256": "33e0bae604caef22a4304728f21f5f2121e596999ae1495ca6203b71bc6379ab",
+      "spikes_sha256": "83d59a333f4f0f67eb69aec7a1166c82d91413690d59b775bb185d5ee8a68dfc",
+      "total_spikes": 132845,
+      "active_neurons": 2235,
+      "receptor_spikes": 132845,
+      "voltage_min_mv": -103.89949035644531,
+      "voltage_max_mv": -45.011756896972656,
+      "action_at_end": {
+        "turn": 0.0,
+        "forward": 0.0,
+        "attack": false
+      },
+      "readouts": [
+        {
+          "index": 306,
+          "id": "10331",
+          "type": "MN9",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 332,
+          "id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 706,
+          "id": "10763",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 725,
+          "id": "10783",
+          "type": "DNp09",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1087,
+          "id": "11177",
+          "type": "DNp09",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1196,
+          "id": "11288",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1240,
+          "id": "11332",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 2194,
+          "id": "12348",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 6367,
+          "id": "16949",
+          "type": "MN9",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 131957,
+          "id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 48,
+          "id": "10059",
+          "type": "DNp20",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 146,
+          "id": "10162",
+          "type": "DNp20",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 489,
+          "id": "10527",
+          "type": "DNpe017",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 142493,
+          "id": "555871",
+          "type": "DNpe017",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        }
+      ],
+      "weights_unchanged": true,
+      "wall_seconds": 1.0578993749804795
+    },
+    {
+      "condition": "ambiguous_sign_reversed",
+      "simulation_ms": 514.3000000000002,
+      "frame_intervals": 18,
+      "input_sha256": "33e0bae604caef22a4304728f21f5f2121e596999ae1495ca6203b71bc6379ab",
+      "spikes_sha256": "2a81e067e05d204615d8a73c65afab4e3f792867f40d4516c73842d030d0b80d",
+      "total_spikes": 250260,
+      "active_neurons": 9554,
+      "receptor_spikes": 132841,
+      "voltage_min_mv": -98.2956771850586,
+      "voltage_max_mv": -45.002525329589844,
+      "action_at_end": {
+        "turn": 1.6776992163979991,
+        "forward": 17.660133443443023,
+        "attack": true
+      },
+      "readouts": [
+        {
+          "index": 306,
+          "id": "10331",
+          "type": "MN9",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 332,
+          "id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 706,
+          "id": "10763",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 725,
+          "id": "10783",
+          "type": "DNp09",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1087,
+          "id": "11177",
+          "type": "DNp09",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1196,
+          "id": "11288",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1240,
+          "id": "11332",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 2194,
+          "id": "12348",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 6367,
+          "id": "16949",
+          "type": "MN9",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 131957,
+          "id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 48,
+          "id": "10059",
+          "type": "DNp20",
+          "side": "R",
+          "spikes": 1,
+          "rate_hz": 39.185
+        },
+        {
+          "index": 146,
+          "id": "10162",
+          "type": "DNp20",
+          "side": "L",
+          "spikes": 1,
+          "rate_hz": 25.204
+        },
+        {
+          "index": 489,
+          "id": "10527",
+          "type": "DNpe017",
+          "side": "L",
+          "spikes": 1,
+          "rate_hz": 26.849
+        },
+        {
+          "index": 142493,
+          "id": "555871",
+          "type": "DNpe017",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 17.301
+        }
+      ],
+      "weights_unchanged": true,
+      "wall_seconds": 3.8313331669196486
+    },
+    {
+      "condition": "shuffled_pixels",
+      "simulation_ms": 514.3000000000002,
+      "frame_intervals": 18,
+      "input_sha256": "f266ad1a655adcbbdb9f36cb7fed3694d4eee9897f71b33ddc41cf129f5a6962",
+      "spikes_sha256": "024b0862f7d0f6abc117239c1ba6304644ae24a591c4ee2c42fb66e97e1c8f5e",
+      "total_spikes": 243321,
+      "active_neurons": 9178,
+      "receptor_spikes": 132784,
+      "voltage_min_mv": -100.34461212158203,
+      "voltage_max_mv": -45.00096130371094,
+      "action_at_end": {
+        "turn": 2.5017722042621573,
+        "forward": 20.0,
+        "attack": true
+      },
+      "readouts": [
+        {
+          "index": 306,
+          "id": "10331",
+          "type": "MN9",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 332,
+          "id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 706,
+          "id": "10763",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 725,
+          "id": "10783",
+          "type": "DNp09",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1087,
+          "id": "11177",
+          "type": "DNp09",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1196,
+          "id": "11288",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 1240,
+          "id": "11332",
+          "type": "MDN",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 2194,
+          "id": "12348",
+          "type": "MDN",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 6367,
+          "id": "16949",
+          "type": "MN9",
+          "side": "R",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 131957,
+          "id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 0.0
+        },
+        {
+          "index": 48,
+          "id": "10059",
+          "type": "DNp20",
+          "side": "R",
+          "spikes": 1,
+          "rate_hz": 44.573
+        },
+        {
+          "index": 146,
+          "id": "10162",
+          "type": "DNp20",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 23.725
+        },
+        {
+          "index": 489,
+          "id": "10527",
+          "type": "DNpe017",
+          "side": "L",
+          "spikes": 0,
+          "rate_hz": 24.295
+        },
+        {
+          "index": 142493,
+          "id": "555871",
+          "type": "DNpe017",
+          "side": "R",
+          "spikes": 1,
+          "rate_hz": 29.808
+        }
+      ],
+      "weights_unchanged": true,
+      "wall_seconds": 3.188012541970238
+    }
+  ],
+  "closed_loop_trials": [
+    {
+      "seed": 41027,
+      "condition": "intact",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 1,
+      "action_tics": 210,
+      "attack_tics": 196,
+      "spikes": 3265247,
+      "wall_seconds": 45.40186204109341,
+      "weights_unchanged": true
+    },
+    {
+      "seed": 41027,
+      "condition": "blank_vision",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 3,
+      "action_tics": 210,
+      "attack_tics": 96,
+      "spikes": 1604818,
+      "wall_seconds": 50.308310749940574,
+      "weights_unchanged": true
+    },
+    {
+      "seed": 41027,
+      "condition": "controls_clamped",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 0,
+      "action_tics": 0,
+      "attack_tics": 0,
+      "spikes": 2918944,
+      "wall_seconds": 51.22183725005016,
+      "weights_unchanged": true
+    },
+    {
+      "seed": 41028,
+      "condition": "intact",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 1,
+      "action_tics": 210,
+      "attack_tics": 198,
+      "spikes": 3207187,
+      "wall_seconds": 76.64337654202245,
+      "weights_unchanged": true
+    },
+    {
+      "seed": 41028,
+      "condition": "blank_vision",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 3,
+      "action_tics": 210,
+      "attack_tics": 96,
+      "spikes": 1604818,
+      "wall_seconds": 105.12804879108444,
+      "weights_unchanged": true
+    },
+    {
+      "seed": 41028,
+      "condition": "controls_clamped",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 0,
+      "action_tics": 0,
+      "attack_tics": 0,
+      "spikes": 2914881,
+      "wall_seconds": 109.53209562506527,
+      "weights_unchanged": true
+    },
+    {
+      "seed": 41029,
+      "condition": "intact",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 1,
+      "action_tics": 210,
+      "attack_tics": 197,
+      "spikes": 3290227,
+      "wall_seconds": 149.354449165985,
+      "weights_unchanged": true
+    },
+    {
+      "seed": 41029,
+      "condition": "blank_vision",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 2,
+      "action_tics": 210,
+      "attack_tics": 96,
+      "spikes": 1604818,
+      "wall_seconds": 162.14611537498422,
+      "weights_unchanged": true
+    },
+    {
+      "seed": 41029,
+      "condition": "controls_clamped",
+      "game_tics": 210,
+      "neural_seconds": 6.000000000000011,
+      "kills": 0,
+      "action_tics": 0,
+      "attack_tics": 0,
+      "spikes": 2917186,
+      "wall_seconds": 111.47296550008468,
+      "weights_unchanged": true
+    }
+  ],
+  "biologically_validated": false,
+  "learning_demonstrated": false,
+  "limits": "Three game seeds, one reconstruction, six seconds each; descriptive checks, not a skill or learning benchmark. Fixed frame interventions use the production 35-Hz input cadence."
+}

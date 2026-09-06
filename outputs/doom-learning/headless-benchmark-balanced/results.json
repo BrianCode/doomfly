@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "batches": [
+    {
+      "jobs": 1,
+      "batch_wall_seconds": 18.528626624960452,
+      "aggregate_brain_seconds_per_wall_second": 0.10794108168307207,
+      "runs": [
+        {
+          "seed": 81031,
+          "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+          "setup_seconds": 5.597302666865289,
+          "timing": {
+            "wall_seconds": 2.8334327498450875,
+            "neural_seconds": 1.0,
+            "speed": 0.3529287928413593,
+            "kernel_seconds": 2.3639880842529237,
+            "sensory_seconds": 0.039942622650414705,
+            "game_seconds": 0.1653637532144785
+          }
+        },
+        {
+          "seed": 81032,
+          "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+          "setup_seconds": 3.8815312089864165,
+          "timing": {
+            "wall_seconds": 2.982278416166082,
+            "neural_seconds": 1.0,
+            "speed": 0.3353140989718749,
+            "kernel_seconds": 2.3847907092422247,
+            "sensory_seconds": 0.07698028977029026,
+            "game_seconds": 0.22069991542957723
+          }
+        }
+      ]
+    },
+    {
+      "jobs": 2,
+      "batch_wall_seconds": 12.755128541961312,
+      "aggregate_brain_seconds_per_wall_second": 0.15679967421892144,
+      "runs": [
+        {
+          "seed": 81031,
+          "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+          "setup_seconds": 5.614983582869172,
+          "timing": {
+            "wall_seconds": 5.717168375151232,
+            "neural_seconds": 1.0,
+            "speed": 0.17491176302351735,
+            "kernel_seconds": 4.895193964242935,
+            "sensory_seconds": 0.09319474874064326,
+            "game_seconds": 0.31744933291338384
+          }
+        },
+        {
+          "seed": 81032,
+          "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+          "setup_seconds": 5.6835552079137415,
+          "timing": {
+            "wall_seconds": 4.689617250114679,
+            "neural_seconds": 1.0,
+            "speed": 0.21323701843163131,
+            "kernel_seconds": 4.088907249737531,
+            "sensory_seconds": 0.10811825352720916,
+            "game_seconds": 0.23915083426982164
+          }
+        }
+      ]
+    },
+    {
+      "jobs": 2,
+      "batch_wall_seconds": 12.109581709140912,
+      "aggregate_brain_seconds_per_wall_second": 0.16515847103870657,
+      "runs": [
+        {
+          "seed": 81031,
+          "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+          "setup_seconds": 2.701365292072296,
+          "timing": {
+            "wall_seconds": 8.542399666970596,
+            "neural_seconds": 1.0,
+            "speed": 0.11706312499829823,
+            "kernel_seconds": 7.3185897883959115,
+            "sensory_seconds": 0.29848170559853315,
+            "game_seconds": 0.3951045402791351
+          }
+        },
+        {
+          "seed": 81032,
+          "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+          "setup_seconds": 2.664776375051588,
+          "timing": {
+            "wall_seconds": 8.539177750004455,
+            "neural_seconds": 1.0,
+            "speed": 0.11710729408337685,
+            "kernel_seconds": 7.347142005804926,
+            "sensory_seconds": 0.3071974231861532,
+            "game_seconds": 0.3639990845695138
+          }
+        }
+      ]
+    },
+    {
+      "jobs": 1,
+      "batch_wall_seconds": 9.311416083015501,
+      "aggregate_brain_seconds_per_wall_second": 0.21479010090077513,
+      "runs": [
+        {
+          "seed": 81031,
+          "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+          "setup_seconds": 2.3491528751328588,
+          "timing": {
+            "wall_seconds": 2.157382166944444,
+            "neural_seconds": 1.0,
+            "speed": 0.46352473628551666,
+            "kernel_seconds": 1.8516841649543494,
+            "sensory_seconds": 0.04096745979040861,
+            "game_seconds": 0.16462858067825437
+          }
+        },
+        {
+          "seed": 81032,
+          "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+          "setup_seconds": 0.9534590418916196,
+          "timing": {
+            "wall_seconds": 1.9751259998884052,
+            "neural_seconds": 1.0,
+            "speed": 0.5062968134977212,
+            "kernel_seconds": 1.7080017535481602,
+            "sensory_seconds": 0.03365583741106093,
+            "game_seconds": 0.16320212790742517
+          }
+        }
+      ]
+    }
+  ],
+  "identical_traces_across_scheduling": true,
+  "limits": "Short full-graph benchmark including process/graph setup, on a shared host. Not a steady-state hardware benchmark or evidence of learning. Parallel jobs require independent full neural and game state."
+}

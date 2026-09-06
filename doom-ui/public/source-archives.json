@@ -1,0 +1,17 @@
+{
+  "experiment-source.zip": {
+    "sha256": "cc0b044b1e2c3d6e1aa837fee44e1bc693c78627d62d02ff88f91fa0623817be",
+    "member_count": 151,
+    "packaging": "DOOMFLY-only publication copy; see PUBLICATION-NOTES.md inside archive."
+  },
+  "learning-iterations-source.zip": {
+    "sha256": "17a238e6ac1681701777052a3b2d8907d43c7d58cf28c07cce3ea21383c74fc6",
+    "member_count": 408,
+    "packaging": "DOOMFLY-only publication copy; see PUBLICATION-NOTES.md inside archive."
+  },
+  "learning-source.zip": {
+    "sha256": "4981310b250fc9ab2bc7c64e68ed2032bffcc0f57b05c0fc3ae4ad9a0ddeebdb",
+    "member_count": 133,
+    "packaging": "DOOMFLY-only publication copy; see PUBLICATION-NOTES.md inside archive."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "archived_at": "2026-09-05T23:19:00.386433+00:00",
+  "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+  "scenario": "defend_the_center",
+  "last_game": {
+    "episode": 38,
+    "tick": 1706,
+    "finished": false,
+    "health": 100,
+    "kills": 0,
+    "ammo": 0,
+    "score": 0.0
+  },
+  "neural_seconds": 2268.7429,
+  "learning": false,
+  "replacement": "combat-survival-v1; different environment; results must not be pooled"
+}

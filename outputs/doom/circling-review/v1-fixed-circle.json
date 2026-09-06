@@ -1,0 +1,35 @@
+[
+  {
+    "seed": 41027,
+    "tics": 548,
+    "dead": true,
+    "health": -11.0,
+    "kills": 2.0,
+    "enemies": 7.0,
+    "objects": {}
+  },
+  {
+    "seed": 41028,
+    "tics": 486,
+    "dead": true,
+    "health": -8.0,
+    "kills": 2.0,
+    "enemies": 6.0,
+    "objects": {}
+  },
+  {
+    "seed": 41029,
+    "tics": 10510,
+    "dead": false,
+    "health": 16.0,
+    "kills": 7.0,
+    "enemies": 8.0,
+    "objects": {
+      "DoomImpBall": 4,
+      "DoomFlyImp": 8,
+      "DoomPlayer": 1,
+      "Clip": 7,
+      "ClipBox": 4
+    }
+  }
+]

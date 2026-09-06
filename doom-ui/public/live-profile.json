@@ -1,0 +1,36 @@
+{
+  "revision": "spectator-training-v1",
+  "phase": "training",
+  "learning_enabled": true,
+  "learning_validation": "unvalidated; prior visual recovery, conditioning and survival controls failed",
+  "planned_learning_window_wall_hours": 72,
+  "learning_window_started": true,
+  "neural_dt_ms": 0.1,
+  "engine_tics_per_neural_second": 35,
+  "graph_neurons": 166700,
+  "graph_directed_edges": 25582938,
+  "decoder": "existing fixed DNp20 / DNpe017 BCI",
+  "arena": "combat-survival-v2",
+  "display_capture_fps_cap": 8,
+  "jpeg_quality": 75,
+  "display_resolution": [
+    640,
+    480
+  ],
+  "segment_wall_seconds": 1,
+  "playout_delay_ms": 2500,
+  "checkpoint_wall_seconds": 300,
+  "retained_checkpoint_generations": 2,
+  "recovery": "learned and fast neural state retained; new run identifier and fresh arena; interrupted round censored",
+  "audit": "all steps retained in hourly gzip files, plus a bounded recent log",
+  "worker_starting_allocation": {
+    "vcpu": 4,
+    "ram_gib": 8,
+    "persistent_disk_gib": 20
+  },
+  "worker_allocation_verified_in_cloud": false,
+  "selection_basis": "Existing experimental v6 eta 0.001 and physiological assumptions; no gain selected to manufacture multiday improvement. Learning enabled at user request with failed validation disclosed.",
+  "study_started_at_ms": 1788653074439,
+  "model": "adaptive-centered-v6-live-v1",
+  "training_protocol": "/live-training.json"
+}

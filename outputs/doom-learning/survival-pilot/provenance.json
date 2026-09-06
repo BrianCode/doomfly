@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-09-05T21:28:50.672129+00:00",
+  "timing": "Recorded while pilot active; these imported source files have not changed since launch. Snapshot retained for future reproduction.",
+  "source_sha256": {
+    "doom_learning/__init__.py": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+    "doom_learning/brain.py": "4dac5c05804b2af355c7c982ec5680356ba24c633c22e7ac8207cf597b6e4e6e",
+    "doom_learning/circuit.py": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+    "doom_learning/common.py": "740144e03c959e49114f3e7e92b8e070d42a20d30a5cb7d3f3c70c74721ad38e",
+    "doom_learning/conditioning.py": "33be3c1f6b0d2b3c20b255f676d9511ef7d8f513d8a5266e3e6167e2b7b39651",
+    "doom_learning/run.py": "22bc87fc31d699cf1fa81dd41f52aa52c8c3e42b5109278d877318d8f1cb0ce4",
+    "doom_learning/vision.py": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+    "doom_learning/kernel.cpp": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+    "doom/engine.py": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+    "doom/native.py": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+    "doom/kernel.cpp": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+    "doom/game.py": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d"
+  },
+  "graph_sha256": "346b8af85a11af13b8324e18669812c1924569e7d1adcb4e6f45cc461a2c344b",
+  "graph_audit_passed": true,
+  "OPENBLAS_NUM_THREADS": 1,
+  "dependencies": {
+    "numpy": "1.24.4",
+    "vizdoom": "1.3.0",
+    "numba": "0.61.2",
+    "pillow": "11.3.0",
+    "pyarrow": "20.0.0"
+  }
+}

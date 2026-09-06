@@ -1,0 +1,1157 @@
+{
+  "generated_at": "2026-09-05T22:56:27.486487+00:00",
+  "announcement_ready": false,
+  "claim": "Survival learning has not been demonstrated. Current physiology and conditioning do not pass validation.",
+  "dataset": {
+    "name": "MaleCNS v1.0",
+    "neurons": 166700,
+    "directed_edges": 25582938,
+    "synaptic_contacts": 124177617
+  },
+  "candidates": 6,
+  "vision": {
+    "candidate": "v2",
+    "black_gamma_d_spikes": 0,
+    "blue_gamma_d_spikes": 283,
+    "blue_gamma_d_cells_active": 14,
+    "gamma_d_cells": 206,
+    "interpretation": "A one-second cold-start signal-propagation assay. Distinct from warmed, recurrent-network validation. No demonstrated useful visual behavior."
+  },
+  "conditioning": {
+    "candidate": "v5",
+    "development_gate": false,
+    "rows": [
+      {
+        "plus": 0,
+        "condition": "paired",
+        "suppression": [
+          0.9379194630872483,
+          0.04878048780487809
+        ],
+        "selectivity": 0.8891389752823702,
+        "memory": {
+          "plastic_edges": 4184,
+          "changed_edges": 3629,
+          "mean_efficacy": 1.671226978302002,
+          "minimum_efficacy": 0.09999999403953552,
+          "sha256": "698b92323a46f7f99c53727e0f96d7428b9ef79c23b4df16385e39e7d7e49ab7",
+          "model": "centered-antihebbian-v5"
+        },
+        "training_KC": 726846,
+        "training_DAN": [
+          867,
+          883
+        ],
+        "US_ms": 800,
+        "wall_seconds": 128.13279741699807,
+        "before_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "after_MBON": [
+          [
+            9,
+            28
+          ],
+          [
+            24,
+            54
+          ]
+        ],
+        "reset_restores": true
+      },
+      {
+        "plus": 0,
+        "condition": "backward",
+        "suppression": [
+          0.01845637583892612,
+          -0.10975609756097571
+        ],
+        "selectivity": 0.12821247339990183,
+        "memory": {
+          "plastic_edges": 4184,
+          "changed_edges": 6,
+          "mean_efficacy": 1.0005289316177368,
+          "minimum_efficacy": 1.0,
+          "sha256": "9a5fae6da845b97b15b7d6aa4b0659a2dc4cea04dfc6e88d187acc8746592a68",
+          "model": "centered-antihebbian-v5"
+        },
+        "training_KC": 127,
+        "training_DAN": [
+          104,
+          122
+        ],
+        "US_ms": 800,
+        "wall_seconds": 85.63591529219411,
+        "before_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "after_MBON": [
+          [
+            293,
+            292
+          ],
+          [
+            18,
+            73
+          ]
+        ],
+        "reset_restores": true
+      },
+      {
+        "plus": 0,
+        "condition": "frozen",
+        "suppression": [
+          0.0,
+          0.0
+        ],
+        "selectivity": 0.0,
+        "memory": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "centered-antihebbian-v5"
+        },
+        "training_KC": 924985,
+        "training_DAN": [
+          1075,
+          1080
+        ],
+        "US_ms": 800,
+        "wall_seconds": 72.51944987499155,
+        "before_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "after_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "reset_restores": true
+      },
+      {
+        "plus": 0,
+        "condition": "no_imposed_US",
+        "suppression": [
+          0.9379194630872483,
+          0.04878048780487809
+        ],
+        "selectivity": 0.8891389752823702,
+        "memory": {
+          "plastic_edges": 4184,
+          "changed_edges": 3566,
+          "mean_efficacy": 1.6208027601242065,
+          "minimum_efficacy": 0.09999999403953552,
+          "sha256": "74b39743d67ec7d4ac0cda32cb97bd067e70dae06e87e82be80405cc9a468cfc",
+          "model": "centered-antihebbian-v5"
+        },
+        "training_KC": 925432,
+        "training_DAN": [
+          1067,
+          1073
+        ],
+        "US_ms": 0,
+        "wall_seconds": 58.26242404081859,
+        "before_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "after_MBON": [
+          [
+            9,
+            28
+          ],
+          [
+            24,
+            54
+          ]
+        ],
+        "reset_restores": true
+      },
+      {
+        "plus": 1,
+        "condition": "paired",
+        "suppression": [
+          0.8993288590604027,
+          0.13414634146341464
+        ],
+        "selectivity": -0.7651825175969881,
+        "memory": {
+          "plastic_edges": 4184,
+          "changed_edges": 7,
+          "mean_efficacy": 0.9994848966598511,
+          "minimum_efficacy": 0.45539864897727966,
+          "sha256": "10881c3c2ba5902e32ed2296960f2e8333b2847bdac0cbced9d2d61e7942f827",
+          "model": "centered-antihebbian-v5"
+        },
+        "training_KC": 172,
+        "training_DAN": [
+          133,
+          138
+        ],
+        "US_ms": 800,
+        "wall_seconds": 39.65015783300623,
+        "before_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "after_MBON": [
+          [
+            48,
+            12
+          ],
+          [
+            26,
+            45
+          ]
+        ],
+        "reset_restores": true
+      },
+      {
+        "plus": 1,
+        "condition": "backward",
+        "suppression": [
+          0.057046979865771785,
+          0.29268292682926833
+        ],
+        "selectivity": 0.23563594696349655,
+        "memory": {
+          "plastic_edges": 4184,
+          "changed_edges": 3655,
+          "mean_efficacy": 1.4408619403839111,
+          "minimum_efficacy": 0.09999999403953552,
+          "sha256": "7d50e2872a232fabfe0f63d56c37caa34fcf866c67c0bad326eebd0dece92496",
+          "model": "centered-antihebbian-v5"
+        },
+        "training_KC": 414106,
+        "training_DAN": [
+          569,
+          574
+        ],
+        "US_ms": 800,
+        "wall_seconds": 38.431254209019244,
+        "before_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "after_MBON": [
+          [
+            287,
+            275
+          ],
+          [
+            46,
+            12
+          ]
+        ],
+        "reset_restores": true
+      },
+      {
+        "plus": 1,
+        "condition": "frozen",
+        "suppression": [
+          0.0,
+          0.0
+        ],
+        "selectivity": 0.0,
+        "memory": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "centered-antihebbian-v5"
+        },
+        "training_KC": 172,
+        "training_DAN": [
+          118,
+          137
+        ],
+        "US_ms": 800,
+        "wall_seconds": 48.701678291894495,
+        "before_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "after_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "reset_restores": true
+      },
+      {
+        "plus": 1,
+        "condition": "no_imposed_US",
+        "suppression": [
+          0.0,
+          -1.4634146341463414
+        ],
+        "selectivity": -1.4634146341463414,
+        "memory": {
+          "plastic_edges": 4184,
+          "changed_edges": 7,
+          "mean_efficacy": 1.0000009536743164,
+          "minimum_efficacy": 0.9897408485412598,
+          "sha256": "bdb89469d95c93791d81a229d96d23a8b7ef65fcb3f35b2ae872c3eafd8c2d7c",
+          "model": "centered-antihebbian-v5"
+        },
+        "training_KC": 172,
+        "training_DAN": [
+          94,
+          88
+        ],
+        "US_ms": 0,
+        "wall_seconds": 54.095416333992034,
+        "before_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            19,
+            63
+          ]
+        ],
+        "after_MBON": [
+          [
+            292,
+            304
+          ],
+          [
+            79,
+            123
+          ]
+        ],
+        "reset_restores": true
+      }
+    ]
+  },
+  "stability": {
+    "candidate": "v6",
+    "rows": [
+      {
+        "cue": "black",
+        "baseline": {
+          "KC_hz_total": 0.0,
+          "DAN_hz": [
+            22.0,
+            18.0
+          ],
+          "MBON_hz": [
+            37.0,
+            37.0
+          ],
+          "all_spikes_hz": 267338.0
+        },
+        "during": {
+          "KC_hz_total": 0.0,
+          "DAN_hz": [
+            23.0,
+            19.0
+          ],
+          "MBON_hz": [
+            37.0,
+            37.0
+          ],
+          "all_spikes_hz": 266756.0
+        },
+        "recovery": {
+          "KC_hz_total": 0.0,
+          "DAN_hz": [
+            22.0,
+            19.0
+          ],
+          "MBON_hz": [
+            38.0,
+            38.0
+          ],
+          "all_spikes_hz": 267611.0
+        },
+        "wall_seconds": 11.290954458061606
+      },
+      {
+        "cue": "left_blue",
+        "baseline": {
+          "KC_hz_total": 0.0,
+          "DAN_hz": [
+            22.0,
+            18.0
+          ],
+          "MBON_hz": [
+            37.0,
+            37.0
+          ],
+          "all_spikes_hz": 267338.0
+        },
+        "during": {
+          "KC_hz_total": 4.0,
+          "DAN_hz": [
+            40.0,
+            38.0
+          ],
+          "MBON_hz": [
+            25.0,
+            26.0
+          ],
+          "all_spikes_hz": 413272.0
+        },
+        "recovery": {
+          "KC_hz_total": 8950.0,
+          "DAN_hz": [
+            106.0,
+            105.0
+          ],
+          "MBON_hz": [
+            13.0,
+            35.0
+          ],
+          "all_spikes_hz": 793164.0
+        },
+        "wall_seconds": 26.684729791944847
+      },
+      {
+        "cue": "right_blue",
+        "baseline": {
+          "KC_hz_total": 0.0,
+          "DAN_hz": [
+            22.0,
+            18.0
+          ],
+          "MBON_hz": [
+            37.0,
+            37.0
+          ],
+          "all_spikes_hz": 267338.0
+        },
+        "during": {
+          "KC_hz_total": 4343.0,
+          "DAN_hz": [
+            66.0,
+            61.0
+          ],
+          "MBON_hz": [
+            35.0,
+            40.0
+          ],
+          "all_spikes_hz": 674435.0
+        },
+        "recovery": {
+          "KC_hz_total": 8935.0,
+          "DAN_hz": [
+            108.0,
+            95.0
+          ],
+          "MBON_hz": [
+            13.0,
+            44.0
+          ],
+          "all_spikes_hz": 787692.0
+        },
+        "wall_seconds": 40.995180000085384
+      },
+      {
+        "cue": "white",
+        "baseline": {
+          "KC_hz_total": 0.0,
+          "DAN_hz": [
+            22.0,
+            18.0
+          ],
+          "MBON_hz": [
+            37.0,
+            37.0
+          ],
+          "all_spikes_hz": 267338.0
+        },
+        "during": {
+          "KC_hz_total": 7005.0,
+          "DAN_hz": [
+            91.0,
+            90.0
+          ],
+          "MBON_hz": [
+            30.0,
+            47.0
+          ],
+          "all_spikes_hz": 1069216.0
+        },
+        "recovery": {
+          "KC_hz_total": 8976.0,
+          "DAN_hz": [
+            108.0,
+            105.0
+          ],
+          "MBON_hz": [
+            19.0,
+            33.0
+          ],
+          "all_spikes_hz": 792154.0
+        },
+        "wall_seconds": 30.069548124913126
+      }
+    ]
+  },
+  "survival": {
+    "candidate": "v6",
+    "complete": true,
+    "groups": [
+      {
+        "condition": "plastic",
+        "test_episodes": 2,
+        "training_replicates": 1,
+        "mean_observed_survival": 3.657142857142857,
+        "deaths": 2,
+        "censored": 0,
+        "changed_edges": 1862,
+        "test_results": [
+          {
+            "seed": 61041,
+            "seconds": 3.657142857142857,
+            "censored": false
+          },
+          {
+            "seed": 61042,
+            "seconds": 3.657142857142857,
+            "censored": false
+          }
+        ]
+      },
+      {
+        "condition": "frozen",
+        "test_episodes": 2,
+        "training_replicates": 1,
+        "mean_observed_survival": 5.828571428571428,
+        "deaths": 1,
+        "censored": 1,
+        "changed_edges": 0,
+        "test_results": [
+          {
+            "seed": 61041,
+            "seconds": 8.0,
+            "censored": true
+          },
+          {
+            "seed": 61042,
+            "seconds": 3.657142857142857,
+            "censored": false
+          }
+        ]
+      },
+      {
+        "condition": "shuffled",
+        "test_episodes": 2,
+        "training_replicates": 1,
+        "mean_observed_survival": 3.657142857142857,
+        "deaths": 2,
+        "censored": 0,
+        "changed_edges": 1896,
+        "test_results": [
+          {
+            "seed": 61041,
+            "seconds": 3.657142857142857,
+            "censored": false
+          },
+          {
+            "seed": 61042,
+            "seconds": 3.657142857142857,
+            "censored": false
+          }
+        ]
+      }
+    ],
+    "episodes": [
+      {
+        "seed": 41041,
+        "seconds_limit": 8.0,
+        "learning_enabled": true,
+        "weights_frozen": false,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 21,
+        "US_ms": 600.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0163156986236572,
+          "minimum_efficacy": 0.6859009265899658,
+          "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 52.10802045906894,
+          "kernel_seconds": 48.06194413546473,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.1085648610360026
+        },
+        "replicate": 41041,
+        "condition": "plastic",
+        "phase": "training"
+      },
+      {
+        "seed": 61041,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0163156986236572,
+          "minimum_efficacy": 0.6859009265899658,
+          "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0163156986236572,
+          "minimum_efficacy": 0.6859009265899658,
+          "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 38.42911241692491,
+          "kernel_seconds": 35.90653813024983,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.14720870829971358
+        },
+        "replicate": 41041,
+        "condition": "plastic",
+        "phase": "held_out"
+      },
+      {
+        "seed": 61042,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0163156986236572,
+          "minimum_efficacy": 0.6859009265899658,
+          "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0163156986236572,
+          "minimum_efficacy": 0.6859009265899658,
+          "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 43.40214858320542,
+          "kernel_seconds": 39.38966470421292,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.13034147351380274
+        },
+        "replicate": 41041,
+        "condition": "plastic",
+        "phase": "held_out"
+      },
+      {
+        "seed": 61041,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": false,
+        "game_tics": 256,
+        "brain_seconds": 7.3143,
+        "survival_seconds": 7.314285714285714,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0163156986236572,
+          "minimum_efficacy": 0.6859009265899658,
+          "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0163156986236572,
+          "minimum_efficacy": 0.6859009265899658,
+          "sha256": "3a81393de23bebe6dabfe2b0fa040e1e3d565a0db3b6d6e3d07e6d97b01dd1e0",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 23.100998459151015,
+          "kernel_seconds": 18.709908613702282,
+          "brain_seconds_including_warmup": 9.3143,
+          "speed": 0.40319902260806045
+        },
+        "replicate": 41041,
+        "condition": "plastic",
+        "phase": "vision_black"
+      },
+      {
+        "seed": 61041,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0156854391098022,
+          "minimum_efficacy": 0.6862521171569824,
+          "sha256": "500cbace36b3d35dc4c3f3cce2443b67e4cb7a308df68278c7510f793264aa59",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 1862,
+          "mean_efficacy": 1.0156854391098022,
+          "minimum_efficacy": 0.6862521171569824,
+          "sha256": "500cbace36b3d35dc4c3f3cce2443b67e4cb7a308df68278c7510f793264aa59",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 37.13809262495488,
+          "kernel_seconds": 34.585187326418236,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.1523260781626335
+        },
+        "replicate": 41041,
+        "condition": "plastic",
+        "phase": "retention_5s"
+      },
+      {
+        "seed": 61041,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 280,
+        "brain_seconds": 8.0,
+        "survival_seconds": 8.0,
+        "dead": false,
+        "right_censored": true,
+        "end_health": 60.0,
+        "damage_total": 20.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 55.78058516699821,
+          "kernel_seconds": 51.88075540214777,
+          "brain_seconds_including_warmup": 10.0,
+          "speed": 0.17927384537221308
+        },
+        "replicate": 41041,
+        "condition": "plastic",
+        "phase": "memory_erased"
+      },
+      {
+        "seed": 41041,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 21,
+        "US_ms": 600.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 33.6606280838605,
+          "kernel_seconds": 31.274928900878876,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.16806281766062617
+        },
+        "replicate": 41041,
+        "condition": "frozen",
+        "phase": "training"
+      },
+      {
+        "seed": 61041,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 280,
+        "brain_seconds": 8.0,
+        "survival_seconds": 8.0,
+        "dead": false,
+        "right_censored": true,
+        "end_health": 60.0,
+        "damage_total": 20.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 79.79512474988587,
+          "kernel_seconds": 73.62275165016763,
+          "brain_seconds_including_warmup": 10.0,
+          "speed": 0.1253209394852698
+        },
+        "replicate": 41041,
+        "condition": "frozen",
+        "phase": "held_out"
+      },
+      {
+        "seed": 61042,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 26.61273283418268,
+          "kernel_seconds": 24.340312741464004,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.21257117918884855
+        },
+        "replicate": 41041,
+        "condition": "frozen",
+        "phase": "held_out"
+      },
+      {
+        "seed": 41041,
+        "seconds_limit": 8.0,
+        "learning_enabled": true,
+        "weights_frozen": false,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 24,
+        "US_ms": 600.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 0,
+          "mean_efficacy": 1.0,
+          "minimum_efficacy": 1.0,
+          "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 1896,
+          "mean_efficacy": 1.0068438053131104,
+          "minimum_efficacy": 0.6856146454811096,
+          "sha256": "ea1928db328d49a0d16244ee57abd3d42777aaa8d6e821484bf56d63cdcbfe59",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 31.872054750099778,
+          "kernel_seconds": 29.516994189936668,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.17749404750825767
+        },
+        "dose_matched": true,
+        "shift_neural_steps": 12386,
+        "replicate": 41041,
+        "condition": "shuffled",
+        "phase": "training"
+      },
+      {
+        "seed": 61041,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 1896,
+          "mean_efficacy": 1.0068438053131104,
+          "minimum_efficacy": 0.6856146454811096,
+          "sha256": "ea1928db328d49a0d16244ee57abd3d42777aaa8d6e821484bf56d63cdcbfe59",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 1896,
+          "mean_efficacy": 1.0068438053131104,
+          "minimum_efficacy": 0.6856146454811096,
+          "sha256": "ea1928db328d49a0d16244ee57abd3d42777aaa8d6e821484bf56d63cdcbfe59",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 26.40899287490174,
+          "kernel_seconds": 24.621991091175005,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.21421112220361593
+        },
+        "replicate": 41041,
+        "condition": "shuffled",
+        "phase": "held_out"
+      },
+      {
+        "seed": 61042,
+        "seconds_limit": 8.0,
+        "learning_enabled": false,
+        "weights_frozen": true,
+        "vision": true,
+        "game_tics": 128,
+        "brain_seconds": 3.6571000000000002,
+        "survival_seconds": 3.657142857142857,
+        "dead": true,
+        "right_censored": false,
+        "end_health": 0.0,
+        "damage_total": 80.0,
+        "US_tics": 0,
+        "US_ms": 0.0,
+        "before": {
+          "plastic_edges": 4184,
+          "changed_edges": 1896,
+          "mean_efficacy": 1.0068438053131104,
+          "minimum_efficacy": 0.6856146454811096,
+          "sha256": "ea1928db328d49a0d16244ee57abd3d42777aaa8d6e821484bf56d63cdcbfe59",
+          "model": "adaptive-centered-v6"
+        },
+        "after": {
+          "plastic_edges": 4184,
+          "changed_edges": 1896,
+          "mean_efficacy": 1.0068438053131104,
+          "minimum_efficacy": 0.6856146454811096,
+          "sha256": "ea1928db328d49a0d16244ee57abd3d42777aaa8d6e821484bf56d63cdcbfe59",
+          "model": "adaptive-centered-v6"
+        },
+        "timing": {
+          "wall_seconds": 42.43578908289783,
+          "kernel_seconds": 39.10942143248394,
+          "brain_seconds_including_warmup": 5.6571,
+          "speed": 0.13330964551993885
+        },
+        "replicate": 41041,
+        "condition": "shuffled",
+        "phase": "held_out"
+      }
+    ],
+    "horizon_seconds": 8.0,
+    "independent_validation": false,
+    "note": "Exploratory technical pilot with one training seed and two held-out starts. A capped episode is right-censored. Internal weight changes do not prove learning."
+  },
+  "arena": {
+    "engine_check_passed": true,
+    "fly_behavior_in_engine_check": false,
+    "stationary_seconds": 3.657142857142857,
+    "cross_to_safe_observed_seconds": 12.0
+  },
+  "performance": {
+    "timing_scope": "Recorded episode timers including warmup; excluding model construction and the separate five-second retention interval.",
+    "episodes": 12,
+    "brain_seconds": 80.2282,
+    "wall_seconds": 490.74428008613177,
+    "kernel_seconds": 451.0203983183019
+  },
+  "limits": [
+    "A reconstructed male wiring diagram with chosen dynamics, not a living or literal fly brain.",
+    "R8 input projection and display spectra are inferred; photoreceptors and APL still lack calibrated graded physiology.",
+    "The centered plasticity rule is adapted from a reduced published model; full-graph parameter transfer is unvalidated.",
+    "Cue-induced persistent activity and no-punishment effects invalidate the current conditioning interpretation.",
+    "No claim of survival learning, consciousness, natural fly behavior, or priority over prior work is supported."
+  ],
+  "sources": [
+    {
+      "title": "R8 cotransmission \u00b7 Xiao et al. 2023",
+      "url": "https://doi.org/10.1038/s41586-023-06681-6"
+    },
+    {
+      "title": "Visual inputs to fly memory \u00b7 2024",
+      "url": "https://doi.org/10.1038/s41467-024-49616-z"
+    },
+    {
+      "title": "Dopamine-gated plasticity \u00b7 Hige et al. 2015",
+      "url": "https://doi.org/10.1016/j.neuron.2015.11.003"
+    },
+    {
+      "title": "Baseline activity and memory dynamics \u00b7 Huang, Luo et al. 2024",
+      "url": "https://doi.org/10.1038/s41586-024-07819-w"
+    }
+  ]
+}

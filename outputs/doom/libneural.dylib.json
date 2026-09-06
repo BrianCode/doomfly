@@ -1,0 +1,11 @@
+{
+  "kernel_source_sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+  "binary_sha256": "806a5eda4de320520674ed6b60488eec303ada046fe5f7b28ab0ab632132f588",
+  "model_revision": "lif-r2-refractory-write-protection",
+  "compile_flags": [
+    "-O3",
+    "-std=c++17",
+    "-shared",
+    "-fPIC"
+  ]
+}

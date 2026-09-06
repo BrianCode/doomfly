@@ -1,0 +1,23 @@
+{
+  "scope": "Recheck corrected US scheduling only; not a replacement survival-learning study. Original failed pilot preserved.",
+  "rows": [
+    {
+      "seed": 41031,
+      "paired_exposure_tics": 78,
+      "corrected_delivered_tics": 78,
+      "dose_matched": true,
+      "shift_tics": 167,
+      "changed_edges": 0,
+      "survival_seconds": 10.971428571428572
+    },
+    {
+      "seed": 41032,
+      "paired_exposure_tics": 82,
+      "corrected_delivered_tics": 82,
+      "dose_matched": true,
+      "shift_tics": 258,
+      "changed_edges": 0,
+      "survival_seconds": 12.0
+    }
+  ]
+}

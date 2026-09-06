@@ -1,0 +1,17 @@
+{
+  "site": "https://doomfly.example/learning",
+  "version": 13,
+  "commit": "d023d4744a0beae9e1a27c349c2a591c33d62b7c",
+  "learning_achieved": false,
+  "biological_gates_passed": false,
+  "baseline_preserved": "outputs/doom/qa-hour-20260905T2047Z",
+  "technical_tests_passed": 42,
+  "website_build": "passed",
+  "website_types": "passed",
+  "new_lab_lint": "passed",
+  "repository_lint": "pre-existing violations remain",
+  "public_source_sha256": "5f984bd78cfe993e2009b1b4026a890648f624dc5c8457babcb47d21cf0df6e1",
+  "public_baseline_run": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+  "baseline_model_changed": false,
+  "baseline_blas_threads": 1
+}

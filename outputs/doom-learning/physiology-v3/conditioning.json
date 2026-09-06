@@ -1,0 +1,1828 @@
+{
+  "schema": 1,
+  "assay": "imposed-KC-activity, full graph",
+  "circuit": {
+    "dataset": "MaleCNS v1.0",
+    "neurons": 166700,
+    "edges": 25582938,
+    "kc_count": 4064,
+    "plastic_edges": 4184,
+    "plastic_edge_index_sha256": "550335ad546f5c3106e4988426197ad24d8556367c9285e2f4c8c33f37f3cc68",
+    "plastic_presynaptic_index_sha256": "a58bac7b66de7bbc48f47c4c5d12db216cbfbeed4a2148020ac4638dde143acd",
+    "DAN": [
+      {
+        "index": 1235,
+        "id": "11327",
+        "type": "PPL101",
+        "instance": "PPL101(y1ped)_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 1774,
+        "id": "11900",
+        "type": "PPL101",
+        "instance": "PPL101(y1ped)_L",
+        "soma_side": "L"
+      }
+    ],
+    "MBON": [
+      {
+        "index": 655,
+        "id": "10704",
+        "type": "MBON11",
+        "instance": "MBON11(y1pedc>a/B)_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 1306,
+        "id": "11402",
+        "type": "MBON11",
+        "instance": "MBON11(y1pedc>a/B)_R",
+        "soma_side": "R"
+      }
+    ],
+    "gamma_d_KC": [
+      {
+        "index": 8303,
+        "id": "19102",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 8904,
+        "id": "19788",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 17000,
+        "id": "28848",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 18370,
+        "id": "30397",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 20372,
+        "id": "32683",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 22576,
+        "id": "35180",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 23943,
+        "id": "36723",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 25649,
+        "id": "38657",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 26229,
+        "id": "39316",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 26643,
+        "id": "39771",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 26866,
+        "id": "40027",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 27848,
+        "id": "41134",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 28942,
+        "id": "42370",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 29455,
+        "id": "42969",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 30246,
+        "id": "43867",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 30424,
+        "id": "44069",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 30793,
+        "id": "44485",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 31197,
+        "id": "44948",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 32293,
+        "id": "46196",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 33147,
+        "id": "47181",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 33293,
+        "id": "47354",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 33482,
+        "id": "47567",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 33720,
+        "id": "47847",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 33960,
+        "id": "48122",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 33982,
+        "id": "48147",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 34232,
+        "id": "48438",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 34321,
+        "id": "48533",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 34409,
+        "id": "48632",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 34418,
+        "id": "48641",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 34702,
+        "id": "48978",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 34761,
+        "id": "49052",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 35014,
+        "id": "49345",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 35330,
+        "id": "49709",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 35331,
+        "id": "49710",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 36079,
+        "id": "50582",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 36387,
+        "id": "50933",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 37017,
+        "id": "51679",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 37285,
+        "id": "51998",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 37797,
+        "id": "52594",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 37936,
+        "id": "52751",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 38067,
+        "id": "52907",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 38334,
+        "id": "53217",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 38379,
+        "id": "53271",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 38584,
+        "id": "53505",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 38728,
+        "id": "53680",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 40847,
+        "id": "56145",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 40968,
+        "id": "56284",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 41810,
+        "id": "57302",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 41902,
+        "id": "57413",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 41936,
+        "id": "57460",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 41969,
+        "id": "57498",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 42013,
+        "id": "57545",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 42017,
+        "id": "57550",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 42844,
+        "id": "58501",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 42863,
+        "id": "58524",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 43078,
+        "id": "58782",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 43096,
+        "id": "58802",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 44370,
+        "id": "60344",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 44673,
+        "id": "60708",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 44776,
+        "id": "60829",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 44962,
+        "id": "61056",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 45810,
+        "id": "62076",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 45976,
+        "id": "62274",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 47024,
+        "id": "63543",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 47654,
+        "id": "64302",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 47659,
+        "id": "64310",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 49607,
+        "id": "66659",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 49867,
+        "id": "66973",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 50179,
+        "id": "67355",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 50568,
+        "id": "67853",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 50673,
+        "id": "67984",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 52226,
+        "id": "69885",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 53514,
+        "id": "71486",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 53683,
+        "id": "71688",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 54118,
+        "id": "72230",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 54346,
+        "id": "72512",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 54904,
+        "id": "73227",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 55588,
+        "id": "74094",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 55734,
+        "id": "74269",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 55804,
+        "id": "74362",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 55958,
+        "id": "74542",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 57170,
+        "id": "76023",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 57216,
+        "id": "76076",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 57530,
+        "id": "76455",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 59359,
+        "id": "78768",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 59875,
+        "id": "79419",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 61044,
+        "id": "80905",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 61060,
+        "id": "80924",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 61176,
+        "id": "81056",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 61286,
+        "id": "81177",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 61607,
+        "id": "81577",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 61667,
+        "id": "81656",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 61760,
+        "id": "81781",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 62532,
+        "id": "82728",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 63206,
+        "id": "83584",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 63540,
+        "id": "84011",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 64039,
+        "id": "84628",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 64497,
+        "id": "85213",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 64601,
+        "id": "85349",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 64617,
+        "id": "85368",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 64974,
+        "id": "85851",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 65030,
+        "id": "85923",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 65225,
+        "id": "86183",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 65375,
+        "id": "86372",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 65789,
+        "id": "86909",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 65813,
+        "id": "86940",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 66132,
+        "id": "87387",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 66497,
+        "id": "87868",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 67600,
+        "id": "89327",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 68697,
+        "id": "90790",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 69022,
+        "id": "91244",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 69203,
+        "id": "91487",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 69535,
+        "id": "91926",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 69599,
+        "id": "92008",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 69603,
+        "id": "92013",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 69725,
+        "id": "92168",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 70326,
+        "id": "92967",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 72087,
+        "id": "95291",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 72229,
+        "id": "95484",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 72843,
+        "id": "96304",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 73794,
+        "id": "97591",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 74411,
+        "id": "98462",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 74713,
+        "id": "98901",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 75084,
+        "id": "99391",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 75985,
+        "id": "100592",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 76739,
+        "id": "101647",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 77197,
+        "id": "102283",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 78213,
+        "id": "103663",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 78243,
+        "id": "103715",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 78284,
+        "id": "103770",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 78836,
+        "id": "104513",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 79690,
+        "id": "105662",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 80139,
+        "id": "106301",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 83326,
+        "id": "110746",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 83643,
+        "id": "111197",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 84028,
+        "id": "111744",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 85755,
+        "id": "114179",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 86656,
+        "id": "115470",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 87632,
+        "id": "116917",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 88351,
+        "id": "117936",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 88590,
+        "id": "118280",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 89191,
+        "id": "119167",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 90350,
+        "id": "120949",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 91489,
+        "id": "122647",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 92436,
+        "id": "124097",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 93421,
+        "id": "125644",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 93520,
+        "id": "125813",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 94287,
+        "id": "127046",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 94606,
+        "id": "127577",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 95445,
+        "id": "128925",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 96238,
+        "id": "130231",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 99178,
+        "id": "135219",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 99188,
+        "id": "135241",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 99279,
+        "id": "135421",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 99412,
+        "id": "135662",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 99539,
+        "id": "135897",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 99626,
+        "id": "136046",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 100083,
+        "id": "136912",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 100274,
+        "id": "137283",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 100283,
+        "id": "137302",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 100631,
+        "id": "137952",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 100756,
+        "id": "138186",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 100761,
+        "id": "138198",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 101480,
+        "id": "139591",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 101790,
+        "id": "140175",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 102720,
+        "id": "142069",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 102786,
+        "id": "142203",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 103044,
+        "id": "142733",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 103306,
+        "id": "143262",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 103791,
+        "id": "144220",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 103975,
+        "id": "144578",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 104041,
+        "id": "144747",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 104069,
+        "id": "144819",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 104207,
+        "id": "145085",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 104766,
+        "id": "146301",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 105355,
+        "id": "147585",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 105589,
+        "id": "148137",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 105591,
+        "id": "148145",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 105593,
+        "id": "148150",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 106387,
+        "id": "150014",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 106480,
+        "id": "150259",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 107157,
+        "id": "151944",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 107354,
+        "id": "152470",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 107442,
+        "id": "152688",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 107768,
+        "id": "153545",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 108677,
+        "id": "155996",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 108954,
+        "id": "156785",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 109136,
+        "id": "157325",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 109523,
+        "id": "158447",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 109917,
+        "id": "159580",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 121141,
+        "id": "216580",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 130610,
+        "id": "520204",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 130612,
+        "id": "520206",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 132315,
+        "id": "524455",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 133394,
+        "id": "526900",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 135004,
+        "id": "531428",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 135843,
+        "id": "533220",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 135903,
+        "id": "533345",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 136600,
+        "id": "534786",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 137005,
+        "id": "535720",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 137032,
+        "id": "535795",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 137229,
+        "id": "536363",
+        "type": "KCg-d",
+        "instance": "KCg-d_R",
+        "soma_side": "R"
+      },
+      {
+        "index": 137464,
+        "id": "537090",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 138936,
+        "id": "542818",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 142217,
+        "id": "553483",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      },
+      {
+        "index": 142517,
+        "id": "556005",
+        "type": "KCg-d",
+        "instance": "KCg-d_L",
+        "soma_side": "L"
+      }
+    ],
+    "dan_to_mbon_contact_fraction": [
+      [
+        0.4826086759567261,
+        0.5614665746688843
+      ],
+      [
+        0.5173913240432739,
+        0.43853339552879333
+      ]
+    ],
+    "selection": "All existing KC-to-MBON11 edges; no graph pruning or added connections.",
+    "compartment_assignment": "Cell-type-level gamma1/peduncle inference; aggregate edges do not resolve receptor localization.",
+    "modulation": "PPL101 outgoing edges deliver a transmitter trace to every recorded target. Only the specified KC-to-MBON11 efficacy response is modeled. Other target responses remain unknown.",
+    "baseline_difference": "Two PPL101 cells use a modulatory channel rather than the baseline default fast excitatory sign.",
+    "evidence": [
+      "https://doi.org/10.1016/j.neuron.2015.11.003",
+      "https://doi.org/10.7554/eLife.16135",
+      "https://male-cns.janelia.org/download/"
+    ]
+  },
+  "parameters": {
+    "eligibility_tau_ms": 1000.0,
+    "eta_per_pair": 0.001,
+    "minimum_efficacy_fraction": 0.1,
+    "dopamine_trace_tau_ms": 100.0,
+    "dt_ms": 0.1,
+    "interpretation": "Chosen phenomenological parameters, not fitted to fly physiology or Doom performance. LTD-only; no consolidation, recovery, extinction or prediction-error circuit."
+  },
+  "conditions": [
+    {
+      "condition": "paired",
+      "before": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "after": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "memory_after_training": {
+        "plastic_edges": 4184,
+        "changed_edges": 64,
+        "mean_efficacy": 0.9997145533561707,
+        "minimum_efficacy": 0.9804006814956665,
+        "sha256": "ba612edbf017440544ae1b9c9de09bc9eb4356c27e123c6612cad7466d7cfe6d",
+        "model": "kc-rest-minus60-v3"
+      },
+      "memory_at_test": {
+        "plastic_edges": 4184,
+        "changed_edges": 64,
+        "mean_efficacy": 0.9997145533561707,
+        "minimum_efficacy": 0.9804006814956665,
+        "sha256": "ba612edbf017440544ae1b9c9de09bc9eb4356c27e123c6612cad7466d7cfe6d",
+        "model": "kc-rest-minus60-v3"
+      },
+      "training_KC_spikes": 798,
+      "training_DAN_spikes": 8,
+      "wall_seconds": 1.4517223329748958
+    },
+    {
+      "condition": "backward",
+      "before": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "after": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "memory_after_training": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "kc-rest-minus60-v3"
+      },
+      "memory_at_test": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "kc-rest-minus60-v3"
+      },
+      "training_KC_spikes": 798,
+      "training_DAN_spikes": 8,
+      "wall_seconds": 1.3773621250875294
+    },
+    {
+      "condition": "frozen",
+      "before": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "after": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "memory_after_training": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "kc-rest-minus60-v3"
+      },
+      "memory_at_test": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "kc-rest-minus60-v3"
+      },
+      "training_KC_spikes": 798,
+      "training_DAN_spikes": 8,
+      "wall_seconds": 4.092263999860734
+    },
+    {
+      "condition": "no_imposed_US",
+      "before": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "after": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "memory_after_training": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "kc-rest-minus60-v3"
+      },
+      "memory_at_test": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "kc-rest-minus60-v3"
+      },
+      "training_KC_spikes": 798,
+      "training_DAN_spikes": 0,
+      "wall_seconds": 1.3096609578933567
+    },
+    {
+      "condition": "reset_memory",
+      "before": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "after": [
+        {
+          "MBON_spikes": [
+            0,
+            13
+          ],
+          "KC_spikes": 798,
+          "DAN_spikes": 0
+        },
+        {
+          "MBON_spikes": [
+            37,
+            53
+          ],
+          "KC_spikes": 662,
+          "DAN_spikes": 88
+        }
+      ],
+      "memory_after_training": {
+        "plastic_edges": 4184,
+        "changed_edges": 64,
+        "mean_efficacy": 0.9997145533561707,
+        "minimum_efficacy": 0.9804006814956665,
+        "sha256": "ba612edbf017440544ae1b9c9de09bc9eb4356c27e123c6612cad7466d7cfe6d",
+        "model": "kc-rest-minus60-v3"
+      },
+      "memory_at_test": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "kc-rest-minus60-v3"
+      },
+      "training_KC_spikes": 798,
+      "training_DAN_spikes": 8,
+      "wall_seconds": 1.3956272909417748
+    }
+  ],
+  "paired_MBON_suppression_CS_plus_CS_minus": [
+    0.0,
+    0.0
+  ],
+  "qualitative_selectivity_and_timing_passed": false,
+  "visual_conditioning_demonstrated": false,
+  "original_experiment_reproduced": false,
+  "stimulus": {
+    "KC_current_mv_equivalent": 15.2,
+    "KC_cells_per_cue": 64,
+    "DAN_current_mv_equivalent": 200,
+    "DAN_pulse_ms": 1,
+    "DAN_pulses": 4,
+    "different_sensory_modality_from_paper": true
+  },
+  "limits": "Technical and qualitative mechanistic check with imposed KC activity. The original work used odor-driven populations, living physiology and longer inter-trial intervals. Output suppression alone is not behavior or a quantitative experimental replication.",
+  "evidence": [
+    "https://doi.org/10.1016/j.neuron.2015.11.003",
+    "https://doi.org/10.7554/eLife.16135"
+  ]
+}

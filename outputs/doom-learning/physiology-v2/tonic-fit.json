@@ -1,0 +1,111 @@
+{
+  "MBON_bias": 9.87,
+  "DAN_bias": [
+    10.86328125,
+    11.76171875
+  ],
+  "target_DAN_hz": 20.09,
+  "target_MBON_hz": 37.16625,
+  "rows": [
+    {
+      "DAN_bias": [
+        18.5,
+        18.5
+      ],
+      "DAN_hz": [
+        56,
+        66
+      ],
+      "MBON_hz": [
+        37,
+        37
+      ]
+    },
+    {
+      "DAN_bias": [
+        12.75,
+        12.75
+      ],
+      "DAN_hz": [
+        37,
+        37
+      ],
+      "MBON_hz": [
+        37,
+        37
+      ]
+    },
+    {
+      "DAN_bias": [
+        9.875,
+        9.875
+      ],
+      "DAN_hz": [
+        0,
+        0
+      ],
+      "MBON_hz": [
+        37,
+        37
+      ]
+    },
+    {
+      "DAN_bias": [
+        11.3125,
+        11.3125
+      ],
+      "DAN_hz": [
+        23,
+        19
+      ],
+      "MBON_hz": [
+        37,
+        37
+      ]
+    },
+    {
+      "DAN_bias": [
+        10.59375,
+        12.03125
+      ],
+      "DAN_hz": [
+        18,
+        32
+      ],
+      "MBON_hz": [
+        37,
+        37
+      ]
+    },
+    {
+      "DAN_bias": [
+        10.953125,
+        11.671875
+      ],
+      "DAN_hz": [
+        25,
+        19
+      ],
+      "MBON_hz": [
+        37,
+        37
+      ]
+    },
+    {
+      "DAN_bias": [
+        10.7734375,
+        11.8515625
+      ],
+      "DAN_hz": [
+        18,
+        37
+      ],
+      "MBON_hz": [
+        37,
+        37
+      ]
+    }
+  ],
+  "source": "https://doi.org/10.1038/s41586-024-07819-w",
+  "meaning": "Constant background currents fitted to baseline rates only; unknown cellular origin. No game data."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "completed_at": "2026-09-05T21:46:42.232174+00:00",
+  "observed_wall_seconds": 3600.3129202499986,
+  "snapshots": 716,
+  "frames": 110,
+  "audit_events": 22050,
+  "public_checks": 0,
+  "errors": 59
+}

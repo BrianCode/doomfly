@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checked_at": "2026-09-05T19:57:51Z",
+  "dataset": "MaleCNS v1.0 male brain and VNC",
+  "neurons": 166700,
+  "retained_glia": 0,
+  "source_sha256": {
+    "annotations.feather": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "neurotransmitters.feather": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+    "edges.feather": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+  },
+  "graph_sha256": "346b8af85a11af13b8324e18669812c1924569e7d1adcb4e6f45cc461a2c344b",
+  "edge_checks": {
+    "source_edges": 151856684,
+    "retained_edges": 25582938,
+    "source_contacts": 311833243,
+    "retained_contacts": 124177617,
+    "weight_one_edges": 10299701,
+    "self_edges": 101
+  },
+  "all_source_rows_checked": true,
+  "all_runtime_edges_checked": true,
+  "checks": [
+    "Source SHA-256 and sizes match lock",
+    "Exact source neuron IDs and cell types",
+    "Consensus neurotransmitter join",
+    "Every source edge rejoined independently using pandas index",
+    "Every normalized endpoint and contact count",
+    "Every runtime CSR endpoint and signed weight",
+    "Readout IDs, types and sides",
+    "Sensory cell classes and UV bounds"
+  ],
+  "biological_dynamics_validated": false
+}

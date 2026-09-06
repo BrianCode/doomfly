@@ -1,0 +1,8 @@
+{
+  "graph_neurons": 166700,
+  "graph_edges": 25582938,
+  "changed_memory_edges": 2007,
+  "declared_R8_sign_changes": 390,
+  "other_weights_unchanged": true,
+  "checkpoint_generation": "fe6878b3d7914aa8a501f2ac5bd57a9d"
+}

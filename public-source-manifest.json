@@ -1,0 +1,4150 @@
+{
+  "format": 1,
+  "note": "SHA-256 of published DOOMFLY-only bytes; historical experiment hashes identify the original run artifacts. This manifest excludes itself.",
+  "files": [
+    {
+      "sha256": "070044e6a8ddec548d2d87c017fc1e17b96031e976672fb7b62397f90cb3153e",
+      "path": ".dockerignore"
+    },
+    {
+      "sha256": "96372e28ecfe4866d4005b64e288e8dd79bd695ff3dfbcaef0dbcec511ca5c5e",
+      "path": ".env.example"
+    },
+    {
+      "sha256": "dfa7dd40df3bf97d28844f5c9310f54acae577a378353ad13cd8146e0e641094",
+      "path": ".gitattributes"
+    },
+    {
+      "sha256": "07b24daa49bfbcd9efb5d57ddae4a01b3280d8057710e8c16e7c114df42b95eb",
+      "path": ".gitignore"
+    },
+    {
+      "sha256": "3aea313587346332c717e749ec7a0b5221d29fddb03d842b007fa98514efd896",
+      "path": "AGENTS.md"
+    },
+    {
+      "sha256": "ae0de445f810bcf5acb8f9732163ec8834a79ed3ac1f2ea9673e19ba25b026ca",
+      "path": "LICENSE"
+    },
+    {
+      "sha256": "7d34f12bf929161aed55b95c3e6708e6509d614802868a25ec37f2067595cb10",
+      "path": "README.md"
+    },
+    {
+      "sha256": "b71e30253a8b3a133a5a4893312c5cc239886270cb9ab279e3bd08365ba3c70b",
+      "path": "THIRD_PARTY.md"
+    },
+    {
+      "sha256": "c3495e609d79a0be41cbc7be6b89117785099d48bcf3da3b11ffb37fbd893a5c",
+      "path": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "sha256": "99182dc947fecf11bdbda1dbeedb418d48b897fe14835587922aa70d58ee51ae",
+      "path": "data-provenance/malecns_v1/normalized/report.json"
+    },
+    {
+      "sha256": "a518a766aa46b14b7b9230a108a63b902acc1e3386f123f45d5c52311342efd8",
+      "path": "data-provenance/malecns_v1/source.lock.json"
+    },
+    {
+      "sha256": "2fb5e9908169ca8d97b7ce3e82049fd8b9a1a057a55bcb434ec1dfe7db342b2f",
+      "path": "deploy/doomfly/Dockerfile"
+    },
+    {
+      "sha256": "f9c2c256fbddb3faf7923fc443e96634aa444bdc2dd4ed620856387c963e23d3",
+      "path": "deploy/doomfly/README.md"
+    },
+    {
+      "sha256": "257bbf00bbfeeccec2bbf8d84708f6f4908538fda6ad32ed3d42b0c31fb8bdb6",
+      "path": "deploy/doomfly/compose.yaml"
+    },
+    {
+      "sha256": "d02eb5987acf8906d7db974cbc8dfae7744a837d9bae6dbff811a0be58b4a83d",
+      "path": "deploy/doomfly/profile.json"
+    },
+    {
+      "sha256": "55c96246e38c1871609e3f2885c780c7b50b7a83d2f9af30974e59da97b8d76b",
+      "path": "docs/doom-combat-arena.md"
+    },
+    {
+      "sha256": "88556e1de626e07180ce7a30431dc7b1587fc3a97a834f3fe624a33cec34bd5a",
+      "path": "docs/doom-learning-iteration-log.md"
+    },
+    {
+      "sha256": "9680d0c84a6a52e188e673effea82396b587252144fca5d0c980f1bdadfb22f2",
+      "path": "docs/doom-learning-review.md"
+    },
+    {
+      "sha256": "473b09f1db8cd8299d4229ae439a878e9818bd564dcb125d8e9624d6e53abaa0",
+      "path": "docs/doom-live-training.md"
+    },
+    {
+      "sha256": "e8eff09bbd1e500f1458d200135f6cc5002e5146b7a82c57552eb4c992929ceb",
+      "path": "docs/doom-neuroscience-review.md"
+    },
+    {
+      "sha256": "949262d0f5d0387f61a2a573488175efcd6f54138950a14971e03b8b9d286694",
+      "path": "docs/doom-one-hour-qa.md"
+    },
+    {
+      "sha256": "56059013a995f4431eb63632d6bc280f82075511a41bf5f22195695ff0aa159d",
+      "path": "docs/doom-performance-review.md"
+    },
+    {
+      "sha256": "4b40df665c4e91e595ea5cf377b874f492f46811dd5f9c28ac4d2680388ea0ee",
+      "path": "docs/doom-qa-prior-art.md"
+    },
+    {
+      "sha256": "b73bfd3adb0a1f983ca408acb83d8d3048f415c5816b7a2a8dd0c6ee2e9c7232",
+      "path": "docs/doom-status.md"
+    },
+    {
+      "sha256": "0196e0549601583b44f6a03e4e1bbf78b362d224b26e8e25f2b5ab9d0e12ed05",
+      "path": "docs/doomfly-spectator-experience.md"
+    },
+    {
+      "sha256": "b2be80c5ec32ecfe8e7749f612f528109b48955495d6450a1cceae0b45fc6a41",
+      "path": "docs/public-release.md"
+    },
+    {
+      "sha256": "7e76b4b02ca708c18ff82212ff9621633bab0e50b389a2a09fdf064f9259f67e",
+      "path": "doom-ui/.gitignore"
+    },
+    {
+      "sha256": "3cf278ebeabd96a8f8cc2102a2ed6508e6af391ca419163fdb3b269b0417ac7b",
+      "path": "doom-ui/.openai/hosting.json"
+    },
+    {
+      "sha256": "0962fdddb1840a06b5afb918ff3f2ff56bce346082651ec5c3567c01dd809f17",
+      "path": "doom-ui/.oxfmtrc.json"
+    },
+    {
+      "sha256": "1a7aa1c7d83b05939e4e697eed9316224caea8958c4ad12837f8be740c13a47d",
+      "path": "doom-ui/.oxlintrc.json"
+    },
+    {
+      "sha256": "5733bd69464ce2a16be8dfa1b86fabf3174a23991a271ad0ab750d3b2752f4d7",
+      "path": "doom-ui/README.md"
+    },
+    {
+      "sha256": "c37f06062cba06eb9838288a935fd286df8cd87efb1f834c6ac0e791108eefb1",
+      "path": "doom-ui/app/api/broadcast/[run]/[segment]/route.ts"
+    },
+    {
+      "sha256": "80acdf126f1e65328395ccfbe3d4f83a712d82c0a0bc6b7bce2e27997abb8963",
+      "path": "doom-ui/app/api/broadcast/route.ts"
+    },
+    {
+      "sha256": "ef4e4d352a2630f6566421b3831d1aed10b6ce699d0c560b79094b311b52890b",
+      "path": "doom-ui/app/api/live/route.ts"
+    },
+    {
+      "sha256": "74e37c83d1b74534e005f22e18315c8bc5ef007c0bfe0d698f72277c1cd701cc",
+      "path": "doom-ui/app/globals.css"
+    },
+    {
+      "sha256": "4baf34ced5f3175afa985524eb15585590e931763c27f737b2a0212be967572e",
+      "path": "doom-ui/app/how-it-works/page.tsx"
+    },
+    {
+      "sha256": "598a4d665a4f53fb243f287baa75c9029731c46b87f8d4c63aad099339825a25",
+      "path": "doom-ui/app/layout.tsx"
+    },
+    {
+      "sha256": "5ad7d2e3594a933ba934b0377d466fe8f7dff68bb3f0397be7ea277c411dac0b",
+      "path": "doom-ui/app/learning/lab.css"
+    },
+    {
+      "sha256": "42b9009a2185b2b6de771638ee9e26580a0ccd6e3753905c32cf49fc38238e40",
+      "path": "doom-ui/app/learning/page.tsx"
+    },
+    {
+      "sha256": "62901b4d3c98303328fdf6829de3c48c8e6c88ff44aa698c221caeb8634b1a7c",
+      "path": "doom-ui/app/page.tsx"
+    },
+    {
+      "sha256": "0637d86048f2ad79393a7af6d4f5f2643c86d6f67f30bd461e74562dfa3e488f",
+      "path": "doom-ui/app/review/page.tsx"
+    },
+    {
+      "sha256": "9928283696d86836422959a2c520df83a718d31ffbcab533a14ca8dca2c8d475",
+      "path": "doom-ui/components.json"
+    },
+    {
+      "sha256": "8ecea11844dbe003c459f9cf8878e8058d7c5b97c6945f4b14ae407df6ad6a11",
+      "path": "doom-ui/components/learning-iterations.tsx"
+    },
+    {
+      "sha256": "f1d7600cd01e811dbce13774e2c0fe03a2a96c7338be9d165877d43edf7e3712",
+      "path": "doom-ui/components/learning-lab.tsx"
+    },
+    {
+      "sha256": "a9d4353a55d5abb732cd3e25a2549a35b39cb053b615ba6647c2807390c20b47",
+      "path": "doom-ui/components/live-doom.tsx"
+    },
+    {
+      "sha256": "443f8a8b2861746a7980ad86f8c7134e0ebf3c5ba4b56eb4ec6d7e53e447b33d",
+      "path": "doom-ui/components/live-memory.tsx"
+    },
+    {
+      "sha256": "e915a2f1f37ffe16d1f00be61f0836f263b55c41d4a5c190b9affc154e86f86e",
+      "path": "doom-ui/components/pipeline-diagrams.tsx"
+    },
+    {
+      "sha256": "a31fdaf18aa89e7c84922b563e537ef07e83589a47337c91bb3405749957936d",
+      "path": "doom-ui/components/pixel-icon.tsx"
+    },
+    {
+      "sha256": "1a777b34de37c704c20bfa30f98ffd24717c2d2b6cff1c588ed409bb694163e5",
+      "path": "doom-ui/components/site-header.tsx"
+    },
+    {
+      "sha256": "33e1c60ba503f4eb36f9a8b1f68b236174b11656d8efea6bac65abddda2f9019",
+      "path": "doom-ui/components/ui/accordion.tsx"
+    },
+    {
+      "sha256": "ed0f1fc432bca4c72f9dd8741ae2268a00d2d3429ff1149bf463c4271b13d8e9",
+      "path": "doom-ui/components/ui/alert-dialog.tsx"
+    },
+    {
+      "sha256": "e760c470414c9e617d7292094146d906352fee3b1526b790a611d4a118e79196",
+      "path": "doom-ui/components/ui/alert.tsx"
+    },
+    {
+      "sha256": "b7fb499905e441a0602392ce118828425ad059079060109694d01f9fac00ad20",
+      "path": "doom-ui/components/ui/aspect-ratio.tsx"
+    },
+    {
+      "sha256": "dcb9e899f1322158f016d75c400fa8cce9b797ea49bec65528bac686cee2ec5c",
+      "path": "doom-ui/components/ui/attachment.tsx"
+    },
+    {
+      "sha256": "342f32b683937b826cdff2999d5e3057836d459aa43eadb0c3538b818d195b9a",
+      "path": "doom-ui/components/ui/avatar.tsx"
+    },
+    {
+      "sha256": "5706189b86e8670499fb33f37147dd6f65c39d59eef5211e34157f2952c35e32",
+      "path": "doom-ui/components/ui/badge.tsx"
+    },
+    {
+      "sha256": "b28b76d6f8d0feafbbeff2220cf83f9a6b03d8c81f0145b3af4c7d19933ab2c0",
+      "path": "doom-ui/components/ui/breadcrumb.tsx"
+    },
+    {
+      "sha256": "dfb9f52ae3b89e4a419b336c3893ab6fb658fc324fb402759d878d54e3b2db5a",
+      "path": "doom-ui/components/ui/bubble.tsx"
+    },
+    {
+      "sha256": "79ad8fb6644a775cc49131c1aa737ca26cae6a563beec0fa52ef6e8d85202fab",
+      "path": "doom-ui/components/ui/button-group.tsx"
+    },
+    {
+      "sha256": "081d2a1cb4f3aec636a6894d9eff4e90d476d5db85b82d0399c1f4d18517112e",
+      "path": "doom-ui/components/ui/button.tsx"
+    },
+    {
+      "sha256": "e7bc682eff8f2215e6b0aab40d1afb7ee927c5f5bef348ccff207631b9261658",
+      "path": "doom-ui/components/ui/calendar.tsx"
+    },
+    {
+      "sha256": "625fce5e16577a45108a86d7afcd70b8931cb2032abe0d6a3faf1010f666d672",
+      "path": "doom-ui/components/ui/card.tsx"
+    },
+    {
+      "sha256": "7444126492d4e0b85b1270f0d83a0955350fa95b3d3fb7b88edc2a5c2b4e5d14",
+      "path": "doom-ui/components/ui/carousel.tsx"
+    },
+    {
+      "sha256": "56ab0e0b41f0cc7902414e046ea4f710bdbf0b756028672ea8c7e5137a278f2b",
+      "path": "doom-ui/components/ui/chart.tsx"
+    },
+    {
+      "sha256": "56b2869e5478f38238e6a3d8aefabfbe8af565b38b2ffad06466487b3eacf154",
+      "path": "doom-ui/components/ui/checkbox.tsx"
+    },
+    {
+      "sha256": "3fdf7ef1ca89c4d85de5ecbb25813d0f572003a53b021baf43c5f3523e48ec97",
+      "path": "doom-ui/components/ui/collapsible.tsx"
+    },
+    {
+      "sha256": "282041e2e8c52cc12e7bbc717bbd3f8c9c5ba18e7fa75b97053bc79687e1181e",
+      "path": "doom-ui/components/ui/combobox.tsx"
+    },
+    {
+      "sha256": "9c1eae65aa105935a34c6b736f673b71a2ef939dde53dce29d986221edbf1f9f",
+      "path": "doom-ui/components/ui/command.tsx"
+    },
+    {
+      "sha256": "05c3646b452f5e3b9eb952eeba3d90657606d2b0875cb77652cdb5eadba0eb5c",
+      "path": "doom-ui/components/ui/context-menu.tsx"
+    },
+    {
+      "sha256": "8bc85def62538b4e62e8530c6b0ba167a192c38519c05f104bf6e10de73b811f",
+      "path": "doom-ui/components/ui/dialog.tsx"
+    },
+    {
+      "sha256": "2dea8a95accb1723db2454ccc858697d5b1f1454568cf4da5e8fcbd0cf7cc1ee",
+      "path": "doom-ui/components/ui/direction.tsx"
+    },
+    {
+      "sha256": "b7ac53d0e5d1fed25fc3f2ac5f5a36e247ca684c677ac376829fa8a7c039b79e",
+      "path": "doom-ui/components/ui/drawer.tsx"
+    },
+    {
+      "sha256": "efc088f3d79f64cf96e222701ae23dcf385b53947b3cd57ffb7be6f5dadcbfe2",
+      "path": "doom-ui/components/ui/dropdown-menu.tsx"
+    },
+    {
+      "sha256": "bf54bac4881b79f6a53f55e70c18640f58a058add88aed763c71be35c4f64f59",
+      "path": "doom-ui/components/ui/empty.tsx"
+    },
+    {
+      "sha256": "79023ca89aae39f9cffa83a9483c9c672099b4547cc821486283db61c6ae9327",
+      "path": "doom-ui/components/ui/field.tsx"
+    },
+    {
+      "sha256": "d8cb7270c5893213fc00b5f270f9bc461e2d7ce5b81f77b8778253a1aeda6a2c",
+      "path": "doom-ui/components/ui/hover-card.tsx"
+    },
+    {
+      "sha256": "2e65ddecb4401220be374cc6cfc42344538266cafeb2e590b3c760c7ed6b490a",
+      "path": "doom-ui/components/ui/input-group.tsx"
+    },
+    {
+      "sha256": "867f568259caac95f682d128d72e681b3fe7c31701a396eacc9284401d917a6a",
+      "path": "doom-ui/components/ui/input-otp.tsx"
+    },
+    {
+      "sha256": "6763c86c34c1c07826386d376f5da8fe2e41585bff3615716d5da88915e088d8",
+      "path": "doom-ui/components/ui/input.tsx"
+    },
+    {
+      "sha256": "9c5e45e6c4aae5b9c4c1304e1f1208d32681ab616a6e0de9de6e0d6b22690592",
+      "path": "doom-ui/components/ui/item.tsx"
+    },
+    {
+      "sha256": "bdfb38a4f7b9b604e196b5cee0d86f12311dae72946f0dbf5928c8ad0638178f",
+      "path": "doom-ui/components/ui/kbd.tsx"
+    },
+    {
+      "sha256": "e4a6fb662c44a44c468d16d79d02b3a3e5bf7b77bd50aef1e586c4d9613df0f6",
+      "path": "doom-ui/components/ui/label.tsx"
+    },
+    {
+      "sha256": "cd1e872384cf5001e48b4dc3cc2bb011eba9700561d41c83a89e872b60baf175",
+      "path": "doom-ui/components/ui/marker.tsx"
+    },
+    {
+      "sha256": "a3715f8e8b78261f5784929c532e100759c58e831c91e842438730797bc9a124",
+      "path": "doom-ui/components/ui/menubar.tsx"
+    },
+    {
+      "sha256": "9512c586d1b0885cf3ae4f1c3dd4281cbdfec7428fe98ff48a66b4ba2a7319f4",
+      "path": "doom-ui/components/ui/message-scroller.tsx"
+    },
+    {
+      "sha256": "2fedcc64ed8563a44f6697615e77574d96f819fe6e5e2fa8a555e30f8ed6bbd7",
+      "path": "doom-ui/components/ui/message.tsx"
+    },
+    {
+      "sha256": "3aafb74b98c039dae4eb2c64c47ec6f5d61fdc888c057de47550346f702f434b",
+      "path": "doom-ui/components/ui/native-select.tsx"
+    },
+    {
+      "sha256": "c8e64bf5241145b512ae18f1062da8275691edf927736496a3860bec76ad6fa1",
+      "path": "doom-ui/components/ui/navigation-menu.tsx"
+    },
+    {
+      "sha256": "1f3c1713e8824cca7c3c0edacf9da7b0114bfda58640771b8fe0bc6179b370ce",
+      "path": "doom-ui/components/ui/pagination.tsx"
+    },
+    {
+      "sha256": "7376624438588e2d64b6e0c5cdf82cbc5fd4530bbcf1f0235c5f3ee08d12e877",
+      "path": "doom-ui/components/ui/popover.tsx"
+    },
+    {
+      "sha256": "0d8ddec9731940e104b851cf3ac67d2fa8589b289824317a9e8f326e090ba65a",
+      "path": "doom-ui/components/ui/progress.tsx"
+    },
+    {
+      "sha256": "43f2d6c2f5bdd4a26c57d93e6f141be20472f9bb8777d9a0d61cd8a5e281a999",
+      "path": "doom-ui/components/ui/radio-group.tsx"
+    },
+    {
+      "sha256": "ea7b85817d4dc70866e0bcf15264e7e1bd7e1893eb4404261fbc23a4d6ff9029",
+      "path": "doom-ui/components/ui/resizable.tsx"
+    },
+    {
+      "sha256": "730c4cc49f8f1b705eb1389cd32c774056a0a2a7a48a9b092cbe44c608be3a0b",
+      "path": "doom-ui/components/ui/scroll-area.tsx"
+    },
+    {
+      "sha256": "45489c502a21fdd5271481d64ad8f762181c9653d8d26bdc6f75450b78c3c852",
+      "path": "doom-ui/components/ui/select.tsx"
+    },
+    {
+      "sha256": "92ad5065f03d7edc98f367e729f3ec84ece1d99ee8cd0d3a8137f266d4ab3d8a",
+      "path": "doom-ui/components/ui/separator.tsx"
+    },
+    {
+      "sha256": "adb432b6f9d7a4733caa45ba8bf510a8a7ff0f6d0dd3aa1f013959fb61268234",
+      "path": "doom-ui/components/ui/sheet.tsx"
+    },
+    {
+      "sha256": "aa3322ca63f098aa1d2abf750f9d097da07362fce25939357f2cefc9b6a03988",
+      "path": "doom-ui/components/ui/sidebar.tsx"
+    },
+    {
+      "sha256": "4c342102b2bbf5bd8c04fa151fe5c13c42faee2f9587a3586c27322020ca35d1",
+      "path": "doom-ui/components/ui/skeleton.tsx"
+    },
+    {
+      "sha256": "af657e73d672f4dd205f19abf151d21a172cf36abfdca49fd7014a20e12367a9",
+      "path": "doom-ui/components/ui/slider.tsx"
+    },
+    {
+      "sha256": "8ddbb330e5564a1f53026da36c2322ed4b027687e91a88f63348ab10f26ae0cb",
+      "path": "doom-ui/components/ui/spinner.tsx"
+    },
+    {
+      "sha256": "04b085443a1c6a72d408e6eb7dd45df881ca27814415b81b39f614806b52c8fc",
+      "path": "doom-ui/components/ui/switch.tsx"
+    },
+    {
+      "sha256": "88f2ba7877eea7f34a5da18b7fa096eb2c7bed602677ce54f5494b494c5afc2e",
+      "path": "doom-ui/components/ui/table.tsx"
+    },
+    {
+      "sha256": "dd914d769bc223b5d5ea56839a7752e534eb475f8d2897d5675606c368bbca1f",
+      "path": "doom-ui/components/ui/tabs.tsx"
+    },
+    {
+      "sha256": "7ae7f0f5d907be24658652c771fee1685193102bf3200aafbf578d144d379fbf",
+      "path": "doom-ui/components/ui/textarea.tsx"
+    },
+    {
+      "sha256": "9126b09f47f0b117bf748cf19aaa4987a1f72d0813d10bfc4b4b0128e6439e48",
+      "path": "doom-ui/components/ui/toast.tsx"
+    },
+    {
+      "sha256": "9b006523be0fe3230cd75f7adf78a501829d594fd3506c56c55bb38211ff1850",
+      "path": "doom-ui/components/ui/toggle-group.tsx"
+    },
+    {
+      "sha256": "6bf41d6f6ffe602c3e28274a82ac029e6ee1331ba3c670a6d814048e1823cc28",
+      "path": "doom-ui/components/ui/toggle.tsx"
+    },
+    {
+      "sha256": "b86e51969931c3d62e88d0bdacd1cd8219105dc6d6b6a588a80011bf92e987cd",
+      "path": "doom-ui/components/ui/tooltip.tsx"
+    },
+    {
+      "sha256": "9667353638a905f7e133c7bb0b08c08ccbda12ea80734a962f4fca7683b69c26",
+      "path": "doom-ui/data/learning-iterations.json"
+    },
+    {
+      "sha256": "9df245fab509dbaa9261282f187d59e16e9b0f034b2d9464abcaca10262aba62",
+      "path": "doom-ui/data/learning-report.json"
+    },
+    {
+      "sha256": "f6ea0cb91300a6e4283aaac1b56b08d8cb233734ad14f78ba09df9c27b3b570c",
+      "path": "doom-ui/design/branding.md"
+    },
+    {
+      "sha256": "93cc6e1dd6401aa1e14b21c7ae289fe561feb5993b17376c4b07bbdf9bfdac81",
+      "path": "doom-ui/design/fly-mark.mjs"
+    },
+    {
+      "sha256": "82bff42ff087bd5dc90a5d17609cc428b8688de92d1333073a839af5ad3c9cbd",
+      "path": "doom-ui/hooks/use-mobile.ts"
+    },
+    {
+      "sha256": "ea7c158112beead3611432c7072f7633d3e718e6173b070744152d49f73f4812",
+      "path": "doom-ui/lib/broadcast-player.ts"
+    },
+    {
+      "sha256": "d69eabaa197559ec044d6c2fa0438e42d608a5b439a104d3854d5cdef010d60c",
+      "path": "doom-ui/lib/broadcast-proxy.ts"
+    },
+    {
+      "sha256": "4f94b9f0090b7b0df9f909f67d7a369600c7bb99feeb75bcfe174be10ae6226c",
+      "path": "doom-ui/lib/broadcast-session.ts"
+    },
+    {
+      "sha256": "5c2b9f225305b9146759bf143761785816ba092aa710b080fc5223e1b2b4636f",
+      "path": "doom-ui/lib/live.ts"
+    },
+    {
+      "sha256": "52983f70cdbf6f93f6e2ebe5b0bdda26a70504e6b64f79891195b972d3645daa",
+      "path": "doom-ui/lib/request-deadline.ts"
+    },
+    {
+      "sha256": "9793229d5829d592d2429fe49c4e603286cb4a05ee7ebd08bd2752fb3258befc",
+      "path": "doom-ui/lib/use-broadcast.ts"
+    },
+    {
+      "sha256": "f6f745c782663b5d31ce9f037b1cdf65bba36c827da780852d2a6ffb4c659e6d",
+      "path": "doom-ui/lib/use-live-tools.ts"
+    },
+    {
+      "sha256": "9304a861c8673bee09e0f12de31773abbde503b02e59dfd74763ddec2e37cf05",
+      "path": "doom-ui/lib/utils.ts"
+    },
+    {
+      "sha256": "d063bebef3a4878ae82f9f9547c2c9675b8b6945ab23702932dcb63a011a9fc9",
+      "path": "doom-ui/next.config.ts"
+    },
+    {
+      "sha256": "260b3be764499013a054b5a6e735dba58d4c7a6dd58c2806caef8c3f126e3354",
+      "path": "doom-ui/package-lock.json"
+    },
+    {
+      "sha256": "4995cbbd54b3038468bb9393a0413ffcd6927ce1a040c53e23544c7ec71f68dd",
+      "path": "doom-ui/package.json"
+    },
+    {
+      "sha256": "f2e30f1c4776e32579f9b1b822d77ef5c528063c00e62542d1c50fcefbb1a893",
+      "path": "doom-ui/public/apple-touch-icon.png"
+    },
+    {
+      "sha256": "eb99bb5ac1a3a536dcb45e4bec450cd3af9f4a55124f98fc53ce37d89026c110",
+      "path": "doom-ui/public/arena-circling-review.json"
+    },
+    {
+      "sha256": "e03ae9637ecbb2086a87fd1872400cbf17e3e2eb52faaf67ed282fe61b4fde5c",
+      "path": "doom-ui/public/audit-experiments.json"
+    },
+    {
+      "sha256": "02105e2a51efe31809c0a9acb3df6cdd9c7a8d5405380264d3ff730dd638e62f",
+      "path": "doom-ui/public/bci-validation.json"
+    },
+    {
+      "sha256": "e9522e3a5292244239ef6cef861b88e5c7fb600d9748f2e8e7e8e85534491900",
+      "path": "doom-ui/public/combat-arena.json"
+    },
+    {
+      "sha256": "fd2b25aef4e7bb2fa68a25b82bd891c4430b7b7b1a8132aadb79f8353124c13c",
+      "path": "doom-ui/public/combat-environment-checks.json"
+    },
+    {
+      "sha256": "911bd10fe8cc881b64fc51a45aa237323b838d41253ccf2d9fce1a6642129181",
+      "path": "doom-ui/public/data-integrity.json"
+    },
+    {
+      "sha256": "cc0b044b1e2c3d6e1aa837fee44e1bc693c78627d62d02ff88f91fa0623817be",
+      "path": "doom-ui/public/experiment-source.zip"
+    },
+    {
+      "sha256": "bb8b0f3f3755bbcc71fd50d32278c44c5cf8617400cfd0d976b7cfe2102bc842",
+      "path": "doom-ui/public/favicon.ico"
+    },
+    {
+      "sha256": "04e7f0b2574be4ffe7422e8652afeb7c954d398f9eb90de648fac48af75478cd",
+      "path": "doom-ui/public/favicon.svg"
+    },
+    {
+      "sha256": "6760dfe95e88b395cf7beb319da0017e479f7caac8478639124b3b3d8df57bbd",
+      "path": "doom-ui/public/first-frame.jpg"
+    },
+    {
+      "sha256": "6803453af425d3ceaaf4de5f2df0da715548f317870133f98cf9c81bac6d5364",
+      "path": "doom-ui/public/fly-icon-96.png"
+    },
+    {
+      "sha256": "01be26715a8161b7057d7b1708c748a9c38776c59cfe6550f923ef1a0402c2b9",
+      "path": "doom-ui/public/fly-logo.png"
+    },
+    {
+      "sha256": "4ee04261a4549a53e38a356688bf430b39a943eab1b75b6a38b0116db88f6637",
+      "path": "doom-ui/public/fly-logo.svg"
+    },
+    {
+      "sha256": "d732b277f12be0c9054fe951a015f23444fa1ba3b1b0cb9e9fc6c25055461b8d",
+      "path": "doom-ui/public/learning-iterations-source-manifest.json"
+    },
+    {
+      "sha256": "17a238e6ac1681701777052a3b2d8907d43c7d58cf28c07cce3ea21383c74fc6",
+      "path": "doom-ui/public/learning-iterations-source.zip"
+    },
+    {
+      "sha256": "9667353638a905f7e133c7bb0b08c08ccbda12ea80734a962f4fca7683b69c26",
+      "path": "doom-ui/public/learning-iterations.json"
+    },
+    {
+      "sha256": "9df245fab509dbaa9261282f187d59e16e9b0f034b2d9464abcaca10262aba62",
+      "path": "doom-ui/public/learning-results.json"
+    },
+    {
+      "sha256": "4981310b250fc9ab2bc7c64e68ed2032bffcc0f57b05c0fc3ae4ad9a0ddeebdb",
+      "path": "doom-ui/public/learning-source.zip"
+    },
+    {
+      "sha256": "d02eb5987acf8906d7db974cbc8dfae7744a837d9bae6dbff811a0be58b4a83d",
+      "path": "doom-ui/public/live-profile.json"
+    },
+    {
+      "sha256": "b893dd22258ff7dce63c3c10ead887f5752785153874d3ab405ec5085cb917e6",
+      "path": "doom-ui/public/live-training.json"
+    },
+    {
+      "sha256": "8cfc6d596bf0cf3dac5a32d6b498f7752cc0555aa22af1bd9dfd9c036636456c",
+      "path": "doom-ui/public/methods.json"
+    },
+    {
+      "sha256": "e8eff09bbd1e500f1458d200135f6cc5002e5146b7a82c57552eb4c992929ceb",
+      "path": "doom-ui/public/neuroscience-review.md"
+    },
+    {
+      "sha256": "846913cb539b6f39da99cff3fe1ca0532dc36aff3e8d8503ad48213db6b87c6b",
+      "path": "doom-ui/public/official-source-check.json"
+    },
+    {
+      "sha256": "1d1ca9c4255b6f35fd010cd4a16f134394463fd78782997c4b97d4d25e5f591e",
+      "path": "doom-ui/public/og.png"
+    },
+    {
+      "sha256": "9de10064ba720ac22981ee876f2526be0b23fe84c6b1cb3d07b54ace11fe8d2e",
+      "path": "doom-ui/public/pixel-fly.png"
+    },
+    {
+      "sha256": "cc017e7ca12934b510aa6144aa859c7fdb53e0e816edff489d9c9d341378d820",
+      "path": "doom-ui/public/retinal-projection.json"
+    },
+    {
+      "sha256": "bba61731e37a170f6af379b8f4b98565da4eebd72b5304a13bcd13da31523bfa",
+      "path": "doom-ui/public/reward-probe.json"
+    },
+    {
+      "sha256": "aa52e0e45923813da1f60dea2a4d4d594dac9ba3c5d39ae92049e3e90a502152",
+      "path": "doom-ui/public/source-archives.json"
+    },
+    {
+      "sha256": "64fbf940348abc0ebc450b66f0d9f7b2ba6073800bf9cc70b7eab86f66f38eea",
+      "path": "doom-ui/public/validation.json"
+    },
+    {
+      "sha256": "84b6314b1563ddbeb7f4472534bc666623b0cceaa7912810caea1494910cfa35",
+      "path": "doom-ui/tests/broadcast-fixture.cjs"
+    },
+    {
+      "sha256": "1c484388a4700bcb60a0a93361791e43d45d5c71c5e40e155ab45df0bebf3ba9",
+      "path": "doom-ui/tests/broadcast-session.test.cjs"
+    },
+    {
+      "sha256": "172b78bb84774eb209a33f065764e3968fbc8e6724dfeaf975b127a473f73d26",
+      "path": "doom-ui/tests/broadcast.test.cjs"
+    },
+    {
+      "sha256": "604f8c56f596ab5ba34fe6d116a33a60fb1709cef9c7c1135bd7526e82d3bea1",
+      "path": "doom-ui/tests/run-broadcast-tests.mjs"
+    },
+    {
+      "sha256": "81aca06cd76be09d9b65c7dff6a031c38664263b506ea792a28f36b17be25f2a",
+      "path": "doom-ui/tsconfig.json"
+    },
+    {
+      "sha256": "a349733b3ebbde78689675c041ea2f38ca896874308738e8d00c185601a692c3",
+      "path": "doom-ui/vite.config.ts"
+    },
+    {
+      "sha256": "561c5984c265e3bf68e52858d5796bcc7214fdc03c52f42330bb8d9141fd05f8",
+      "path": "doom/README.md"
+    },
+    {
+      "sha256": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+      "path": "doom/__init__.py"
+    },
+    {
+      "sha256": "97db9ca40fc27413910ea61c9ca40f3f5ebe242246dedf46cbd6e891d61fce26",
+      "path": "doom/analyze_observation.py"
+    },
+    {
+      "sha256": "0fd393e832cba4c262db878e7fd1f95dc4bd5e12586f7ade54b0d41fc3db040d",
+      "path": "doom/archive.py"
+    },
+    {
+      "sha256": "b7da4838bafefd9d885cd62ddf2455024188315d676a8d2a9be4bbba4faa5b5c",
+      "path": "doom/arena_probe.py"
+    },
+    {
+      "sha256": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+      "path": "doom/audit_data.py"
+    },
+    {
+      "sha256": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+      "path": "doom/audit_experiments.py"
+    },
+    {
+      "sha256": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+      "path": "doom/audit_remote.py"
+    },
+    {
+      "sha256": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+      "path": "doom/audit_retina.py"
+    },
+    {
+      "sha256": "a354f3ecac9755a69b047168e50889a1431e0eca36c96320c12cb7276a3dfe65",
+      "path": "doom/broadcast.py"
+    },
+    {
+      "sha256": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+      "path": "doom/build_kernel.py"
+    },
+    {
+      "sha256": "5249f22d19e1cd5dd2522e9339778b5ce0b5715f58a090bc69cf347e0afb93ec",
+      "path": "doom/checkpoint.py"
+    },
+    {
+      "sha256": "2be1b8e6f4dccbec3d565672e4f9c3cae954a7b6ca1e777b36f31c6023a63dc3",
+      "path": "doom/combat_arena.py"
+    },
+    {
+      "sha256": "11d0eed94557ffe5b0f9e5f46773bcd5f490600ac8d9cd8b15ce678edac8e19d",
+      "path": "doom/connectome.py"
+    },
+    {
+      "sha256": "4532ef8b2f08d819cb31dee3a40f21685112971a05697cf0fa7fa634cf9035b8",
+      "path": "doom/datasets.json"
+    },
+    {
+      "sha256": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+      "path": "doom/engine.py"
+    },
+    {
+      "sha256": "340feff6671753be935668626c8666b2beab560a814b9f1eac6fb2185e447345",
+      "path": "doom/game.py"
+    },
+    {
+      "sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+      "path": "doom/kernel.cpp"
+    },
+    {
+      "sha256": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+      "path": "doom/native.py"
+    },
+    {
+      "sha256": "0989e64d1405cfef0894b0ed428323682e62fc4282b71e542b29c5d78d6940db",
+      "path": "doom/observe.py"
+    },
+    {
+      "sha256": "ef430bced2cf399491ea539b8f819b2dc3000e5b0c1656536ff74670f28831cc",
+      "path": "doom/observe_public.py"
+    },
+    {
+      "sha256": "d280740149c4006374989227f8ca2d9caca626344ea02c3c359387d19627c262",
+      "path": "doom/prepare.py"
+    },
+    {
+      "sha256": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+      "path": "doom/provenance.py"
+    },
+    {
+      "sha256": "3f89cde5469ea9195d7c519b67c1ec6950f4426317a9a7c80e394beabdbdff79",
+      "path": "doom/requirements.txt"
+    },
+    {
+      "sha256": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+      "path": "doom/reward.py"
+    },
+    {
+      "sha256": "f32562f9ca10850e07fbada4df9be1cd00c9ed69a0f1297ca1a45680ccd4bebc",
+      "path": "doom/run_broadcast.sh"
+    },
+    {
+      "sha256": "7fbc38bf27fa12999a05a4cb55e09d18a0632fc3b947306b466dadd65764b261",
+      "path": "doom/scenarios/combat_survival.acs"
+    },
+    {
+      "sha256": "bd2160dd42e997db16f8ba0ab38244a672c06416226a21b1ebd198d3a584d943",
+      "path": "doom/scenarios/combat_survival.cfg"
+    },
+    {
+      "sha256": "268d72045a392501b1a0647ff5b06e53c890d2b19a34874fa494fb9e37970ff6",
+      "path": "doom/scenarios/combat_survival.decorate"
+    },
+    {
+      "sha256": "e9522e3a5292244239ef6cef861b88e5c7fb600d9748f2e8e7e8e85534491900",
+      "path": "doom/scenarios/combat_survival.json"
+    },
+    {
+      "sha256": "40350fd06042e0d610c258345b90e0db69037562d1f2302d850d8cd6ee9d184b",
+      "path": "doom/scenarios/combat_survival.wad"
+    },
+    {
+      "sha256": "e6484c818ed9f0d15f233652fe54631482cec23fc7e82e095867070db8c2dfbe",
+      "path": "doom/server.py"
+    },
+    {
+      "sha256": "31608178ab6c2878ef5d4b3db16ea1a588704edc6ba055de48db45fe4a2c3117",
+      "path": "doom/training.py"
+    },
+    {
+      "sha256": "2c2cf0f5f764398261d4a28dd37e44535c2f7164e1e011d07e9125646a1813f7",
+      "path": "doom/training_checkpoint.py"
+    },
+    {
+      "sha256": "fc9868a935b90a1658192a1717f6a4b425865c8ecea8cd2e6bd1c78ed57bfcf7",
+      "path": "doom/transmitters.py"
+    },
+    {
+      "sha256": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+      "path": "doom/validate.py"
+    },
+    {
+      "sha256": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+      "path": "doom/validate_bci.py"
+    },
+    {
+      "sha256": "e894c1df9210df3fc8d7501361a2e128b5cd157d3a4065a8b690763a6c9847ba",
+      "path": "doom_learning/README.md"
+    },
+    {
+      "sha256": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+      "path": "doom_learning/__init__.py"
+    },
+    {
+      "sha256": "c68a51b59791eda4241e0eca2aef9f3023c406529de577091225a22e9ae0bd57",
+      "path": "doom_learning/analyze.py"
+    },
+    {
+      "sha256": "7810c6b993c700191283024079f64aa9e4c405b84789b428bb7858e790198a8e",
+      "path": "doom_learning/benchmark.py"
+    },
+    {
+      "sha256": "99bef17182f44c1647a1f02d591a4f66dbe8f9f5ed78e10145d0a9e53c4d6604",
+      "path": "doom_learning/brain.py"
+    },
+    {
+      "sha256": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+      "path": "doom_learning/circuit.py"
+    },
+    {
+      "sha256": "afb7564f452868d45ad3410e1c429b8edb1c4781f33ca23bd0b1c12e1ed99768",
+      "path": "doom_learning/common.py"
+    },
+    {
+      "sha256": "9175d8ea1166e1f3fc38a71693069d225534d196fe90c69aee7724478d75028e",
+      "path": "doom_learning/conditioning.py"
+    },
+    {
+      "sha256": "301ffcb3896dcc2cc9c8def93adfb1ec1e40285584e7a88eccbfdda61cbe02dd",
+      "path": "doom_learning/controls.py"
+    },
+    {
+      "sha256": "7db9ea94d23234b41fa10459280b99105f617885c50e55ab534c0fb8356e7036",
+      "path": "doom_learning/export_iterations.py"
+    },
+    {
+      "sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+      "path": "doom_learning/kernel.cpp"
+    },
+    {
+      "sha256": "72b1304053ae8a03b55a719497003b640bb6ed76ad6c257b3c0cd6edf8c9661a",
+      "path": "doom_learning/run.py"
+    },
+    {
+      "sha256": "8eec7594986c846ce5c259eb950ab32e4d3377d840408f753f247a4f62a33eec",
+      "path": "doom_learning/survival_arena.py"
+    },
+    {
+      "sha256": "d3a2ec6e54aad0f73404f4484c9afeda878861bb09a0b222ef5b9d94561afad7",
+      "path": "doom_learning/sweep.py"
+    },
+    {
+      "sha256": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+      "path": "doom_learning/vision.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "doom_learning_v2/__init__.py"
+    },
+    {
+      "sha256": "8ee11ad854bb316559508441d45a1e185a153b64a634274578666eda84295625",
+      "path": "doom_learning_v2/brain.py"
+    },
+    {
+      "sha256": "8a95e79cabbad3ecc3f0ddffc42685dcd56d2356cec76c6ce55e199e10964709",
+      "path": "doom_learning_v2/conditioning.py"
+    },
+    {
+      "sha256": "f1cca01b570f7445295c1d631cdaa108e16d268d39e5bfaeaf4dee7344114f37",
+      "path": "doom_learning_v2/kernel.cpp"
+    },
+    {
+      "sha256": "20279cdc14352b23fcbb76db2ee4bdebcc26394bccc04a1ad5fcedc5e3accdeb",
+      "path": "doom_learning_v2/vision.py"
+    },
+    {
+      "sha256": "e05fb24ac79c3870fb7df26938d0bff00409312d1083ec5755d026ac1490e7ea",
+      "path": "doom_learning_v2/visual.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "doom_learning_v3/__init__.py"
+    },
+    {
+      "sha256": "3f0ec5cad890bd5f2c4626ddf8486b44ce5b549314612a4f090b6710e3789b23",
+      "path": "doom_learning_v3/brain.py"
+    },
+    {
+      "sha256": "1368277a9e028238c5399a7827c88e6f65f9f451105431807d4062256c15991a",
+      "path": "doom_learning_v3/conditioning.py"
+    },
+    {
+      "sha256": "c40988cfd08c28b135183408c222fb446dde45d93f3833067c619c9aef2f0aee",
+      "path": "doom_learning_v3/kernel.cpp"
+    },
+    {
+      "sha256": "e05fb24ac79c3870fb7df26938d0bff00409312d1083ec5755d026ac1490e7ea",
+      "path": "doom_learning_v3/visual.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "doom_learning_v4/__init__.py"
+    },
+    {
+      "sha256": "ed521bfc5f2a6309558a64b0efd5b6ced98add2ccbf7e262448fe00649acc110",
+      "path": "doom_learning_v4/brain.py"
+    },
+    {
+      "sha256": "ae6d8a3b95712015daf35a1271a357b94fdeec44ab87ad77feac271851741317",
+      "path": "doom_learning_v4/conditioning.py"
+    },
+    {
+      "sha256": "e2d4d584f4633613277bb1bf6ea7ba20855c01a332ae2e9344ed7782604c8509",
+      "path": "doom_learning_v4/kernel.cpp"
+    },
+    {
+      "sha256": "ce878e9987517ea75b26aa12f9c4c093aee990b4e0e9641781c1bc70841d065a",
+      "path": "doom_learning_v4/rgb_conditioning.py"
+    },
+    {
+      "sha256": "e05fb24ac79c3870fb7df26938d0bff00409312d1083ec5755d026ac1490e7ea",
+      "path": "doom_learning_v4/visual.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "doom_learning_v5/__init__.py"
+    },
+    {
+      "sha256": "74d283704d522ace5c3965b6267e5ec68e2a7119ade0c52993bd9be1b8c94d9e",
+      "path": "doom_learning_v5/brain.py"
+    },
+    {
+      "sha256": "a62951dc94ebf395933f656a002cf3765cae493bfe0337aea158b45d2487e5b6",
+      "path": "doom_learning_v5/calibration.py"
+    },
+    {
+      "sha256": "adf31770237fdf8b27b60dbcf1f94f570f12fe7cad01c85012cfd9652038065b",
+      "path": "doom_learning_v5/conditioning.py"
+    },
+    {
+      "sha256": "f1cca01b570f7445295c1d631cdaa108e16d268d39e5bfaeaf4dee7344114f37",
+      "path": "doom_learning_v5/kernel.cpp"
+    },
+    {
+      "sha256": "0df2ae1bf10b97a213064b3ac3934227539d08e51521a99cdb56fe7f5b44b725",
+      "path": "doom_learning_v5/rule.py"
+    },
+    {
+      "sha256": "788c06afd646528b0f5a9d3a8daa6838278709a15f1a90159b2ed4f9e6531c88",
+      "path": "doom_learning_v5/visual.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "doom_learning_v6/__init__.py"
+    },
+    {
+      "sha256": "15623eab650fc2becd71754365dd3ffeab72af70fb5344644e99c8232522a9e1",
+      "path": "doom_learning_v6/analyze.py"
+    },
+    {
+      "sha256": "0c6ef6e3f80edd076c05cfaaea0e14d36b0e439c597f9456b00387062484593f",
+      "path": "doom_learning_v6/brain.py"
+    },
+    {
+      "sha256": "a62951dc94ebf395933f656a002cf3765cae493bfe0337aea158b45d2487e5b6",
+      "path": "doom_learning_v6/calibration.py"
+    },
+    {
+      "sha256": "e2d4d584f4633613277bb1bf6ea7ba20855c01a332ae2e9344ed7782604c8509",
+      "path": "doom_learning_v6/kernel.cpp"
+    },
+    {
+      "sha256": "0df2ae1bf10b97a213064b3ac3934227539d08e51521a99cdb56fe7f5b44b725",
+      "path": "doom_learning_v6/rule.py"
+    },
+    {
+      "sha256": "8d6694ab570d49f9aaa952173e08e172c1375ada3e308a1cb896f2d3540181af",
+      "path": "doom_learning_v6/stability.py"
+    },
+    {
+      "sha256": "21339bbc71ea32622c00c5fccaa9767523064940c33b0e40befbea250d17637f",
+      "path": "doom_learning_v6/survival.py"
+    },
+    {
+      "sha256": "788c06afd646528b0f5a9d3a8daa6838278709a15f1a90159b2ed4f9e6531c88",
+      "path": "doom_learning_v6/visual.py"
+    },
+    {
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "path": "licenses/CC-BY-4.0.txt"
+    },
+    {
+      "sha256": "ed60abcf1ff64bf61bf8b4c585ab63643d655a21f8997ba284c01f94ed681fc5",
+      "path": "licenses/Freedoom-BSD-3-Clause.txt"
+    },
+    {
+      "sha256": "3621f6d6476189190e2960fa43f11b275ba4eca848fdac50a1ba2925de6223e8",
+      "path": "licenses/Shiu-model-MIT.txt"
+    },
+    {
+      "sha256": "a93dee55da22589b02b42ecb360318c41d51fb06ec4ef2b876b038f762bcc1a7",
+      "path": "licenses/ViZDoom-MIT.txt"
+    },
+    {
+      "sha256": "bfb9d80628daa515aa7f851cc37d7117b37d6db2e09bd5522dfb165f9c57ce0e",
+      "path": "licenses/dependency-notices.json"
+    },
+    {
+      "sha256": "07fc1b39d69d14bc7d40482a628f47226258eb01265db68ae684944b916beb2a",
+      "path": "licenses/npm/base-ui__react/LICENSE"
+    },
+    {
+      "sha256": "0ccbf956cffc8dcf515809433cb5242ee67c94513d46e48c261d68d0880de406",
+      "path": "licenses/npm/class-variance-authority/LICENSE"
+    },
+    {
+      "sha256": "9a9edad7baae52622bddf3c15b2ef8a33d2c89f2d25408ad13e8a7481c6b0c97",
+      "path": "licenses/npm/clsx/license"
+    },
+    {
+      "sha256": "b5acfd21b3b61508365224c40ec1b03ec71091248baaf989d4be916551e7d532",
+      "path": "licenses/npm/cmdk/LICENSE.md"
+    },
+    {
+      "sha256": "8d3951c38967b964b1fe259bfd200c2647cc04c858b55a4414e3122a60f1ef4b",
+      "path": "licenses/npm/date-fns/LICENSE.md"
+    },
+    {
+      "sha256": "992490064b90ec94c302fe5f29dcc14cb44145857064e46f9ffe6c8f511c1093",
+      "path": "licenses/npm/embla-carousel-react/LICENSE"
+    },
+    {
+      "sha256": "079031192fea535a245aa64a637d8433c406b82a14f91c3606b1d63e41c00152",
+      "path": "licenses/npm/input-otp/LICENSE"
+    },
+    {
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "path": "licenses/npm/lucide-react/LICENSE"
+    },
+    {
+      "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713",
+      "path": "licenses/npm/openai__sites-vite-plugin/LICENSE"
+    },
+    {
+      "sha256": "45d115f88e2b50de2113bafbc5e877f8e85dc9236d5d304a855ed4756f7e4439",
+      "path": "licenses/npm/react-day-picker/LICENSE"
+    },
+    {
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "path": "licenses/npm/react-dom/LICENSE"
+    },
+    {
+      "sha256": "a8f1e0280bf14adcf5d017547db85eb5c3bac0feb1690ca98650874002eaa8ea",
+      "path": "licenses/npm/react-resizable-panels/LICENSE.md"
+    },
+    {
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "path": "licenses/npm/react-server-dom-webpack/LICENSE"
+    },
+    {
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "path": "licenses/npm/react/LICENSE"
+    },
+    {
+      "sha256": "2d3aa48a8d1d3b93093680e8e68d3a64cfb590c3ade377ffcaefc69dac7c2ce5",
+      "path": "licenses/npm/recharts/LICENSE"
+    },
+    {
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+      "path": "licenses/npm/shadcn/LICENSE.md"
+    },
+    {
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+      "path": "licenses/npm/shadcn__react/LICENSE.md"
+    },
+    {
+      "sha256": "d4c70c7ce38cea8778f0aed3fc0bef0a9dbd27f13bd8b6773cbd6d37941971e5",
+      "path": "licenses/npm/tailwind-merge/LICENSE.md"
+    },
+    {
+      "sha256": "039184dfa0a822397b3f45a435b5b1e538721587fbade96b9fa80f86cb354109",
+      "path": "licenses/npm/tw-animate-css/LICENSE"
+    },
+    {
+      "sha256": "19a7b85046eb77c8ab308c68569abbbb59235814297b9c95dc90480f71ec7198",
+      "path": "licenses/npm/vinext/LICENSE"
+    },
+    {
+      "sha256": "894c1ba1b8bb9b5f03f9d2ff7a662565c9bb663459b6988e4681df5508e50741",
+      "path": "neural-build-constraints.txt"
+    },
+    {
+      "sha256": "5ab3fc27e56c4c190a7b83e36abdf9dc4e43b421ca0984b841172025a72b4fd8",
+      "path": "outputs/doom-learning/conditioning-current-sensitivity.json"
+    },
+    {
+      "sha256": "dc52ac726f8766e381ba4fe6bac7edee2875203291942ba20dcbe2e0e4164095",
+      "path": "outputs/doom-learning/conditioning.json"
+    },
+    {
+      "sha256": "17235da279dd4d3b71c161175833cf0966b9cc18ccb670f8f8b81a49c42b2aa5",
+      "path": "outputs/doom-learning/delivery.json"
+    },
+    {
+      "sha256": "88011777c25e3a45e5524874b1caf5d98be321d9401bd6fd96c1475561740604",
+      "path": "outputs/doom-learning/exposure-correction/41031.json"
+    },
+    {
+      "sha256": "35c82513aa31ba0faa70d9bfec2a0dfc1d6ff900d29677de16625a93bc18b8a9",
+      "path": "outputs/doom-learning/exposure-correction/41032.json"
+    },
+    {
+      "sha256": "6f0ec490e8ec06e4d1c0e047b5fd8a0d666e293e6ba9eb49c778bf7dfa74e250",
+      "path": "outputs/doom-learning/exposure-correction/provenance.json"
+    },
+    {
+      "sha256": "7acee9e0237ff064ad9b5741871e6cfc1057cdcff016b478c35a2aef57d3af72",
+      "path": "outputs/doom-learning/exposure-correction/recheck-script.py"
+    },
+    {
+      "sha256": "d8422c4ba61bfc9db152947cc618893e75aead92b1cdf59f8a1f3b9c0b87ad7b",
+      "path": "outputs/doom-learning/exposure-correction/results.json"
+    },
+    {
+      "sha256": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/__init__.py"
+    },
+    {
+      "sha256": "97db9ca40fc27413910ea61c9ca40f3f5ebe242246dedf46cbd6e891d61fce26",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/analyze_observation.py"
+    },
+    {
+      "sha256": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/audit_data.py"
+    },
+    {
+      "sha256": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/audit_experiments.py"
+    },
+    {
+      "sha256": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/audit_remote.py"
+    },
+    {
+      "sha256": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/audit_retina.py"
+    },
+    {
+      "sha256": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/build_kernel.py"
+    },
+    {
+      "sha256": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/engine.py"
+    },
+    {
+      "sha256": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/game.py"
+    },
+    {
+      "sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/kernel.cpp"
+    },
+    {
+      "sha256": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/native.py"
+    },
+    {
+      "sha256": "0989e64d1405cfef0894b0ed428323682e62fc4282b71e542b29c5d78d6940db",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/observe.py"
+    },
+    {
+      "sha256": "ef430bced2cf399491ea539b8f819b2dc3000e5b0c1656536ff74670f28831cc",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/observe_public.py"
+    },
+    {
+      "sha256": "d280740149c4006374989227f8ca2d9caca626344ea02c3c359387d19627c262",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/prepare.py"
+    },
+    {
+      "sha256": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/provenance.py"
+    },
+    {
+      "sha256": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/reward.py"
+    },
+    {
+      "sha256": "db2c5f3e10b6abf90e7e3f19ed198d4a407333c8438d33e296fc2f83f8d01cad",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/server.py"
+    },
+    {
+      "sha256": "fc9868a935b90a1658192a1717f6a4b425865c8ecea8cd2e6bd1c78ed57bfcf7",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/transmitters.py"
+    },
+    {
+      "sha256": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/validate.py"
+    },
+    {
+      "sha256": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom/validate_bci.py"
+    },
+    {
+      "sha256": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/__init__.py"
+    },
+    {
+      "sha256": "913242d888884d241b41bd18bf0c3d76e71c4b6ea1dbab97d6637b01c57285d3",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/analyze.py"
+    },
+    {
+      "sha256": "7810c6b993c700191283024079f64aa9e4c405b84789b428bb7858e790198a8e",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/benchmark.py"
+    },
+    {
+      "sha256": "4dac5c05804b2af355c7c982ec5680356ba24c633c22e7ac8207cf597b6e4e6e",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/brain.py"
+    },
+    {
+      "sha256": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/circuit.py"
+    },
+    {
+      "sha256": "3b499c2e9c42f24279910da2efbf29d7aa8004ecb5cb6e1e45bcc3a3786a5814",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/common.py"
+    },
+    {
+      "sha256": "9175d8ea1166e1f3fc38a71693069d225534d196fe90c69aee7724478d75028e",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/conditioning.py"
+    },
+    {
+      "sha256": "301ffcb3896dcc2cc9c8def93adfb1ec1e40285584e7a88eccbfdda61cbe02dd",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/controls.py"
+    },
+    {
+      "sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/kernel.cpp"
+    },
+    {
+      "sha256": "8adce8256738238692232b53aabd5eaf81f77d71629a685d9bcdebc272a0306e",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/run.py"
+    },
+    {
+      "sha256": "d3a2ec6e54aad0f73404f4484c9afeda878861bb09a0b222ef5b9d94561afad7",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/sweep.py"
+    },
+    {
+      "sha256": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+      "path": "outputs/doom-learning/exposure-correction/source-snapshot/doom_learning/vision.py"
+    },
+    {
+      "sha256": "ddc90355596a60a9573fd9cff3459452ee389b0c76fec4278e46c4066da3debd",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/batch-0-jobs-1-seed-81031.json"
+    },
+    {
+      "sha256": "b4ff98fcd66f013c97803d9fd39946dc3fd0bc59c3a78154ebb4698554802091",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/batch-0-jobs-1-seed-81032.json"
+    },
+    {
+      "sha256": "32a00c3e19363915c4ebf8b89045e1359506c0f31295544db7ec01ac0bb07ad0",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/batch-1-jobs-2-seed-81031.json"
+    },
+    {
+      "sha256": "627a6a887bbce2b39eb759db72b79cca7a3d8af487dfdb8a584d316203deb499",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/batch-1-jobs-2-seed-81032.json"
+    },
+    {
+      "sha256": "385ddee4f0095baadecc0ce696128792167329666d6ce12b71e9b98d7cb88270",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/batch-2-jobs-2-seed-81031.json"
+    },
+    {
+      "sha256": "07bfbea32b5e35dab15654f96ae19d940cf236886ede5e2fefff32a5518d6cfc",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/batch-2-jobs-2-seed-81032.json"
+    },
+    {
+      "sha256": "20a5abad250a40f136b38d579af3dfce7a2a42049d4bb854e240849d2f938a0c",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/batch-3-jobs-1-seed-81031.json"
+    },
+    {
+      "sha256": "92edd7f97ce98f52a710e444ec7dff5221be9fac976a08bda19dfb25d69fb994",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/batch-3-jobs-1-seed-81032.json"
+    },
+    {
+      "sha256": "b835f7e5aba584ed814d4037bd0ccde9325a34047783c5bbc4a06da9157938b6",
+      "path": "outputs/doom-learning/headless-benchmark-balanced/results.json"
+    },
+    {
+      "sha256": "739281f5e4b987870636f01addab5fc7ab363cd83523a2b5fedbe265430e8153",
+      "path": "outputs/doom-learning/headless-benchmark-initial/jobs-1-seed-81031.json"
+    },
+    {
+      "sha256": "b186cc5be55ce2dee42da13b8f3e01bfaf12c45709e3ee540aa4a133d5fb07e4",
+      "path": "outputs/doom-learning/headless-benchmark-initial/jobs-1-seed-81032.json"
+    },
+    {
+      "sha256": "be0f2de72f58fd9af2a56480fef8377521edbed22ab42200513710488a3cdd42",
+      "path": "outputs/doom-learning/headless-benchmark-initial/jobs-2-seed-81031.json"
+    },
+    {
+      "sha256": "6d8c0e03bd347d84a33dd019e053b64ea6c17e8ebde37e9805a82aa0bf509739",
+      "path": "outputs/doom-learning/headless-benchmark-initial/jobs-2-seed-81032.json"
+    },
+    {
+      "sha256": "81bbfa5dbc9660df243fa7bca7f95023c2e255d982de0296fb287db36c2d5099",
+      "path": "outputs/doom-learning/headless-benchmark-initial/results.json"
+    },
+    {
+      "sha256": "10e64322bb91cb7c3b568fb81a5c458686318b8a7920c62c863368ca96ae91f4",
+      "path": "outputs/doom-learning/libmemory.dylib.json"
+    },
+    {
+      "sha256": "1169e918def69b17f123e40f54dd6b43b7ddf2fb5cb77eb62659886297340fd4",
+      "path": "outputs/doom-learning/physiology-v2/conditioning.json"
+    },
+    {
+      "sha256": "e03f1177b4e5a006dc6848da1a8ef930352b0054ea09e5b691273da91eae3b66",
+      "path": "outputs/doom-learning/physiology-v2/libmemory.dylib.json"
+    },
+    {
+      "sha256": "206709bdecf047abe0cfa2968ec37be0636b8e2e13967caacffbaaee6b2b27b1",
+      "path": "outputs/doom-learning/physiology-v2/modulation-check.json"
+    },
+    {
+      "sha256": "303a8a91f45ac80f12a8808f626ead1f8c19cc333c36ae1bed3fa1b4743dda32",
+      "path": "outputs/doom-learning/physiology-v2/r8-sign-diagnostic.json"
+    },
+    {
+      "sha256": "b911d597c3a4c45715001f48c98446c997808b26cad0ff2d1708d838110b73ac",
+      "path": "outputs/doom-learning/physiology-v2/rgb-vision.json"
+    },
+    {
+      "sha256": "2b13bc07c1f92ce86a40189c122204fdcb6882c78e93e2e12aefa4ca850b342d",
+      "path": "outputs/doom-learning/physiology-v2/source-manifest.json"
+    },
+    {
+      "sha256": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/__init__.py"
+    },
+    {
+      "sha256": "97db9ca40fc27413910ea61c9ca40f3f5ebe242246dedf46cbd6e891d61fce26",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/analyze_observation.py"
+    },
+    {
+      "sha256": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/audit_data.py"
+    },
+    {
+      "sha256": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/audit_experiments.py"
+    },
+    {
+      "sha256": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/audit_remote.py"
+    },
+    {
+      "sha256": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/audit_retina.py"
+    },
+    {
+      "sha256": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/build_kernel.py"
+    },
+    {
+      "sha256": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/engine.py"
+    },
+    {
+      "sha256": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/game.py"
+    },
+    {
+      "sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/kernel.cpp"
+    },
+    {
+      "sha256": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/native.py"
+    },
+    {
+      "sha256": "0989e64d1405cfef0894b0ed428323682e62fc4282b71e542b29c5d78d6940db",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/observe.py"
+    },
+    {
+      "sha256": "ef430bced2cf399491ea539b8f819b2dc3000e5b0c1656536ff74670f28831cc",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/observe_public.py"
+    },
+    {
+      "sha256": "d280740149c4006374989227f8ca2d9caca626344ea02c3c359387d19627c262",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/prepare.py"
+    },
+    {
+      "sha256": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/provenance.py"
+    },
+    {
+      "sha256": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/reward.py"
+    },
+    {
+      "sha256": "db2c5f3e10b6abf90e7e3f19ed198d4a407333c8438d33e296fc2f83f8d01cad",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/server.py"
+    },
+    {
+      "sha256": "fc9868a935b90a1658192a1717f6a4b425865c8ecea8cd2e6bd1c78ed57bfcf7",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/transmitters.py"
+    },
+    {
+      "sha256": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/validate.py"
+    },
+    {
+      "sha256": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom/validate_bci.py"
+    },
+    {
+      "sha256": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/__init__.py"
+    },
+    {
+      "sha256": "c68a51b59791eda4241e0eca2aef9f3023c406529de577091225a22e9ae0bd57",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/analyze.py"
+    },
+    {
+      "sha256": "7810c6b993c700191283024079f64aa9e4c405b84789b428bb7858e790198a8e",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/benchmark.py"
+    },
+    {
+      "sha256": "99bef17182f44c1647a1f02d591a4f66dbe8f9f5ed78e10145d0a9e53c4d6604",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/brain.py"
+    },
+    {
+      "sha256": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/circuit.py"
+    },
+    {
+      "sha256": "3b499c2e9c42f24279910da2efbf29d7aa8004ecb5cb6e1e45bcc3a3786a5814",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/common.py"
+    },
+    {
+      "sha256": "9175d8ea1166e1f3fc38a71693069d225534d196fe90c69aee7724478d75028e",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/conditioning.py"
+    },
+    {
+      "sha256": "301ffcb3896dcc2cc9c8def93adfb1ec1e40285584e7a88eccbfdda61cbe02dd",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/controls.py"
+    },
+    {
+      "sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/kernel.cpp"
+    },
+    {
+      "sha256": "72b1304053ae8a03b55a719497003b640bb6ed76ad6c257b3c0cd6edf8c9661a",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/run.py"
+    },
+    {
+      "sha256": "d3a2ec6e54aad0f73404f4484c9afeda878861bb09a0b222ef5b9d94561afad7",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/sweep.py"
+    },
+    {
+      "sha256": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning/vision.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning_v2/__init__.py"
+    },
+    {
+      "sha256": "8ee11ad854bb316559508441d45a1e185a153b64a634274578666eda84295625",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning_v2/brain.py"
+    },
+    {
+      "sha256": "8a95e79cabbad3ecc3f0ddffc42685dcd56d2356cec76c6ce55e199e10964709",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning_v2/conditioning.py"
+    },
+    {
+      "sha256": "f1cca01b570f7445295c1d631cdaa108e16d268d39e5bfaeaf4dee7344114f37",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning_v2/kernel.cpp"
+    },
+    {
+      "sha256": "33e17caf56f270c68ece9654ce5ab8ce6f7fed81c402ff087b187eb03ab7a949",
+      "path": "outputs/doom-learning/physiology-v2/source-snapshot/doom_learning_v2/visual.py"
+    },
+    {
+      "sha256": "cb51c183f077d291c9477437e8853c17073fb32cff39b0b9b9cfda2ecc238f8d",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/0-backward.json"
+    },
+    {
+      "sha256": "94761143fbd668f2bc5fff16b8f0001c1c1361ad42a4062097460c55139ad217",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/0-frozen.json"
+    },
+    {
+      "sha256": "c94dd55813b2d11f11e27c8bcdd8fac8861527e7dd5e7dc00c1abcfdb5bd29dc",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/0-no_imposed_US.json"
+    },
+    {
+      "sha256": "9e50bc86333d51a5d7c228dc61874c6befbf91a2942e7764a340d2f5f15e5d9f",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/0-paired.json"
+    },
+    {
+      "sha256": "896155959f88760732c933f2ca78c045db062ccb3ecfc5f401850d4b3b1a5dd5",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/1-backward.json"
+    },
+    {
+      "sha256": "4f280d47f19ee78a47f6744f421d575edad7c388a3bc6118cdeb8056760db8b2",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/1-frozen.json"
+    },
+    {
+      "sha256": "96c5adc488d2721b6f51f26efc2d6c54f9048d257ad1a53503ac480512a45a28",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/1-no_imposed_US.json"
+    },
+    {
+      "sha256": "4857c8573a8bb5e0454dac68bf67ee73134befbb26403923f600873dc8ce32ee",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/1-paired.json"
+    },
+    {
+      "sha256": "789572bbc66eb5bf86b5b0e3e141e998c819115f18181fd2346b7421f362b724",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/protocol.json"
+    },
+    {
+      "sha256": "a077787396f929c2741aaf22129c3341720901f3cd87d2911ae9f8c3aed1288a",
+      "path": "outputs/doom-learning/physiology-v2/spatial-conditioning/results.json"
+    },
+    {
+      "sha256": "42e5fb8d2e2137c68924b78a846b86cdcf139a314e46382423d4446a26784d62",
+      "path": "outputs/doom-learning/physiology-v2/tonic-calibration.json"
+    },
+    {
+      "sha256": "292120ef7b3555a2ffd16076ef7a3a4859af5b0808399dd7dab4a15d68b72f97",
+      "path": "outputs/doom-learning/physiology-v2/tonic-fit.json"
+    },
+    {
+      "sha256": "62f02e6b4c66083dca2fef7531ada7cb43861efd56cac798d92c2f2868c3fa77",
+      "path": "outputs/doom-learning/physiology-v2/warmup-check.json"
+    },
+    {
+      "sha256": "e91a093079a5b1b4987d968a529c53f9d1a6be23daa3242c4257a55201e21d21",
+      "path": "outputs/doom-learning/physiology-v3/conditioning.json"
+    },
+    {
+      "sha256": "c8fe7a5bd16aafd063fd60047e89a72a910979d1f3ba55f831a51592930b00fa",
+      "path": "outputs/doom-learning/physiology-v3/libmemory.dylib.json"
+    },
+    {
+      "sha256": "3d8483f3ea7e815ed9e061cf24403c706e9739bb91dfc9ae55e456401b938b78",
+      "path": "outputs/doom-learning/physiology-v3/plasticity-amplitude-sensitivity.json"
+    },
+    {
+      "sha256": "819bb6a26ce9cb099453fa2850c4c909a7c6de3e6d4c9cab83b5e714f8bb5107",
+      "path": "outputs/doom-learning/physiology-v3/rgb-vision-reproducible.json"
+    },
+    {
+      "sha256": "1078e43344c9a5626cfb84485ca5232c366d06d1cf1d0c6c4139bd10f155fd4a",
+      "path": "outputs/doom-learning/physiology-v4/libmemory.dylib.json"
+    },
+    {
+      "sha256": "b98fa2ac1ca76249515a337a38b70a72ddaef2e1e3897de97070cac66a6ebbcd",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/0-backward.json"
+    },
+    {
+      "sha256": "3e81be019561978b759cc0e0f21f76b876679d6e402bc80f192c39bebc933183",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/0-frozen.json"
+    },
+    {
+      "sha256": "94729528c8fb21a456f22e337c2591501d415df4feadb70e3b24c13dff6f5f4d",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/0-no_imposed_US.json"
+    },
+    {
+      "sha256": "ab15b77dcaed0ae6e4c46d21f7eac491636f5f6dda7a1522b0b0e085aae23a15",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/0-paired.json"
+    },
+    {
+      "sha256": "a68ef6fa3cf4791b1a0438dbce4e725eba7f701774bde9ba260dfe17ed974d7a",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/1-backward.json"
+    },
+    {
+      "sha256": "4f72da9753f0c88beca601bc6ed1e6bc9d947433a1b466d48dee77a95e0d3590",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/1-frozen.json"
+    },
+    {
+      "sha256": "b60d0aaff613753e4544d0a2772fe0473cfbef4d6fb5ebf85382d2eb0035d379",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/1-no_imposed_US.json"
+    },
+    {
+      "sha256": "0e932b4f6bb679ea8ee8d92528ee1457f4a698d575784fab3df81d9df0b0bb78",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/1-paired.json"
+    },
+    {
+      "sha256": "98fc7b149d441dedb7dab4cbac6c27c8a57b9af5a11133a16701832782219521",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/protocol.json"
+    },
+    {
+      "sha256": "2ad27fc72cc57c697a4fb5193569975b8bf75301425738b587655a72f0b210d2",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/results.json"
+    },
+    {
+      "sha256": "a721c9e220bcd4793430fc73100dc656665be8cb5610e782f651267773d13d4c",
+      "path": "outputs/doom-learning/physiology-v4/rgb-conditioning/source-snapshot/doom_learning_v4/rgb_conditioning.py"
+    },
+    {
+      "sha256": "f31e8c63b9d94640a6920db6e23fc1e49f432de77d559ba7e1346016d02a72c0",
+      "path": "outputs/doom-learning/physiology-v4/rgb-vision-reproducible.json"
+    },
+    {
+      "sha256": "759ce80f23b1a22da1739d7886e5f0697e243d66f4d5d7aef1dd48a8ab812b1b",
+      "path": "outputs/doom-learning/physiology-v4/white-recruitment.json"
+    },
+    {
+      "sha256": "e272f49d6d60b5906fc73a8f0771c9daa965eb93a9dbfe9c53aab712be569796",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/0-backward.json"
+    },
+    {
+      "sha256": "55accba5e6d79edeac2c4041453aa223ea704502559d7f6e0b7079ebdb327794",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/0-frozen.json"
+    },
+    {
+      "sha256": "dc1420c172ef3a262278b0583e19d82ae7aa1d887406f3e53ad4e97dc8cc3cbd",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/0-no_imposed_US.json"
+    },
+    {
+      "sha256": "7c9444c2cd859308a3819db620fa066ba2186b6d04fcaec134e63461eb722dd4",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/0-paired.json"
+    },
+    {
+      "sha256": "6d4b3d40fe32e86342cbc2d17dbcac84b15fef08504e04974856405a109e6dfc",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/1-backward.json"
+    },
+    {
+      "sha256": "0317975009a18ede61ec7228cac92b05f64beefa6c328045be22fddf8ead7e6e",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/1-frozen.json"
+    },
+    {
+      "sha256": "6f0a52e385db66c82b2bc7c955d83c67a33dbab35ec58a260096a50a2f5fded5",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/1-no_imposed_US.json"
+    },
+    {
+      "sha256": "48a1ff750fa2308d912a3ab86d8dae2ab7eabdcb89020ea801fe0d875fd6d9de",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/1-paired.json"
+    },
+    {
+      "sha256": "b7d7791758bdc06afbef3a8c76074391a266296b877039453d7b0407eddef4a4",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/calibration.json"
+    },
+    {
+      "sha256": "d2b87aac46aa34464468a679e51318a05992cf2f320a3f25e954716809cbba4b",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/progress.json"
+    },
+    {
+      "sha256": "39cede2c65bfcb0391c17edd18d712edeb02868a392460fa81bfc6dcde492c29",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/protocol.json"
+    },
+    {
+      "sha256": "4a429b196455f0eccaf593d4b83584535c8f3c85062ca50b747d7c8fa4e332a0",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/provenance.json"
+    },
+    {
+      "sha256": "24f69611634e6f73628d3ba5b557956850ced858d3b9c9e59e644a03f1041e4d",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/results.json"
+    },
+    {
+      "sha256": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/__init__.py"
+    },
+    {
+      "sha256": "97db9ca40fc27413910ea61c9ca40f3f5ebe242246dedf46cbd6e891d61fce26",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/analyze_observation.py"
+    },
+    {
+      "sha256": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/audit_data.py"
+    },
+    {
+      "sha256": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/audit_experiments.py"
+    },
+    {
+      "sha256": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/audit_remote.py"
+    },
+    {
+      "sha256": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/audit_retina.py"
+    },
+    {
+      "sha256": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/build_kernel.py"
+    },
+    {
+      "sha256": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/engine.py"
+    },
+    {
+      "sha256": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/game.py"
+    },
+    {
+      "sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/kernel.cpp"
+    },
+    {
+      "sha256": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/native.py"
+    },
+    {
+      "sha256": "0989e64d1405cfef0894b0ed428323682e62fc4282b71e542b29c5d78d6940db",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/observe.py"
+    },
+    {
+      "sha256": "ef430bced2cf399491ea539b8f819b2dc3000e5b0c1656536ff74670f28831cc",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/observe_public.py"
+    },
+    {
+      "sha256": "d280740149c4006374989227f8ca2d9caca626344ea02c3c359387d19627c262",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/prepare.py"
+    },
+    {
+      "sha256": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/provenance.py"
+    },
+    {
+      "sha256": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/reward.py"
+    },
+    {
+      "sha256": "db2c5f3e10b6abf90e7e3f19ed198d4a407333c8438d33e296fc2f83f8d01cad",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/server.py"
+    },
+    {
+      "sha256": "fc9868a935b90a1658192a1717f6a4b425865c8ecea8cd2e6bd1c78ed57bfcf7",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/transmitters.py"
+    },
+    {
+      "sha256": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/validate.py"
+    },
+    {
+      "sha256": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom/validate_bci.py"
+    },
+    {
+      "sha256": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/__init__.py"
+    },
+    {
+      "sha256": "c68a51b59791eda4241e0eca2aef9f3023c406529de577091225a22e9ae0bd57",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/analyze.py"
+    },
+    {
+      "sha256": "7810c6b993c700191283024079f64aa9e4c405b84789b428bb7858e790198a8e",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/benchmark.py"
+    },
+    {
+      "sha256": "99bef17182f44c1647a1f02d591a4f66dbe8f9f5ed78e10145d0a9e53c4d6604",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/brain.py"
+    },
+    {
+      "sha256": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/circuit.py"
+    },
+    {
+      "sha256": "afb7564f452868d45ad3410e1c429b8edb1c4781f33ca23bd0b1c12e1ed99768",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/common.py"
+    },
+    {
+      "sha256": "9175d8ea1166e1f3fc38a71693069d225534d196fe90c69aee7724478d75028e",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/conditioning.py"
+    },
+    {
+      "sha256": "301ffcb3896dcc2cc9c8def93adfb1ec1e40285584e7a88eccbfdda61cbe02dd",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/controls.py"
+    },
+    {
+      "sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/kernel.cpp"
+    },
+    {
+      "sha256": "72b1304053ae8a03b55a719497003b640bb6ed76ad6c257b3c0cd6edf8c9661a",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/run.py"
+    },
+    {
+      "sha256": "d3a2ec6e54aad0f73404f4484c9afeda878861bb09a0b222ef5b9d94561afad7",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/sweep.py"
+    },
+    {
+      "sha256": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning/vision.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v2/__init__.py"
+    },
+    {
+      "sha256": "8ee11ad854bb316559508441d45a1e185a153b64a634274578666eda84295625",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v2/brain.py"
+    },
+    {
+      "sha256": "8a95e79cabbad3ecc3f0ddffc42685dcd56d2356cec76c6ce55e199e10964709",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v2/conditioning.py"
+    },
+    {
+      "sha256": "f1cca01b570f7445295c1d631cdaa108e16d268d39e5bfaeaf4dee7344114f37",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v2/kernel.cpp"
+    },
+    {
+      "sha256": "20279cdc14352b23fcbb76db2ee4bdebcc26394bccc04a1ad5fcedc5e3accdeb",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v2/vision.py"
+    },
+    {
+      "sha256": "e05fb24ac79c3870fb7df26938d0bff00409312d1083ec5755d026ac1490e7ea",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v2/visual.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v5/__init__.py"
+    },
+    {
+      "sha256": "74d283704d522ace5c3965b6267e5ec68e2a7119ade0c52993bd9be1b8c94d9e",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v5/brain.py"
+    },
+    {
+      "sha256": "a62951dc94ebf395933f656a002cf3765cae493bfe0337aea158b45d2487e5b6",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v5/calibration.py"
+    },
+    {
+      "sha256": "adf31770237fdf8b27b60dbcf1f94f570f12fe7cad01c85012cfd9652038065b",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v5/conditioning.py"
+    },
+    {
+      "sha256": "f1cca01b570f7445295c1d631cdaa108e16d268d39e5bfaeaf4dee7344114f37",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v5/kernel.cpp"
+    },
+    {
+      "sha256": "0df2ae1bf10b97a213064b3ac3934227539d08e51521a99cdb56fe7f5b44b725",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v5/rule.py"
+    },
+    {
+      "sha256": "788c06afd646528b0f5a9d3a8daa6838278709a15f1a90159b2ed4f9e6531c88",
+      "path": "outputs/doom-learning/physiology-v5/conditioning/source-snapshot/doom_learning_v5/visual.py"
+    },
+    {
+      "sha256": "2871b4701c7187a4562487f9b021132673e9abe53106e0a854b89b7089f7c6ca",
+      "path": "outputs/doom-learning/physiology-v5/libmemory.dylib.json"
+    },
+    {
+      "sha256": "d161cb1ee1de241759787a1df1b4b209ce57fb2db6ae8a6d76a5bab654c37f7f",
+      "path": "outputs/doom-learning/physiology-v5/reinforcement-calibration.json"
+    },
+    {
+      "sha256": "3490dc3a76eef8bc3d86c275e9c4b2cdbfb988f313f26ffed7bb243aa5d134c7",
+      "path": "outputs/doom-learning/physiology-v6/libmemory.dylib.json"
+    },
+    {
+      "sha256": "96abc1db3a3e47a9676afb09606b6c315d87e4f35d2d9354060442c346ab07d9",
+      "path": "outputs/doom-learning/physiology-v6/stability/black.json"
+    },
+    {
+      "sha256": "60466ff2d11af29a47bf6b4eb3d73ba5e1df21e3959cdd1d499e0c27b1623325",
+      "path": "outputs/doom-learning/physiology-v6/stability/left_blue.json"
+    },
+    {
+      "sha256": "24a02bb9693675742eafd2c87de9140e6af3141cd9581eaaef87966a085a037c",
+      "path": "outputs/doom-learning/physiology-v6/stability/protocol.json"
+    },
+    {
+      "sha256": "008a2bbb7f7782af9cc1112a2d6b6db1c0e03e42a3a3b8db1651d15440914345",
+      "path": "outputs/doom-learning/physiology-v6/stability/provenance.json"
+    },
+    {
+      "sha256": "193e5432bee99dd2b95739c01706ed9acde88e80c57f29fe98ec381e1412123d",
+      "path": "outputs/doom-learning/physiology-v6/stability/results.json"
+    },
+    {
+      "sha256": "89cdd5495a06400be8d6bb705a71be36db42ef380f246a50d063c7a93aa8a315",
+      "path": "outputs/doom-learning/physiology-v6/stability/right_blue.json"
+    },
+    {
+      "sha256": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/__init__.py"
+    },
+    {
+      "sha256": "97db9ca40fc27413910ea61c9ca40f3f5ebe242246dedf46cbd6e891d61fce26",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/analyze_observation.py"
+    },
+    {
+      "sha256": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/audit_data.py"
+    },
+    {
+      "sha256": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/audit_experiments.py"
+    },
+    {
+      "sha256": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/audit_remote.py"
+    },
+    {
+      "sha256": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/audit_retina.py"
+    },
+    {
+      "sha256": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/build_kernel.py"
+    },
+    {
+      "sha256": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/engine.py"
+    },
+    {
+      "sha256": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/game.py"
+    },
+    {
+      "sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/kernel.cpp"
+    },
+    {
+      "sha256": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/native.py"
+    },
+    {
+      "sha256": "0989e64d1405cfef0894b0ed428323682e62fc4282b71e542b29c5d78d6940db",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/observe.py"
+    },
+    {
+      "sha256": "ef430bced2cf399491ea539b8f819b2dc3000e5b0c1656536ff74670f28831cc",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/observe_public.py"
+    },
+    {
+      "sha256": "d280740149c4006374989227f8ca2d9caca626344ea02c3c359387d19627c262",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/prepare.py"
+    },
+    {
+      "sha256": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/provenance.py"
+    },
+    {
+      "sha256": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/reward.py"
+    },
+    {
+      "sha256": "db2c5f3e10b6abf90e7e3f19ed198d4a407333c8438d33e296fc2f83f8d01cad",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/server.py"
+    },
+    {
+      "sha256": "fc9868a935b90a1658192a1717f6a4b425865c8ecea8cd2e6bd1c78ed57bfcf7",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/transmitters.py"
+    },
+    {
+      "sha256": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/validate.py"
+    },
+    {
+      "sha256": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom/validate_bci.py"
+    },
+    {
+      "sha256": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/__init__.py"
+    },
+    {
+      "sha256": "c68a51b59791eda4241e0eca2aef9f3023c406529de577091225a22e9ae0bd57",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/analyze.py"
+    },
+    {
+      "sha256": "7810c6b993c700191283024079f64aa9e4c405b84789b428bb7858e790198a8e",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/benchmark.py"
+    },
+    {
+      "sha256": "99bef17182f44c1647a1f02d591a4f66dbe8f9f5ed78e10145d0a9e53c4d6604",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/brain.py"
+    },
+    {
+      "sha256": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/circuit.py"
+    },
+    {
+      "sha256": "afb7564f452868d45ad3410e1c429b8edb1c4781f33ca23bd0b1c12e1ed99768",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/common.py"
+    },
+    {
+      "sha256": "9175d8ea1166e1f3fc38a71693069d225534d196fe90c69aee7724478d75028e",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/conditioning.py"
+    },
+    {
+      "sha256": "301ffcb3896dcc2cc9c8def93adfb1ec1e40285584e7a88eccbfdda61cbe02dd",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/controls.py"
+    },
+    {
+      "sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/kernel.cpp"
+    },
+    {
+      "sha256": "72b1304053ae8a03b55a719497003b640bb6ed76ad6c257b3c0cd6edf8c9661a",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/run.py"
+    },
+    {
+      "sha256": "8eec7594986c846ce5c259eb950ab32e4d3377d840408f753f247a4f62a33eec",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/survival_arena.py"
+    },
+    {
+      "sha256": "d3a2ec6e54aad0f73404f4484c9afeda878861bb09a0b222ef5b9d94561afad7",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/sweep.py"
+    },
+    {
+      "sha256": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning/vision.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v2/__init__.py"
+    },
+    {
+      "sha256": "8ee11ad854bb316559508441d45a1e185a153b64a634274578666eda84295625",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v2/brain.py"
+    },
+    {
+      "sha256": "8a95e79cabbad3ecc3f0ddffc42685dcd56d2356cec76c6ce55e199e10964709",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v2/conditioning.py"
+    },
+    {
+      "sha256": "f1cca01b570f7445295c1d631cdaa108e16d268d39e5bfaeaf4dee7344114f37",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v2/kernel.cpp"
+    },
+    {
+      "sha256": "20279cdc14352b23fcbb76db2ee4bdebcc26394bccc04a1ad5fcedc5e3accdeb",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v2/vision.py"
+    },
+    {
+      "sha256": "e05fb24ac79c3870fb7df26938d0bff00409312d1083ec5755d026ac1490e7ea",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v2/visual.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v6/__init__.py"
+    },
+    {
+      "sha256": "0c6ef6e3f80edd076c05cfaaea0e14d36b0e439c597f9456b00387062484593f",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v6/brain.py"
+    },
+    {
+      "sha256": "a62951dc94ebf395933f656a002cf3765cae493bfe0337aea158b45d2487e5b6",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v6/calibration.py"
+    },
+    {
+      "sha256": "e2d4d584f4633613277bb1bf6ea7ba20855c01a332ae2e9344ed7782604c8509",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v6/kernel.cpp"
+    },
+    {
+      "sha256": "0df2ae1bf10b97a213064b3ac3934227539d08e51521a99cdb56fe7f5b44b725",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v6/rule.py"
+    },
+    {
+      "sha256": "8d6694ab570d49f9aaa952173e08e172c1375ada3e308a1cb896f2d3540181af",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v6/stability.py"
+    },
+    {
+      "sha256": "788c06afd646528b0f5a9d3a8daa6838278709a15f1a90159b2ed4f9e6531c88",
+      "path": "outputs/doom-learning/physiology-v6/stability/source-snapshot/doom_learning_v6/visual.py"
+    },
+    {
+      "sha256": "7059d73c90acf445da028ddfc212d83d417e7ea2c76fbef2be2caed78c6745d4",
+      "path": "outputs/doom-learning/physiology-v6/stability/white.json"
+    },
+    {
+      "sha256": "ecaf43b774cc7f25e692705a13b7bfce8098fe930fd8ca5d5fd08a3d9e5d6fe1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/arena.json"
+    },
+    {
+      "sha256": "fc9f5c26738b21ae0eda516b935430465eacdcd90b66045a0a9f043c367f8bc1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/arena.wad"
+    },
+    {
+      "sha256": "f064da07f88570e6674f2217804daf3cb9ca324dff0717b05c6188cd08654624",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/current.json"
+    },
+    {
+      "sha256": "d91290ff44b4ec40456e9461dda4f334da15912504e891485bd2d5014481ac54",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/episode.json"
+    },
+    {
+      "sha256": "eec4daeacaaa10cdafd68a958f3126b1e682199bf44fe1cb9af1f62951eef1bb",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/frames/00000.png"
+    },
+    {
+      "sha256": "8542b2404cafb06737ebbc7ceec8238bde053ca96977c21de428c2a63e19d822",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/frames/00035.png"
+    },
+    {
+      "sha256": "6e4964f8b7ac79bff04523271a6b750fe2546505c225081591492478ebc775c2",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/frames/00070.png"
+    },
+    {
+      "sha256": "9328c360f03f33490cc928bbdd3d3b54874b20f226b470dc736f622c9248d652",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/frames/00105.png"
+    },
+    {
+      "sha256": "5c4550548c6593178845fbd8cb16a394f0c45a6fdec79927498689fc651c0033",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/frames/00140.png"
+    },
+    {
+      "sha256": "6e98fd14a18fbb51e763f6d16beba14de90ff087dc8c48e4bf8109c31c61da96",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/frames/00175.png"
+    },
+    {
+      "sha256": "12687d2d993d6c4a27c60c485c76afa417552c7f0da1f27472e3382a2344f456",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/frames/00210.png"
+    },
+    {
+      "sha256": "f4bcad4156d30ad72bccd2598eb57efc04d66178cba64793e9d606202e1746e8",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61041/frames/00245.png"
+    },
+    {
+      "sha256": "45cfea565235fd80b91350b1b9c68e7b099e232ce4585eff0bd9f4d1d16ac365",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61042/arena.json"
+    },
+    {
+      "sha256": "7c4ee9aecdda52dd9f58f3162e512603d5023f97c635ed4ca43ecadb1cfe2fb1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61042/arena.wad"
+    },
+    {
+      "sha256": "205e62677968f90ab99f1e65eb2f1d3ec4e6ce8b58aa7401cacb7644cd651c60",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61042/current.json"
+    },
+    {
+      "sha256": "9e29624a526ef8a4470e805f6105418d811d4eb3988dc21c82ed78d52241a1bc",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61042/episode.json"
+    },
+    {
+      "sha256": "6c6ae05d558f12fc67a14ca8b6f9f53452feb63bc9ca9c837eb2da61b4b48457",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61042/frames/00000.png"
+    },
+    {
+      "sha256": "a4ddbd151362957530cb8ff8ffd44a3de122db737efa849160d74f542cdbd23a",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61042/frames/00035.png"
+    },
+    {
+      "sha256": "1a52277e34c0d450a3e894a69c560e3468115908dd7f431fb17c9c6636dd4719",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61042/frames/00070.png"
+    },
+    {
+      "sha256": "282c44fead839432c37b1c8f4c1e95e88baed41c3d7b69c5952ffc312f509bcd",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/test-61042/frames/00105.png"
+    },
+    {
+      "sha256": "13b44248214ca4cef7c1b7815c3cfac95c8f140d534395259f765b9947a2e73d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/train-0/arena.json"
+    },
+    {
+      "sha256": "36654d53b815cf30999b9ecc99e79f35527c3c6f90d3069aefb6e5e055424aab",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/train-0/arena.wad"
+    },
+    {
+      "sha256": "39070c3f29009ffd752af7c005bf43a71be6147260f0e061453fc0b1b6274346",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/train-0/current.json"
+    },
+    {
+      "sha256": "252ff2f758462898478f46c2c005d9563b79624c97c3e6085e0d1fc07fcedc01",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/train-0/episode.json"
+    },
+    {
+      "sha256": "37beeea6761090adfdf7ba85b6c3a493f6737941afe2b2a6d1ea93ff580f924b",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/train-0/frames/00000.png"
+    },
+    {
+      "sha256": "28bcd9dd4a43ba34634385aeb447ac96611b7203403b4001d6a9a954011178fe",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/train-0/frames/00035.png"
+    },
+    {
+      "sha256": "07a6747eda32f52cf10937162c7f357057e66e88e2b53b4dd3c0f1768b5d8a03",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/train-0/frames/00070.png"
+    },
+    {
+      "sha256": "eb306435c961b17e4ea4a3f180a557271daf601692c3b9ace7a9c970164f047c",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-frozen/train-0/frames/00105.png"
+    },
+    {
+      "sha256": "ecaf43b774cc7f25e692705a13b7bfce8098fe930fd8ca5d5fd08a3d9e5d6fe1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/memory-erased/arena.json"
+    },
+    {
+      "sha256": "fc9f5c26738b21ae0eda516b935430465eacdcd90b66045a0a9f043c367f8bc1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/memory-erased/arena.wad"
+    },
+    {
+      "sha256": "f0afeb864fec6bdc8daadddf612a0d9a500f18239e557afa0ee32b05b02f9201",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/memory-erased/current.json"
+    },
+    {
+      "sha256": "a04b24bdd05d8289c991201689566a77d56f83780f859b132270c9bb7cf14682",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/memory-erased/episode.json"
+    },
+    {
+      "sha256": "ecaf43b774cc7f25e692705a13b7bfce8098fe930fd8ca5d5fd08a3d9e5d6fe1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/retention-5s/arena.json"
+    },
+    {
+      "sha256": "fc9f5c26738b21ae0eda516b935430465eacdcd90b66045a0a9f043c367f8bc1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/retention-5s/arena.wad"
+    },
+    {
+      "sha256": "7ebac18423762108fde301a21ad9cfa02a9e518bbdf7f8e39ad6fa641535998c",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/retention-5s/current.json"
+    },
+    {
+      "sha256": "4cbe6a51a8e8227aea75bd10123d4894817b1adebb2f730cb74384389b2565d0",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/retention-5s/episode.json"
+    },
+    {
+      "sha256": "ecaf43b774cc7f25e692705a13b7bfce8098fe930fd8ca5d5fd08a3d9e5d6fe1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61041/arena.json"
+    },
+    {
+      "sha256": "fc9f5c26738b21ae0eda516b935430465eacdcd90b66045a0a9f043c367f8bc1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61041/arena.wad"
+    },
+    {
+      "sha256": "be124bd15103b84ce77d5da87720edbdbc03687b7dcf56073a415b731e8b0b5b",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61041/current.json"
+    },
+    {
+      "sha256": "536f8cb8d1e5f5af7058c24e12cc851927cb34ce70ddabcbe385de0511cfd8d8",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61041/episode.json"
+    },
+    {
+      "sha256": "eec4daeacaaa10cdafd68a958f3126b1e682199bf44fe1cb9af1f62951eef1bb",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61041/frames/00000.png"
+    },
+    {
+      "sha256": "f9e0a7e8cfc2912a8b62c3932f7efcd1182ae918af042b1339588e936761d10f",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61041/frames/00035.png"
+    },
+    {
+      "sha256": "e02b7074dc6e4986056db40c23c9baeb39ca2929044802366546748e1203d71b",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61041/frames/00070.png"
+    },
+    {
+      "sha256": "1daf35eaa9c8eebf992bd34cd2fb50e7f675cb935dc4869f86b2187f0a28cc58",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61041/frames/00105.png"
+    },
+    {
+      "sha256": "45cfea565235fd80b91350b1b9c68e7b099e232ce4585eff0bd9f4d1d16ac365",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61042/arena.json"
+    },
+    {
+      "sha256": "7c4ee9aecdda52dd9f58f3162e512603d5023f97c635ed4ca43ecadb1cfe2fb1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61042/arena.wad"
+    },
+    {
+      "sha256": "32e4c938488dff517b6a2d943fd9211bd7aab9c82d7f3a2c4d5f3cd4b3d2f128",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61042/current.json"
+    },
+    {
+      "sha256": "8881c8e1256c9c2e035a83785849776a67d610bd12a2044ac9f6d7d001020042",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61042/episode.json"
+    },
+    {
+      "sha256": "6c6ae05d558f12fc67a14ca8b6f9f53452feb63bc9ca9c837eb2da61b4b48457",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61042/frames/00000.png"
+    },
+    {
+      "sha256": "146470c19ed67ad16a9fd258a5dbe6fdf1453b90e84218b69ba6a99838235577",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61042/frames/00035.png"
+    },
+    {
+      "sha256": "594528993a58436bc71c48fcf0107d90b45ba2e4ddab858e9aeeb437622af7e6",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61042/frames/00070.png"
+    },
+    {
+      "sha256": "25fcb76881392a65fb5eb921d1e674263c8986f5277e787dfb30089c4a7e912d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/test-61042/frames/00105.png"
+    },
+    {
+      "sha256": "13b44248214ca4cef7c1b7815c3cfac95c8f140d534395259f765b9947a2e73d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/train-0/arena.json"
+    },
+    {
+      "sha256": "36654d53b815cf30999b9ecc99e79f35527c3c6f90d3069aefb6e5e055424aab",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/train-0/arena.wad"
+    },
+    {
+      "sha256": "59f8a5e3076bcaec0361968277dbc431bc26767110b62227e2059084b5924f57",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/train-0/current.json"
+    },
+    {
+      "sha256": "afb85e0aeb57c2299c6aafb4bf13fbc9f76a3c2324a98603b5ece29682f44059",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/train-0/episode.json"
+    },
+    {
+      "sha256": "37beeea6761090adfdf7ba85b6c3a493f6737941afe2b2a6d1ea93ff580f924b",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/train-0/frames/00000.png"
+    },
+    {
+      "sha256": "6cbf257edcd2ce28b7400202fde9cfda5e08ce98698db47ae5d6bdfcf7231e3d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/train-0/frames/00035.png"
+    },
+    {
+      "sha256": "5c2b63e8e9b059c2157f4fa39d19d217944bd4e288fad69407bba8ad6bdff97a",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/train-0/frames/00070.png"
+    },
+    {
+      "sha256": "8a697f95c6cd5fac6837b81fa32388115e67a5188953f758cdfc5e1e102538ca",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/train-0/frames/00105.png"
+    },
+    {
+      "sha256": "ecaf43b774cc7f25e692705a13b7bfce8098fe930fd8ca5d5fd08a3d9e5d6fe1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/vision-black/arena.json"
+    },
+    {
+      "sha256": "fc9f5c26738b21ae0eda516b935430465eacdcd90b66045a0a9f043c367f8bc1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/vision-black/arena.wad"
+    },
+    {
+      "sha256": "07744ed979f52606507bdc1b0fa66c1b569b6fbf7d47f5453405393c5e0b99b2",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/vision-black/current.json"
+    },
+    {
+      "sha256": "a886381e80c8c55fec3ca0cc1ef142feffefa49c0a458f24a1c2096aa7961aed",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-plastic/vision-black/episode.json"
+    },
+    {
+      "sha256": "ecaf43b774cc7f25e692705a13b7bfce8098fe930fd8ca5d5fd08a3d9e5d6fe1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61041/arena.json"
+    },
+    {
+      "sha256": "fc9f5c26738b21ae0eda516b935430465eacdcd90b66045a0a9f043c367f8bc1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61041/arena.wad"
+    },
+    {
+      "sha256": "af285291c647d66c95e484a6fe505efa0325e1ce1fe003661b3bc8e5702ca08b",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61041/current.json"
+    },
+    {
+      "sha256": "c25e8fa1dd457a257eba2b759cd318870e8985449a2fbfce72aca95487b64b5c",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61041/episode.json"
+    },
+    {
+      "sha256": "eec4daeacaaa10cdafd68a958f3126b1e682199bf44fe1cb9af1f62951eef1bb",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61041/frames/00000.png"
+    },
+    {
+      "sha256": "f7b000460c2cd29558d7ae8382963b938a5d0757eb372f6d8f00482aa4b95b6e",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61041/frames/00035.png"
+    },
+    {
+      "sha256": "35bfaf882b7d72ced587d1cc04f28483ddeed9dd05989504d0b084c9b3b33296",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61041/frames/00070.png"
+    },
+    {
+      "sha256": "e29870a1386146d810dfaf2f27ec513884ea1e75c5f4eac02fd7e38920c7a9c0",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61041/frames/00105.png"
+    },
+    {
+      "sha256": "45cfea565235fd80b91350b1b9c68e7b099e232ce4585eff0bd9f4d1d16ac365",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61042/arena.json"
+    },
+    {
+      "sha256": "7c4ee9aecdda52dd9f58f3162e512603d5023f97c635ed4ca43ecadb1cfe2fb1",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61042/arena.wad"
+    },
+    {
+      "sha256": "7179b921b869fd6a581d10272f729a7724d61d0286d8001b0345e2f20996aa4b",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61042/current.json"
+    },
+    {
+      "sha256": "857974a4c2b0efb0cb42b1f7b2da9c0545dbdf17e93dbd5c7763223e928c59f7",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61042/episode.json"
+    },
+    {
+      "sha256": "6c6ae05d558f12fc67a14ca8b6f9f53452feb63bc9ca9c837eb2da61b4b48457",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61042/frames/00000.png"
+    },
+    {
+      "sha256": "a685e77c06756092e190d4078a845254b30fc334ba0811f542708cea38232437",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61042/frames/00035.png"
+    },
+    {
+      "sha256": "26751f8dc0ececb54ab3b648794abae3d839c3c3f1bf83c954c237eb407745ea",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61042/frames/00070.png"
+    },
+    {
+      "sha256": "8e28442f1542ba0ba7e057560c17b251ee00610599bf6257c635208c0f0adfcb",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/test-61042/frames/00105.png"
+    },
+    {
+      "sha256": "13b44248214ca4cef7c1b7815c3cfac95c8f140d534395259f765b9947a2e73d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/train-0/arena.json"
+    },
+    {
+      "sha256": "36654d53b815cf30999b9ecc99e79f35527c3c6f90d3069aefb6e5e055424aab",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/train-0/arena.wad"
+    },
+    {
+      "sha256": "a875c438853f58a24918361a363b088cc56aa758f2e677ed9240a28056daa9ed",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/train-0/current.json"
+    },
+    {
+      "sha256": "76a455a20f9011236c78a977e8e77f307ab027e41da00552a804bcb20289306d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/train-0/episode.json"
+    },
+    {
+      "sha256": "37beeea6761090adfdf7ba85b6c3a493f6737941afe2b2a6d1ea93ff580f924b",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/train-0/frames/00000.png"
+    },
+    {
+      "sha256": "b00099c5170f821ddb6ecac39a24c1de1718280df61531e03171ec8b21e6d666",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/train-0/frames/00035.png"
+    },
+    {
+      "sha256": "1268916ba8987c93aadc44b39337f18d8770758dce26cc0cce1a692bf7ff7337",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/train-0/frames/00070.png"
+    },
+    {
+      "sha256": "f035e56d370233d38d40b456758a6b5c0b7728e880bc19fad9e6deb404e693e5",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/41041-shuffled/train-0/frames/00105.png"
+    },
+    {
+      "sha256": "e5b10e58e23008b23c4b9c3fccc49d0626c0e728c06ddb3c6fea32f74f88b384",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/analysis.json"
+    },
+    {
+      "sha256": "7a2a00473c4d4bd69f32caee3cbe000d4980b586f01945f7d74f4757daaaac83",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/circuit.json"
+    },
+    {
+      "sha256": "e2557161aaac7011dc3d7f9b65a3773ed5c6fa92ba0bcbbbdf307e592352a441",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/progress.json"
+    },
+    {
+      "sha256": "e7516d4c6c5e15a59d1fc9bf8203e3168c20776ce89a45c8d0bbc9754c88af54",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/protocol.json"
+    },
+    {
+      "sha256": "9cd64da55276c574e120eb9fe2ad3990467ee1a864444d30f78ae075c34ca10d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/provenance.json"
+    },
+    {
+      "sha256": "44c5f32bc606ad110a87bd5dd86364b7ffd634b2dbba269bc9bce9dcb6811538",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/results.json"
+    },
+    {
+      "sha256": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/__init__.py"
+    },
+    {
+      "sha256": "97db9ca40fc27413910ea61c9ca40f3f5ebe242246dedf46cbd6e891d61fce26",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/analyze_observation.py"
+    },
+    {
+      "sha256": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/audit_data.py"
+    },
+    {
+      "sha256": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/audit_experiments.py"
+    },
+    {
+      "sha256": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/audit_remote.py"
+    },
+    {
+      "sha256": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/audit_retina.py"
+    },
+    {
+      "sha256": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/build_kernel.py"
+    },
+    {
+      "sha256": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/engine.py"
+    },
+    {
+      "sha256": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/game.py"
+    },
+    {
+      "sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/kernel.cpp"
+    },
+    {
+      "sha256": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/native.py"
+    },
+    {
+      "sha256": "0989e64d1405cfef0894b0ed428323682e62fc4282b71e542b29c5d78d6940db",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/observe.py"
+    },
+    {
+      "sha256": "ef430bced2cf399491ea539b8f819b2dc3000e5b0c1656536ff74670f28831cc",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/observe_public.py"
+    },
+    {
+      "sha256": "d280740149c4006374989227f8ca2d9caca626344ea02c3c359387d19627c262",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/prepare.py"
+    },
+    {
+      "sha256": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/provenance.py"
+    },
+    {
+      "sha256": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/reward.py"
+    },
+    {
+      "sha256": "db2c5f3e10b6abf90e7e3f19ed198d4a407333c8438d33e296fc2f83f8d01cad",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/server.py"
+    },
+    {
+      "sha256": "fc9868a935b90a1658192a1717f6a4b425865c8ecea8cd2e6bd1c78ed57bfcf7",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/transmitters.py"
+    },
+    {
+      "sha256": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/validate.py"
+    },
+    {
+      "sha256": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom/validate_bci.py"
+    },
+    {
+      "sha256": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/__init__.py"
+    },
+    {
+      "sha256": "c68a51b59791eda4241e0eca2aef9f3023c406529de577091225a22e9ae0bd57",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/analyze.py"
+    },
+    {
+      "sha256": "7810c6b993c700191283024079f64aa9e4c405b84789b428bb7858e790198a8e",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/benchmark.py"
+    },
+    {
+      "sha256": "99bef17182f44c1647a1f02d591a4f66dbe8f9f5ed78e10145d0a9e53c4d6604",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/brain.py"
+    },
+    {
+      "sha256": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/circuit.py"
+    },
+    {
+      "sha256": "afb7564f452868d45ad3410e1c429b8edb1c4781f33ca23bd0b1c12e1ed99768",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/common.py"
+    },
+    {
+      "sha256": "9175d8ea1166e1f3fc38a71693069d225534d196fe90c69aee7724478d75028e",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/conditioning.py"
+    },
+    {
+      "sha256": "301ffcb3896dcc2cc9c8def93adfb1ec1e40285584e7a88eccbfdda61cbe02dd",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/controls.py"
+    },
+    {
+      "sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/kernel.cpp"
+    },
+    {
+      "sha256": "72b1304053ae8a03b55a719497003b640bb6ed76ad6c257b3c0cd6edf8c9661a",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/run.py"
+    },
+    {
+      "sha256": "8eec7594986c846ce5c259eb950ab32e4d3377d840408f753f247a4f62a33eec",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/survival_arena.py"
+    },
+    {
+      "sha256": "d3a2ec6e54aad0f73404f4484c9afeda878861bb09a0b222ef5b9d94561afad7",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/sweep.py"
+    },
+    {
+      "sha256": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning/vision.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v2/__init__.py"
+    },
+    {
+      "sha256": "8ee11ad854bb316559508441d45a1e185a153b64a634274578666eda84295625",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v2/brain.py"
+    },
+    {
+      "sha256": "8a95e79cabbad3ecc3f0ddffc42685dcd56d2356cec76c6ce55e199e10964709",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v2/conditioning.py"
+    },
+    {
+      "sha256": "f1cca01b570f7445295c1d631cdaa108e16d268d39e5bfaeaf4dee7344114f37",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v2/kernel.cpp"
+    },
+    {
+      "sha256": "20279cdc14352b23fcbb76db2ee4bdebcc26394bccc04a1ad5fcedc5e3accdeb",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v2/vision.py"
+    },
+    {
+      "sha256": "e05fb24ac79c3870fb7df26938d0bff00409312d1083ec5755d026ac1490e7ea",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v2/visual.py"
+    },
+    {
+      "sha256": "81761cced1f9167f5f85509e8473fa234a9727af7358a2b7f44722dce3604de0",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v6/__init__.py"
+    },
+    {
+      "sha256": "0c6ef6e3f80edd076c05cfaaea0e14d36b0e439c597f9456b00387062484593f",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v6/brain.py"
+    },
+    {
+      "sha256": "a62951dc94ebf395933f656a002cf3765cae493bfe0337aea158b45d2487e5b6",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v6/calibration.py"
+    },
+    {
+      "sha256": "e2d4d584f4633613277bb1bf6ea7ba20855c01a332ae2e9344ed7782604c8509",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v6/kernel.cpp"
+    },
+    {
+      "sha256": "0df2ae1bf10b97a213064b3ac3934227539d08e51521a99cdb56fe7f5b44b725",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v6/rule.py"
+    },
+    {
+      "sha256": "8d6694ab570d49f9aaa952173e08e172c1375ada3e308a1cb896f2d3540181af",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v6/stability.py"
+    },
+    {
+      "sha256": "21339bbc71ea32622c00c5fccaa9767523064940c33b0e40befbea250d17637f",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v6/survival.py"
+    },
+    {
+      "sha256": "788c06afd646528b0f5a9d3a8daa6838278709a15f1a90159b2ed4f9e6531c88",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/source-snapshot/doom_learning_v6/visual.py"
+    },
+    {
+      "sha256": "b7962d9aca91bf2c54f94cee41e20cf05f57c9185634533abfabaf7a6773361e",
+      "path": "outputs/doom-learning/physiology-v6/survival-pilot/visual.json"
+    },
+    {
+      "sha256": "5d29efabcea16ae156f7cc8690568a6d45b3c0e3eea7597b4e9c487ab5a5b640",
+      "path": "outputs/doom-learning/publication-v12.json"
+    },
+    {
+      "sha256": "9df245fab509dbaa9261282f187d59e16e9b0f034b2d9464abcaca10262aba62",
+      "path": "outputs/doom-learning/report.json"
+    },
+    {
+      "sha256": "ff093112c8b4757c3439523d56a97fd0a977ca3d521fd9e2815a98d56a80274d",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-frozen/eval-92031.json"
+    },
+    {
+      "sha256": "60f343ef06b3d6ac299d60069120ccf6906d26c2ad41b8ee7335077f27f857db",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-frozen/train-1.json"
+    },
+    {
+      "sha256": "170a163f5a09e60e8516739c3f4d01b11e120834fd5659c19e410bd0099c96b5",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-frozen/training-1/current.json"
+    },
+    {
+      "sha256": "f8eb275be567fbd718ba1017eb0baf1fd74d9b944efef310c1794ebb2f032a8e",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-frozen/training-1/frames/000000.png"
+    },
+    {
+      "sha256": "0182f298a19a418587a633c814277c1c2b8580830d78ef33ce3d98bdbf0e6ac3",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-plastic/eval-92031.json"
+    },
+    {
+      "sha256": "89f287bbc8ecd797ed34680e56770c625bde2bdb10d11641d6728b2b5fcbdc86",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-plastic/reset-memory.json"
+    },
+    {
+      "sha256": "aa2f46341e16d82035cce4c949b8c6c4e5f1dcef56ed4fed61d27a73d81b3349",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-plastic/retention.json"
+    },
+    {
+      "sha256": "fdd5e16522b9b9efec545f175a799dbc709f08b506a1c80c1a7c6909749c0aa0",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-plastic/train-1.json"
+    },
+    {
+      "sha256": "fd0c06d724cb32e8ae6d61408784d58e87161597c8e0d2eaeefc9ae5014a9406",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-plastic/training-1/current.json"
+    },
+    {
+      "sha256": "f8eb275be567fbd718ba1017eb0baf1fd74d9b944efef310c1794ebb2f032a8e",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-plastic/training-1/frames/000000.png"
+    },
+    {
+      "sha256": "dfca3a1d6f49dffc27edc566d94e8a5dc2b22f8f39e326bff539d6512654930d",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-shuffled/eval-92031.json"
+    },
+    {
+      "sha256": "70a09a81abb49340f27055bb2d3f9cc90f169f59b4c926d88140ad5ba858aca1",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-shuffled/train-1.json"
+    },
+    {
+      "sha256": "9f645399b1704291b9362780956b0ccfab8158b0a759704cbafc2316a8a5cde3",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-shuffled/training-1/current.json"
+    },
+    {
+      "sha256": "f8eb275be567fbd718ba1017eb0baf1fd74d9b944efef310c1794ebb2f032a8e",
+      "path": "outputs/doom-learning/revised-runner-smoke/91031-shuffled/training-1/frames/000000.png"
+    },
+    {
+      "sha256": "7a2a00473c4d4bd69f32caee3cbe000d4980b586f01945f7d74f4757daaaac83",
+      "path": "outputs/doom-learning/revised-runner-smoke/circuit.json"
+    },
+    {
+      "sha256": "6d296887a588a3702cc538d6aaf03d11f62ffbe97c5d8f71596150d276a07f85",
+      "path": "outputs/doom-learning/revised-runner-smoke/progress.json"
+    },
+    {
+      "sha256": "248bfce6113eb519acc611b5ebc9730c7726c0b5d18df719ba67a0acbaa96b15",
+      "path": "outputs/doom-learning/revised-runner-smoke/protocol.json"
+    },
+    {
+      "sha256": "6887f3cb8859e87f02976c25e2ce8ec208bb4ad93ed004fccc128f8c560f9fdb",
+      "path": "outputs/doom-learning/revised-runner-smoke/provenance.json"
+    },
+    {
+      "sha256": "5f519dd83a82b9a94c78819af2ae4e820391a3b21afb77c7e7c6c9f4001113da",
+      "path": "outputs/doom-learning/revised-runner-smoke/results.json"
+    },
+    {
+      "sha256": "b9fc70db740d8f43661fee3aa828e951bfcb3ca5f8588eb511cf0f4fdda6e9c0",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/__init__.py"
+    },
+    {
+      "sha256": "97db9ca40fc27413910ea61c9ca40f3f5ebe242246dedf46cbd6e891d61fce26",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/analyze_observation.py"
+    },
+    {
+      "sha256": "4416da3ec5512b73519655d22c5c6950cac31f895b0356ad79f350b203ded427",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/audit_data.py"
+    },
+    {
+      "sha256": "aee8d70fb473b68d61b14aa6ee8027871380c8c81a97ba172a16bf876c0a9160",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/audit_experiments.py"
+    },
+    {
+      "sha256": "8317401325aed00c2f6d200de2c473ccd0a7a42edc0608c8e7afe95df0e0ba30",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/audit_remote.py"
+    },
+    {
+      "sha256": "f38e8fcb877a3966cbe1ef27b9e587617b61ea502821180f9849ea26caa3919d",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/audit_retina.py"
+    },
+    {
+      "sha256": "c2012a5ab467ddab0bd0f630d69a5a8fd442e70661c744b826d8ccfdff999c4e",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/build_kernel.py"
+    },
+    {
+      "sha256": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/engine.py"
+    },
+    {
+      "sha256": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/game.py"
+    },
+    {
+      "sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/kernel.cpp"
+    },
+    {
+      "sha256": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/native.py"
+    },
+    {
+      "sha256": "0989e64d1405cfef0894b0ed428323682e62fc4282b71e542b29c5d78d6940db",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/observe.py"
+    },
+    {
+      "sha256": "ef430bced2cf399491ea539b8f819b2dc3000e5b0c1656536ff74670f28831cc",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/observe_public.py"
+    },
+    {
+      "sha256": "d280740149c4006374989227f8ca2d9caca626344ea02c3c359387d19627c262",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/prepare.py"
+    },
+    {
+      "sha256": "0c8d91aca939d9c6294462a6982e9e271ec3cf4edca6afe7412384e67a56bfb8",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/provenance.py"
+    },
+    {
+      "sha256": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/reward.py"
+    },
+    {
+      "sha256": "db2c5f3e10b6abf90e7e3f19ed198d4a407333c8438d33e296fc2f83f8d01cad",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/server.py"
+    },
+    {
+      "sha256": "fc9868a935b90a1658192a1717f6a4b425865c8ecea8cd2e6bd1c78ed57bfcf7",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/transmitters.py"
+    },
+    {
+      "sha256": "d3a9d00ce83c8e2e9665f47ecdb4b743098ef67ad292f74de30ace0e1645cdaf",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/validate.py"
+    },
+    {
+      "sha256": "93dd1013f620faed74434834ca4daa46db8741236718639fcf9c77a22f6d9b64",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom/validate_bci.py"
+    },
+    {
+      "sha256": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/__init__.py"
+    },
+    {
+      "sha256": "c68a51b59791eda4241e0eca2aef9f3023c406529de577091225a22e9ae0bd57",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/analyze.py"
+    },
+    {
+      "sha256": "7810c6b993c700191283024079f64aa9e4c405b84789b428bb7858e790198a8e",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/benchmark.py"
+    },
+    {
+      "sha256": "4dac5c05804b2af355c7c982ec5680356ba24c633c22e7ac8207cf597b6e4e6e",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/brain.py"
+    },
+    {
+      "sha256": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/circuit.py"
+    },
+    {
+      "sha256": "3b499c2e9c42f24279910da2efbf29d7aa8004ecb5cb6e1e45bcc3a3786a5814",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/common.py"
+    },
+    {
+      "sha256": "9175d8ea1166e1f3fc38a71693069d225534d196fe90c69aee7724478d75028e",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/conditioning.py"
+    },
+    {
+      "sha256": "301ffcb3896dcc2cc9c8def93adfb1ec1e40285584e7a88eccbfdda61cbe02dd",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/controls.py"
+    },
+    {
+      "sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/kernel.cpp"
+    },
+    {
+      "sha256": "8adce8256738238692232b53aabd5eaf81f77d71629a685d9bcdebc272a0306e",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/run.py"
+    },
+    {
+      "sha256": "d3a2ec6e54aad0f73404f4484c9afeda878861bb09a0b222ef5b9d94561afad7",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/sweep.py"
+    },
+    {
+      "sha256": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+      "path": "outputs/doom-learning/revised-runner-smoke/source-snapshot/doom_learning/vision.py"
+    },
+    {
+      "sha256": "fce7c4eeec5c6e75bffc1702f088a67d2c16b2219d0124f5723423058780be9a",
+      "path": "outputs/doom-learning/survival-arena/check/cross_to_safe.json"
+    },
+    {
+      "sha256": "e5c899c93a81969bf57b33237848194fa6c0066a9bff95e1073f8cc6a10b40a0",
+      "path": "outputs/doom-learning/survival-arena/check/cross_to_safe.png"
+    },
+    {
+      "sha256": "297cf77b82323425718f8c2554e48b6eef3899c50a20cfbad1f4f99a6118a3a2",
+      "path": "outputs/doom-learning/survival-arena/check/cross_to_safe.wad"
+    },
+    {
+      "sha256": "0fb0a4f6376858349fe1a249fc6a2ee4dc58877b28079456c90fbb67c6427cfc",
+      "path": "outputs/doom-learning/survival-arena/check/environment-check.json"
+    },
+    {
+      "sha256": "fce7c4eeec5c6e75bffc1702f088a67d2c16b2219d0124f5723423058780be9a",
+      "path": "outputs/doom-learning/survival-arena/check/stationary.json"
+    },
+    {
+      "sha256": "e5c899c93a81969bf57b33237848194fa6c0066a9bff95e1073f8cc6a10b40a0",
+      "path": "outputs/doom-learning/survival-arena/check/stationary.png"
+    },
+    {
+      "sha256": "297cf77b82323425718f8c2554e48b6eef3899c50a20cfbad1f4f99a6118a3a2",
+      "path": "outputs/doom-learning/survival-arena/check/stationary.wad"
+    },
+    {
+      "sha256": "2f542ddf34564d79618da06fe84e3f7149a51f94f9f1372ab00d6250c7a70f4a",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/current.json"
+    },
+    {
+      "sha256": "2c653c601f2d11369081676be9cdbcb85e1f76f3d6878fbba5265ba378a8699b",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/eval-61031.json"
+    },
+    {
+      "sha256": "d3a9cce644195c23129b8c651d298e25123644bb3c9a848edade77def30d4a85",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/eval-61032.json"
+    },
+    {
+      "sha256": "86241de85d858009f8a868fce7274dccd8d87effb897e370e4c5a181c51a2e5a",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000000.png"
+    },
+    {
+      "sha256": "25caf3c3f5663d067b7c07a69a36013a0ae2156e05cfe8141c3a8c69b447aabf",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000035.png"
+    },
+    {
+      "sha256": "ff8075fd91b66527f4cfc90f08ad18d0c4522c312bb66f7bc6b5b3c82703792d",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000070.png"
+    },
+    {
+      "sha256": "ad15027065e864364689ad9b4c2f15d9f7c44edef0ddae240ecdad70e74f252c",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000105.png"
+    },
+    {
+      "sha256": "99a55321215eebe60eddd69e123a09fced50f7dcf8ce60ea8c7d940a911895ac",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000140.png"
+    },
+    {
+      "sha256": "c574f1d5e45c966caff5785a6cc0bd60f431cbea00d959789d31c71c8b61afcc",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000175.png"
+    },
+    {
+      "sha256": "4b82e0d9ff7ccbbdb8b388eb3edffc46b5db11ae339fb654e9b452df80df5a44",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000210.png"
+    },
+    {
+      "sha256": "7e489297afdd4b860a55f29a4ae287233b984256a4633029e25b14915d61e1dd",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000245.png"
+    },
+    {
+      "sha256": "cb5887c22ff7fa3c857b925570a1b7b2c66eb6876b8e437cb8ccec25a00c1301",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000280.png"
+    },
+    {
+      "sha256": "f81c20d33120912061c2a9b404f743fd117e2c9d5f16557db850928d7c71f401",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000315.png"
+    },
+    {
+      "sha256": "abd3c2ee566c85a24f70ad10a0d66ca9c37555f266fd3d571dd7686d60bd1f53",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/frames/000350.png"
+    },
+    {
+      "sha256": "bf2b2b8b2b54b34497dc361ba3479e3a0d1944df56a7256848acebfc1f9aad6b",
+      "path": "outputs/doom-learning/survival-pilot/41031-frozen/train-1.json"
+    },
+    {
+      "sha256": "cd68ee628f74934656a02ce4c65624558d7107439004e4449b00012f68a1ffea",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/current.json"
+    },
+    {
+      "sha256": "d9212447e0aed1ba275da9d652a61f45bd08acbc26ca5ebaa0a8e3a3f0c62c1d",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/eval-61031.json"
+    },
+    {
+      "sha256": "afa25c0eb9e62d505afbdfe90f4ce5a84e038a0f1ece059798ca12d18a41a004",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/eval-61032.json"
+    },
+    {
+      "sha256": "86241de85d858009f8a868fce7274dccd8d87effb897e370e4c5a181c51a2e5a",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000000.png"
+    },
+    {
+      "sha256": "25caf3c3f5663d067b7c07a69a36013a0ae2156e05cfe8141c3a8c69b447aabf",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000035.png"
+    },
+    {
+      "sha256": "ff8075fd91b66527f4cfc90f08ad18d0c4522c312bb66f7bc6b5b3c82703792d",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000070.png"
+    },
+    {
+      "sha256": "ad15027065e864364689ad9b4c2f15d9f7c44edef0ddae240ecdad70e74f252c",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000105.png"
+    },
+    {
+      "sha256": "99a55321215eebe60eddd69e123a09fced50f7dcf8ce60ea8c7d940a911895ac",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000140.png"
+    },
+    {
+      "sha256": "c574f1d5e45c966caff5785a6cc0bd60f431cbea00d959789d31c71c8b61afcc",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000175.png"
+    },
+    {
+      "sha256": "4b82e0d9ff7ccbbdb8b388eb3edffc46b5db11ae339fb654e9b452df80df5a44",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000210.png"
+    },
+    {
+      "sha256": "7e489297afdd4b860a55f29a4ae287233b984256a4633029e25b14915d61e1dd",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000245.png"
+    },
+    {
+      "sha256": "cb5887c22ff7fa3c857b925570a1b7b2c66eb6876b8e437cb8ccec25a00c1301",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000280.png"
+    },
+    {
+      "sha256": "f81c20d33120912061c2a9b404f743fd117e2c9d5f16557db850928d7c71f401",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000315.png"
+    },
+    {
+      "sha256": "abd3c2ee566c85a24f70ad10a0d66ca9c37555f266fd3d571dd7686d60bd1f53",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/frames/000350.png"
+    },
+    {
+      "sha256": "ece2d6bb32cc7205224c1b5fe6c653e98655745a8c68cb665a2f1247eb46ab5f",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/reset-memory.json"
+    },
+    {
+      "sha256": "e5158f7adae3035d673231e051e4d9e98c9fc0bbc22e16cdf91be215baf2d1dd",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/retention.json"
+    },
+    {
+      "sha256": "7beb4b51f81e025b91d7c9ead1649e2e98c9f9ab9dfacf2bb2ee9ddd7e266081",
+      "path": "outputs/doom-learning/survival-pilot/41031-plastic/train-1.json"
+    },
+    {
+      "sha256": "6be759a4ab1b6d020fe0d95f3d0e13e5b8c338bd8221d7a543eb21ef03d1116f",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/current.json"
+    },
+    {
+      "sha256": "ced8449f06952c6da347f3275d7734202a71f36cd61b53f0d87530dab0f4b2a3",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/eval-61031.json"
+    },
+    {
+      "sha256": "8d2a2cffd0c69e34fd112ab3b4ced32a8726be4e6a41adea9eda974be26a21a4",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/eval-61032.json"
+    },
+    {
+      "sha256": "86241de85d858009f8a868fce7274dccd8d87effb897e370e4c5a181c51a2e5a",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000000.png"
+    },
+    {
+      "sha256": "25caf3c3f5663d067b7c07a69a36013a0ae2156e05cfe8141c3a8c69b447aabf",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000035.png"
+    },
+    {
+      "sha256": "ff8075fd91b66527f4cfc90f08ad18d0c4522c312bb66f7bc6b5b3c82703792d",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000070.png"
+    },
+    {
+      "sha256": "ad15027065e864364689ad9b4c2f15d9f7c44edef0ddae240ecdad70e74f252c",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000105.png"
+    },
+    {
+      "sha256": "99a55321215eebe60eddd69e123a09fced50f7dcf8ce60ea8c7d940a911895ac",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000140.png"
+    },
+    {
+      "sha256": "c574f1d5e45c966caff5785a6cc0bd60f431cbea00d959789d31c71c8b61afcc",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000175.png"
+    },
+    {
+      "sha256": "4b82e0d9ff7ccbbdb8b388eb3edffc46b5db11ae339fb654e9b452df80df5a44",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000210.png"
+    },
+    {
+      "sha256": "7e489297afdd4b860a55f29a4ae287233b984256a4633029e25b14915d61e1dd",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000245.png"
+    },
+    {
+      "sha256": "cb5887c22ff7fa3c857b925570a1b7b2c66eb6876b8e437cb8ccec25a00c1301",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000280.png"
+    },
+    {
+      "sha256": "f81c20d33120912061c2a9b404f743fd117e2c9d5f16557db850928d7c71f401",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000315.png"
+    },
+    {
+      "sha256": "abd3c2ee566c85a24f70ad10a0d66ca9c37555f266fd3d571dd7686d60bd1f53",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/frames/000350.png"
+    },
+    {
+      "sha256": "bc7c94b1977fa4d0be50cd221443c817f4f86e6fc77e52f4c4c21fc18e3002ec",
+      "path": "outputs/doom-learning/survival-pilot/41031-shuffled/train-1.json"
+    },
+    {
+      "sha256": "b9149f88da2a2728c19be41ef034cc64dfb7e9262b136fae551bf5ed93246ea0",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/current.json"
+    },
+    {
+      "sha256": "95532cb7f1576c6aee538030292499b840a22e23d06dcad4e5b068905ff209fd",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/eval-61031.json"
+    },
+    {
+      "sha256": "4730aa2ec412f98594db3add7eb0cd29c51592fbfc5d3fd59a41b03885ca1467",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/eval-61032.json"
+    },
+    {
+      "sha256": "c5070e38de1c450d5aba680c68425332dfca682742df77eb298bdb53f0d0813a",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000000.png"
+    },
+    {
+      "sha256": "d804da4c871d566a5f2609d1fbe25bd18ec4a78280c88f92156e54ba37fbee92",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000035.png"
+    },
+    {
+      "sha256": "1518bb42be52703fb169d84a0cb9f201e3248a63b808043b270485f80cfec6f1",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000070.png"
+    },
+    {
+      "sha256": "9afb2a19dcc8276beb904f2e985607f260b0e26b75c88886bc652f266d8c21cf",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000105.png"
+    },
+    {
+      "sha256": "17cbcc7ecad1ca3c28bea18010bbeed945af77ff61ee164d4b269e0aedcab503",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000140.png"
+    },
+    {
+      "sha256": "95a187e39f32005b6b2a4ea1577f106c0855899e9c7fd5090526c63bc5dc0158",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000175.png"
+    },
+    {
+      "sha256": "c7fcaf10fb0bdf2311022fedd7dad5bc8a28da5f5f8223e1a03a6f15637e9c60",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000210.png"
+    },
+    {
+      "sha256": "0ac31a0fca0ca990f19201e221d351da008aa4eb32c3a71414b72b0106527233",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000245.png"
+    },
+    {
+      "sha256": "e4382a8f8c91788ad5a87607d30d1d29c071e892442e6130f8d55ef2e0c472cc",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000280.png"
+    },
+    {
+      "sha256": "570ec084e190d358e0c29398e82e825090de415c04115bde09e96d6c6e55c474",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000315.png"
+    },
+    {
+      "sha256": "61511437e29f1bceda63a6450dd01d19e3c23b6dc11161c0e2fdbb77e5a33945",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000350.png"
+    },
+    {
+      "sha256": "c49de94b6260c7b5ebcaafe39775294f5cf441a609ae2e48ba26d25fb41994fd",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/frames/000385.png"
+    },
+    {
+      "sha256": "49f33043413a772a525947b30f0dc8a5848d5c16ea192c1aa77849ccc189d897",
+      "path": "outputs/doom-learning/survival-pilot/41032-frozen/train-1.json"
+    },
+    {
+      "sha256": "dcad0e9f15f85983d2e0ebebd0e28176db801895ffd439a9b787824196f83b7c",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/current.json"
+    },
+    {
+      "sha256": "1f8a0167927c1d6dd2c0576f7172a81daaf129555abdc8fddc8e521a9af2fbb9",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/eval-61031.json"
+    },
+    {
+      "sha256": "8db7da1cdab790e66bea51e6ba085db0b61a8dbb42cef429ce40f29bd80c64a0",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/eval-61032.json"
+    },
+    {
+      "sha256": "c5070e38de1c450d5aba680c68425332dfca682742df77eb298bdb53f0d0813a",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000000.png"
+    },
+    {
+      "sha256": "d804da4c871d566a5f2609d1fbe25bd18ec4a78280c88f92156e54ba37fbee92",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000035.png"
+    },
+    {
+      "sha256": "1518bb42be52703fb169d84a0cb9f201e3248a63b808043b270485f80cfec6f1",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000070.png"
+    },
+    {
+      "sha256": "9afb2a19dcc8276beb904f2e985607f260b0e26b75c88886bc652f266d8c21cf",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000105.png"
+    },
+    {
+      "sha256": "17cbcc7ecad1ca3c28bea18010bbeed945af77ff61ee164d4b269e0aedcab503",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000140.png"
+    },
+    {
+      "sha256": "95a187e39f32005b6b2a4ea1577f106c0855899e9c7fd5090526c63bc5dc0158",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000175.png"
+    },
+    {
+      "sha256": "c7fcaf10fb0bdf2311022fedd7dad5bc8a28da5f5f8223e1a03a6f15637e9c60",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000210.png"
+    },
+    {
+      "sha256": "0ac31a0fca0ca990f19201e221d351da008aa4eb32c3a71414b72b0106527233",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000245.png"
+    },
+    {
+      "sha256": "e4382a8f8c91788ad5a87607d30d1d29c071e892442e6130f8d55ef2e0c472cc",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000280.png"
+    },
+    {
+      "sha256": "570ec084e190d358e0c29398e82e825090de415c04115bde09e96d6c6e55c474",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000315.png"
+    },
+    {
+      "sha256": "61511437e29f1bceda63a6450dd01d19e3c23b6dc11161c0e2fdbb77e5a33945",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000350.png"
+    },
+    {
+      "sha256": "c49de94b6260c7b5ebcaafe39775294f5cf441a609ae2e48ba26d25fb41994fd",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/frames/000385.png"
+    },
+    {
+      "sha256": "dfa713eeb483e88ad4e7695acc65ba65503c492aa76602c503e20c1c8d36a15a",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/reset-memory.json"
+    },
+    {
+      "sha256": "40ef7561a4ec82845e81cbb10b0f37f7e37948250c6d9ebff97e0e5e55462da8",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/retention.json"
+    },
+    {
+      "sha256": "3fc1416fa700fd2a00f68247b5d83032ac5311ff21984e84815344556a24ea34",
+      "path": "outputs/doom-learning/survival-pilot/41032-plastic/train-1.json"
+    },
+    {
+      "sha256": "d7926fc0f2c1bdaa3b2fbae96f7f45fd5bef19705e0b4de5c01eaee665315e0c",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/current.json"
+    },
+    {
+      "sha256": "68629b24c483a022faf99ecd00f85e438287c3664b55b6331dc2dba2b8fe819d",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/eval-61031.json"
+    },
+    {
+      "sha256": "69532692a7d6fe0d8034351775c4a7213bcb020d79e2cd042e25b14e9bf00895",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/eval-61032.json"
+    },
+    {
+      "sha256": "c5070e38de1c450d5aba680c68425332dfca682742df77eb298bdb53f0d0813a",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000000.png"
+    },
+    {
+      "sha256": "d804da4c871d566a5f2609d1fbe25bd18ec4a78280c88f92156e54ba37fbee92",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000035.png"
+    },
+    {
+      "sha256": "1518bb42be52703fb169d84a0cb9f201e3248a63b808043b270485f80cfec6f1",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000070.png"
+    },
+    {
+      "sha256": "9afb2a19dcc8276beb904f2e985607f260b0e26b75c88886bc652f266d8c21cf",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000105.png"
+    },
+    {
+      "sha256": "17cbcc7ecad1ca3c28bea18010bbeed945af77ff61ee164d4b269e0aedcab503",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000140.png"
+    },
+    {
+      "sha256": "95a187e39f32005b6b2a4ea1577f106c0855899e9c7fd5090526c63bc5dc0158",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000175.png"
+    },
+    {
+      "sha256": "c7fcaf10fb0bdf2311022fedd7dad5bc8a28da5f5f8223e1a03a6f15637e9c60",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000210.png"
+    },
+    {
+      "sha256": "0ac31a0fca0ca990f19201e221d351da008aa4eb32c3a71414b72b0106527233",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000245.png"
+    },
+    {
+      "sha256": "e4382a8f8c91788ad5a87607d30d1d29c071e892442e6130f8d55ef2e0c472cc",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000280.png"
+    },
+    {
+      "sha256": "570ec084e190d358e0c29398e82e825090de415c04115bde09e96d6c6e55c474",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000315.png"
+    },
+    {
+      "sha256": "61511437e29f1bceda63a6450dd01d19e3c23b6dc11161c0e2fdbb77e5a33945",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000350.png"
+    },
+    {
+      "sha256": "c49de94b6260c7b5ebcaafe39775294f5cf441a609ae2e48ba26d25fb41994fd",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/frames/000385.png"
+    },
+    {
+      "sha256": "e9a29b628f40c9bb470168d5c770f48c5bc4dcbdecec106b210c4c38e5ddc9a6",
+      "path": "outputs/doom-learning/survival-pilot/41032-shuffled/train-1.json"
+    },
+    {
+      "sha256": "7a2a00473c4d4bd69f32caee3cbe000d4980b586f01945f7d74f4757daaaac83",
+      "path": "outputs/doom-learning/survival-pilot/circuit.json"
+    },
+    {
+      "sha256": "640d66d7af617bf416feee1bb50da7c535389a12d2e918e3f297593171938eeb",
+      "path": "outputs/doom-learning/survival-pilot/progress.json"
+    },
+    {
+      "sha256": "b79dc19eec973124d33545730e5a0cbbf983f33def67a506d2f456d92714775e",
+      "path": "outputs/doom-learning/survival-pilot/protocol.json"
+    },
+    {
+      "sha256": "c041c316b6eb530d7716dd77d6859cd88f56b30aeeb2dcec17a5c24b2a2d9db9",
+      "path": "outputs/doom-learning/survival-pilot/provenance.json"
+    },
+    {
+      "sha256": "d9590958d777d28e204beccb5a443000b3d4c0d8d95d37824fa323107c50e1af",
+      "path": "outputs/doom-learning/survival-pilot/results.json"
+    },
+    {
+      "sha256": "5fc0ce73c05a49ff58af01729a9169018080bb5b913cedb2268116a95c04aeb3",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom/engine.py"
+    },
+    {
+      "sha256": "4efff8885f382ff75d73252e6ba75c052a98a9cc13a41b17466d6c46db76427d",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom/game.py"
+    },
+    {
+      "sha256": "2dc0939d5efb5b3b53551a7836b24385e30976b6dfb8ece9edbb0a6983bed337",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom/kernel.cpp"
+    },
+    {
+      "sha256": "81ff083d7d863d53ef1b264b7de3c123c0f9cc4e38d397ad36cbfa328649e234",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom/native.py"
+    },
+    {
+      "sha256": "6e55f234721223fd572f51189091607a5dcdc033828f17289250641c93b62345",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom_learning/__init__.py"
+    },
+    {
+      "sha256": "4dac5c05804b2af355c7c982ec5680356ba24c633c22e7ac8207cf597b6e4e6e",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom_learning/brain.py"
+    },
+    {
+      "sha256": "4ced05f329fcf8873eb2852a7fb349526efe5e7b2b9f24d2417fe719563edcdd",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom_learning/circuit.py"
+    },
+    {
+      "sha256": "740144e03c959e49114f3e7e92b8e070d42a20d30a5cb7d3f3c70c74721ad38e",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom_learning/common.py"
+    },
+    {
+      "sha256": "33be3c1f6b0d2b3c20b255f676d9511ef7d8f513d8a5266e3e6167e2b7b39651",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom_learning/conditioning.py"
+    },
+    {
+      "sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom_learning/kernel.cpp"
+    },
+    {
+      "sha256": "22bc87fc31d699cf1fa81dd41f52aa52c8c3e42b5109278d877318d8f1cb0ce4",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom_learning/run.py"
+    },
+    {
+      "sha256": "3ae84010ba5ca5c4c691048be697972016e47b1ebf4ea144f0edacc9e3d499b8",
+      "path": "outputs/doom-learning/survival-pilot/source-snapshot/doom_learning/vision.py"
+    },
+    {
+      "sha256": "1d93174c83e1cdde65e9c063a47756473be3cceb1d378683f6eb77c8e9ab1d9d",
+      "path": "outputs/doom-learning/vision.json"
+    },
+    {
+      "sha256": "d6e06691f3ef1d2c2dfa8fb923130fe81f75559ebb92a57c326a729eb099c459",
+      "path": "outputs/doom/archive-stock-before-combat-20260905/archive.json"
+    },
+    {
+      "sha256": "c4fd4e9e5cfe3d773d83320c3434accfe1c2ee5462226f9f8c2a8f47aeeabf9e",
+      "path": "outputs/doom/archive-stock-before-combat-20260905/final-state.json"
+    },
+    {
+      "sha256": "911bd10fe8cc881b64fc51a45aa237323b838d41253ccf2d9fce1a6642129181",
+      "path": "outputs/doom/audit/data-integrity.json"
+    },
+    {
+      "sha256": "8401dc46028dca842d10a8003e942605322071890d6b251b0913caababac4923",
+      "path": "outputs/doom/audit/environment.json"
+    },
+    {
+      "sha256": "e03ae9637ecbb2086a87fd1872400cbf17e3e2eb52faaf67ed282fe61b4fde5c",
+      "path": "outputs/doom/audit/experiments.json"
+    },
+    {
+      "sha256": "c8a5ac6b3db0f504a5b0d3c8c292cc5d7f87c38b11bcd99e850ed0c35ce0d786",
+      "path": "outputs/doom/audit/libneural-candidate.dylib.json"
+    },
+    {
+      "sha256": "ca20af2ea53466b8a65dace48536fa1e5d460b3d85dd54a77fbae58933c9df08",
+      "path": "outputs/doom/audit/live-review-snapshot.json"
+    },
+    {
+      "sha256": "846913cb539b6f39da99cff3fe1ca0532dc36aff3e8d8503ad48213db6b87c6b",
+      "path": "outputs/doom/audit/official-source-check.json"
+    },
+    {
+      "sha256": "f0de331a28d2f08c3afae36daab9fd4f01035af1dc0af27f3f310957434fd2a4",
+      "path": "outputs/doom/audit/pre-review/bci-validation.json"
+    },
+    {
+      "sha256": "c11969a7e1d2b6f282cc353639911180b7f55ea58f4a738adcc85654722d424a",
+      "path": "outputs/doom/audit/pre-review/engine.py"
+    },
+    {
+      "sha256": "869a4855f9eb9cc3af1aeba98a4f3699097cedf6f9cc6fc79642109079fd2ecc",
+      "path": "outputs/doom/audit/pre-review/game.py"
+    },
+    {
+      "sha256": "bea339f2a5e7fd999b1cd468f44d0ba5caf3f3e0d5cf4e3d342d075c6d5b2c36",
+      "path": "outputs/doom/audit/pre-review/kernel.cpp"
+    },
+    {
+      "sha256": "be958b000520cb57b2804d638105c3fea3c4c3abd16eb139d6029cad231f0d86",
+      "path": "outputs/doom/audit/pre-review/native.py"
+    },
+    {
+      "sha256": "d280740149c4006374989227f8ca2d9caca626344ea02c3c359387d19627c262",
+      "path": "outputs/doom/audit/pre-review/prepare.py"
+    },
+    {
+      "sha256": "2865a9b1fdf8db1ea4fc9682ed578497cadb65b2b37c61b7c1ed266cfa53dacf",
+      "path": "outputs/doom/audit/pre-review/reward.py"
+    },
+    {
+      "sha256": "2b13a044b7952a45fa63796c00b0803b72361068094dfda0cf002be199b36f83",
+      "path": "outputs/doom/audit/pre-review/server.py"
+    },
+    {
+      "sha256": "e6f860e32851b947c52b57ca9e33f932f3fd6c331a0e6e85166f1d29519b532b",
+      "path": "outputs/doom/audit/pre-review/validation.json"
+    },
+    {
+      "sha256": "e03ae9637ecbb2086a87fd1872400cbf17e3e2eb52faaf67ed282fe61b4fde5c",
+      "path": "outputs/doom/audit/public-experiments.json"
+    },
+    {
+      "sha256": "bb8b33ef995be6136ee581b14bbddf08b141af84249cda9394082b6782bda628",
+      "path": "outputs/doom/audit/public-review-snapshot.json"
+    },
+    {
+      "sha256": "cc017e7ca12934b510aa6144aa859c7fdb53e0e816edff489d9c9d341378d820",
+      "path": "outputs/doom/audit/retinal-projection.json"
+    },
+    {
+      "sha256": "2f9a8d171e830a0bde6a9e416fa08c92f7ac9bf09a31c2be6c39c0d11cf7512d",
+      "path": "outputs/doom/audit/review-verification.json"
+    },
+    {
+      "sha256": "2b269ad1d3953724d1973b826d7f9371d009c1f523d85a9292fa28d928b508fa",
+      "path": "outputs/doom/bci-readouts.json"
+    },
+    {
+      "sha256": "f0de331a28d2f08c3afae36daab9fd4f01035af1dc0af27f3f310957434fd2a4",
+      "path": "outputs/doom/bci-validation.json"
+    },
+    {
+      "sha256": "8e43d8b9522663a7789d7b1aad38fdb63f8dfdf98a3ef5596e50e1ac49e1518e",
+      "path": "outputs/doom/calibrated-probe-counts.npy"
+    },
+    {
+      "sha256": "eb99bb5ac1a3a536dcb45e4bec450cd3af9f4a55124f98fc53ce37d89026c110",
+      "path": "outputs/doom/circling-review/comparison.json"
+    },
+    {
+      "sha256": "e25e1940d346cb1c172ec880dd8fe4c4fee470ccf1bb7d4c827ef40a85c8c7b8",
+      "path": "outputs/doom/circling-review/v1-assets/combat_arena.py"
+    },
+    {
+      "sha256": "0a224b2fd3fefbc62923b47767e79729d8bcef80407511242ed7515aabeff282",
+      "path": "outputs/doom/circling-review/v1-assets/combat_survival.json"
+    },
+    {
+      "sha256": "75723435a57366811436e2506cc294572a023e504888639b67e5e59d87b4edff",
+      "path": "outputs/doom/circling-review/v1-assets/combat_survival.wad"
+    },
+    {
+      "sha256": "f4609b32cffa6de3a76cc5499fdfb93a1623e8377f9370de36509a03de3d3f0f",
+      "path": "outputs/doom/circling-review/v1-fixed-circle.json"
+    },
+    {
+      "sha256": "183e4bb7443f1a00076bacf17ecaa2fdf3dc7c79f10110012ed449bae242992c",
+      "path": "outputs/doom/circling-review/v1-live-final-state.json"
+    },
+    {
+      "sha256": "c00422e6a29c955c8315bea5b848d671e954b73de074e2aed1b73179cb3f9185",
+      "path": "outputs/doom/circling-review/v1-probe.json"
+    },
+    {
+      "sha256": "db442f6d05a690a53cabe1ffae34ed095d150bb6f41deddb069caf56f221119a",
+      "path": "outputs/doom/circling-review/v2-live-verification.json"
+    },
+    {
+      "sha256": "9f6f54f5d518379fc748c2455d8bedc7aa91fc9819c727b927ae7b925b3214ff",
+      "path": "outputs/doom/circling-review/v2-probe.json"
+    },
+    {
+      "sha256": "fd2b25aef4e7bb2fa68a25b82bd891c4430b7b7b1a8132aadb79f8353124c13c",
+      "path": "outputs/doom/combat-survival-v1/environment-checks.json"
+    },
+    {
+      "sha256": "50da3b45a1be7ad36d3fb0ba12254093b456dd2b24bfcf8d2a351c4e10ba29c2",
+      "path": "outputs/doom/combat-survival-v1/public-smoke-check.json"
+    },
+    {
+      "sha256": "6760dfe95e88b395cf7beb319da0017e479f7caac8478639124b3b3d8df57bbd",
+      "path": "outputs/doom/first-frame.jpg"
+    },
+    {
+      "sha256": "c8a5ac6b3db0f504a5b0d3c8c292cc5d7f87c38b11bcd99e850ed0c35ce0d786",
+      "path": "outputs/doom/libneural.dylib.json"
+    },
+    {
+      "sha256": "78ba280dcb6dd48cdb60a1d64e65101dab8173356d541c852ee4aabe9291fd82",
+      "path": "outputs/doom/live-probe-counts.npy"
+    },
+    {
+      "sha256": "6d658e6e9ce2762745ce79148c4374e9d1166d5fd31f1e305d2d7a5aa28a69df",
+      "path": "outputs/doom/live-training-v1/handoff-checkpoint.json"
+    },
+    {
+      "sha256": "080feca414fd4666d4bf02f4b289b99b89133d98ad314bf137853b8dacaa3c1a",
+      "path": "outputs/doom/live-training-v1/pre-handoff-state.json"
+    },
+    {
+      "sha256": "01f9d6c30cc6a37f6680b94ad80f0b491802a948386ffbfe87060babe2e80926",
+      "path": "outputs/doom/live-training-v1/public-verification.json"
+    },
+    {
+      "sha256": "0e2f0c00a1b241efd629b2103eebf3889d4ae5deafedec67cda69f3cf7ac3478",
+      "path": "outputs/doom/live-training-v1/run-0ef47fcb-967b-4fab-96b7-f202fbf4ff41.json"
+    },
+    {
+      "sha256": "559e25da93b60cd42cda4e7f8c36f6bc8ebb680cfd69b2c99d75363b2a4dca72",
+      "path": "outputs/doom/live-training-v1/run-dcaea589-c5f3-43a6-82de-05f34c75b90a.json"
+    },
+    {
+      "sha256": "a2ba56d507c7437b841739d91d368999f8a203459c851792b0969abf512b36b7",
+      "path": "outputs/doom/live-training-v1/weight-integrity.json"
+    },
+    {
+      "sha256": "f953f3e51fab83a3d0e46c1f9e1445af6bd0c8af2cf63d1ba6d365ae824da1bf",
+      "path": "outputs/doom/malecns_v1/manifest.json"
+    },
+    {
+      "sha256": "8c9476e5edb56b82fbe6accd63769c5b49897ba7528a37aa3dd061ce581898fe",
+      "path": "outputs/doom/performance-20260905/post-observation-restart.json"
+    },
+    {
+      "sha256": "23f3b9e8a1b54f49428609847c75a442e3872b4606d4e91d269d16beaecb45c5",
+      "path": "outputs/doom/performance-20260905/post-restart-sample.json"
+    },
+    {
+      "sha256": "aa53dd19a83079e009239b39276eb755c7c91d564d6868029b08b55ed7be55af",
+      "path": "outputs/doom/performance-20260905/public-delivery.json"
+    },
+    {
+      "sha256": "06d233823be7fec0b3834c00056bb16c65c0b4539bbe8ba4fe21098e8dbc636b",
+      "path": "outputs/doom/performance-20260905/retina-threading.json"
+    },
+    {
+      "sha256": "5f7f974f922051d225d75e93c395b00bf893e496ea67e0914d4ff5e73c62ec07",
+      "path": "outputs/doom/public-verification.json"
+    },
+    {
+      "sha256": "b257238f17cad3f5c60c57377fed975d0ca9757ad6ce63737486b11acec68f94",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/HANDOFF.md"
+    },
+    {
+      "sha256": "ff36fbed5727d1c8fdf9564313d47170518fbcc7e3c3323b04ad87aa838a1c06",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/analysis-environment.txt"
+    },
+    {
+      "sha256": "00c1f31ff02d9d7c4156abcc5832c78551a6fa33e825630baee521e6e4ae8c81",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/analysis.json"
+    },
+    {
+      "sha256": "31563b4178a6fa4efa2f89edfcec547caf463286558c1b9ec6fcde7716aebc39",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/analyzer-preflight.json"
+    },
+    {
+      "sha256": "b37969f358785286a0ee17c8137c60263e74a622ef1ef63094f6b28b2bf7cf92",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/complete.json"
+    },
+    {
+      "sha256": "7079ffa333dfa24629090ba17eb640e26c950902b623b01a50e0ad910326127c",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/episodes.csv"
+    },
+    {
+      "sha256": "1422975bddd50d223abb763b63e6c7a608e0cb59d8d35bee22fc506a9de6f7a8",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/episodes.png"
+    },
+    {
+      "sha256": "560debe1ba794a05c44506b941ee66cbb30efc8947f5cccea1c3c1623f588b94",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/fingerprints-end.json"
+    },
+    {
+      "sha256": "560debe1ba794a05c44506b941ee66cbb30efc8947f5cccea1c3c1623f588b94",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/fingerprints-start.json"
+    },
+    {
+      "sha256": "01f37bcdfb45db192feb9a7267bf624ea133e31cd29b6321b5367d372d611595",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0000-6857.jpg"
+    },
+    {
+      "sha256": "3f10a7a561220fb0a6a271946e5f38060130758364148f7687baa9f7d6248ed4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0001-6971.jpg"
+    },
+    {
+      "sha256": "7b3c52474934543baa8400c9a758e40a8e82baf9cbf5265b9243f8a804f94be4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0002-7112.jpg"
+    },
+    {
+      "sha256": "1a84a5b80fc7448746522abea91b6fb098440535fac5b4fe1611f9c63c9db3f4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0003-7323.jpg"
+    },
+    {
+      "sha256": "ea6436c19fbb980f17c2c7ff3e431ff65a97cb6a50ae32a8e5887d2bcd2a584c",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0004-7503.jpg"
+    },
+    {
+      "sha256": "7a2e39db4115cbae0114bbeff17d6f331cf1e249c2d7b40b2fd18b2193f9c22e",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0005-7715.jpg"
+    },
+    {
+      "sha256": "334afb1c87e2f4a8b5b275b51bfb2e96d022c4873404bfdff7b0e864781c51e3",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0006-7899.jpg"
+    },
+    {
+      "sha256": "470f5f64ddd3b38dc4389490478f5f67627cd8bccae82739b401ea728d8eb217",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0007-8108.jpg"
+    },
+    {
+      "sha256": "3d2d9177f37cdf80bf2beec821de595532319130fda0484a7cbf3dae070093d4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0008-8297.jpg"
+    },
+    {
+      "sha256": "e4052ec9a82a2c928725f521367df4d88155d58a304057c7a41d1498280db128",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0009-8470.jpg"
+    },
+    {
+      "sha256": "a9ed2c46aafd465a3dd2a7a5d51482820a21cd9adc7e13d0293f749794440ec5",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0010-8684.jpg"
+    },
+    {
+      "sha256": "f5c357acd148d677bfe0757ed990de75b6babb16fb08d1557bc5844068034025",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0011-8868.jpg"
+    },
+    {
+      "sha256": "90912272ac6852285349423b276b217781aab84225c23500fdce486d68963b4e",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0012-9074.jpg"
+    },
+    {
+      "sha256": "fb196d7020e39a7d2d7b855086cd05f56e0d522cf739612353b6708005ab2418",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0013-9260.jpg"
+    },
+    {
+      "sha256": "a86dbd671a9227b2b8e57fc51fd1d9ebb7fe06d4d2c1cdeda76502d89e555508",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0014-9474.jpg"
+    },
+    {
+      "sha256": "d40066680e11e537eac722ca9cc65892bc4ec3c252490b2d6add1e2b4b6050ec",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0015-9657.jpg"
+    },
+    {
+      "sha256": "5073e673f1c757ae3d0e9d8bb4decbfdd488c6a6a1173698c3dde229ddc076a0",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0016-9880.jpg"
+    },
+    {
+      "sha256": "b7b73de50ed1dd6b4c91f1c66c27fbffa500f5f83812739c32ff7eeb956ba5e7",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0017-10104.jpg"
+    },
+    {
+      "sha256": "7925f38cb12f7c3eb3b87f0aa896ed4c6eafe55869998017d680b6aefcae776d",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0018-10304.jpg"
+    },
+    {
+      "sha256": "324f00561a835c36d79e199b90df19da311e8a21306407cccc4cf4f627336e78",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0019-10471.jpg"
+    },
+    {
+      "sha256": "2eefada99f7b52d7d55e874da0861c35cfd51027d248757e17380726d2ad3e2b",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0020-10616.jpg"
+    },
+    {
+      "sha256": "1fce0e9651ad5eed6d5a8472c5ec2f31a2fd67b4de872f3d4fcecd59d144cbb2",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0021-10777.jpg"
+    },
+    {
+      "sha256": "d17269c92dfcf0aa3250026a60558fe60d19d1382c71aac256521211317351b8",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0022-10909.jpg"
+    },
+    {
+      "sha256": "b4d6b76d2bbb68201bb83277798880917ddc4cf5310e868329098950ff453b3c",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0023-11087.jpg"
+    },
+    {
+      "sha256": "100722a2a77374baafa7ba1be1c1dac01f9ac19486c2cdb999ca6584f950593f",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0024-11193.jpg"
+    },
+    {
+      "sha256": "c3e5ea258784819bf5c8b1c98f97f3a10368959f3418988b18b413046354f43e",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0025-11352.jpg"
+    },
+    {
+      "sha256": "7423279bf8ae8e7465d28313136b02bd3b08094738c32033bc8b14e916c59550",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0026-11552.jpg"
+    },
+    {
+      "sha256": "92290c2cde5cdf17339797bc685196fbe5aca7bc5b443cd0a8283aee00158b3b",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0027-11722.jpg"
+    },
+    {
+      "sha256": "4d62418258c2f3a36bc934ad48ba0756303d135eef25affe0ef03a9e0726d2fd",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0028-11858.jpg"
+    },
+    {
+      "sha256": "05f1c7c07ac0967866e39d6abe5bce8574d0ce867a48c0d44224c072ed16f250",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0029-12019.jpg"
+    },
+    {
+      "sha256": "3503162dc9c3af0f243eaeb120059e3e558dcb5f773acaa0cb6f1f81f0b6f4dd",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0030-12172.jpg"
+    },
+    {
+      "sha256": "107a997799b1e98a98a3c0f6c42dd05f1ec6a99f545e854e17f4b72c638893e4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0031-12335.jpg"
+    },
+    {
+      "sha256": "2abd40c276bce3b433bc48918a3e0d726cabf23a05aad4d1165bbe46c4649143",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0032-12497.jpg"
+    },
+    {
+      "sha256": "4d73770295e770667bd058d786daf97f6808a4d1f0ba71bc146a1ea70bea315e",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0033-12684.jpg"
+    },
+    {
+      "sha256": "5f456cc408e2f94ee3c7a7f281c307218fe3a828dc03464c04a28bea31f440d6",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0034-12864.jpg"
+    },
+    {
+      "sha256": "ea1a23a3158764a099c4ad6ef2b49a0b1638e88f9a505660ff149ec6d90ad04c",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0035-12997.jpg"
+    },
+    {
+      "sha256": "db808fe8651810402cdec42d8e08f8c742d20e81ecead2520a276127be81aede",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0036-13133.jpg"
+    },
+    {
+      "sha256": "b900b5d3f85f765a2dd6764a70560385ab70f612e8c6f428f44f3b172dd7a31d",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0037-13280.jpg"
+    },
+    {
+      "sha256": "00f9efd0c81b9532a94de0bdf0e9d5d0798af7442ca8ba970707e87d9bdb0259",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0038-13435.jpg"
+    },
+    {
+      "sha256": "0e7469867375fa0f4ea8bf7ebe033dd219f73ac129f21b7728cc1eeb961bd39d",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0039-13618.jpg"
+    },
+    {
+      "sha256": "96778a924620e5d640f14a53ef02d90ed9b077272440502c04d0143e082d813f",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0040-13838.jpg"
+    },
+    {
+      "sha256": "50b94d9277d048fefe990a9edaf06cf5f872baa890f9d793e2dc00ed3eafde7b",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0041-14012.jpg"
+    },
+    {
+      "sha256": "7f1f241e23f3814c76f7245927a4dd688a3878ff2a60cdb9fe269f5df13f2779",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0042-14111.jpg"
+    },
+    {
+      "sha256": "d8c19599141fd9efa5dbf5019fb2c033e60445a7800a444153bd7601db6fe1df",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0043-14252.jpg"
+    },
+    {
+      "sha256": "dee3cfdd9813ccce4e62a520707587051e5737cd40a7e9e92c83456bb33d034a",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0044-14418.jpg"
+    },
+    {
+      "sha256": "1a4f2e7ba6cb5a9f568deafaa7d0531ca0d29833627422589ce687502b77f656",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0045-14586.jpg"
+    },
+    {
+      "sha256": "63a2e0c7df6406fabc5501f1bbcbab37d9eace3d5c6eea7fce83c0f351d3d642",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0046-14721.jpg"
+    },
+    {
+      "sha256": "4c9297e49caad7b2217f8240c4ed9703af3e24cd143d375812289569e3e735dd",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0047-14881.jpg"
+    },
+    {
+      "sha256": "9da1f03121b69160437cabcaa716ec03566fc5637cd5897032813ab05b9a99e3",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0048-15064.jpg"
+    },
+    {
+      "sha256": "d04d2b8c1748fd2264c18ea8846ce22be3ebf149899f2585005c54e04659cab3",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0049-15213.jpg"
+    },
+    {
+      "sha256": "bd752c698e8d3ed302132d2399278a5b3b16f42db1b715491fed0a29c02a3119",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0050-15352.jpg"
+    },
+    {
+      "sha256": "b7df9b66ce5f26ad78a3ab2b71327b12b977c83574f31220c6881bec2ab7b1e5",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0051-15447.jpg"
+    },
+    {
+      "sha256": "9bb077550005a259ee12cbb156507d25926dc94c377773aad80fe39fa0389539",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0052-15509.jpg"
+    },
+    {
+      "sha256": "311e58c6d49af67ce06dde9c4d71e07ac0e1a5b16a31b235980b666ca190c688",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0053-15648.jpg"
+    },
+    {
+      "sha256": "751e287e90851740ea609448dfa9a5640b7a254a14f5b295056a4d86dfcae5f8",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0054-15793.jpg"
+    },
+    {
+      "sha256": "df8f7ea806a6c89e8b72a8a851cb200829b5e4596821d1283a924003bf510b63",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0055-15925.jpg"
+    },
+    {
+      "sha256": "899697117fde7179e0a973fb41adfd5a997fa16df45557216a8b44f9f1b94cdb",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0056-16096.jpg"
+    },
+    {
+      "sha256": "aff3a0b75771907eb3ea56f3cc6550def189051450a310cef625a7aae03754fe",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0057-16183.jpg"
+    },
+    {
+      "sha256": "df649ca0e9fb45c65c29c402586f34539f5bdcac886b8c72bc67b85455086ceb",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0058-16303.jpg"
+    },
+    {
+      "sha256": "20b9fc4186ca3687c9d877bd1c55339e5b8906d68b9694f3e0fb1fb40af2029c",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0059-16479.jpg"
+    },
+    {
+      "sha256": "47fe0a7989d031c02e456baf0ac17f3a3f5a74b13d525b463a3260b6e4ad7c73",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0060-16643.jpg"
+    },
+    {
+      "sha256": "2edea00ce2046ef6c0ebd480971476f5badf50891ba85dd5d3a5e2ea2172c139",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0061-16795.jpg"
+    },
+    {
+      "sha256": "53a2932e3749a45ae1efe231d971264beef47efdc847176b0226def0a6ae1a5f",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0062-16959.jpg"
+    },
+    {
+      "sha256": "a3cddd876d1747ab459646ffcc174134b62210541e24bca462867c2dda56e017",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0063-17160.jpg"
+    },
+    {
+      "sha256": "5e050daf52a87df5a56583c32eabeca84500933f4a830a882ca80623bd072733",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0064-17339.jpg"
+    },
+    {
+      "sha256": "8633c19fa2782fcae8d1949795b18468a968fb8fe9904df27d6af50a62739862",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0065-17507.jpg"
+    },
+    {
+      "sha256": "839d14cc52d40cce2528a62b39e829fcddee2d696a82b2fbd51adc66f97d1859",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0066-17694.jpg"
+    },
+    {
+      "sha256": "640b72627a43729b60d002dd3d2d4d630b7cbded192a9ef0066ba616b0113012",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0067-17819.jpg"
+    },
+    {
+      "sha256": "bc77fa5dac030a8c30837d74d8eafc469242643d9e1b1af54866459aeaad9dc1",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0068-18004.jpg"
+    },
+    {
+      "sha256": "aef6ab3f46ebea824630f564e820eda950821fafab1eb531336e3708c1cd8bf0",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0069-18197.jpg"
+    },
+    {
+      "sha256": "e45e6776a7c7058bd47f3ae01c4e09d3d91233ba679642e249959ec1cee7d4cf",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0070-18355.jpg"
+    },
+    {
+      "sha256": "e27d0b9258276dcc9f562eef9347c606e6f150177e94cb714153c2550f783f35",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0071-18463.jpg"
+    },
+    {
+      "sha256": "0b2084f0ef299a7c469d01db722d9eb2633559165ad3ec2f132c2e4728476afb",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0072-18618.jpg"
+    },
+    {
+      "sha256": "0a7d48af6b54ad53a5dc4ac102703c9718a505d692da900dc66c09f891e8e3d4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0073-18760.jpg"
+    },
+    {
+      "sha256": "1bea25013f9775a7f606aa950f5528b42ffc8ee08a0c4d19edfce5d85036cffa",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0074-18843.jpg"
+    },
+    {
+      "sha256": "24c7f6dbcac2fe627bb5c8b7498813a2868d8bc2ec79cc16e78077f6e4961c7d",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0075-18961.jpg"
+    },
+    {
+      "sha256": "5036ab0d1f2510dcb2fa6e438ddd43ac50fdbf6aa740fbb7b3e75d18b25d39a4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0076-19099.jpg"
+    },
+    {
+      "sha256": "ce81bd40bb27c692968c943e413a35b17420b354c3f905e65c3fe9f743e57fe8",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0077-19299.jpg"
+    },
+    {
+      "sha256": "d84debeae623fcc48ae0440cc502b84e3779d2aaef5b4bf0b1d9bc2a87dea775",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0078-19439.jpg"
+    },
+    {
+      "sha256": "bd1fc167589ea3009200694ad7bc2cc6bce35529a053b36999775d717ff5798a",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0079-19622.jpg"
+    },
+    {
+      "sha256": "3621e0ae4ef721fafc0d0513e2c665f6a6398089c07bf83b97bf6aec1af2d35c",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0080-19804.jpg"
+    },
+    {
+      "sha256": "a1163192c1f0d597c26f3f92075587dc5971f46641616c5ddc8b9a0eec4bb683",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0081-19957.jpg"
+    },
+    {
+      "sha256": "cd5be2de0839e8292eef3dc6eb339a954f5876af02c29909c09c8ebb4ba3c358",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0082-20080.jpg"
+    },
+    {
+      "sha256": "7449db549a0582ba65f77084b3f49db49878d51bfeea3a100241b3e2c0c6d7fd",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0083-20220.jpg"
+    },
+    {
+      "sha256": "1c0ad3d3b6c16caba1e7d4840db7324b6bd6ca0eb18b6f4c0a7be29d2e47943b",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0084-20378.jpg"
+    },
+    {
+      "sha256": "b556148fa989578ff6fce2a4bf2b2f73613cf4ff1ccbd718bbb1b872a182f809",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0085-20538.jpg"
+    },
+    {
+      "sha256": "bc4a5293bdc527f7ec86e938f1772136ebf52454fc5aa046d21f20f2b9346396",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0086-20673.jpg"
+    },
+    {
+      "sha256": "023a6a0c256cf558f19989644efae8e50268c8b4986543294098e99fb9fdbf1c",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0087-20713.jpg"
+    },
+    {
+      "sha256": "af91fd3381a81ec94e4ba49a16600bc9dd73369f048143642e84c47a17a1685d",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0088-20763.jpg"
+    },
+    {
+      "sha256": "fae5329ad0bb352bb044c86f8d6159d448975b8e1e50ce0e131ba03b51826b51",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0089-20787.jpg"
+    },
+    {
+      "sha256": "bbfd3f950ff59f19a32cb4c427624aa7fd1cec7808c7ae235e1606a0fa60bd57",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0090-20822.jpg"
+    },
+    {
+      "sha256": "19347ddadddb49d892fa525034ccdc2685e9c3348b3a3e62a9421a42ed258e4f",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0091-20955.jpg"
+    },
+    {
+      "sha256": "39388320c457513ac52bacdc2872befe78671051d3a3413b09407d8b209e36aa",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0092-21094.jpg"
+    },
+    {
+      "sha256": "670f552d1ee0ad7605f5418b6f23a2b9ae24bdfc5a9569eb3f06479bdcc300a2",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0093-21258.jpg"
+    },
+    {
+      "sha256": "82cf6b1b50ecb184f345d1b62b411af8c7bee69b4e78ec50b7fab9476e84e05b",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0094-21389.jpg"
+    },
+    {
+      "sha256": "47b8552d8cb99d42a94d248884ad6a33e7acdd358a83239c8acfb4cf156bab99",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0095-21545.jpg"
+    },
+    {
+      "sha256": "6a79f4b16cdb76c8bf5f1d2f34d414ba1910643e612d05ea615764544b06a0a8",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0096-21737.jpg"
+    },
+    {
+      "sha256": "9904ca13cfd24e2131f6bc088aa5cf5f8c6f2cf0494f55ba5cebe44990ffa3f7",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0097-21908.jpg"
+    },
+    {
+      "sha256": "75c29c813d64e7ec95b14aff92a028f67abb5c7ad4231a7c1ebcb6d97f1c31e7",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0098-22028.jpg"
+    },
+    {
+      "sha256": "180208f93f9183c1ae26ab3e41ae2336ba453cdb0ec3d4c710755c958ca4f260",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0099-22149.jpg"
+    },
+    {
+      "sha256": "14bfb081915cdecefeec54d406ce1cc25f31b9262ca8e244171b262ee50ee3a2",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0100-22271.jpg"
+    },
+    {
+      "sha256": "ccbc430b43da0e773bd014b814e2764bd53ce4c40a3d9a5c2ba024179975d05b",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0101-22434.jpg"
+    },
+    {
+      "sha256": "a7130c48c1a198e54a17643fd38097bf51923158c91aaba10ecb3feaaf4e81a4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0102-22525.jpg"
+    },
+    {
+      "sha256": "7fb122cd05681fcba45c137f9a37fdcfbbcf15bc5a989b9cc652eab881638601",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0103-22688.jpg"
+    },
+    {
+      "sha256": "49c7f2b43e66558edd446a287a1f4fa9a12c96a8f6376b4c2d69d2c07a6a0aa5",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0104-22813.jpg"
+    },
+    {
+      "sha256": "c48955263ee18485a7c7e28640220588fde3262371475504c55a2da404667ff5",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0105-22957.jpg"
+    },
+    {
+      "sha256": "1f67b7e83f4b886dd19243e4a445be685006f00dc212fbda0d6ddddba3aad990",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0106-23125.jpg"
+    },
+    {
+      "sha256": "5ce0859f91760e018a6f2f8119744b69168a8518473d409b73ab1e6fcebd24dd",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0107-23259.jpg"
+    },
+    {
+      "sha256": "94418b1336b3d411d9038e896a33cd59ea5c50052e5ca6c0c369f2a46df3f931",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0108-23375.jpg"
+    },
+    {
+      "sha256": "f5c9bc1ff6ae34790b9d2a73fde5d9f8285794ceba6e8caf1a6f6d53eb35e237",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/frames/0109-23410.jpg"
+    },
+    {
+      "sha256": "6ffecb813da747f9fb1c21c4fc95023edb64ba22906b42ccc4d754bade2ab8b8",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/initial-state.json"
+    },
+    {
+      "sha256": "4bb5b83c0ff3bfc0ab446c4a1924daa763240294839a46d8b257f1216e3e978d",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/last-state.json"
+    },
+    {
+      "sha256": "beffd29ebff89bfef5ae7fb8a3128e42f578b62346af1f27f46d9385493784c7",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/matplotlib-cache/fontlist-v390.json"
+    },
+    {
+      "sha256": "ecc58ddb40a188589a0724642a9bcfc963faa3192377e36c4213c7b367b11639",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/observation.png"
+    },
+    {
+      "sha256": "badb496cfdf5562a30ecb85e183f1e3fdda805cac1e6926fa94a069699b87c82",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/progress.json"
+    },
+    {
+      "sha256": "d50f0b0b1db9b4851f8d9e36abcf717d1cf8f153ba25e3062d4cbadf883802f4",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/protocol.json"
+    },
+    {
+      "sha256": "a571fe766ffc5cf0edfb2f5f385fab76db6c28ac74508979bc597d74e5c6b976",
+      "path": "outputs/doom/qa-hour-20260905T2047Z/timeseries.csv"
+    },
+    {
+      "sha256": "05c6ee6ba09eae9354aeae564d41a356142be6d2e6d1c5f3bf70671d41fb572b",
+      "path": "outputs/doom/reward-probe.json"
+    },
+    {
+      "sha256": "04b94833cdc1d61d4bb2981cef22b29b0960ce49e1adee41e3b0c9d5fffc2f94",
+      "path": "outputs/doom/spectator-v1/previous-run-final-state.json"
+    },
+    {
+      "sha256": "3c6320023afca7319af69d7e0ac6d75f8a5752756615a5b62d42411c157e988e",
+      "path": "outputs/doom/spectator-v1/public-verification.json"
+    },
+    {
+      "sha256": "cbe11733c61fe4698132b96c78eba397b11738533206d0c6cbd3c86b9f8e5345",
+      "path": "outputs/doom/spectator-v1/recovery-verification.json"
+    },
+    {
+      "sha256": "1560e7b6c2f3f0e898417b8eb1f16d9ea8311fb47a024d5d88dcb5a6fefa3a68",
+      "path": "outputs/doom/spectator-v1/restart-checkpoint-record.json"
+    },
+    {
+      "sha256": "a3c939186689980d5bbe49c667f752a0d136f5b880533c0e624760ece5c8a8fb",
+      "path": "outputs/doom/spectator-v1/run-2ea17d55-a282-4f8b-8089-adb3885e20bb.json"
+    },
+    {
+      "sha256": "64ad81af6379b06759ab313020b709a5327712b4b67e967d8217a93429034c88",
+      "path": "outputs/doom/spectator-v1/run-fdfeb7c8-21bf-42d1-856d-1644346d0a7c.json"
+    },
+    {
+      "sha256": "7b0325fcfc531ebfaafae40ad75daff6fc2a2a40533e2ce1893c418f508919eb",
+      "path": "outputs/doom/spectator-v2/before-training-final-state.json"
+    },
+    {
+      "sha256": "8d03e992f32b389f2f7b3dc73b857d3f15cf39d52fb1b79bf13d61bf18273f98",
+      "path": "outputs/doom/spectator-v2/run-53bd55cb-daa0-4cdd-b00b-c9e27285d7a2.json"
+    },
+    {
+      "sha256": "e6f860e32851b947c52b57ca9e33f932f3fd6c331a0e6e85166f1d29519b532b",
+      "path": "outputs/doom/validation.json"
+    },
+    {
+      "sha256": "0f792d73d83e29f0fb703a46db10647879b1415b0de84941d5c746117996609f",
+      "path": "pyproject.toml"
+    },
+    {
+      "sha256": "6153c3fcd18a7d4e6bc04ea12b1d3a95570a294fa302d6ce081d2344562fc8a4",
+      "path": "requirements-neural.txt"
+    },
+    {
+      "sha256": "6f321f37576b1d66ef3b45d62258810a2eab0a7b3bc2dc73616f17f9a89ec8e8",
+      "path": "research/huang-2024/README.md"
+    },
+    {
+      "sha256": "8ffae7c9c251f27afa1b30e4709629a8039532c30fadf9de1f50e929d07aec94",
+      "path": "research/huang-2024/targets.json"
+    },
+    {
+      "sha256": "4ae710c7e5306fc1047f7e29cefc30841ec0fbd8eed49e9df3ddf805ba64f513",
+      "path": "tests/test_connectome.py"
+    },
+    {
+      "sha256": "920513c38ed1964d077f72de158637159d223b481fdb2cf02ae87b812fc123e5",
+      "path": "tests/test_doom.py"
+    },
+    {
+      "sha256": "4d35653ec95962977de26a0665ffa449e1a95e30af6aa560155d3f57db57231f",
+      "path": "tests/test_doom_broadcast.py"
+    },
+    {
+      "sha256": "fe779b9c307acb003d40ad4bdb8ae9468e82adc4e7cd211d04bcaf31183a0d6f",
+      "path": "tests/test_doom_centered_rule.py"
+    },
+    {
+      "sha256": "1dd4b7a8503f1bd8caed9da71cfc2089bfe32e9bcb6c65a99a67dcd7d8b0699a",
+      "path": "tests/test_doom_checkpoint.py"
+    },
+    {
+      "sha256": "cab92b111a0eef6af9f610f77bc82ea42d6dc5411fc752a51771267425671790",
+      "path": "tests/test_doom_combat.py"
+    },
+    {
+      "sha256": "af532b29095bb213fb3a26bb2b7d225418dd9c3c0b1ff1f0e842a00450535ebf",
+      "path": "tests/test_doom_learning.py"
+    },
+    {
+      "sha256": "27848ee8e7e7947257c852a74b1e8da0f26f12bb74369c830a12a8a679396c2d",
+      "path": "tests/test_doom_learning_controls.py"
+    },
+    {
+      "sha256": "ca9abad243f78d3197f7b5710e2c9edb13ddb5509e05aa5e501184ddeb88ff45",
+      "path": "tests/test_doom_learning_v2.py"
+    },
+    {
+      "sha256": "c619e14975212eaa0b88ccdb35e619be61561b16a7edf8b247591d7a79bd934d",
+      "path": "tests/test_doom_learning_v4.py"
+    },
+    {
+      "sha256": "e7f110aba48f1f1a694808453e40f07584ee707b8c14c4f9a825fa7b0f37300a",
+      "path": "tests/test_doom_learning_v5.py"
+    },
+    {
+      "sha256": "055def6b11e54871dd5499aa1fb93556763dc3b95eeba2e6ecf177ae3fe864a8",
+      "path": "tests/test_doom_learning_v6.py"
+    },
+    {
+      "sha256": "96f9655ba6ee17e3d4c08620e25be6a5940edb41d9afa9f6c2f2f40a77b62ce2",
+      "path": "tests/test_doom_live_training.py"
+    },
+    {
+      "sha256": "9f549cbc6186bff4f863da6c00c17e74d47e9385467cce63bb258ac40186ed3e",
+      "path": "tests/test_doom_reference.py"
+    }
+  ]
+}

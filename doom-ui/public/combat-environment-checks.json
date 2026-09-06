@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-09-05T23:19:29.287930+00:00",
+  "scenario": "combat-survival-v1",
+  "command": "OPENBLAS_NUM_THREADS=1 .venv-neural/bin/python -m pytest tests/test_doom_combat.py tests/test_doom.py -q",
+  "passed": 14,
+  "failed": 0,
+  "duration_seconds": 48.12,
+  "environment_checks": [
+    "death and arena reset",
+    "unlimited round duration and eight-enemy cap",
+    "ammo contact and timed respawn",
+    "shooting kills and recurring spawns",
+    "collectible enemy ammo drops",
+    "asset hashes"
+  ],
+  "scientific_learning_validated": false,
+  "test_only_interventions": "God mode, warp, inventory removal, and kill monsters isolate engine mechanics. None run in the public broadcaster.",
+  "assets": {
+    "combat_arena.py": "e25e1940d346cb1c172ec880dd8fe4c4fee470ccf1bb7d4c827ef40a85c8c7b8",
+    "combat_survival.acs": "634300ab5ce7dc581c8da4a8881fb3a2753cad36c014f81b1d0070d8adcd6387",
+    "combat_survival.decorate": "268d72045a392501b1a0647ff5b06e53c890d2b19a34874fa494fb9e37970ff6",
+    "combat_survival.cfg": "bd2160dd42e997db16f8ba0ab38244a672c06416226a21b1ebd198d3a584d943",
+    "combat_survival.wad": "75723435a57366811436e2506cc294572a023e504888639b67e5e59d87b4edff"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "model": {
+    "model": "all-modulators-separated-v2",
+    "source_sha256": "f1cca01b570f7445295c1d631cdaa108e16d268d39e5bfaeaf4dee7344114f37",
+    "binary_sha256": "308e301da2fedcdd3a8acb19f816109beb1641f1752191c8f58d82aef7d62a74",
+    "flags": [
+      "-O3",
+      "-std=c++17",
+      "-shared",
+      "-fPIC"
+    ]
+  },
+  "modulatory_cells": 541,
+  "rows": [
+    {
+      "current": 7.2,
+      "imposed_spikes": 1029,
+      "KC_spikes": 1063,
+      "active_KCs": 67,
+      "DAN_spikes": [
+        10,
+        12
+      ],
+      "MBON_spikes": [
+        0,
+        13
+      ],
+      "seconds": 0.5142519171349704
+    },
+    {
+      "current": 30.0,
+      "imposed_spikes": 9570,
+      "KC_spikes": 13990,
+      "active_KCs": 139,
+      "DAN_spikes": [
+        93,
+        50
+      ],
+      "MBON_spikes": [
+        0,
+        180
+      ],
+      "seconds": 0.7386523331515491
+    }
+  ]
+}

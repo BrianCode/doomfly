@@ -1,0 +1,164 @@
+[
+  {
+    "package": "@base-ui/react",
+    "version": "1.7.0",
+    "license": "MIT",
+    "notice": "licenses/npm/base-ui__react/LICENSE",
+    "sha256": "07fc1b39d69d14bc7d40482a628f47226258eb01265db68ae684944b916beb2a",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "@openai/sites-vite-plugin",
+    "version": "0.2.0",
+    "license": "MIT",
+    "notice": "licenses/npm/openai__sites-vite-plugin/LICENSE",
+    "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "@shadcn/react",
+    "version": "0.3.0",
+    "license": "MIT",
+    "notice": "licenses/npm/shadcn__react/LICENSE.md",
+    "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "class-variance-authority",
+    "version": "0.7.1",
+    "license": "Apache-2.0",
+    "notice": "licenses/npm/class-variance-authority/LICENSE",
+    "sha256": "0ccbf956cffc8dcf515809433cb5242ee67c94513d46e48c261d68d0880de406",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "clsx",
+    "version": "2.1.1",
+    "license": "MIT",
+    "notice": "licenses/npm/clsx/license",
+    "sha256": "9a9edad7baae52622bddf3c15b2ef8a33d2c89f2d25408ad13e8a7481c6b0c97",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "cmdk",
+    "version": "1.1.1",
+    "license": "MIT",
+    "notice": "licenses/npm/cmdk/LICENSE.md",
+    "sha256": "b5acfd21b3b61508365224c40ec1b03ec71091248baaf989d4be916551e7d532",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "date-fns",
+    "version": "4.1.0",
+    "license": "MIT",
+    "notice": "licenses/npm/date-fns/LICENSE.md",
+    "sha256": "8d3951c38967b964b1fe259bfd200c2647cc04c858b55a4414e3122a60f1ef4b",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "lucide-react",
+    "version": "1.31.0",
+    "license": "ISC",
+    "notice": "licenses/npm/lucide-react/LICENSE",
+    "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "react",
+    "version": "19.2.6",
+    "license": "MIT",
+    "notice": "licenses/npm/react/LICENSE",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "react-day-picker",
+    "version": "9.8.1",
+    "license": "MIT",
+    "notice": "licenses/npm/react-day-picker/LICENSE",
+    "sha256": "45d115f88e2b50de2113bafbc5e877f8e85dc9236d5d304a855ed4756f7e4439",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "react-dom",
+    "version": "19.2.6",
+    "license": "MIT",
+    "notice": "licenses/npm/react-dom/LICENSE",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "react-resizable-panels",
+    "version": "4.5.8",
+    "license": "MIT",
+    "notice": "licenses/npm/react-resizable-panels/LICENSE.md",
+    "sha256": "a8f1e0280bf14adcf5d017547db85eb5c3bac0feb1690ca98650874002eaa8ea",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "react-server-dom-webpack",
+    "version": "19.2.6",
+    "license": "MIT",
+    "notice": "licenses/npm/react-server-dom-webpack/LICENSE",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "recharts",
+    "version": "3.8.0",
+    "license": "MIT",
+    "notice": "licenses/npm/recharts/LICENSE",
+    "sha256": "2d3aa48a8d1d3b93093680e8e68d3a64cfb590c3ade377ffcaefc69dac7c2ce5",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "shadcn",
+    "version": "4.18.0",
+    "license": "MIT",
+    "notice": "licenses/npm/shadcn/LICENSE.md",
+    "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "tailwind-merge",
+    "version": "3.6.0",
+    "license": "MIT",
+    "notice": "licenses/npm/tailwind-merge/LICENSE.md",
+    "sha256": "d4c70c7ce38cea8778f0aed3fc0bef0a9dbd27f13bd8b6773cbd6d37941971e5",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "tw-animate-css",
+    "version": "1.4.0",
+    "license": "MIT",
+    "notice": "licenses/npm/tw-animate-css/LICENSE",
+    "sha256": "039184dfa0a822397b3f45a435b5b1e538721587fbade96b9fa80f86cb354109",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "vinext",
+    "version": "1.0.0-beta.5",
+    "license": "MIT",
+    "notice": "licenses/npm/vinext/LICENSE",
+    "sha256": "19a7b85046eb77c8ab308c68569abbbb59235814297b9c95dc90480f71ec7198",
+    "source": "Installed package distribution; version is pinned in doom-ui/package-lock.json."
+  },
+  {
+    "package": "embla-carousel-react",
+    "version": "8.5.2",
+    "license": "MIT",
+    "notice": "licenses/npm/embla-carousel-react/LICENSE",
+    "sha256": "992490064b90ec94c302fe5f29dcc14cb44145857064e46f9ffe6c8f511c1093",
+    "source": "https://github.com/davidjerleke/embla-carousel/blob/v8.5.2/LICENSE",
+    "source_note": "Upstream notice; installed package declares MIT but omits the top-level license file."
+  },
+  {
+    "package": "input-otp",
+    "version": "1.4.2",
+    "license": "MIT",
+    "notice": "licenses/npm/input-otp/LICENSE",
+    "sha256": "079031192fea535a245aa64a637d8433c406b82a14f91c3606b1d63e41c00152",
+    "source": "https://github.com/guilhermerodz/input-otp/blob/master/LICENSE",
+    "source_note": "Upstream notice; installed package declares MIT but omits the top-level license file."
+  }
+]

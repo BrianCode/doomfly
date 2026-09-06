@@ -1,0 +1,6999 @@
+{
+  "schema": 1,
+  "model_revision": "lif-r2-refractory-write-protection",
+  "full_graph": true,
+  "neurons": 166700,
+  "edges": 25582938,
+  "conditions": [
+    {
+      "stimulus": "black",
+      "brain_seconds": 1.0000000000000004,
+      "wall_seconds": 3.6433797909412533,
+      "spike_sha256": "782f2048331b6af7a798ce3f989c661d1f4d9b622f8a8bace30d8564b8d75d14",
+      "groups": {
+        "receptors": {
+          "cells": 3377,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "lamina": {
+          "cells": 7114,
+          "spikes": 230823,
+          "active_cells": 7114
+        },
+        "T4": {
+          "cells": 6865,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "T5": {
+          "cells": 6720,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "Kenyon": {
+          "cells": 4064,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "visual_KCg_d": {
+          "cells": 206,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "MBON11": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "PPL101": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "descending": {
+          "cells": 1314,
+          "spikes": 51,
+          "active_cells": 4
+        },
+        "DNp20": {
+          "cells": 2,
+          "spikes": 30,
+          "active_cells": 2
+        },
+        "DNpe017": {
+          "cells": 2,
+          "spikes": 21,
+          "active_cells": 2
+        }
+      },
+      "trace": [
+        {
+          "tick": 0,
+          "neural_ms": 28.6,
+          "kernel_ms": 316.1280839703977,
+          "groups": {
+            "receptors": 0,
+            "lamina": 7114,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 3.478844532211385,
+            "attack": true
+          }
+        },
+        {
+          "tick": 1,
+          "neural_ms": 57.1,
+          "kernel_ms": 227.13933396153152,
+          "groups": {
+            "receptors": 0,
+            "lamina": 8604,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 0,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 6.096642370547056,
+            "attack": true
+          }
+        },
+        {
+          "tick": 2,
+          "neural_ms": 85.7,
+          "kernel_ms": 31.121541978791356,
+          "groups": {
+            "receptors": 0,
+            "lamina": 5277,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 11.537868560212576,
+            "attack": true
+          }
+        },
+        {
+          "tick": 3,
+          "neural_ms": 114.30000000000001,
+          "kernel_ms": 179.91429194808006,
+          "groups": {
+            "receptors": 0,
+            "lamina": 7452,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.0436533596634152,
+            "forward": 8.667969316996631,
+            "attack": false
+          }
+        },
+        {
+          "tick": 4,
+          "neural_ms": 142.9,
+          "kernel_ms": 154.61108298040926,
+          "groups": {
+            "receptors": 0,
+            "lamina": 5988,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.7840577531224936,
+            "forward": 9.990765836245616,
+            "attack": true
+          }
+        },
+        {
+          "tick": 5,
+          "neural_ms": 171.4,
+          "kernel_ms": 55.60104199685156,
+          "groups": {
+            "receptors": 0,
+            "lamina": 7068,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 0,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.5896226065577427,
+            "forward": 10.993700014186862,
+            "attack": true
+          }
+        },
+        {
+          "tick": 6,
+          "neural_ms": 200.0,
+          "kernel_ms": 101.68345784768462,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6124,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.4866147814874069,
+            "forward": 8.259155831593338,
+            "attack": false
+          }
+        },
+        {
+          "tick": 7,
+          "neural_ms": 228.6,
+          "kernel_ms": 50.24691601283848,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6936,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.1168381096455378,
+            "forward": 13.162484079978562,
+            "attack": true
+          }
+        },
+        {
+          "tick": 8,
+          "neural_ms": 257.1,
+          "kernel_ms": 55.01029104925692,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6284,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.8398781782205583,
+            "forward": 9.89837565039582,
+            "attack": false
+          }
+        },
+        {
+          "tick": 9,
+          "neural_ms": 285.70000000000005,
+          "kernel_ms": 70.32829103991389,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6667,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.6309690772466815,
+            "forward": 10.91512411695271,
+            "attack": true
+          }
+        },
+        {
+          "tick": 10,
+          "neural_ms": 314.30000000000007,
+          "kernel_ms": 83.61683296971023,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6385,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.51767683921735,
+            "forward": 11.67896922969822,
+            "attack": true
+          }
+        },
+        {
+          "tick": 11,
+          "neural_ms": 342.9000000000001,
+          "kernel_ms": 45.79012491740286,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6633,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.140173872392428,
+            "forward": 8.773972975066274,
+            "attack": false
+          }
+        },
+        {
+          "tick": 12,
+          "neural_ms": 371.4000000000001,
+          "kernel_ms": 80.26308286935091,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6525,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.8574270044416344,
+            "forward": 10.07865443802593,
+            "attack": true
+          }
+        },
+        {
+          "tick": 13,
+          "neural_ms": 400.0000000000001,
+          "kernel_ms": 101.48637485690415,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6572,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.6441528543403243,
+            "forward": 7.571716298336053,
+            "attack": false
+          }
+        },
+        {
+          "tick": 14,
+          "neural_ms": 428.60000000000014,
+          "kernel_ms": 129.2464998550713,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6421,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.5275813180847808,
+            "forward": 5.688347393495615,
+            "attack": false
+          }
+        },
+        {
+          "tick": 15,
+          "neural_ms": 457.10000000000014,
+          "kernel_ms": 74.34962503612041,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6579,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 0,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.1487629258317462,
+            "forward": 7.758220017192258,
+            "attack": true
+          }
+        },
+        {
+          "tick": 16,
+          "neural_ms": 485.70000000000016,
+          "kernel_ms": 44.94079202413559,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6599,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -0.18063071890025903,
+            "forward": 9.307305197418737,
+            "attack": true
+          }
+        },
+        {
+          "tick": 17,
+          "neural_ms": 514.3000000000002,
+          "kernel_ms": 71.42212498001754,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6617,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.9079522532620401,
+            "forward": 6.992230450028848,
+            "attack": false
+          }
+        },
+        {
+          "tick": 18,
+          "neural_ms": 542.9000000000002,
+          "kernel_ms": 42.10245795547962,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6506,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.725763944603925,
+            "forward": 8.731845871403529,
+            "attack": true
+          }
+        },
+        {
+          "tick": 19,
+          "neural_ms": 571.4000000000002,
+          "kernel_ms": 59.348042123019695,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6585,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.297799085932597,
+            "forward": 6.566472561815305,
+            "attack": false
+          }
+        },
+        {
+          "tick": 20,
+          "neural_ms": 600.0000000000002,
+          "kernel_ms": 68.85958416387439,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6530,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -0.06866542339221482,
+            "forward": 8.4119898865442,
+            "attack": true
+          }
+        },
+        {
+          "tick": 21,
+          "neural_ms": 628.6000000000003,
+          "kernel_ms": 66.47920911200345,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6720,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.9920675940606792,
+            "forward": 6.319613527483945,
+            "attack": false
+          }
+        },
+        {
+          "tick": 22,
+          "neural_ms": 657.1000000000003,
+          "kernel_ms": 41.41804203391075,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6333,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.7901994801108807,
+            "forward": 4.752439454457522,
+            "attack": false
+          }
+        },
+        {
+          "tick": 23,
+          "neural_ms": 685.7000000000003,
+          "kernel_ms": 71.17787492461503,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6650,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.388563304158271,
+            "forward": 7.049174628896335,
+            "attack": true
+          }
+        },
+        {
+          "tick": 24,
+          "neural_ms": 714.3000000000003,
+          "kernel_ms": 34.22262519598007,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6488,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.7944383162366802,
+            "forward": 5.2957813719710805,
+            "attack": false
+          }
+        },
+        {
+          "tick": 25,
+          "neural_ms": 742.9000000000003,
+          "kernel_ms": 47.8604999370873,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6376,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 2.391747783274709,
+            "forward": 3.978522566989783,
+            "attack": false
+          }
+        },
+        {
+          "tick": 26,
+          "neural_ms": 771.4000000000003,
+          "kernel_ms": 114.17237506248057,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6533,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 0,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.7986284257593665,
+            "forward": 6.472407375270707,
+            "attack": true
+          }
+        },
+        {
+          "tick": 27,
+          "neural_ms": 800.0000000000003,
+          "kernel_ms": 148.4657081309706,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6579,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.3512422962524113,
+            "forward": 4.86247769621979,
+            "attack": false
+          }
+        },
+        {
+          "tick": 28,
+          "neural_ms": 828.6000000000004,
+          "kernel_ms": 54.059040965512395,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6526,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.015137822260664,
+            "forward": 7.131842246256852,
+            "attack": true
+          }
+        },
+        {
+          "tick": 29,
+          "neural_ms": 857.1000000000004,
+          "kernel_ms": 53.927416913211346,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6461,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.7633981124387551,
+            "forward": 5.363247028742318,
+            "attack": false
+          }
+        },
+        {
+          "tick": 30,
+          "neural_ms": 885.7000000000004,
+          "kernel_ms": 47.416500048711896,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6702,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.6171658226230696,
+            "forward": 7.508051524993701,
+            "attack": true
+          }
+        },
+        {
+          "tick": 31,
+          "neural_ms": 914.3000000000004,
+          "kernel_ms": 64.90245810709894,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6334,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.214916226323705,
+            "forward": 5.6405184293307755,
+            "attack": false
+          }
+        },
+        {
+          "tick": 32,
+          "neural_ms": 942.9000000000004,
+          "kernel_ms": 106.88933404162526,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6507,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.9127211423442656,
+            "forward": 7.716355162727044,
+            "attack": true
+          }
+        },
+        {
+          "tick": 33,
+          "neural_ms": 971.4000000000004,
+          "kernel_ms": 64.11191704683006,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6470,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 0,
+            "DNp20": 0,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.686379309261558,
+            "forward": 5.802809073761696,
+            "attack": false
+          }
+        },
+        {
+          "tick": 34,
+          "neural_ms": 1000.0000000000005,
+          "kernel_ms": 131.04620878584683,
+          "groups": {
+            "receptors": 0,
+            "lamina": 6678,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.55930447507107,
+            "forward": 7.838278056805923,
+            "attack": true
+          }
+        }
+      ]
+    },
+    {
+      "stimulus": "white",
+      "brain_seconds": 1.0000000000000004,
+      "wall_seconds": 3.1080913331825286,
+      "spike_sha256": "f073dd4acd03483e11c528938e91bcc2be28674fd27027dc954fc59c1eb3bbf5",
+      "groups": {
+        "receptors": {
+          "cells": 3377,
+          "spikes": 436887,
+          "active_cells": 3335
+        },
+        "lamina": {
+          "cells": 7114,
+          "spikes": 169659,
+          "active_cells": 5298
+        },
+        "T4": {
+          "cells": 6865,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "T5": {
+          "cells": 6720,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "Kenyon": {
+          "cells": 4064,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "visual_KCg_d": {
+          "cells": 206,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "MBON11": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "PPL101": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "descending": {
+          "cells": 1314,
+          "spikes": 137,
+          "active_cells": 4
+        },
+        "DNp20": {
+          "cells": 2,
+          "spikes": 78,
+          "active_cells": 2
+        },
+        "DNpe017": {
+          "cells": 2,
+          "spikes": 59,
+          "active_cells": 2
+        }
+      },
+      "trace": [
+        {
+          "tick": 0,
+          "neural_ms": 28.6,
+          "kernel_ms": 157.1186671499163,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 5145,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 3.478844532211385,
+            "attack": true
+          }
+        },
+        {
+          "tick": 1,
+          "neural_ms": 57.1,
+          "kernel_ms": 77.63733388856053,
+          "groups": {
+            "receptors": 10005,
+            "lamina": 5928,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 9.577144064310108,
+            "attack": true
+          }
+        },
+        {
+          "tick": 2,
+          "neural_ms": 85.7,
+          "kernel_ms": 113.80945798009634,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4216,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 14.15263936747657,
+            "attack": true
+          }
+        },
+        {
+          "tick": 3,
+          "neural_ms": 114.30000000000001,
+          "kernel_ms": 83.9630828704685,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 5216,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 2,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 10.632348873763332,
+            "attack": false
+          }
+        },
+        {
+          "tick": 4,
+          "neural_ms": 142.9,
+          "kernel_ms": 48.94358292222023,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4649,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 14.945375292986137,
+            "attack": true
+          }
+        },
+        {
+          "tick": 5,
+          "neural_ms": 171.4,
+          "kernel_ms": 50.800584023818374,
+          "groups": {
+            "receptors": 10005,
+            "lamina": 4951,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.0441505081289153,
+            "forward": 18.200138644004397,
+            "attack": true
+          }
+        },
+        {
+          "tick": 6,
+          "neural_ms": 200.0,
+          "kernel_ms": 105.33987497910857,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4779,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.7844312421791991,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 7,
+          "neural_ms": 228.6,
+          "kernel_ms": 80.05729108117521,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4936,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 2,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.58931386703001,
+            "forward": 15.499128367310313,
+            "attack": false
+          }
+        },
+        {
+          "tick": 8,
+          "neural_ms": 257.1,
+          "kernel_ms": 102.38841595128179,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4796,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.5314734445324745,
+            "forward": 18.616568849269353,
+            "attack": true
+          }
+        },
+        {
+          "tick": 9,
+          "neural_ms": 285.70000000000005,
+          "kernel_ms": 78.42545886524022,
+          "groups": {
+            "receptors": 10005,
+            "lamina": 4799,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.9018013621395407,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 10,
+          "neural_ms": 314.30000000000007,
+          "kernel_ms": 97.70229202695191,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4878,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.4724056259957172,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 11,
+          "neural_ms": 342.9000000000001,
+          "kernel_ms": 61.92362494766712,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4765,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.8574259182673405,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 12,
+          "neural_ms": 371.4000000000001,
+          "kernel_ms": 63.504750141873956,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4840,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 3.4851117831371385,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 13,
+          "neural_ms": 400.0000000000001,
+          "kernel_ms": 74.35720902867615,
+          "groups": {
+            "receptors": 10005,
+            "lamina": 4760,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.6182341950669232,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 14,
+          "neural_ms": 428.60000000000014,
+          "kernel_ms": 137.59037479758263,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4907,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.9669814705475668,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 15,
+          "neural_ms": 457.10000000000014,
+          "kernel_ms": 108.69783302769065,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4670,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.5233486119627866,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 16,
+          "neural_ms": 485.70000000000016,
+          "kernel_ms": 70.82575000822544,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4822,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.8956974791691066,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 17,
+          "neural_ms": 514.3000000000002,
+          "kernel_ms": 32.57770789787173,
+          "groups": {
+            "receptors": 10009,
+            "lamina": 4836,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.4241666472445,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 18,
+          "neural_ms": 542.9000000000002,
+          "kernel_ms": 58.14491701312363,
+          "groups": {
+            "receptors": 13336,
+            "lamina": 4755,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.1135765206166246,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 19,
+          "neural_ms": 571.4000000000002,
+          "kernel_ms": 59.18470909819007,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4876,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.5894396710984664,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 20,
+          "neural_ms": 600.0000000000002,
+          "kernel_ms": 67.66316713765264,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4815,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.194086605199193,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 21,
+          "neural_ms": 628.6000000000003,
+          "kernel_ms": 54.33649988844991,
+          "groups": {
+            "receptors": 10022,
+            "lamina": 4835,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.9407259863524975,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 22,
+          "neural_ms": 657.1000000000003,
+          "kernel_ms": 53.605458000674844,
+          "groups": {
+            "receptors": 13323,
+            "lamina": 4713,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.4594536054651217,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 23,
+          "neural_ms": 685.7000000000003,
+          "kernel_ms": 55.02279195934534,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4869,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 3.183739652821672,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 24,
+          "neural_ms": 714.3000000000003,
+          "kernel_ms": 73.36137490347028,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4776,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.39182458007264,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 25,
+          "neural_ms": 742.9000000000003,
+          "kernel_ms": 117.49620898626745,
+          "groups": {
+            "receptors": 13328,
+            "lamina": 4819,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.7968883909114344,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 26,
+          "neural_ms": 771.4000000000003,
+          "kernel_ms": 49.90354203619063,
+          "groups": {
+            "receptors": 10017,
+            "lamina": 4803,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 3,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.3954361915153326,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 27,
+          "neural_ms": 800.0000000000003,
+          "kernel_ms": 57.35275009647012,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4877,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.7996016595716549,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 28,
+          "neural_ms": 828.6000000000004,
+          "kernel_ms": 56.58237496390939,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4821,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.351973450432159,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 29,
+          "neural_ms": 857.1000000000004,
+          "kernel_ms": 81.67266589589417,
+          "groups": {
+            "receptors": 13332,
+            "lamina": 4715,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 3,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.0608538143152573,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 30,
+          "neural_ms": 885.7000000000004,
+          "kernel_ms": 129.658916965127,
+          "groups": {
+            "receptors": 10013,
+            "lamina": 4809,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.548242427626599,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 31,
+          "neural_ms": 914.3000000000004,
+          "kernel_ms": 118.30337485298514,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4907,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.1631366562987147,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 32,
+          "neural_ms": 942.9000000000004,
+          "kernel_ms": 51.17408302612603,
+          "groups": {
+            "receptors": 13340,
+            "lamina": 4783,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.8738210871146873,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 33,
+          "neural_ms": 971.4000000000004,
+          "kernel_ms": 48.14066691324115,
+          "groups": {
+            "receptors": 13335,
+            "lamina": 4759,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.7012764213640195,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 34,
+          "neural_ms": 1000.0000000000005,
+          "kernel_ms": 63.425500178709626,
+          "groups": {
+            "receptors": 10012,
+            "lamina": 4834,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.278105374762689,
+            "forward": 20.0,
+            "attack": true
+          }
+        }
+      ]
+    },
+    {
+      "stimulus": "left",
+      "brain_seconds": 1.0000000000000004,
+      "wall_seconds": 2.306391749996692,
+      "spike_sha256": "fab90fdf55faac8e3eb99989c8014b9680dac36fb180a7f6b05d07080969dad8",
+      "groups": {
+        "receptors": {
+          "cells": 3377,
+          "spikes": 150389,
+          "active_cells": 1148
+        },
+        "lamina": {
+          "cells": 7114,
+          "spikes": 207439,
+          "active_cells": 6410
+        },
+        "T4": {
+          "cells": 6865,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "T5": {
+          "cells": 6720,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "Kenyon": {
+          "cells": 4064,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "visual_KCg_d": {
+          "cells": 206,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "MBON11": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "PPL101": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "descending": {
+          "cells": 1314,
+          "spikes": 91,
+          "active_cells": 4
+        },
+        "DNp20": {
+          "cells": 2,
+          "spikes": 50,
+          "active_cells": 2
+        },
+        "DNpe017": {
+          "cells": 2,
+          "spikes": 41,
+          "active_cells": 2
+        }
+      },
+      "trace": [
+        {
+          "tick": 0,
+          "neural_ms": 28.6,
+          "kernel_ms": 54.105208022519946,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 6361,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 3.478844532211385,
+            "attack": true
+          }
+        },
+        {
+          "tick": 1,
+          "neural_ms": 57.1,
+          "kernel_ms": 142.07104197703302,
+          "groups": {
+            "receptors": 3444,
+            "lamina": 7558,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -1.044150508128915,
+            "forward": 9.577144064310108,
+            "attack": true
+          }
+        },
+        {
+          "tick": 2,
+          "neural_ms": 85.7,
+          "kernel_ms": 64.54491708427668,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 4857,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -0.7844312421791989,
+            "forward": 14.15263936747657,
+            "attack": true
+          }
+        },
+        {
+          "tick": 3,
+          "neural_ms": 114.30000000000001,
+          "kernel_ms": 74.10191697999835,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 6471,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -0.5893138670300103,
+            "forward": 14.111193405974717,
+            "attack": true
+          }
+        },
+        {
+          "tick": 4,
+          "neural_ms": 142.9,
+          "kernel_ms": 85.06854181177914,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5564,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -0.44272947735874124,
+            "forward": 17.55890113672778,
+            "attack": true
+          }
+        },
+        {
+          "tick": 5,
+          "neural_ms": 171.4,
+          "kernel_ms": 36.53183300048113,
+          "groups": {
+            "receptors": 3444,
+            "lamina": 6144,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": -1.3770893859100586,
+            "forward": 13.204543945004104,
+            "attack": false
+          }
+        },
+        {
+          "tick": 6,
+          "neural_ms": 200.0,
+          "kernel_ms": 50.73587503284216,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5668,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.009097585211934102,
+            "forward": 13.398924758720781,
+            "attack": true
+          }
+        },
+        {
+          "tick": 7,
+          "neural_ms": 228.6,
+          "kernel_ms": 46.838290989398956,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 6209,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.006834675665117515,
+            "forward": 17.023800329534843,
+            "attack": true
+          }
+        },
+        {
+          "tick": 8,
+          "neural_ms": 257.1,
+          "kernel_ms": 57.18883383087814,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5769,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.005139773523818292,
+            "forward": 16.282642204260252,
+            "attack": true
+          }
+        },
+        {
+          "tick": 9,
+          "neural_ms": 285.70000000000005,
+          "kernel_ms": 48.79516689106822,
+          "groups": {
+            "receptors": 3444,
+            "lamina": 5934,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.0397920399605372,
+            "forward": 15.711384909111116,
+            "attack": true
+          }
+        },
+        {
+          "tick": 10,
+          "neural_ms": 314.30000000000007,
+          "kernel_ms": 51.80770787410438,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 6072,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -0.7811568879815018,
+            "forward": 18.761065191390013,
+            "attack": true
+          }
+        },
+        {
+          "tick": 11,
+          "neural_ms": 342.9000000000001,
+          "kernel_ms": 52.25929198786616,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5698,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": -1.6305073267933274,
+            "forward": 14.094486913633729,
+            "attack": false
+          }
+        },
+        {
+          "tick": 12,
+          "neural_ms": 371.4000000000001,
+          "kernel_ms": 61.231042025610805,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5911,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -0.18201424339185934,
+            "forward": 14.079756760133614,
+            "attack": true
+          }
+        },
+        {
+          "tick": 13,
+          "neural_ms": 400.0000000000001,
+          "kernel_ms": 48.983917105942965,
+          "groups": {
+            "receptors": 3445,
+            "lamina": 5647,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.1803938562935765,
+            "forward": 14.056439427725216,
+            "attack": true
+          }
+        },
+        {
+          "tick": 14,
+          "neural_ms": 428.60000000000014,
+          "kernel_ms": 43.568666093051434,
+          "groups": {
+            "receptors": 4591,
+            "lamina": 5987,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -0.8867857763267447,
+            "forward": 17.517766519794566,
+            "attack": true
+          }
+        },
+        {
+          "tick": 15,
+          "neural_ms": 457.10000000000014,
+          "kernel_ms": 45.74916698038578,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5885,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -0.6668755443253918,
+            "forward": 16.654111820487408,
+            "attack": true
+          }
+        },
+        {
+          "tick": 16,
+          "neural_ms": 485.70000000000016,
+          "kernel_ms": 55.708040948957205,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5879,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.5446520256043126,
+            "forward": 15.990456144742708,
+            "attack": true
+          }
+        },
+        {
+          "tick": 17,
+          "neural_ms": 514.3000000000002,
+          "kernel_ms": 62.36479082144797,
+          "groups": {
+            "receptors": 3445,
+            "lamina": 6001,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": -0.11678596181973688,
+            "forward": 12.013031913483367,
+            "attack": false
+          }
+        },
+        {
+          "tick": 18,
+          "neural_ms": 542.9000000000002,
+          "kernel_ms": 60.7718329411,
+          "groups": {
+            "receptors": 4591,
+            "lamina": 5881,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -1.131390286845984,
+            "forward": 15.982630845199708,
+            "attack": true
+          }
+        },
+        {
+          "tick": 19,
+          "neural_ms": 571.4000000000002,
+          "kernel_ms": 59.22225001268089,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5846,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -0.850821622906675,
+            "forward": 15.499667910877875,
+            "attack": true
+          }
+        },
+        {
+          "tick": 20,
+          "neural_ms": 600.0000000000002,
+          "kernel_ms": 49.29104191251099,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5861,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -0.6391904781290438,
+            "forward": 18.60201012545689,
+            "attack": true
+          }
+        },
+        {
+          "tick": 21,
+          "neural_ms": 628.6000000000003,
+          "kernel_ms": 57.95275000855327,
+          "groups": {
+            "receptors": 3447,
+            "lamina": 5952,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.5238532703509813,
+            "forward": 17.453839320932587,
+            "attack": true
+          }
+        },
+        {
+          "tick": 22,
+          "neural_ms": 657.1000000000003,
+          "kernel_ms": 44.97637506574392,
+          "groups": {
+            "receptors": 4589,
+            "lamina": 5819,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": -2.1901098889240607,
+            "forward": 13.125535961941438,
+            "attack": false
+          }
+        },
+        {
+          "tick": 23,
+          "neural_ms": 685.7000000000003,
+          "kernel_ms": 48.103334149345756,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5848,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -0.6016943247008187,
+            "forward": 13.339569014684438,
+            "attack": true
+          }
+        },
+        {
+          "tick": 24,
+          "neural_ms": 714.3000000000003,
+          "kernel_ms": 43.387999990954995,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5826,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.4956838120385472,
+            "forward": 13.50036404578724,
+            "attack": true
+          }
+        },
+        {
+          "tick": 25,
+          "neural_ms": 742.9000000000003,
+          "kernel_ms": 56.82208412326872,
+          "groups": {
+            "receptors": 4587,
+            "lamina": 5985,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.1236513332614897,
+            "forward": 13.621163341484792,
+            "attack": true
+          }
+        },
+        {
+          "tick": 26,
+          "neural_ms": 771.4000000000003,
+          "kernel_ms": 50.95341615378857,
+          "groups": {
+            "receptors": 3449,
+            "lamina": 5858,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -1.8891523276265345,
+            "forward": 17.2043123807353,
+            "attack": true
+          }
+        },
+        {
+          "tick": 27,
+          "neural_ms": 800.0000000000003,
+          "kernel_ms": 58.79804096184671,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5977,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.4192495195748591,
+            "forward": 16.40380125692998,
+            "attack": true
+          }
+        },
+        {
+          "tick": 28,
+          "neural_ms": 828.6000000000004,
+          "kernel_ms": 55.843374924734235,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5752,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -2.1098824664205855,
+            "forward": 15.80240717596542,
+            "attack": true
+          }
+        },
+        {
+          "tick": 29,
+          "neural_ms": 857.1000000000004,
+          "kernel_ms": 70.18337491899729,
+          "groups": {
+            "receptors": 4588,
+            "lamina": 5886,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -1.5866616896868169,
+            "forward": 18.844638836410997,
+            "attack": true
+          }
+        },
+        {
+          "tick": 30,
+          "neural_ms": 885.7000000000004,
+          "kernel_ms": 59.83383394777775,
+          "groups": {
+            "receptors": 3448,
+            "lamina": 5842,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -2.2356529712802393,
+            "forward": 17.636117201027794,
+            "attack": true
+          }
+        },
+        {
+          "tick": 31,
+          "neural_ms": 914.3000000000004,
+          "kernel_ms": 40.532125160098076,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 6046,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": -0.6359091398900055,
+            "forward": 13.249355543590013,
+            "attack": false
+          }
+        },
+        {
+          "tick": 32,
+          "neural_ms": 942.9000000000004,
+          "kernel_ms": 71.00304099731147,
+          "groups": {
+            "receptors": 4592,
+            "lamina": 5826,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.5213881236017153,
+            "forward": 13.432590037499194,
+            "attack": true
+          }
+        },
+        {
+          "tick": 33,
+          "neural_ms": 971.4000000000004,
+          "kernel_ms": 94.25220894627273,
+          "groups": {
+            "receptors": 4589,
+            "lamina": 5828,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": -1.1441055553007085,
+            "forward": 17.062502568154027,
+            "attack": true
+          }
+        },
+        {
+          "tick": 34,
+          "neural_ms": 1000.0000000000005,
+          "kernel_ms": 89.89183302037418,
+          "groups": {
+            "receptors": 3448,
+            "lamina": 5791,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": -1.9031770920579902,
+            "forward": 16.29726484616324,
+            "attack": true
+          }
+        }
+      ]
+    },
+    {
+      "stimulus": "right",
+      "brain_seconds": 1.0000000000000004,
+      "wall_seconds": 2.4465183750726283,
+      "spike_sha256": "267c489c75c393ca04f24de6826fdaed39571b845dc7622e4b803f82c5fd3b1d",
+      "groups": {
+        "receptors": {
+          "cells": 3377,
+          "spikes": 286499,
+          "active_cells": 2187
+        },
+        "lamina": {
+          "cells": 7114,
+          "spikes": 192895,
+          "active_cells": 5999
+        },
+        "T4": {
+          "cells": 6865,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "T5": {
+          "cells": 6720,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "Kenyon": {
+          "cells": 4064,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "visual_KCg_d": {
+          "cells": 206,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "MBON11": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "PPL101": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "descending": {
+          "cells": 1314,
+          "spikes": 96,
+          "active_cells": 4
+        },
+        "DNp20": {
+          "cells": 2,
+          "spikes": 57,
+          "active_cells": 2
+        },
+        "DNpe017": {
+          "cells": 2,
+          "spikes": 39,
+          "active_cells": 2
+        }
+      },
+      "trace": [
+        {
+          "tick": 0,
+          "neural_ms": 28.6,
+          "kernel_ms": 32.20641682855785,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5897,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 3.478844532211385,
+            "attack": true
+          }
+        },
+        {
+          "tick": 1,
+          "neural_ms": 57.1,
+          "kernel_ms": 58.91670798882842,
+          "groups": {
+            "receptors": 6561,
+            "lamina": 6981,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.044150508128915,
+            "forward": 6.096642370547056,
+            "attack": true
+          }
+        },
+        {
+          "tick": 2,
+          "neural_ms": 85.7,
+          "kernel_ms": 78.46570806577802,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 4640,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.7844312421791989,
+            "forward": 11.537868560212576,
+            "attack": true
+          }
+        },
+        {
+          "tick": 3,
+          "neural_ms": 114.30000000000001,
+          "kernel_ms": 38.654500152915716,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 6168,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.6329672266934256,
+            "forward": 8.667969316996631,
+            "attack": false
+          }
+        },
+        {
+          "tick": 4,
+          "neural_ms": 142.9,
+          "kernel_ms": 73.07725003920496,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5072,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.2267872304812348,
+            "forward": 13.469610368457001,
+            "attack": true
+          }
+        },
+        {
+          "tick": 5,
+          "neural_ms": 171.4,
+          "kernel_ms": 55.41224987246096,
+          "groups": {
+            "receptors": 6561,
+            "lamina": 5783,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 3.0108625005967165,
+            "forward": 13.609840690970868,
+            "attack": true
+          }
+        },
+        {
+          "tick": 6,
+          "neural_ms": 200.0,
+          "kernel_ms": 86.95075009018183,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5330,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 3.3056017981180874,
+            "forward": 13.703409052330535,
+            "attack": true
+          }
+        },
+        {
+          "tick": 7,
+          "neural_ms": 228.6,
+          "kernel_ms": 50.46229204162955,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5590,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 4.5706817734597545,
+            "forward": 13.77370346425546,
+            "attack": true
+          }
+        },
+        {
+          "tick": 8,
+          "neural_ms": 257.1,
+          "kernel_ms": 44.35025015845895,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5332,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 2,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 3.4372178455995313,
+            "forward": 10.358021339888367,
+            "attack": false
+          }
+        },
+        {
+          "tick": 9,
+          "neural_ms": 285.70000000000005,
+          "kernel_ms": 49.35533297248185,
+          "groups": {
+            "receptors": 6561,
+            "lamina": 5567,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 3.6259066299278384,
+            "forward": 14.739283272260975,
+            "attack": true
+          }
+        },
+        {
+          "tick": 10,
+          "neural_ms": 314.30000000000007,
+          "kernel_ms": 42.73945884779096,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5557,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 3.7676614596421603,
+            "forward": 18.030761572723726,
+            "attack": true
+          }
+        },
+        {
+          "tick": 11,
+          "neural_ms": 342.9000000000001,
+          "kernel_ms": 76.52408303692937,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5409,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 3.8741565638364466,
+            "forward": 17.0246816388504,
+            "attack": true
+          }
+        },
+        {
+          "tick": 12,
+          "neural_ms": 371.4000000000001,
+          "kernel_ms": 52.928792079910636,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5552,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 3.957571467598923,
+            "forward": 16.28330496142802,
+            "attack": true
+          }
+        },
+        {
+          "tick": 13,
+          "neural_ms": 400.0000000000001,
+          "kernel_ms": 51.18812504224479,
+          "groups": {
+            "receptors": 6561,
+            "lamina": 5417,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 4.016828853208539,
+            "forward": 19.190727346006092,
+            "attack": true
+          }
+        },
+        {
+          "tick": 14,
+          "neural_ms": 428.60000000000014,
+          "kernel_ms": 56.51374999433756,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5370,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 4.061346711735792,
+            "forward": 17.896120560095362,
+            "attack": true
+          }
+        },
+        {
+          "tick": 15,
+          "neural_ms": 457.10000000000014,
+          "kernel_ms": 53.63974999636412,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5463,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 5.142491635216299,
+            "forward": 16.938639451972936,
+            "attack": true
+          }
+        },
+        {
+          "tick": 16,
+          "neural_ms": 485.70000000000016,
+          "kernel_ms": 48.49904193542898,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5425,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 4.907015078020992,
+            "forward": 12.725366585270317,
+            "attack": false
+          }
+        },
+        {
+          "tick": 17,
+          "neural_ms": 514.3000000000002,
+          "kernel_ms": 54.96258405037224,
+          "groups": {
+            "receptors": 6565,
+            "lamina": 5435,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 3.686456984004863,
+            "forward": 16.51778125415604,
+            "attack": true
+          }
+        },
+        {
+          "tick": 18,
+          "neural_ms": 542.9000000000002,
+          "kernel_ms": 53.247082978487015,
+          "groups": {
+            "receptors": 8744,
+            "lamina": 5440,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 4.856804036705992,
+            "forward": 15.888036086847087,
+            "attack": true
+          }
+        },
+        {
+          "tick": 19,
+          "neural_ms": 571.4000000000002,
+          "kernel_ms": 50.90587493032217,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5528,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 4.6965363741677395,
+            "forward": 15.428531304212806,
+            "attack": true
+          }
+        },
+        {
+          "tick": 20,
+          "neural_ms": 600.0000000000002,
+          "kernel_ms": 63.190249959006906,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5455,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 5.615638921673789,
+            "forward": 15.06972332003272,
+            "attack": true
+          }
+        },
+        {
+          "tick": 21,
+          "neural_ms": 628.6000000000003,
+          "kernel_ms": 134.36012505553663,
+          "groups": {
+            "receptors": 6574,
+            "lamina": 5374,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 4.2188195865098015,
+            "forward": 18.27900882742634,
+            "attack": true
+          }
+        },
+        {
+          "tick": 22,
+          "neural_ms": 657.1000000000003,
+          "kernel_ms": 77.19279103912413,
+          "groups": {
+            "receptors": 8735,
+            "lamina": 5510,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 4.216762973586089,
+            "forward": 17.22657688681748,
+            "attack": true
+          }
+        },
+        {
+          "tick": 23,
+          "neural_ms": 685.7000000000003,
+          "kernel_ms": 37.93729189783335,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5484,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 4.21154974202767,
+            "forward": 12.941683215800666,
+            "attack": false
+          }
+        },
+        {
+          "tick": 24,
+          "neural_ms": 714.3000000000003,
+          "kernel_ms": 58.51912498474121,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5440,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 5.251286595712971,
+            "forward": 13.2014473196697,
+            "attack": true
+          }
+        },
+        {
+          "tick": 25,
+          "neural_ms": 742.9000000000003,
+          "kernel_ms": 55.02633401192725,
+          "groups": {
+            "receptors": 8743,
+            "lamina": 5510,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 4.98874866464556,
+            "forward": 13.396598379871449,
+            "attack": true
+          }
+        },
+        {
+          "tick": 26,
+          "neural_ms": 771.4000000000003,
+          "kernel_ms": 60.647042002528906,
+          "groups": {
+            "receptors": 6566,
+            "lamina": 5474,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 3.7516101070302468,
+            "forward": 17.03543632858138,
+            "attack": true
+          }
+        },
+        {
+          "tick": 27,
+          "neural_ms": 800.0000000000003,
+          "kernel_ms": 53.80979203619063,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5466,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 3.862097782683736,
+            "forward": 16.27693099221805,
+            "attack": true
+          }
+        },
+        {
+          "tick": 28,
+          "neural_ms": 828.6000000000004,
+          "kernel_ms": 61.06724985875189,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5487,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 3.945103042925067,
+            "forward": 19.18593882122344,
+            "attack": true
+          }
+        },
+        {
+          "tick": 29,
+          "neural_ms": 857.1000000000004,
+          "kernel_ms": 69.96629200875759,
+          "groups": {
+            "receptors": 8743,
+            "lamina": 5456,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 4.010924231167337,
+            "forward": 14.428099476059643,
+            "attack": false
+          }
+        },
+        {
+          "tick": 30,
+          "neural_ms": 885.7000000000004,
+          "kernel_ms": 53.30070806667209,
+          "groups": {
+            "receptors": 6566,
+            "lamina": 5442,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 5.100564149598356,
+            "forward": 14.318136287737847,
+            "attack": true
+          }
+        },
+        {
+          "tick": 31,
+          "neural_ms": 914.3000000000004,
+          "kernel_ms": 90.26495879516006,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5431,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 4.875516525495581,
+            "forward": 14.235525055221354,
+            "attack": true
+          }
+        },
+        {
+          "tick": 32,
+          "neural_ms": 942.9000000000004,
+          "kernel_ms": 134.04845795594156,
+          "groups": {
+            "receptors": 8748,
+            "lamina": 5438,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 3.662793299036083,
+            "forward": 17.652306856785806,
+            "attack": true
+          }
+        },
+        {
+          "tick": 33,
+          "neural_ms": 971.4000000000004,
+          "kernel_ms": 62.94041592627764,
+          "groups": {
+            "receptors": 8746,
+            "lamina": 5494,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 4.842773787758481,
+            "forward": 16.75528807168575,
+            "attack": true
+          }
+        },
+        {
+          "tick": 34,
+          "neural_ms": 1000.0000000000005,
+          "kernel_ms": 90.3494160156697,
+          "groups": {
+            "receptors": 6565,
+            "lamina": 5478,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 4.681848263893861,
+            "forward": 12.587621547678294,
+            "attack": false
+          }
+        }
+      ]
+    },
+    {
+      "stimulus": "vertical",
+      "brain_seconds": 1.0000000000000004,
+      "wall_seconds": 3.564275417011231,
+      "spike_sha256": "6345065edeafe27ea40e738fcab678103f780f1ba9a8d4bbc4131069f94800d0",
+      "groups": {
+        "receptors": {
+          "cells": 3377,
+          "spikes": 219636,
+          "active_cells": 1677
+        },
+        "lamina": {
+          "cells": 7114,
+          "spikes": 200209,
+          "active_cells": 6178
+        },
+        "T4": {
+          "cells": 6865,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "T5": {
+          "cells": 6720,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "Kenyon": {
+          "cells": 4064,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "visual_KCg_d": {
+          "cells": 206,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "MBON11": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "PPL101": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "descending": {
+          "cells": 1314,
+          "spikes": 101,
+          "active_cells": 4
+        },
+        "DNp20": {
+          "cells": 2,
+          "spikes": 58,
+          "active_cells": 2
+        },
+        "DNpe017": {
+          "cells": 2,
+          "spikes": 43,
+          "active_cells": 2
+        }
+      },
+      "trace": [
+        {
+          "tick": 0,
+          "neural_ms": 28.6,
+          "kernel_ms": 32.73149998858571,
+          "groups": {
+            "receptors": 6656,
+            "lamina": 6120,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 3.478844532211385,
+            "attack": true
+          }
+        },
+        {
+          "tick": 1,
+          "neural_ms": 57.1,
+          "kernel_ms": 90.09945811703801,
+          "groups": {
+            "receptors": 5083,
+            "lamina": 7275,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.044150508128915,
+            "forward": 6.096642370547056,
+            "attack": true
+          }
+        },
+        {
+          "tick": 2,
+          "neural_ms": 85.7,
+          "kernel_ms": 44.243291951715946,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 4762,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 2,
+            "DNpe017": 3
+          },
+          "action": {
+            "turn": 0.7844312421791989,
+            "forward": 15.01671309242396,
+            "attack": true
+          }
+        },
+        {
+          "tick": 3,
+          "neural_ms": 114.30000000000001,
+          "kernel_ms": 46.07274988666177,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 6121,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.5893138670300103,
+            "forward": 14.760339692949664,
+            "attack": true
+          }
+        },
+        {
+          "tick": 4,
+          "neural_ms": 142.9,
+          "kernel_ms": 175.4220831207931,
+          "groups": {
+            "receptors": 6656,
+            "lamina": 5408,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.4863828370221563,
+            "forward": 14.567735942201404,
+            "attack": true
+          }
+        },
+        {
+          "tick": 5,
+          "neural_ms": 171.4,
+          "kernel_ms": 113.44058299437165,
+          "groups": {
+            "receptors": 5083,
+            "lamina": 5896,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.117781080816345,
+            "forward": 14.435646775459311,
+            "attack": true
+          }
+        },
+        {
+          "tick": 6,
+          "neural_ms": 200.0,
+          "kernel_ms": 133.86304187588394,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5625,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.8397471388300249,
+            "forward": 17.80265082383956,
+            "attack": true
+          }
+        },
+        {
+          "tick": 7,
+          "neural_ms": 228.6,
+          "kernel_ms": 141.85824990272522,
+          "groups": {
+            "receptors": 6657,
+            "lamina": 5833,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.6745239919147723,
+            "forward": 16.85331056091808,
+            "attack": true
+          }
+        },
+        {
+          "tick": 8,
+          "neural_ms": 257.1,
+          "kernel_ms": 69.26575000397861,
+          "groups": {
+            "receptors": 6707,
+            "lamina": 5642,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.2592659111197035,
+            "forward": 16.154431468044834,
+            "attack": true
+          }
+        },
+        {
+          "tick": 9,
+          "neural_ms": 285.70000000000005,
+          "kernel_ms": 76.73808303661644,
+          "groups": {
+            "receptors": 5083,
+            "lamina": 5619,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.9460394025605273,
+            "forward": 15.615064976029442,
+            "attack": true
+          }
+        },
+        {
+          "tick": 10,
+          "neural_ms": 314.30000000000007,
+          "kernel_ms": 70.05733298137784,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5753,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.7543773960198665,
+            "forward": 15.209859094283864,
+            "attack": true
+          }
+        },
+        {
+          "tick": 11,
+          "neural_ms": 342.9000000000001,
+          "kernel_ms": 64.4893751014024,
+          "groups": {
+            "receptors": 6656,
+            "lamina": 5660,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.3179981518919706,
+            "forward": 18.384287595778,
+            "attack": true
+          }
+        },
+        {
+          "tick": 12,
+          "neural_ms": 371.4000000000001,
+          "kernel_ms": 70.74308395385742,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5663,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 2,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.9911533973893648,
+            "forward": 13.825246327532069,
+            "attack": false
+          }
+        },
+        {
+          "tick": 13,
+          "neural_ms": 400.0000000000001,
+          "kernel_ms": 62.5542919151485,
+          "groups": {
+            "receptors": 5083,
+            "lamina": 5616,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.788269853790793,
+            "forward": 17.34407978655459,
+            "attack": true
+          }
+        },
+        {
+          "tick": 14,
+          "neural_ms": 428.60000000000014,
+          "kernel_ms": 51.51320807635784,
+          "groups": {
+            "receptors": 6657,
+            "lamina": 5640,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.343460288377827,
+            "forward": 16.508803283849897,
+            "attack": true
+          }
+        },
+        {
+          "tick": 15,
+          "neural_ms": 457.10000000000014,
+          "kernel_ms": 112.6885418780148,
+          "groups": {
+            "receptors": 6707,
+            "lamina": 5675,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.0544517951010692,
+            "forward": 15.895357084972801,
+            "attack": true
+          }
+        },
+        {
+          "tick": 16,
+          "neural_ms": 485.70000000000016,
+          "kernel_ms": 44.94591592811048,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5649,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.5434328299244051,
+            "forward": 15.420432077277923,
+            "attack": true
+          }
+        },
+        {
+          "tick": 17,
+          "neural_ms": 514.3000000000002,
+          "kernel_ms": 62.03216686844826,
+          "groups": {
+            "receptors": 5085,
+            "lamina": 5672,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.1595233853473137,
+            "forward": 15.06363867361847,
+            "attack": true
+          }
+        },
+        {
+          "tick": 18,
+          "neural_ms": 542.9000000000002,
+          "kernel_ms": 101.91737511195242,
+          "groups": {
+            "receptors": 6654,
+            "lamina": 5707,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.9147599313910282,
+            "forward": 14.795593127832678,
+            "attack": true
+          }
+        },
+        {
+          "tick": 19,
+          "neural_ms": 571.4000000000002,
+          "kernel_ms": 61.267999932169914,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5771,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.39577625387674115,
+            "forward": 14.606998627003122,
+            "attack": true
+          }
+        },
+        {
+          "tick": 20,
+          "neural_ms": 600.0000000000002,
+          "kernel_ms": 76.77216688171029,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5619,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.29733190381709973,
+            "forward": 14.452536531866324,
+            "attack": true
+          }
+        },
+        {
+          "tick": 21,
+          "neural_ms": 628.6000000000003,
+          "kernel_ms": 51.423042081296444,
+          "groups": {
+            "receptors": 5038,
+            "lamina": 5715,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.2670277035295177,
+            "forward": 14.336494934209213,
+            "attack": true
+          }
+        },
+        {
+          "tick": 22,
+          "neural_ms": 657.1000000000003,
+          "kernel_ms": 68.42945911921561,
+          "groups": {
+            "receptors": 6701,
+            "lamina": 5602,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.9528228936717499,
+            "forward": 17.74225193502905,
+            "attack": true
+          }
+        },
+        {
+          "tick": 23,
+          "neural_ms": 685.7000000000003,
+          "kernel_ms": 58.86612506583333,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5637,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.8031269389607507,
+            "forward": 16.80793513371001,
+            "attack": true
+          }
+        },
+        {
+          "tick": 24,
+          "neural_ms": 714.3000000000003,
+          "kernel_ms": 60.49054116010666,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5771,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.1058844769948406,
+            "forward": 16.10601784942794,
+            "attack": true
+          }
+        },
+        {
+          "tick": 25,
+          "neural_ms": 742.9000000000003,
+          "kernel_ms": 435.1177921053022,
+          "groups": {
+            "receptors": 6653,
+            "lamina": 5551,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.5820722810690835,
+            "forward": 19.057538166471243,
+            "attack": true
+          }
+        },
+        {
+          "tick": 26,
+          "neural_ms": 771.4000000000003,
+          "kernel_ms": 163.47695793956518,
+          "groups": {
+            "receptors": 5086,
+            "lamina": 5688,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 2.2338914148564464,
+            "forward": 14.331540353422042,
+            "attack": false
+          }
+        },
+        {
+          "tick": 27,
+          "neural_ms": 800.0000000000003,
+          "kernel_ms": 104.48658303357661,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5737,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.678239108066344,
+            "forward": 17.724439560882974,
+            "attack": true
+          }
+        },
+        {
+          "tick": 28,
+          "neural_ms": 828.6000000000004,
+          "kernel_ms": 51.74779100343585,
+          "groups": {
+            "receptors": 6657,
+            "lamina": 5725,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 2,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.2607983025102902,
+            "forward": 13.31570883070142,
+            "attack": false
+          }
+        },
+        {
+          "tick": 29,
+          "neural_ms": 857.1000000000004,
+          "kernel_ms": 57.32091702520847,
+          "groups": {
+            "receptors": 6704,
+            "lamina": 5617,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.992288803438335,
+            "forward": 16.974606234580047,
+            "attack": true
+          }
+        },
+        {
+          "tick": 30,
+          "neural_ms": 885.7000000000004,
+          "kernel_ms": 42.745708022266626,
+          "groups": {
+            "receptors": 5086,
+            "lamina": 5675,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.4967320981927752,
+            "forward": 16.23123161667031,
+            "attack": true
+          }
+        },
+        {
+          "tick": 31,
+          "neural_ms": 914.3000000000004,
+          "kernel_ms": 47.12024983018637,
+          "groups": {
+            "receptors": 6708,
+            "lamina": 5652,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.1244388714599756,
+            "forward": 15.672762056590926,
+            "attack": true
+          }
+        },
+        {
+          "tick": 32,
+          "neural_ms": 942.9000000000004,
+          "kernel_ms": 80.25583322159946,
+          "groups": {
+            "receptors": 6657,
+            "lamina": 5773,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.8884022477088012,
+            "forward": 18.732049286170366,
+            "attack": true
+          }
+        },
+        {
+          "tick": 33,
+          "neural_ms": 971.4000000000004,
+          "kernel_ms": 87.16595801524818,
+          "groups": {
+            "receptors": 6704,
+            "lamina": 5573,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.42010540816578,
+            "forward": 17.56726976957638,
+            "attack": true
+          }
+        },
+        {
+          "tick": 34,
+          "neural_ms": 1000.0000000000005,
+          "kernel_ms": 80.94424987211823,
+          "groups": {
+            "receptors": 5087,
+            "lamina": 5767,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.0668721038589446,
+            "forward": 20.0,
+            "attack": true
+          }
+        }
+      ]
+    },
+    {
+      "stimulus": "horizontal",
+      "brain_seconds": 1.0000000000000004,
+      "wall_seconds": 2.638995375018567,
+      "spike_sha256": "0bb5e0249f85201377a189bffd23e44758dbbf220c9a323ba5700cb58ac4b180",
+      "groups": {
+        "receptors": {
+          "cells": 3377,
+          "spikes": 229489,
+          "active_cells": 1752
+        },
+        "lamina": {
+          "cells": 7114,
+          "spikes": 198136,
+          "active_cells": 6131
+        },
+        "T4": {
+          "cells": 6865,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "T5": {
+          "cells": 6720,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "Kenyon": {
+          "cells": 4064,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "visual_KCg_d": {
+          "cells": 206,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "MBON11": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "PPL101": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "descending": {
+          "cells": 1314,
+          "spikes": 106,
+          "active_cells": 4
+        },
+        "DNp20": {
+          "cells": 2,
+          "spikes": 60,
+          "active_cells": 2
+        },
+        "DNpe017": {
+          "cells": 2,
+          "spikes": 46,
+          "active_cells": 2
+        }
+      },
+      "trace": [
+        {
+          "tick": 0,
+          "neural_ms": 28.6,
+          "kernel_ms": 55.874082958325744,
+          "groups": {
+            "receptors": 6950,
+            "lamina": 6056,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 3.478844532211385,
+            "attack": true
+          }
+        },
+        {
+          "tick": 1,
+          "neural_ms": 57.1,
+          "kernel_ms": 57.58729111403227,
+          "groups": {
+            "receptors": 5314,
+            "lamina": 7183,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.044150508128915,
+            "forward": 6.096642370547056,
+            "attack": true
+          }
+        },
+        {
+          "tick": 2,
+          "neural_ms": 85.7,
+          "kernel_ms": 41.68333392590284,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 4707,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 2,
+            "DNpe017": 3
+          },
+          "action": {
+            "turn": 0.7844312421791989,
+            "forward": 15.01671309242396,
+            "attack": true
+          }
+        },
+        {
+          "tick": 3,
+          "neural_ms": 114.30000000000001,
+          "kernel_ms": 74.70395788550377,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 6043,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.5893138670300103,
+            "forward": 14.760339692949664,
+            "attack": true
+          }
+        },
+        {
+          "tick": 4,
+          "neural_ms": 142.9,
+          "kernel_ms": 141.16962486878037,
+          "groups": {
+            "receptors": 6985,
+            "lamina": 5362,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.4863828370221563,
+            "forward": 14.567735942201404,
+            "attack": true
+          }
+        },
+        {
+          "tick": 5,
+          "neural_ms": 171.4,
+          "kernel_ms": 66.86504185199738,
+          "groups": {
+            "receptors": 5279,
+            "lamina": 5830,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.117781080816345,
+            "forward": 17.91614846922236,
+            "attack": true
+          }
+        },
+        {
+          "tick": 6,
+          "neural_ms": 200.0,
+          "kernel_ms": 56.7450828384608,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5509,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.8834004984934403,
+            "forward": 13.459732566680788,
+            "attack": false
+          }
+        },
+        {
+          "tick": 7,
+          "neural_ms": 228.6,
+          "kernel_ms": 43.595666997134686,
+          "groups": {
+            "receptors": 6985,
+            "lamina": 5834,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.414928385373851,
+            "forward": 17.069482962412874,
+            "attack": true
+          }
+        },
+        {
+          "tick": 8,
+          "neural_ms": 257.1,
+          "kernel_ms": 50.400499952957034,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5621,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.0640463146422445,
+            "forward": 19.797497889122425,
+            "attack": true
+          }
+        },
+        {
+          "tick": 9,
+          "neural_ms": 285.70000000000005,
+          "kernel_ms": 46.614374965429306,
+          "groups": {
+            "receptors": 5279,
+            "lamina": 5608,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 2,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 0.7993782178267763,
+            "forward": 14.873120053385065,
+            "attack": false
+          }
+        },
+        {
+          "tick": 10,
+          "neural_ms": 314.30000000000007,
+          "kernel_ms": 50.791375106200576,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5716,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.644196330718919,
+            "forward": 18.131308143020924,
+            "attack": true
+          }
+        },
+        {
+          "tick": 11,
+          "neural_ms": 342.9000000000001,
+          "kernel_ms": 62.90529202669859,
+          "groups": {
+            "receptors": 6985,
+            "lamina": 5558,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.235223236546166,
+            "forward": 17.10021851827636,
+            "attack": true
+          }
+        },
+        {
+          "tick": 12,
+          "neural_ms": 371.4000000000001,
+          "kernel_ms": 60.73770811781287,
+          "groups": {
+            "receptors": 7007,
+            "lamina": 5716,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.973055989278155,
+            "forward": 16.340109771483146,
+            "attack": true
+          }
+        },
+        {
+          "tick": 13,
+          "neural_ms": 400.0000000000001,
+          "kernel_ms": 57.55829205736518,
+          "groups": {
+            "receptors": 5280,
+            "lamina": 5451,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.525936563578193,
+            "forward": 19.233402676206474,
+            "attack": true
+          }
+        },
+        {
+          "tick": 14,
+          "neural_ms": 428.60000000000014,
+          "kernel_ms": 85.47329087741673,
+          "groups": {
+            "receptors": 6985,
+            "lamina": 5665,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.8976417104696415,
+            "forward": 17.9281809402981,
+            "attack": true
+          }
+        },
+        {
+          "tick": 15,
+          "neural_ms": 457.10000000000014,
+          "kernel_ms": 125.5202500615269,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5577,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.4712041239931,
+            "forward": 16.96274931488429,
+            "attack": true
+          }
+        },
+        {
+          "tick": 16,
+          "neural_ms": 485.70000000000016,
+          "kernel_ms": 69.90495789796114,
+          "groups": {
+            "receptors": 7007,
+            "lamina": 5582,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.856523274729789,
+            "forward": 19.701168488373995,
+            "attack": true
+          }
+        },
+        {
+          "tick": 17,
+          "neural_ms": 514.3000000000002,
+          "kernel_ms": 93.9462089445442,
+          "groups": {
+            "receptors": 5282,
+            "lamina": 5714,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.39473653193978,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 18,
+          "neural_ms": 542.9000000000002,
+          "kernel_ms": 64.26108302548528,
+          "groups": {
+            "receptors": 6983,
+            "lamina": 5642,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.047813415541767,
+            "forward": 19.82514741624729,
+            "attack": true
+          }
+        },
+        {
+          "tick": 19,
+          "neural_ms": 571.4000000000002,
+          "kernel_ms": 57.628832990303636,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5614,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.8321211324834028,
+            "forward": 18.389295144764095,
+            "attack": true
+          }
+        },
+        {
+          "tick": 20,
+          "neural_ms": 600.0000000000002,
+          "kernel_ms": 81.25629182904959,
+          "groups": {
+            "receptors": 7007,
+            "lamina": 5629,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.376404114721053,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 21,
+          "neural_ms": 628.6000000000003,
+          "kernel_ms": 69.87962499260902,
+          "groups": {
+            "receptors": 5265,
+            "lamina": 5577,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 2.0776943154888112,
+            "forward": 15.605887448562227,
+            "attack": false
+          }
+        },
+        {
+          "tick": 22,
+          "neural_ms": 657.1000000000003,
+          "kernel_ms": 59.586624847725034,
+          "groups": {
+            "receptors": 7000,
+            "lamina": 5513,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.5624557413659383,
+            "forward": 18.696853200148833,
+            "attack": true
+          }
+        },
+        {
+          "tick": 23,
+          "neural_ms": 685.7000000000003,
+          "kernel_ms": 56.47387495264411,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5591,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.173814587559806,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 24,
+          "neural_ms": 714.3000000000003,
+          "kernel_ms": 66.12029206007719,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5754,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.9254963773502098,
+            "forward": 15.779471836582879,
+            "attack": false
+          }
+        },
+        {
+          "tick": 25,
+          "neural_ms": 742.9000000000003,
+          "kernel_ms": 53.35237504914403,
+          "groups": {
+            "receptors": 6945,
+            "lamina": 5545,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.4465534454443714,
+            "forward": 18.812216354634238,
+            "attack": true
+          }
+        },
+        {
+          "tick": 26,
+          "neural_ms": 771.4000000000003,
+          "kernel_ms": 55.63008296303451,
+          "groups": {
+            "receptors": 5319,
+            "lamina": 5694,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 2,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.0878288106089826,
+            "forward": 14.14705485402516,
+            "attack": false
+          }
+        },
+        {
+          "tick": 27,
+          "neural_ms": 800.0000000000003,
+          "kernel_ms": 64.29299991577864,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5548,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.860898477623909,
+            "forward": 17.585842502001803,
+            "attack": true
+          }
+        },
+        {
+          "tick": 28,
+          "neural_ms": 828.6000000000004,
+          "kernel_ms": 56.661542039364576,
+          "groups": {
+            "receptors": 6985,
+            "lamina": 5737,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.3980234583113158,
+            "forward": 16.690430573895192,
+            "attack": true
+          }
+        },
+        {
+          "tick": 29,
+          "neural_ms": 857.1000000000004,
+          "kernel_ms": 78.715082956478,
+          "groups": {
+            "receptors": 7004,
+            "lamina": 5462,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.051333568522988,
+            "forward": 19.512445089823316,
+            "attack": true
+          }
+        },
+        {
+          "tick": 30,
+          "neural_ms": 885.7000000000004,
+          "kernel_ms": 56.05504219420254,
+          "groups": {
+            "receptors": 5283,
+            "lamina": 5671,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.8334809665847704,
+            "forward": 14.658970541700638,
+            "attack": false
+          }
+        },
+        {
+          "tick": 31,
+          "neural_ms": 914.3000000000004,
+          "kernel_ms": 80.51674999296665,
+          "groups": {
+            "receptors": 7008,
+            "lamina": 5579,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.3774257072453,
+            "forward": 17.97042562066913,
+            "attack": true
+          }
+        },
+        {
+          "tick": 32,
+          "neural_ms": 942.9000000000004,
+          "kernel_ms": 47.223875066265464,
+          "groups": {
+            "receptors": 6985,
+            "lamina": 5694,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.0348084400975934,
+            "forward": 16.97935349367422,
+            "attack": true
+          }
+        },
+        {
+          "tick": 33,
+          "neural_ms": 971.4000000000004,
+          "kernel_ms": 52.08466597832739,
+          "groups": {
+            "receptors": 7005,
+            "lamina": 5560,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.8223412055723107,
+            "forward": 19.729719243896724,
+            "attack": true
+          }
+        },
+        {
+          "tick": 34,
+          "neural_ms": 1000.0000000000005,
+          "kernel_ms": 68.4373329859227,
+          "groups": {
+            "receptors": 5282,
+            "lamina": 5594,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.4127101809094706,
+            "forward": 18.301045023278853,
+            "attack": true
+          }
+        }
+      ]
+    },
+    {
+      "stimulus": "motion_left",
+      "brain_seconds": 1.0000000000000004,
+      "wall_seconds": 2.547931083943695,
+      "spike_sha256": "4dcbfc27b013f1b74a84158a03f6aded32156e96e221ebf542d3ac1f698bf319",
+      "groups": {
+        "receptors": {
+          "cells": 3377,
+          "spikes": 258085,
+          "active_cells": 3335
+        },
+        "lamina": {
+          "cells": 7114,
+          "spikes": 190418,
+          "active_cells": 7110
+        },
+        "T4": {
+          "cells": 6865,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "T5": {
+          "cells": 6720,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "Kenyon": {
+          "cells": 4064,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "visual_KCg_d": {
+          "cells": 206,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "MBON11": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "PPL101": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "descending": {
+          "cells": 1314,
+          "spikes": 110,
+          "active_cells": 4
+        },
+        "DNp20": {
+          "cells": 2,
+          "spikes": 63,
+          "active_cells": 2
+        },
+        "DNpe017": {
+          "cells": 2,
+          "spikes": 47,
+          "active_cells": 2
+        }
+      },
+      "trace": [
+        {
+          "tick": 0,
+          "neural_ms": 28.6,
+          "kernel_ms": 43.59420784749091,
+          "groups": {
+            "receptors": 6656,
+            "lamina": 6120,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 3.478844532211385,
+            "attack": true
+          }
+        },
+        {
+          "tick": 1,
+          "neural_ms": 57.1,
+          "kernel_ms": 75.79029188491404,
+          "groups": {
+            "receptors": 6236,
+            "lamina": 6947,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.044150508128915,
+            "forward": 6.096642370547056,
+            "attack": true
+          }
+        },
+        {
+          "tick": 2,
+          "neural_ms": 85.7,
+          "kernel_ms": 37.19670884311199,
+          "groups": {
+            "receptors": 7744,
+            "lamina": 4571,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 2,
+            "DNpe017": 3
+          },
+          "action": {
+            "turn": 0.7844312421791989,
+            "forward": 15.01671309242396,
+            "attack": true
+          }
+        },
+        {
+          "tick": 3,
+          "neural_ms": 114.30000000000001,
+          "kernel_ms": 155.91779095120728,
+          "groups": {
+            "receptors": 7441,
+            "lamina": 5844,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.5893138670300103,
+            "forward": 14.760339692949664,
+            "attack": true
+          }
+        },
+        {
+          "tick": 4,
+          "neural_ms": 142.9,
+          "kernel_ms": 54.15545799769461,
+          "groups": {
+            "receptors": 7499,
+            "lamina": 5287,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.44272947735874124,
+            "forward": 18.04658047441279,
+            "attack": true
+          }
+        },
+        {
+          "tick": 5,
+          "neural_ms": 171.4,
+          "kernel_ms": 47.88795881904662,
+          "groups": {
+            "receptors": 7326,
+            "lamina": 5461,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.3770893859100586,
+            "forward": 13.571285758480265,
+            "attack": false
+          }
+        },
+        {
+          "tick": 6,
+          "neural_ms": 200.0,
+          "kernel_ms": 113.49825002253056,
+          "groups": {
+            "receptors": 7616,
+            "lamina": 5342,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.0345557744514813,
+            "forward": 17.15328870510137,
+            "attack": true
+          }
+        },
+        {
+          "tick": 7,
+          "neural_ms": 228.6,
+          "kernel_ms": 57.6109578832984,
+          "groups": {
+            "receptors": 7525,
+            "lamina": 5487,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.7772230774573761,
+            "forward": 16.365469076898012,
+            "attack": true
+          }
+        },
+        {
+          "tick": 8,
+          "neural_ms": 257.1,
+          "kernel_ms": 69.78929205797613,
+          "groups": {
+            "receptors": 7349,
+            "lamina": 5338,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.6286333411628395,
+            "forward": 15.787567718213424,
+            "attack": true
+          }
+        },
+        {
+          "tick": 9,
+          "neural_ms": 285.70000000000005,
+          "kernel_ms": 54.79229218326509,
+          "groups": {
+            "receptors": 7068,
+            "lamina": 5289,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.2235313443003122,
+            "forward": 18.8182984878464,
+            "attack": true
+          }
+        },
+        {
+          "tick": 10,
+          "neural_ms": 314.30000000000007,
+          "kernel_ms": 53.29499999061227,
+          "groups": {
+            "receptors": 7182,
+            "lamina": 5563,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 3,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.9628467180754778,
+            "forward": 17.6163286818602,
+            "attack": true
+          }
+        },
+        {
+          "tick": 11,
+          "neural_ms": 342.9000000000001,
+          "kernel_ms": 59.02070784941316,
+          "groups": {
+            "receptors": 7486,
+            "lamina": 5385,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.518266719787559,
+            "forward": 16.713333701125837,
+            "attack": true
+          }
+        },
+        {
+          "tick": 12,
+          "neural_ms": 371.4000000000001,
+          "kernel_ms": 53.74279199168086,
+          "groups": {
+            "receptors": 7683,
+            "lamina": 5409,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.8937724694583595,
+            "forward": 19.529668567969253,
+            "attack": true
+          }
+        },
+        {
+          "tick": 13,
+          "neural_ms": 400.0000000000001,
+          "kernel_ms": 93.01537508144975,
+          "groups": {
+            "receptors": 7408,
+            "lamina": 5224,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.422720459413482,
+            "forward": 18.15075442915964,
+            "attack": true
+          }
+        },
+        {
+          "tick": 14,
+          "neural_ms": 428.60000000000014,
+          "kernel_ms": 47.15329105965793,
+          "groups": {
+            "receptors": 7523,
+            "lamina": 5403,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.0688366941001277,
+            "forward": 17.114827786071384,
+            "attack": true
+          }
+        },
+        {
+          "tick": 15,
+          "neural_ms": 457.10000000000014,
+          "kernel_ms": 110.48837495036423,
+          "groups": {
+            "receptors": 7295,
+            "lamina": 5406,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.892081445760732,
+            "forward": 19.831597842873226,
+            "attack": true
+          }
+        },
+        {
+          "tick": 16,
+          "neural_ms": 485.70000000000016,
+          "kernel_ms": 64.27445891313255,
+          "groups": {
+            "receptors": 7613,
+            "lamina": 5380,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.1727126724736587,
+            "forward": 18.377582606054943,
+            "attack": true
+          }
+        },
+        {
+          "tick": 17,
+          "neural_ms": 514.3000000000002,
+          "kernel_ms": 47.92604083195329,
+          "groups": {
+            "receptors": 7527,
+            "lamina": 5416,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.6322778060235104,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 18,
+          "neural_ms": 542.9000000000002,
+          "kernel_ms": 44.41258404403925,
+          "groups": {
+            "receptors": 7376,
+            "lamina": 5404,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 2.2699226541686817,
+            "forward": 15.599276944208981,
+            "attack": false
+          }
+        },
+        {
+          "tick": 19,
+          "neural_ms": 571.4000000000002,
+          "kernel_ms": 60.82433299161494,
+          "groups": {
+            "receptors": 7076,
+            "lamina": 5438,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.7070141921373352,
+            "forward": 18.69188200664696,
+            "attack": true
+          }
+        },
+        {
+          "tick": 20,
+          "neural_ms": 600.0000000000002,
+          "kernel_ms": 45.35358399152756,
+          "groups": {
+            "receptors": 7218,
+            "lamina": 5357,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.2824159474435548,
+            "forward": 17.521356705495506,
+            "attack": true
+          }
+        },
+        {
+          "tick": 21,
+          "neural_ms": 628.6000000000003,
+          "kernel_ms": 61.11991708166897,
+          "groups": {
+            "receptors": 7486,
+            "lamina": 5330,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.9634311594084494,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 22,
+          "neural_ms": 657.1000000000003,
+          "kernel_ms": 44.34337490238249,
+          "groups": {
+            "receptors": 7677,
+            "lamina": 5309,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.7686644730595178,
+            "forward": 15.131150470852369,
+            "attack": false
+          }
+        },
+        {
+          "tick": 23,
+          "neural_ms": 685.7000000000003,
+          "kernel_ms": 66.47387496195734,
+          "groups": {
+            "receptors": 7412,
+            "lamina": 5314,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.3723848584264298,
+            "forward": 18.325156749441277,
+            "attack": true
+          }
+        },
+        {
+          "tick": 24,
+          "neural_ms": 714.3000000000003,
+          "kernel_ms": 62.45783297345042,
+          "groups": {
+            "receptors": 7514,
+            "lamina": 5469,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.7822840547742227,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 25,
+          "neural_ms": 742.9000000000003,
+          "kernel_ms": 55.258499924093485,
+          "groups": {
+            "receptors": 7308,
+            "lamina": 5393,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.3826167410135213,
+            "forward": 19.04853255791404,
+            "attack": true
+          }
+        },
+        {
+          "tick": 26,
+          "neural_ms": 771.4000000000003,
+          "kernel_ms": 47.73841588757932,
+          "groups": {
+            "receptors": 7608,
+            "lamina": 5417,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.7917617518221614,
+            "forward": 17.80526970118126,
+            "attack": true
+          }
+        },
+        {
+          "tick": 27,
+          "neural_ms": 800.0000000000003,
+          "kernel_ms": 81.65137516334653,
+          "groups": {
+            "receptors": 7528,
+            "lamina": 5422,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.3460836208274927,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 28,
+          "neural_ms": 828.6000000000004,
+          "kernel_ms": 51.07879196293652,
+          "groups": {
+            "receptors": 7374,
+            "lamina": 5390,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 2.054915661929534,
+            "forward": 15.276266105736404,
+            "attack": false
+          }
+        },
+        {
+          "tick": 29,
+          "neural_ms": 857.1000000000004,
+          "kernel_ms": 51.28291598521173,
+          "groups": {
+            "receptors": 7075,
+            "lamina": 5267,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.545325869195159,
+            "forward": 18.44897325181592,
+            "attack": true
+          }
+        },
+        {
+          "tick": 30,
+          "neural_ms": 885.7000000000004,
+          "kernel_ms": 48.00487495958805,
+          "groups": {
+            "receptors": 7198,
+            "lamina": 5503,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.1609455549819505,
+            "forward": 17.338868438904743,
+            "attack": true
+          }
+        },
+        {
+          "tick": 31,
+          "neural_ms": 914.3000000000004,
+          "kernel_ms": 74.55712486989796,
+          "groups": {
+            "receptors": 7477,
+            "lamina": 5383,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.8721749946076501,
+            "forward": 19.98373272539325,
+            "attack": true
+          }
+        },
+        {
+          "tick": 32,
+          "neural_ms": 942.9000000000004,
+          "kernel_ms": 132.07720802165568,
+          "groups": {
+            "receptors": 7648,
+            "lamina": 5321,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.742539187339235,
+            "forward": 18.49187585587371,
+            "attack": true
+          }
+        },
+        {
+          "tick": 33,
+          "neural_ms": 971.4000000000004,
+          "kernel_ms": 75.76037500984967,
+          "groups": {
+            "receptors": 7417,
+            "lamina": 5436,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.0182780537796852,
+            "forward": 17.386655926484515,
+            "attack": true
+          }
+        },
+        {
+          "tick": 34,
+          "neural_ms": 1000.0000000000005,
+          "kernel_ms": 47.93816595338285,
+          "groups": {
+            "receptors": 7516,
+            "lamina": 5393,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.7649942344438305,
+            "forward": 20.0,
+            "attack": true
+          }
+        }
+      ]
+    },
+    {
+      "stimulus": "motion_right",
+      "brain_seconds": 1.0000000000000004,
+      "wall_seconds": 2.9619268749374896,
+      "spike_sha256": "63b1812e8802a1335b68c604206dff5902660b9117bd0a73f2397ae80cb6786b",
+      "groups": {
+        "receptors": {
+          "cells": 3377,
+          "spikes": 258090,
+          "active_cells": 3335
+        },
+        "lamina": {
+          "cells": 7114,
+          "spikes": 190285,
+          "active_cells": 7109
+        },
+        "T4": {
+          "cells": 6865,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "T5": {
+          "cells": 6720,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "Kenyon": {
+          "cells": 4064,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "visual_KCg_d": {
+          "cells": 206,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "MBON11": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "PPL101": {
+          "cells": 2,
+          "spikes": 0,
+          "active_cells": 0
+        },
+        "descending": {
+          "cells": 1314,
+          "spikes": 110,
+          "active_cells": 4
+        },
+        "DNp20": {
+          "cells": 2,
+          "spikes": 62,
+          "active_cells": 2
+        },
+        "DNpe017": {
+          "cells": 2,
+          "spikes": 48,
+          "active_cells": 2
+        }
+      },
+      "trace": [
+        {
+          "tick": 0,
+          "neural_ms": 28.6,
+          "kernel_ms": 77.00437493622303,
+          "groups": {
+            "receptors": 6656,
+            "lamina": 6120,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.0,
+            "forward": 3.478844532211385,
+            "attack": true
+          }
+        },
+        {
+          "tick": 1,
+          "neural_ms": 57.1,
+          "kernel_ms": 122.56204104050994,
+          "groups": {
+            "receptors": 5896,
+            "lamina": 6996,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.044150508128915,
+            "forward": 6.096642370547056,
+            "attack": true
+          }
+        },
+        {
+          "tick": 2,
+          "neural_ms": 85.7,
+          "kernel_ms": 79.04725009575486,
+          "groups": {
+            "receptors": 7239,
+            "lamina": 4609,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 2,
+            "DNpe017": 3
+          },
+          "action": {
+            "turn": 0.7844312421791989,
+            "forward": 15.01671309242396,
+            "attack": true
+          }
+        },
+        {
+          "tick": 3,
+          "neural_ms": 114.30000000000001,
+          "kernel_ms": 46.993124997243285,
+          "groups": {
+            "receptors": 7383,
+            "lamina": 5754,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.5893138670300103,
+            "forward": 14.760339692949664,
+            "attack": true
+          }
+        },
+        {
+          "tick": 4,
+          "neural_ms": 142.9,
+          "kernel_ms": 53.10275009833276,
+          "groups": {
+            "receptors": 7565,
+            "lamina": 5177,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.44272947735874124,
+            "forward": 14.567735942201404,
+            "attack": true
+          }
+        },
+        {
+          "tick": 5,
+          "neural_ms": 171.4,
+          "kernel_ms": 76.53829199261963,
+          "groups": {
+            "receptors": 7529,
+            "lamina": 5527,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.3770893859100586,
+            "forward": 17.91614846922236,
+            "attack": true
+          }
+        },
+        {
+          "tick": 6,
+          "neural_ms": 200.0,
+          "kernel_ms": 49.940832890570164,
+          "groups": {
+            "receptors": 7380,
+            "lamina": 5296,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.0345557744514813,
+            "forward": 16.93857709889217,
+            "attack": true
+          }
+        },
+        {
+          "tick": 7,
+          "neural_ms": 228.6,
+          "kernel_ms": 47.53679106943309,
+          "groups": {
+            "receptors": 7519,
+            "lamina": 5644,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 0.7772230774573761,
+            "forward": 19.68300880615452,
+            "attack": true
+          }
+        },
+        {
+          "tick": 8,
+          "neural_ms": 257.1,
+          "kernel_ms": 44.23304204829037,
+          "groups": {
+            "receptors": 7427,
+            "lamina": 5332,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.6286333411628395,
+            "forward": 14.80190319012213,
+            "attack": false
+          }
+        },
+        {
+          "tick": 9,
+          "neural_ms": 285.70000000000005,
+          "kernel_ms": 71.39762514270842,
+          "groups": {
+            "receptors": 7800,
+            "lamina": 5388,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.2235313443003122,
+            "forward": 18.077805576026478,
+            "attack": true
+          }
+        },
+        {
+          "tick": 10,
+          "neural_ms": 314.30000000000007,
+          "kernel_ms": 48.73037477955222,
+          "groups": {
+            "receptors": 7445,
+            "lamina": 5387,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.9628467180754778,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 11,
+          "neural_ms": 342.9000000000001,
+          "kernel_ms": 76.32549991831183,
+          "groups": {
+            "receptors": 7169,
+            "lamina": 5438,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 2.518266719787559,
+            "forward": 15.430084132025781,
+            "attack": false
+          }
+        },
+        {
+          "tick": 12,
+          "neural_ms": 371.4000000000001,
+          "kernel_ms": 130.33033395186067,
+          "groups": {
+            "receptors": 7161,
+            "lamina": 5370,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.8937724694583595,
+            "forward": 18.564646600156806,
+            "attack": true
+          }
+        },
+        {
+          "tick": 13,
+          "neural_ms": 400.0000000000001,
+          "kernel_ms": 74.36991692520678,
+          "groups": {
+            "receptors": 7372,
+            "lamina": 5361,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.422720459413482,
+            "forward": 17.425769501174653,
+            "attack": true
+          }
+        },
+        {
+          "tick": 14,
+          "neural_ms": 428.60000000000014,
+          "kernel_ms": 76.15583296865225,
+          "groups": {
+            "receptors": 7576,
+            "lamina": 5314,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.112490053763543,
+            "forward": 16.570173712551316,
+            "attack": true
+          }
+        },
+        {
+          "tick": 15,
+          "neural_ms": 457.10000000000014,
+          "kernel_ms": 41.28504195250571,
+          "groups": {
+            "receptors": 7617,
+            "lamina": 5360,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.5886226325381032,
+            "forward": 15.941508522149963,
+            "attack": true
+          }
+        },
+        {
+          "tick": 16,
+          "neural_ms": 485.70000000000016,
+          "kernel_ms": 145.680750021711,
+          "groups": {
+            "receptors": 7361,
+            "lamina": 5414,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.1934727946730044,
+            "forward": 18.933948458912727,
+            "attack": true
+          }
+        },
+        {
+          "tick": 17,
+          "neural_ms": 514.3000000000002,
+          "kernel_ms": 55.57495797984302,
+          "groups": {
+            "receptors": 7503,
+            "lamina": 5479,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 0.8966114937874817,
+            "forward": 17.703212181657673,
+            "attack": true
+          }
+        },
+        {
+          "tick": 18,
+          "neural_ms": 542.9000000000002,
+          "kernel_ms": 79.42258310504258,
+          "groups": {
+            "receptors": 7518,
+            "lamina": 5303,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.7172440559742435,
+            "forward": 16.778606026466306,
+            "attack": true
+          }
+        },
+        {
+          "tick": 19,
+          "neural_ms": 571.4000000000002,
+          "kernel_ms": 85.65341611392796,
+          "groups": {
+            "receptors": 7757,
+            "lamina": 5395,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.2913920082378623,
+            "forward": 19.578754287037864,
+            "attack": true
+          }
+        },
+        {
+          "tick": 20,
+          "neural_ms": 600.0000000000002,
+          "kernel_ms": 62.02854192815721,
+          "groups": {
+            "receptors": 7465,
+            "lamina": 5324,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.0138278979850943,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 21,
+          "neural_ms": 628.6000000000003,
+          "kernel_ms": 93.55308301746845,
+          "groups": {
+            "receptors": 7163,
+            "lamina": 5402,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.556566974370517,
+            "forward": 19.75605738965902,
+            "attack": true
+          }
+        },
+        {
+          "tick": 22,
+          "neural_ms": 657.1000000000003,
+          "kernel_ms": 68.52341699413955,
+          "groups": {
+            "receptors": 7165,
+            "lamina": 5399,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.9225748068488044,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 23,
+          "neural_ms": 685.7000000000003,
+          "kernel_ms": 67.10987514816225,
+          "groups": {
+            "receptors": 7370,
+            "lamina": 5393,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.4443585787468118,
+            "forward": 19.869772200392152,
+            "attack": true
+          }
+        },
+        {
+          "tick": 24,
+          "neural_ms": 714.3000000000003,
+          "kernel_ms": 66.94633304141462,
+          "groups": {
+            "receptors": 7559,
+            "lamina": 5390,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.1287459638980715,
+            "forward": 18.406261573746708,
+            "attack": true
+          }
+        },
+        {
+          "tick": 25,
+          "neural_ms": 742.9000000000003,
+          "kernel_ms": 82.3704160284251,
+          "groups": {
+            "receptors": 7627,
+            "lamina": 5334,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 5,
+            "DNp20": 3,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 2.6429006211878567,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 26,
+          "neural_ms": 771.4000000000003,
+          "kernel_ms": 112.1193750295788,
+          "groups": {
+            "receptors": 7360,
+            "lamina": 5362,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 2,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 1.9874989398828193,
+            "forward": 19.111588192361435,
+            "attack": true
+          }
+        },
+        {
+          "tick": 27,
+          "neural_ms": 800.0000000000003,
+          "kernel_ms": 97.53154194913805,
+          "groups": {
+            "receptors": 7508,
+            "lamina": 5379,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 1,
+            "DNpe017": 1
+          },
+          "action": {
+            "turn": 2.536787012431445,
+            "forward": 17.836666272504456,
+            "attack": true
+          }
+        },
+        {
+          "tick": 28,
+          "neural_ms": 828.6000000000004,
+          "kernel_ms": 66.8260829988867,
+          "groups": {
+            "receptors": 7516,
+            "lamina": 5505,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.9057932470593333,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 29,
+          "neural_ms": 857.1000000000004,
+          "kernel_ms": 62.90104193612933,
+          "groups": {
+            "receptors": 7755,
+            "lamina": 5303,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 1,
+            "DNp20": 1,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 2.4773341957031545,
+            "forward": 15.309287825608136,
+            "attack": false
+          }
+        },
+        {
+          "tick": 30,
+          "neural_ms": 885.7000000000004,
+          "kernel_ms": 72.49054103158414,
+          "groups": {
+            "receptors": 7463,
+            "lamina": 5484,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.8611285684386258,
+            "forward": 18.45898468457295,
+            "attack": true
+          }
+        },
+        {
+          "tick": 31,
+          "neural_ms": 914.3000000000004,
+          "kernel_ms": 51.791958045214415,
+          "groups": {
+            "receptors": 7154,
+            "lamina": 5270,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.398196316938685,
+            "forward": 20.0,
+            "attack": true
+          }
+        },
+        {
+          "tick": 32,
+          "neural_ms": 942.9000000000004,
+          "kernel_ms": 104.54116598702967,
+          "groups": {
+            "receptors": 7172,
+            "lamina": 5344,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 2,
+            "DNp20": 2,
+            "DNpe017": 0
+          },
+          "action": {
+            "turn": 1.0504126226706583,
+            "forward": 15.645219912490143,
+            "attack": false
+          }
+        },
+        {
+          "tick": 33,
+          "neural_ms": 971.4000000000004,
+          "kernel_ms": 65.4390410054475,
+          "groups": {
+            "receptors": 7370,
+            "lamina": 5430,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 3,
+            "DNp20": 1,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.8340757732942572,
+            "forward": 18.726431773680133,
+            "attack": true
+          }
+        },
+        {
+          "tick": 34,
+          "neural_ms": 1000.0000000000005,
+          "kernel_ms": 46.223375014960766,
+          "groups": {
+            "receptors": 7570,
+            "lamina": 5302,
+            "T4": 0,
+            "T5": 0,
+            "Kenyon": 0,
+            "visual_KCg_d": 0,
+            "MBON11": 0,
+            "PPL101": 0,
+            "descending": 4,
+            "DNp20": 2,
+            "DNpe017": 2
+          },
+          "action": {
+            "turn": 1.3778725632898516,
+            "forward": 20.0,
+            "attack": true
+          }
+        }
+      ]
+    }
+  ],
+  "pairwise": [
+    {
+      "a": "left",
+      "b": "right",
+      "different_KCs": 0,
+      "different_visual_KCs": 0
+    },
+    {
+      "a": "vertical",
+      "b": "horizontal",
+      "different_KCs": 0,
+      "different_visual_KCs": 0
+    },
+    {
+      "a": "motion_left",
+      "b": "motion_right",
+      "different_KCs": 0,
+      "different_visual_KCs": 0
+    },
+    {
+      "a": "black",
+      "b": "white",
+      "different_KCs": 0,
+      "different_visual_KCs": 0
+    }
+  ],
+  "visual_memory_input_active": false,
+  "validated_fly_vision": false,
+  "gameplay_vision_advantage_demonstrated": false,
+  "limits": "Deterministic stimulus assays on one reconstruction; no independent animals, physiological tuning or behavior validation."
+}

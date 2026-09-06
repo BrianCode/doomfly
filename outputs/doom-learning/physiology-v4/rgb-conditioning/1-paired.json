@@ -1,0 +1,75 @@
+{
+  "plus": 1,
+  "condition": "paired",
+  "before": [
+    {
+      "MBON": [
+        11,
+        19
+      ],
+      "KC": 3941,
+      "DAN": [
+        34,
+        38
+      ],
+      "KC_pattern_sha256": "96d9742bf6425c943a2ab8916a1ac5d62ff945b0e4d51e02a7097362d5916bab"
+    },
+    {
+      "MBON": [
+        10,
+        40
+      ],
+      "KC": 10251,
+      "DAN": [
+        99,
+        98
+      ],
+      "KC_pattern_sha256": "9a37ee8a9f5e6c3fba6fba18703b0debf9c1766fb58ef0e4e212866553499a9d"
+    }
+  ],
+  "after": [
+    {
+      "MBON": [
+        0,
+        0
+      ],
+      "KC": 4052,
+      "DAN": [
+        39,
+        44
+      ],
+      "KC_pattern_sha256": "dd22b3924b7874db3fb039516c453c4a43e557faa5c52b82534a05d161f9b90a"
+    },
+    {
+      "MBON": [
+        0,
+        0
+      ],
+      "KC": 10254,
+      "DAN": [
+        106,
+        90
+      ],
+      "KC_pattern_sha256": "1d6178f791bbab249a0bb61075fa02d399bccc59dcb5f9fa94334dd5af06d954"
+    }
+  ],
+  "suppression": [
+    1.0,
+    1.0
+  ],
+  "selectivity": 0.0,
+  "memory": {
+    "plastic_edges": 4184,
+    "changed_edges": 1772,
+    "mean_efficacy": 0.621904730796814,
+    "minimum_efficacy": 0.09999999403953552,
+    "sha256": "90046c4303140d7e6f27f577df82f01273169df6662217b7b5ee2f8a53b95a43",
+    "model": "kc-adaptive-lif-v4"
+  },
+  "train_KC": 13862,
+  "train_DAN": [
+    139,
+    130
+  ],
+  "wall": 30.48257066705264
+}

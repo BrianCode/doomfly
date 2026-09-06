@@ -1,0 +1,49 @@
+{
+  "completed": 8,
+  "total": 8,
+  "latest": {
+    "plus": 1,
+    "condition": "no_imposed_US",
+    "suppression": [
+      0.0,
+      -1.4634146341463414
+    ],
+    "selectivity": -1.4634146341463414,
+    "memory": {
+      "plastic_edges": 4184,
+      "changed_edges": 7,
+      "mean_efficacy": 1.0000009536743164,
+      "minimum_efficacy": 0.9897408485412598,
+      "sha256": "bdb89469d95c93791d81a229d96d23a8b7ef65fcb3f35b2ae872c3eafd8c2d7c",
+      "model": "centered-antihebbian-v5"
+    },
+    "training_KC": 172,
+    "training_DAN": [
+      94,
+      88
+    ],
+    "US_ms": 0,
+    "wall_seconds": 54.095416333992034,
+    "before_MBON": [
+      [
+        292,
+        304
+      ],
+      [
+        19,
+        63
+      ]
+    ],
+    "after_MBON": [
+      [
+        292,
+        304
+      ],
+      [
+        79,
+        123
+      ]
+    ],
+    "reset_restores": true
+  }
+}

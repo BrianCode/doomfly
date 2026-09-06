@@ -1,0 +1,49 @@
+# Local secrets and configuration
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+.npmrc
+*.pem
+*.key
+
+# Dependencies and generated builds
+.venv*/
+node_modules/
+__pycache__/
+.pytest_cache/
+.cache-neural/
+.mplconfig/
+*.pyc
+*.egg-info/
+*.tsbuildinfo
+.wrangler/
+.vercel/
+.next/
+.vinext/
+dist/
+build/
+coverage/
+.DS_Store
+
+# Downloaded upstream datasets/research and large mutable runtime state
+connectome_data/
+neural_data/
+research/**/*.pdf
+research/**/*.xlsx
+tools/acc/
+*.npz
+*.so
+*.dylib
+*.o
+*.a
+*.log
+*.log.*
+*.jsonl
+*.jsonl.*
+outputs/**/*.gz
+outputs/**/checkpoints/
+_vizdoom.ini
+
+# Separately commissioned social banners
+output/

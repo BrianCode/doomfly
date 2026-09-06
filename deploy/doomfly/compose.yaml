@@ -1,0 +1,20 @@
+services:
+  brain:
+    build:
+      context: ../..
+      dockerfile: deploy/doomfly/Dockerfile
+    restart: unless-stopped
+    stop_grace_period: 60s
+    cpus: 4
+    mem_limit: 8g
+    shm_size: 256m
+    ports:
+      - "127.0.0.1:8766:8766"
+    volumes:
+      - brain_state:/state
+      - ../../outputs/doom/malecns_v1:/app/outputs/doom/malecns_v1:ro
+      - ../../outputs/doom/audit/data-integrity.json:/app/outputs/doom/audit/data-integrity.json:ro
+      - ../../connectome_data/malecns_v1/normalized/neurons.feather:/app/connectome_data/malecns_v1/normalized/neurons.feather:ro
+      - ../../connectome_data/malecns_v1/annotations.feather:/app/connectome_data/malecns_v1/annotations.feather:ro
+volumes:
+  brain_state:

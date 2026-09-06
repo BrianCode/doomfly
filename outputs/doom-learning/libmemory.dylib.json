@@ -1,0 +1,11 @@
+{
+  "model": "gamma1-eligibility-ltd-v1",
+  "source_sha256": "6eec74a9648c0e44d82218f1683a4ae363ceca8a226fee5a912cd3b13f18611d",
+  "binary_sha256": "1c13fd2e1fd266f618ae38575decaf97780b96820a458f81d08fde127497ad89",
+  "flags": [
+    "-O3",
+    "-std=c++17",
+    "-shared",
+    "-fPIC"
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "seed": 91031,
+  "scenario": "health_gathering",
+  "horizon_seconds": 0.1,
+  "game_tics": 4,
+  "initial_health": 92,
+  "initial_game_tic": 1,
+  "final_game_tic": 5,
+  "survival_seconds": 0.11428571428571428,
+  "died": false,
+  "right_censored": true,
+  "end_health": 92,
+  "healing_total": 0,
+  "damage_total": 0,
+  "US_tics": 0,
+  "KC_spikes": 0,
+  "DAN_spikes": 0,
+  "before": {
+    "plastic_edges": 4184,
+    "changed_edges": 0,
+    "mean_efficacy": 1.0,
+    "minimum_efficacy": 1.0,
+    "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+    "model": "gamma1-eligibility-ltd-v1"
+  },
+  "after": {
+    "plastic_edges": 4184,
+    "changed_edges": 0,
+    "mean_efficacy": 1.0,
+    "minimum_efficacy": 1.0,
+    "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+    "model": "gamma1-eligibility-ltd-v1"
+  },
+  "timing": {
+    "wall_seconds": 1.3704899998847395,
+    "neural_seconds": 0.11430000000000001,
+    "speed": 0.08340082744829429,
+    "kernel_seconds": 0.9715997090097517,
+    "sensory_seconds": 0.01306120865046978,
+    "game_seconds": 0.04382079211063683
+  },
+  "assets": {
+    "vizdoom_version": "1.3.0",
+    "scenario": "health_gathering",
+    "sha256": {
+      "health_gathering.cfg": "5ad95e6f158564184e334c64d298124eb5a8a40ec696a073487ed24365444b8b",
+      "health_gathering.wad": "c77c8ba3254ae19eaff8d00418870a7718ef8a5822e5872ab68b76205cb2bacf",
+      "freedoom2.wad": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    }
+  },
+  "trace": [
+    {
+      "tick": 1,
+      "brain_seconds": 0.0286,
+      "health": 92,
+      "damage": 0,
+      "healing": 0,
+      "US_active": false,
+      "KC_spikes": 0,
+      "DAN_spikes": 0,
+      "MBON_spikes": [
+        0,
+        0
+      ],
+      "input_rgb_sha256": "a0e0ae4019365329cb01ab7c82386df890f758ab8ffc9f7ce7477c6057500db0",
+      "retinal_sha256": "3a39928f86e65936f76de7688d44acbf5da637ca09e82c9604c6de30610a1616",
+      "spikes_sha256": "aca16e23078a79827eb37a5bd229fbcbb1ff18faad6270687dcc99a48eee8546",
+      "action": {
+        "turn": 0.0,
+        "forward": 3.478844532211385,
+        "attack": true
+      },
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      }
+    },
+    {
+      "tick": 2,
+      "brain_seconds": 0.0571,
+      "health": 92,
+      "damage": 0,
+      "healing": 0,
+      "US_active": false,
+      "KC_spikes": 0,
+      "DAN_spikes": 0,
+      "MBON_spikes": [
+        0,
+        0
+      ],
+      "input_rgb_sha256": "a89abe9b166af0e5a6a77075e8bc792d45b1036aa822808f1ade6f639b740f5c",
+      "retinal_sha256": "d2b2fb45f51816c0ab0a94d304da235f576121f177df0d3392388bf84aaed6d1",
+      "spikes_sha256": "dc2548eac8701f234d5ed2d7fecd5fbd37b22096a1478f43410f4904a2e9f582",
+      "action": {
+        "turn": 0.0,
+        "forward": 6.096642370547056,
+        "attack": true
+      },
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      }
+    },
+    {
+      "tick": 3,
+      "brain_seconds": 0.0857,
+      "health": 92,
+      "damage": 0,
+      "healing": 0,
+      "US_active": false,
+      "KC_spikes": 0,
+      "DAN_spikes": 0,
+      "MBON_spikes": [
+        0,
+        0
+      ],
+      "input_rgb_sha256": "5ebdf211a26d624056f74caf0debf6b4fabd351f938e1547db1daf31d153016c",
+      "retinal_sha256": "241a99c6dfdc6fd7c5d6e74a33808f4a4955b65b4de613fc320d4fd04e55ee88",
+      "spikes_sha256": "bbe7d44740a9cfbab8a1485abc1fea95d62cd801eec42755934b0a3f6f5974a1",
+      "action": {
+        "turn": 0.0,
+        "forward": 11.537868560212576,
+        "attack": true
+      },
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      }
+    },
+    {
+      "tick": 4,
+      "brain_seconds": 0.11430000000000001,
+      "health": 92,
+      "damage": 0,
+      "healing": 0,
+      "US_active": false,
+      "KC_spikes": 0,
+      "DAN_spikes": 0,
+      "MBON_spikes": [
+        0,
+        0
+      ],
+      "input_rgb_sha256": "4c058309c92a464fdd5e642cd6c9df6f06295009c14f5cd646e843c440b2455c",
+      "retinal_sha256": "ac240d57aec5f6c290ecedc65a33a84a69110f93fc1b2231c3981e3701169f0f",
+      "spikes_sha256": "1b02507c38ab1a581abe201fbad261fb4c983947470a8c07c2521f9057c8d243",
+      "action": {
+        "turn": 1.0436533596634152,
+        "forward": 8.667969316996631,
+        "attack": false
+      },
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      }
+    }
+  ],
+  "replicate": 91031,
+  "condition": "plastic",
+  "phase": "training",
+  "training_episode": 1
+}

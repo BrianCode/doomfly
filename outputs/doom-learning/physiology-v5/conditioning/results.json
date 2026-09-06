@@ -1,0 +1,368 @@
+{
+  "complete": true,
+  "development_gate": false,
+  "independently_validated": false,
+  "survival_learning_demonstrated": false,
+  "rows": [
+    {
+      "plus": 0,
+      "condition": "paired",
+      "suppression": [
+        0.9379194630872483,
+        0.04878048780487809
+      ],
+      "selectivity": 0.8891389752823702,
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 3629,
+        "mean_efficacy": 1.671226978302002,
+        "minimum_efficacy": 0.09999999403953552,
+        "sha256": "698b92323a46f7f99c53727e0f96d7428b9ef79c23b4df16385e39e7d7e49ab7",
+        "model": "centered-antihebbian-v5"
+      },
+      "training_KC": 726846,
+      "training_DAN": [
+        867,
+        883
+      ],
+      "US_ms": 800,
+      "wall_seconds": 128.13279741699807,
+      "before_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "after_MBON": [
+        [
+          9,
+          28
+        ],
+        [
+          24,
+          54
+        ]
+      ],
+      "reset_restores": true
+    },
+    {
+      "plus": 0,
+      "condition": "backward",
+      "suppression": [
+        0.01845637583892612,
+        -0.10975609756097571
+      ],
+      "selectivity": 0.12821247339990183,
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 6,
+        "mean_efficacy": 1.0005289316177368,
+        "minimum_efficacy": 1.0,
+        "sha256": "9a5fae6da845b97b15b7d6aa4b0659a2dc4cea04dfc6e88d187acc8746592a68",
+        "model": "centered-antihebbian-v5"
+      },
+      "training_KC": 127,
+      "training_DAN": [
+        104,
+        122
+      ],
+      "US_ms": 800,
+      "wall_seconds": 85.63591529219411,
+      "before_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "after_MBON": [
+        [
+          293,
+          292
+        ],
+        [
+          18,
+          73
+        ]
+      ],
+      "reset_restores": true
+    },
+    {
+      "plus": 0,
+      "condition": "frozen",
+      "suppression": [
+        0.0,
+        0.0
+      ],
+      "selectivity": 0.0,
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "centered-antihebbian-v5"
+      },
+      "training_KC": 924985,
+      "training_DAN": [
+        1075,
+        1080
+      ],
+      "US_ms": 800,
+      "wall_seconds": 72.51944987499155,
+      "before_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "after_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "reset_restores": true
+    },
+    {
+      "plus": 0,
+      "condition": "no_imposed_US",
+      "suppression": [
+        0.9379194630872483,
+        0.04878048780487809
+      ],
+      "selectivity": 0.8891389752823702,
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 3566,
+        "mean_efficacy": 1.6208027601242065,
+        "minimum_efficacy": 0.09999999403953552,
+        "sha256": "74b39743d67ec7d4ac0cda32cb97bd067e70dae06e87e82be80405cc9a468cfc",
+        "model": "centered-antihebbian-v5"
+      },
+      "training_KC": 925432,
+      "training_DAN": [
+        1067,
+        1073
+      ],
+      "US_ms": 0,
+      "wall_seconds": 58.26242404081859,
+      "before_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "after_MBON": [
+        [
+          9,
+          28
+        ],
+        [
+          24,
+          54
+        ]
+      ],
+      "reset_restores": true
+    },
+    {
+      "plus": 1,
+      "condition": "paired",
+      "suppression": [
+        0.8993288590604027,
+        0.13414634146341464
+      ],
+      "selectivity": -0.7651825175969881,
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 7,
+        "mean_efficacy": 0.9994848966598511,
+        "minimum_efficacy": 0.45539864897727966,
+        "sha256": "10881c3c2ba5902e32ed2296960f2e8333b2847bdac0cbced9d2d61e7942f827",
+        "model": "centered-antihebbian-v5"
+      },
+      "training_KC": 172,
+      "training_DAN": [
+        133,
+        138
+      ],
+      "US_ms": 800,
+      "wall_seconds": 39.65015783300623,
+      "before_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "after_MBON": [
+        [
+          48,
+          12
+        ],
+        [
+          26,
+          45
+        ]
+      ],
+      "reset_restores": true
+    },
+    {
+      "plus": 1,
+      "condition": "backward",
+      "suppression": [
+        0.057046979865771785,
+        0.29268292682926833
+      ],
+      "selectivity": 0.23563594696349655,
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 3655,
+        "mean_efficacy": 1.4408619403839111,
+        "minimum_efficacy": 0.09999999403953552,
+        "sha256": "7d50e2872a232fabfe0f63d56c37caa34fcf866c67c0bad326eebd0dece92496",
+        "model": "centered-antihebbian-v5"
+      },
+      "training_KC": 414106,
+      "training_DAN": [
+        569,
+        574
+      ],
+      "US_ms": 800,
+      "wall_seconds": 38.431254209019244,
+      "before_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "after_MBON": [
+        [
+          287,
+          275
+        ],
+        [
+          46,
+          12
+        ]
+      ],
+      "reset_restores": true
+    },
+    {
+      "plus": 1,
+      "condition": "frozen",
+      "suppression": [
+        0.0,
+        0.0
+      ],
+      "selectivity": 0.0,
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "centered-antihebbian-v5"
+      },
+      "training_KC": 172,
+      "training_DAN": [
+        118,
+        137
+      ],
+      "US_ms": 800,
+      "wall_seconds": 48.701678291894495,
+      "before_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "after_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "reset_restores": true
+    },
+    {
+      "plus": 1,
+      "condition": "no_imposed_US",
+      "suppression": [
+        0.0,
+        -1.4634146341463414
+      ],
+      "selectivity": -1.4634146341463414,
+      "memory": {
+        "plastic_edges": 4184,
+        "changed_edges": 7,
+        "mean_efficacy": 1.0000009536743164,
+        "minimum_efficacy": 0.9897408485412598,
+        "sha256": "bdb89469d95c93791d81a229d96d23a8b7ef65fcb3f35b2ae872c3eafd8c2d7c",
+        "model": "centered-antihebbian-v5"
+      },
+      "training_KC": 172,
+      "training_DAN": [
+        94,
+        88
+      ],
+      "US_ms": 0,
+      "wall_seconds": 54.095416333992034,
+      "before_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          19,
+          63
+        ]
+      ],
+      "after_MBON": [
+        [
+          292,
+          304
+        ],
+        [
+          79,
+          123
+        ]
+      ],
+      "reset_restores": true
+    }
+  ]
+}

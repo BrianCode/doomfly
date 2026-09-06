@@ -1,0 +1,38 @@
+{
+  "status": "running",
+  "seed": 91031,
+  "learning_enabled": true,
+  "scenario": "health_gathering",
+  "vision": "intact",
+  "state": {
+    "tick": 4,
+    "brain_seconds": 0.11430000000000001,
+    "health": 92,
+    "damage": 0,
+    "healing": 0,
+    "US_active": false,
+    "KC_spikes": 0,
+    "DAN_spikes": 0,
+    "MBON_spikes": [
+      0,
+      0
+    ],
+    "input_rgb_sha256": "4c058309c92a464fdd5e642cd6c9df6f06295009c14f5cd646e843c440b2455c",
+    "retinal_sha256": "ac240d57aec5f6c290ecedc65a33a84a69110f93fc1b2231c3981e3701169f0f",
+    "spikes_sha256": "1b02507c38ab1a581abe201fbad261fb4c983947470a8c07c2521f9057c8d243",
+    "action": {
+      "turn": 1.0436533596634152,
+      "forward": 8.667969316996631,
+      "attack": false
+    },
+    "memory": {
+      "plastic_edges": 4184,
+      "changed_edges": 0,
+      "mean_efficacy": 1.0,
+      "minimum_efficacy": 1.0,
+      "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+      "model": "gamma1-eligibility-ltd-v1"
+    }
+  },
+  "wall_seconds": 0.16579579189419746
+}

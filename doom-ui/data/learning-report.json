@@ -1,0 +1,1580 @@
+{
+  "schema": 1,
+  "generated_at": "2026-09-05T21:50:56.878361+00:00",
+  "status": "complete",
+  "title": "Learning laboratory",
+  "verdict": "Learning not demonstrated",
+  "learning_demonstrated": false,
+  "live_baseline_changed": false,
+  "candidate_publicly_promoted": false,
+  "gates": [
+    {
+      "name": "Visual memory input",
+      "passed": false,
+      "detail": "Controlled images must activate and distinguish memory-cell responses."
+    },
+    {
+      "name": "Selective conditioning",
+      "passed": false,
+      "detail": "Paired stimulation must affect its cue more than control cues and backward/no-US conditions."
+    },
+    {
+      "name": "Survival memory changes",
+      "passed": false,
+      "detail": "Game experience must change the identified memory synapses."
+    },
+    {
+      "name": "Matched reinforcement exposure",
+      "passed": false,
+      "detail": "Shuffled controls must receive the same amount of imposed stimulation."
+    }
+  ],
+  "exposure_correction": {
+    "scope": "Recheck corrected US scheduling only; not a replacement survival-learning study. Original failed pilot preserved.",
+    "rows": [
+      {
+        "seed": 41031,
+        "paired_exposure_tics": 78,
+        "corrected_delivered_tics": 78,
+        "dose_matched": true,
+        "shift_tics": 167,
+        "changed_edges": 0,
+        "survival_seconds": 10.971428571428572
+      },
+      {
+        "seed": 41032,
+        "paired_exposure_tics": 82,
+        "corrected_delivered_tics": 82,
+        "dose_matched": true,
+        "shift_tics": 258,
+        "changed_edges": 0,
+        "survival_seconds": 12.0
+      }
+    ]
+  },
+  "scheduling_benchmark": {
+    "schema": 1,
+    "batches": [
+      {
+        "jobs": 1,
+        "batch_wall_seconds": 18.528626624960452,
+        "aggregate_brain_seconds_per_wall_second": 0.10794108168307207,
+        "runs": [
+          {
+            "seed": 81031,
+            "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+            "setup_seconds": 5.597302666865289,
+            "timing": {
+              "wall_seconds": 2.8334327498450875,
+              "neural_seconds": 1.0,
+              "speed": 0.3529287928413593,
+              "kernel_seconds": 2.3639880842529237,
+              "sensory_seconds": 0.039942622650414705,
+              "game_seconds": 0.1653637532144785
+            }
+          },
+          {
+            "seed": 81032,
+            "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+            "setup_seconds": 3.8815312089864165,
+            "timing": {
+              "wall_seconds": 2.982278416166082,
+              "neural_seconds": 1.0,
+              "speed": 0.3353140989718749,
+              "kernel_seconds": 2.3847907092422247,
+              "sensory_seconds": 0.07698028977029026,
+              "game_seconds": 0.22069991542957723
+            }
+          }
+        ]
+      },
+      {
+        "jobs": 2,
+        "batch_wall_seconds": 12.755128541961312,
+        "aggregate_brain_seconds_per_wall_second": 0.15679967421892144,
+        "runs": [
+          {
+            "seed": 81031,
+            "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+            "setup_seconds": 5.614983582869172,
+            "timing": {
+              "wall_seconds": 5.717168375151232,
+              "neural_seconds": 1.0,
+              "speed": 0.17491176302351735,
+              "kernel_seconds": 4.895193964242935,
+              "sensory_seconds": 0.09319474874064326,
+              "game_seconds": 0.31744933291338384
+            }
+          },
+          {
+            "seed": 81032,
+            "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+            "setup_seconds": 5.6835552079137415,
+            "timing": {
+              "wall_seconds": 4.689617250114679,
+              "neural_seconds": 1.0,
+              "speed": 0.21323701843163131,
+              "kernel_seconds": 4.088907249737531,
+              "sensory_seconds": 0.10811825352720916,
+              "game_seconds": 0.23915083426982164
+            }
+          }
+        ]
+      },
+      {
+        "jobs": 2,
+        "batch_wall_seconds": 12.109581709140912,
+        "aggregate_brain_seconds_per_wall_second": 0.16515847103870657,
+        "runs": [
+          {
+            "seed": 81031,
+            "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+            "setup_seconds": 2.701365292072296,
+            "timing": {
+              "wall_seconds": 8.542399666970596,
+              "neural_seconds": 1.0,
+              "speed": 0.11706312499829823,
+              "kernel_seconds": 7.3185897883959115,
+              "sensory_seconds": 0.29848170559853315,
+              "game_seconds": 0.3951045402791351
+            }
+          },
+          {
+            "seed": 81032,
+            "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+            "setup_seconds": 2.664776375051588,
+            "timing": {
+              "wall_seconds": 8.539177750004455,
+              "neural_seconds": 1.0,
+              "speed": 0.11710729408337685,
+              "kernel_seconds": 7.347142005804926,
+              "sensory_seconds": 0.3071974231861532,
+              "game_seconds": 0.3639990845695138
+            }
+          }
+        ]
+      },
+      {
+        "jobs": 1,
+        "batch_wall_seconds": 9.311416083015501,
+        "aggregate_brain_seconds_per_wall_second": 0.21479010090077513,
+        "runs": [
+          {
+            "seed": 81031,
+            "trace_sha256": "f162f12f27efa22cd7c6eb922b60d7ea23107445ee3ac2fa033226f85ae6f237",
+            "setup_seconds": 2.3491528751328588,
+            "timing": {
+              "wall_seconds": 2.157382166944444,
+              "neural_seconds": 1.0,
+              "speed": 0.46352473628551666,
+              "kernel_seconds": 1.8516841649543494,
+              "sensory_seconds": 0.04096745979040861,
+              "game_seconds": 0.16462858067825437
+            }
+          },
+          {
+            "seed": 81032,
+            "trace_sha256": "48253f0d578996dc3ca156d2d8e910db716546ab2e34ec38dba9ca8eeeb3c6fd",
+            "setup_seconds": 0.9534590418916196,
+            "timing": {
+              "wall_seconds": 1.9751259998884052,
+              "neural_seconds": 1.0,
+              "speed": 0.5062968134977212,
+              "kernel_seconds": 1.7080017535481602,
+              "sensory_seconds": 0.03365583741106093,
+              "game_seconds": 0.16320212790742517
+            }
+          }
+        ]
+      }
+    ],
+    "identical_traces_across_scheduling": true,
+    "limits": "Short full-graph benchmark including process/graph setup, on a shared host. Not a steady-state hardware benchmark or evidence of learning. Parallel jobs require independent full neural and game state."
+  },
+  "vision": [
+    {
+      "stimulus": "black",
+      "receptor_spikes": 0,
+      "T4_spikes": 0,
+      "T5_spikes": 0,
+      "KC_spikes": 0,
+      "MBON_spikes": 0
+    },
+    {
+      "stimulus": "white",
+      "receptor_spikes": 436887,
+      "T4_spikes": 0,
+      "T5_spikes": 0,
+      "KC_spikes": 0,
+      "MBON_spikes": 0
+    },
+    {
+      "stimulus": "left",
+      "receptor_spikes": 150389,
+      "T4_spikes": 0,
+      "T5_spikes": 0,
+      "KC_spikes": 0,
+      "MBON_spikes": 0
+    },
+    {
+      "stimulus": "right",
+      "receptor_spikes": 286499,
+      "T4_spikes": 0,
+      "T5_spikes": 0,
+      "KC_spikes": 0,
+      "MBON_spikes": 0
+    },
+    {
+      "stimulus": "vertical",
+      "receptor_spikes": 219636,
+      "T4_spikes": 0,
+      "T5_spikes": 0,
+      "KC_spikes": 0,
+      "MBON_spikes": 0
+    },
+    {
+      "stimulus": "horizontal",
+      "receptor_spikes": 229489,
+      "T4_spikes": 0,
+      "T5_spikes": 0,
+      "KC_spikes": 0,
+      "MBON_spikes": 0
+    },
+    {
+      "stimulus": "motion_left",
+      "receptor_spikes": 258085,
+      "T4_spikes": 0,
+      "T5_spikes": 0,
+      "KC_spikes": 0,
+      "MBON_spikes": 0
+    },
+    {
+      "stimulus": "motion_right",
+      "receptor_spikes": 258090,
+      "T4_spikes": 0,
+      "T5_spikes": 0,
+      "KC_spikes": 0,
+      "MBON_spikes": 0
+    }
+  ],
+  "conditioning": [
+    {
+      "condition": "paired",
+      "changed_edges": 4184,
+      "mean_efficacy": 0.10000001639127731,
+      "before_MBON_spikes": [
+        228,
+        623
+      ],
+      "after_MBON_spikes": [
+        16,
+        0
+      ],
+      "DAN_spikes": 915
+    },
+    {
+      "condition": "backward",
+      "changed_edges": 4184,
+      "mean_efficacy": 0.4272055923938751,
+      "before_MBON_spikes": [
+        228,
+        623
+      ],
+      "after_MBON_spikes": [
+        34,
+        0
+      ],
+      "DAN_spikes": 397
+    },
+    {
+      "condition": "frozen",
+      "changed_edges": 0,
+      "mean_efficacy": 1.0,
+      "before_MBON_spikes": [
+        228,
+        623
+      ],
+      "after_MBON_spikes": [
+        228,
+        623
+      ],
+      "DAN_spikes": 516
+    },
+    {
+      "condition": "no_imposed_US",
+      "changed_edges": 4184,
+      "mean_efficacy": 0.10000001639127731,
+      "before_MBON_spikes": [
+        228,
+        623
+      ],
+      "after_MBON_spikes": [
+        16,
+        0
+      ],
+      "DAN_spikes": 915
+    },
+    {
+      "condition": "reset_memory",
+      "changed_edges": 4184,
+      "mean_efficacy": 0.10000001639127731,
+      "before_MBON_spikes": [
+        228,
+        623
+      ],
+      "after_MBON_spikes": [
+        228,
+        623
+      ],
+      "DAN_spikes": 915
+    }
+  ],
+  "comparison": [
+    {
+      "condition": "plastic",
+      "episodes": 4,
+      "training_replicates": 2,
+      "mean_survival_seconds": 12.0,
+      "deaths": 0,
+      "censored": 4,
+      "changed_edges_max": 0,
+      "training_KC_spikes": 0,
+      "training_DAN_spikes": 1190,
+      "delivered_US_tics": 160
+    },
+    {
+      "condition": "frozen",
+      "episodes": 4,
+      "training_replicates": 2,
+      "mean_survival_seconds": 12.0,
+      "deaths": 0,
+      "censored": 4,
+      "changed_edges_max": 0,
+      "training_KC_spikes": 0,
+      "training_DAN_spikes": 1190,
+      "delivered_US_tics": 160
+    },
+    {
+      "condition": "shuffled",
+      "episodes": 4,
+      "training_replicates": 2,
+      "mean_survival_seconds": 12.0,
+      "deaths": 0,
+      "censored": 4,
+      "changed_edges_max": 0,
+      "training_KC_spikes": 0,
+      "training_DAN_spikes": 1138,
+      "delivered_US_tics": 153
+    }
+  ],
+  "paired_survival_differences": [
+    {
+      "replicate": 41031,
+      "versus": "frozen",
+      "mean_paired_difference_seconds": 0.0
+    },
+    {
+      "replicate": 41032,
+      "versus": "frozen",
+      "mean_paired_difference_seconds": 0.0
+    },
+    {
+      "replicate": 41031,
+      "versus": "shuffled",
+      "mean_paired_difference_seconds": 0.0
+    },
+    {
+      "replicate": 41032,
+      "versus": "shuffled",
+      "mean_paired_difference_seconds": 0.0
+    }
+  ],
+  "traces": [
+    {
+      "condition": "plastic",
+      "replicate": 41031,
+      "seed": 61031,
+      "survival_seconds": 12.0,
+      "points": [
+        {
+          "seconds": 0.0286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.22860000000000003,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.42860000000000004,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.6286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.8286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.0286000000000002,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.2286000000000001,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.4286,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.6286,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.8286000000000002,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.0286,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.2285999999999997,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.4286,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.6286000000000005,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.8286000000000002,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.0286000000000004,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.2286000000000006,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.4286000000000003,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.6286000000000005,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.8286000000000002,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.0286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.2286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.4286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.6286000000000005,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.828600000000001,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.0286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.2286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.4286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.6286000000000005,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.828600000000001,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.0286,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.2286,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.4286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.6286000000000005,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.828600000000001,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.0286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.2286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.4286,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.6286000000000005,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.828600000000001,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.0286,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.2286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.428600000000001,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.6286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.8286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.0286,
+          "health": 45,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.2286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.428600000000001,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.6286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.8286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.0286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.2286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.428600000000001,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.6286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.8286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.0286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.2286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.428600000000001,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.6286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.8286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 12.0,
+          "health": 13,
+          "efficacy": 1.0
+        }
+      ]
+    },
+    {
+      "condition": "frozen",
+      "replicate": 41031,
+      "seed": 61031,
+      "survival_seconds": 12.0,
+      "points": [
+        {
+          "seconds": 0.0286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.22860000000000003,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.42860000000000004,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.6286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.8286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.0286000000000002,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.2286000000000001,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.4286,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.6286,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.8286000000000002,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.0286,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.2285999999999997,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.4286,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.6286000000000005,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.8286000000000002,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.0286000000000004,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.2286000000000006,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.4286000000000003,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.6286000000000005,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.8286000000000002,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.0286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.2286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.4286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.6286000000000005,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.828600000000001,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.0286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.2286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.4286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.6286000000000005,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.828600000000001,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.0286,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.2286,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.4286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.6286000000000005,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.828600000000001,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.0286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.2286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.4286,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.6286000000000005,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.828600000000001,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.0286,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.2286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.428600000000001,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.6286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.8286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.0286,
+          "health": 45,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.2286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.428600000000001,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.6286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.8286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.0286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.2286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.428600000000001,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.6286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.8286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.0286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.2286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.428600000000001,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.6286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.8286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 12.0,
+          "health": 13,
+          "efficacy": 1.0
+        }
+      ]
+    },
+    {
+      "condition": "shuffled",
+      "replicate": 41031,
+      "seed": 61031,
+      "survival_seconds": 12.0,
+      "points": [
+        {
+          "seconds": 0.0286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.22860000000000003,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.42860000000000004,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.6286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 0.8286,
+          "health": 92,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.0286000000000002,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.2286000000000001,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.4286,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.6286,
+          "health": 84,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 1.8286000000000002,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.0286,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.2285999999999997,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.4286,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.6286000000000005,
+          "health": 76,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 2.8286000000000002,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.0286000000000004,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.2286000000000006,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.4286000000000003,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.6286000000000005,
+          "health": 68,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 3.8286000000000002,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.0286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.2286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.4286,
+          "health": 60,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.6286000000000005,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 4.828600000000001,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.0286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.2286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.4286,
+          "health": 52,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.6286000000000005,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 5.828600000000001,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.0286,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.2286,
+          "health": 44,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.4286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.6286000000000005,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 6.828600000000001,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.0286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.2286,
+          "health": 36,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.4286,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.6286000000000005,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 7.828600000000001,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.0286,
+          "health": 28,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.2286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.428600000000001,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.6286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 8.8286,
+          "health": 20,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.0286,
+          "health": 45,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.2286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.428600000000001,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.6286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 9.8286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.0286,
+          "health": 37,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.2286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.428600000000001,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.6286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 10.8286,
+          "health": 29,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.0286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.2286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.428600000000001,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.6286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 11.8286,
+          "health": 21,
+          "efficacy": 1.0
+        },
+        {
+          "seconds": 12.0,
+          "health": 13,
+          "efficacy": 1.0
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "schema": 1,
+    "model": "gamma1-eligibility-ltd-v1",
+    "parameters": {
+      "eligibility_tau_ms": 1000.0,
+      "eta_per_pair": 0.001,
+      "minimum_efficacy_fraction": 0.1,
+      "dopamine_trace_tau_ms": 100.0,
+      "dt_ms": 0.1,
+      "interpretation": "Chosen phenomenological parameters, not fitted to fly physiology or Doom performance. LTD-only; no consolidation, recovery, extinction or prediction-error circuit."
+    },
+    "train_seeds": [
+      41031,
+      41032
+    ],
+    "eval_seeds": [
+      61031,
+      61032
+    ],
+    "train_episodes": 1,
+    "episode_seconds": 12.0,
+    "retention_rest_seconds": 2.0,
+    "conditions": [
+      "plastic",
+      "frozen",
+      "shuffled"
+    ],
+    "scenario": "health_gathering",
+    "controls": "Same fixed DNp20/DNpe017 BCI in every arm. No trained or game-state-driven decoder.",
+    "reinforcement": "A health decrease schedules 200 ms of +30 mV-equivalent PPL101 current starting next game tic.",
+    "shuffling": "Circular shift of paired-arm delivered-US booleans, chosen with an independent seeded RNG. Actual delivered exposure is checked; early deaths can prevent dose matching.",
+    "headless": "No sleep, viewer, compressed video or high-rate full-state serialization. RGB generated and sampled every tic.",
+    "experimental_unit": "Independent game seeds and reset copies of one reconstructed male; not independent biological flies.",
+    "evaluation": "Plasticity and all imposed reinforcement off; matched held-out seeds. Neural dynamics reset between episodes; learned efficacies retained.",
+    "retention": "Quiet zero-drive simulated interval followed by reset of fast neural state. LTD-only persistence is a model property, not measured biological retention.",
+    "claim_gate": "Vision pathway, conditioning, dose-matched comparisons, held-out improvement and reset control must all pass. A working runner is not proof of learning."
+  },
+  "retention_and_reset": [
+    {
+      "seed": 61031,
+      "scenario": "health_gathering",
+      "horizon_seconds": 12.0,
+      "game_tics": 420,
+      "survival_seconds": 12.0,
+      "died": false,
+      "right_censored": true,
+      "end_health": 13,
+      "healing_total": 25,
+      "damage_total": 104,
+      "US_tics": 0,
+      "KC_spikes": 0,
+      "DAN_spikes": 0,
+      "before": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      },
+      "after": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      },
+      "timing": {
+        "wall_seconds": 39.34428612492047,
+        "neural_seconds": 12.0,
+        "speed": 0.304999815269218,
+        "kernel_seconds": 34.096474659862,
+        "sensory_seconds": 0.5523618801962584,
+        "game_seconds": 3.4714916166849434
+      },
+      "replicate": 41031,
+      "condition": "plastic",
+      "phase": "retention",
+      "training_episode": 1
+    },
+    {
+      "seed": 61031,
+      "scenario": "health_gathering",
+      "horizon_seconds": 12.0,
+      "game_tics": 420,
+      "survival_seconds": 12.0,
+      "died": false,
+      "right_censored": true,
+      "end_health": 13,
+      "healing_total": 25,
+      "damage_total": 104,
+      "US_tics": 0,
+      "KC_spikes": 0,
+      "DAN_spikes": 0,
+      "before": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      },
+      "after": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      },
+      "timing": {
+        "wall_seconds": 52.93431220785715,
+        "neural_seconds": 12.0,
+        "speed": 0.22669605969148335,
+        "kernel_seconds": 45.41686174739152,
+        "sensory_seconds": 0.6071443376131356,
+        "game_seconds": 4.121046414831653
+      },
+      "replicate": 41031,
+      "condition": "plastic",
+      "phase": "reset_memory",
+      "training_episode": 1
+    },
+    {
+      "seed": 61031,
+      "scenario": "health_gathering",
+      "horizon_seconds": 12.0,
+      "game_tics": 420,
+      "survival_seconds": 12.0,
+      "died": false,
+      "right_censored": true,
+      "end_health": 13,
+      "healing_total": 25,
+      "damage_total": 104,
+      "US_tics": 0,
+      "KC_spikes": 0,
+      "DAN_spikes": 0,
+      "before": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      },
+      "after": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      },
+      "timing": {
+        "wall_seconds": 35.45417820895091,
+        "neural_seconds": 12.0,
+        "speed": 0.3384650443532331,
+        "kernel_seconds": 30.18604904622771,
+        "sensory_seconds": 0.5302611396182328,
+        "game_seconds": 3.700199820334092
+      },
+      "replicate": 41032,
+      "condition": "plastic",
+      "phase": "retention",
+      "training_episode": 1
+    },
+    {
+      "seed": 61031,
+      "scenario": "health_gathering",
+      "horizon_seconds": 12.0,
+      "game_tics": 420,
+      "survival_seconds": 12.0,
+      "died": false,
+      "right_censored": true,
+      "end_health": 13,
+      "healing_total": 25,
+      "damage_total": 104,
+      "US_tics": 0,
+      "KC_spikes": 0,
+      "DAN_spikes": 0,
+      "before": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      },
+      "after": {
+        "plastic_edges": 4184,
+        "changed_edges": 0,
+        "mean_efficacy": 1.0,
+        "minimum_efficacy": 1.0,
+        "sha256": "68ca0e5ed93eb735d2a3185aabdc7b373f7ea4b38993af4e8859ca7562c74a43",
+        "model": "gamma1-eligibility-ltd-v1"
+      },
+      "timing": {
+        "wall_seconds": 47.26160258403979,
+        "neural_seconds": 12.0,
+        "speed": 0.25390590551096526,
+        "kernel_seconds": 40.64595303335227,
+        "sensory_seconds": 0.6958876685239375,
+        "game_seconds": 3.677042123861611
+      },
+      "replicate": 41032,
+      "condition": "plastic",
+      "phase": "reset_memory",
+      "training_episode": 1
+    }
+  ],
+  "performance": {
+    "episodes": 22,
+    "wall_seconds": 1240.760221665725,
+    "brain_seconds": 260.9142,
+    "aggregate_speed": 0.2102857550105223
+  },
+  "limits": [
+    "One reconstructed male, repeated across game seeds; no independent biological animals.",
+    "This is a small development pilot, not a confirmatory survival study.",
+    "The imposed-KC assay bypasses vision and does not reproduce the original odor experiment.",
+    "No imposed US does not silence endogenous dopamine neurons.",
+    "Quiet-delay retention in an LTD-only model is a modeled property, not proof of biological retention.",
+    "Failed gates prevent a learning claim or promotion to the live broadcast."
+  ],
+  "sources": [
+    {
+      "title": "Presynaptic dopamine-dependent depression",
+      "url": "https://doi.org/10.1016/j.neuron.2015.11.003"
+    },
+    {
+      "title": "Compartment-specific memory rules",
+      "url": "https://doi.org/10.7554/eLife.16135"
+    },
+    {
+      "title": "Visual and olfactory memory circuits",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4135349/"
+    },
+    {
+      "title": "Visual-system modeling and physiological constraints",
+      "url": "https://www.nature.com/articles/s41586-024-07939-3"
+    },
+    {
+      "title": "ViZDoom survival scenario",
+      "url": "https://vizdoom.farama.org/environments/default/"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "technical_checks": {
+    "complete_episode_count": true,
+    "neural_clock_within_half_step": true,
+    "one_observation_per_game_tic": true,
+    "frozen_efficacies_unchanged": true,
+    "tests_have_no_imposed_reinforcement": true,
+    "dose_matches_exact_neural_steps": true,
+    "shuffled_actual_dose_matched": true,
+    "recorded_input_and_spike_hashes": true,
+    "memory_erasure_restores_full_frozen_trace": true
+  },
+  "all_technical_checks_pass": true,
+  "erasure_identity": [
+    {
+      "replicate": 41041,
+      "test_seed": 61041,
+      "trace_matches_frozen": true
+    }
+  ],
+  "held_out": [
+    {
+      "replicate": 41041,
+      "test_seed": 61041,
+      "plastic": {
+        "seconds": 3.657142857142857,
+        "censored": false
+      },
+      "frozen": {
+        "seconds": 8.0,
+        "censored": true
+      },
+      "shuffled": {
+        "seconds": 3.657142857142857,
+        "censored": false
+      },
+      "observed_plastic_minus_frozen": -4.342857142857143
+    },
+    {
+      "replicate": 41041,
+      "test_seed": 61042,
+      "plastic": {
+        "seconds": 3.657142857142857,
+        "censored": false
+      },
+      "frozen": {
+        "seconds": 3.657142857142857,
+        "censored": false
+      },
+      "shuffled": {
+        "seconds": 3.657142857142857,
+        "censored": false
+      },
+      "observed_plastic_minus_frozen": 0.0
+    }
+  ],
+  "announcement_ready": false,
+  "survival_learning_demonstrated": false,
+  "reason": "Failed upstream physiological/conditioning validation. One training replica, descriptive pilot only; observed/censored durations do not justify a general learning claim.",
+  "timing_scope": "Episode timing includes each two-second warmup; excludes model construction and standalone five-second retention interval."
+}

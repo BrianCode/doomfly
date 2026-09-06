@@ -1,0 +1,8442 @@
+{
+  "cue": "black",
+  "baseline": {
+    "KC_hz_total": 0.0,
+    "DAN_hz": [
+      22.0,
+      18.0
+    ],
+    "MBON_hz": [
+      37.0,
+      37.0
+    ],
+    "all_spikes_hz": 267338.0
+  },
+  "during": {
+    "KC_hz_total": 0.0,
+    "DAN_hz": [
+      23.0,
+      19.0
+    ],
+    "MBON_hz": [
+      37.0,
+      37.0
+    ],
+    "all_spikes_hz": 266756.0
+  },
+  "recovery": {
+    "KC_hz_total": 0.0,
+    "DAN_hz": [
+      22.0,
+      19.0
+    ],
+    "MBON_hz": [
+      38.0,
+      38.0
+    ],
+    "all_spikes_hz": 267611.0
+  },
+  "wall_seconds": 11.290954458061606,
+  "trace": [
+    {
+      "ms": 10.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 0
+    },
+    {
+      "ms": 20.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 7305
+    },
+    {
+      "ms": 30.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 738
+    },
+    {
+      "ms": 40.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2002
+    },
+    {
+      "ms": 50.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 3821
+    },
+    {
+      "ms": 60.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 4378
+    },
+    {
+      "ms": 70.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 670
+    },
+    {
+      "ms": 80.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 4407
+    },
+    {
+      "ms": 90.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 1627
+    },
+    {
+      "ms": 100.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 3581
+    },
+    {
+      "ms": 110.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2066
+    },
+    {
+      "ms": 120.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 3302
+    },
+    {
+      "ms": 130.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2093
+    },
+    {
+      "ms": 140.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 3251
+    },
+    {
+      "ms": 150.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2710
+    },
+    {
+      "ms": 160.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2470
+    },
+    {
+      "ms": 170.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2891
+    },
+    {
+      "ms": 180.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2530
+    },
+    {
+      "ms": 190.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2881
+    },
+    {
+      "ms": 200.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2356
+    },
+    {
+      "ms": 210.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 3078
+    },
+    {
+      "ms": 220.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2278
+    },
+    {
+      "ms": 230.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 3043
+    },
+    {
+      "ms": 240.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2249
+    },
+    {
+      "ms": 250.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 3140
+    },
+    {
+      "ms": 260.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2361
+    },
+    {
+      "ms": 270.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2778
+    },
+    {
+      "ms": 280.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2510
+    },
+    {
+      "ms": 290.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2939
+    },
+    {
+      "ms": 300.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2267
+    },
+    {
+      "ms": 310.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2996
+    },
+    {
+      "ms": 320.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2561
+    },
+    {
+      "ms": 330.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2620
+    },
+    {
+      "ms": 340.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2771
+    },
+    {
+      "ms": 350.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2661
+    },
+    {
+      "ms": 360.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2464
+    },
+    {
+      "ms": 370.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2832
+    },
+    {
+      "ms": 380.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2721
+    },
+    {
+      "ms": 390.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2514
+    },
+    {
+      "ms": 400.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2896
+    },
+    {
+      "ms": 410.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2536
+    },
+    {
+      "ms": 420.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2597
+    },
+    {
+      "ms": 430.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2742
+    },
+    {
+      "ms": 440.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2647
+    },
+    {
+      "ms": 450.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2710
+    },
+    {
+      "ms": 460.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2849
+    },
+    {
+      "ms": 470.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2433
+    },
+    {
+      "ms": 480.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2898
+    },
+    {
+      "ms": 490.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2618
+    },
+    {
+      "ms": 500.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2632
+    },
+    {
+      "ms": 510.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2724
+    },
+    {
+      "ms": 520.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2680
+    },
+    {
+      "ms": 530.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2604
+    },
+    {
+      "ms": 540.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2778
+    },
+    {
+      "ms": 550.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2851
+    },
+    {
+      "ms": 560.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2402
+    },
+    {
+      "ms": 570.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2848
+    },
+    {
+      "ms": 580.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2738
+    },
+    {
+      "ms": 590.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2504
+    },
+    {
+      "ms": 600.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2756
+    },
+    {
+      "ms": 610.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2930
+    },
+    {
+      "ms": 620.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2273
+    },
+    {
+      "ms": 630.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 3026
+    },
+    {
+      "ms": 640.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2616
+    },
+    {
+      "ms": 650.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2451
+    },
+    {
+      "ms": 660.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2816
+    },
+    {
+      "ms": 670.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2755
+    },
+    {
+      "ms": 680.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2395
+    },
+    {
+      "ms": 690.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2900
+    },
+    {
+      "ms": 700.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2632
+    },
+    {
+      "ms": 710.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2653
+    },
+    {
+      "ms": 720.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2642
+    },
+    {
+      "ms": 730.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2703
+    },
+    {
+      "ms": 740.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2533
+    },
+    {
+      "ms": 750.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2708
+    },
+    {
+      "ms": 760.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2710
+    },
+    {
+      "ms": 770.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2634
+    },
+    {
+      "ms": 780.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2699
+    },
+    {
+      "ms": 790.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2662
+    },
+    {
+      "ms": 800.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2705
+    },
+    {
+      "ms": 810.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2699
+    },
+    {
+      "ms": 820.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2568
+    },
+    {
+      "ms": 830.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2745
+    },
+    {
+      "ms": 840.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2710
+    },
+    {
+      "ms": 850.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2480
+    },
+    {
+      "ms": 860.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2780
+    },
+    {
+      "ms": 870.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2727
+    },
+    {
+      "ms": 880.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2392
+    },
+    {
+      "ms": 890.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 3073
+    },
+    {
+      "ms": 900.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2648
+    },
+    {
+      "ms": 910.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2348
+    },
+    {
+      "ms": 920.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2928
+    },
+    {
+      "ms": 930.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2621
+    },
+    {
+      "ms": 940.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2562
+    },
+    {
+      "ms": 950.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2770
+    },
+    {
+      "ms": 960.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2799
+    },
+    {
+      "ms": 970.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2386
+    },
+    {
+      "ms": 980.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2820
+    },
+    {
+      "ms": 990.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2779
+    },
+    {
+      "ms": 1000.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2550
+    },
+    {
+      "ms": 1010.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2544
+    },
+    {
+      "ms": 1020.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2971
+    },
+    {
+      "ms": 1030.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2477
+    },
+    {
+      "ms": 1040.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2665
+    },
+    {
+      "ms": 1050.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2643
+    },
+    {
+      "ms": 1060.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2708
+    },
+    {
+      "ms": 1070.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2723
+    },
+    {
+      "ms": 1080.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2559
+    },
+    {
+      "ms": 1090.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2817
+    },
+    {
+      "ms": 1100.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2610
+    },
+    {
+      "ms": 1110.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2500
+    },
+    {
+      "ms": 1120.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2925
+    },
+    {
+      "ms": 1130.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2479
+    },
+    {
+      "ms": 1140.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2700
+    },
+    {
+      "ms": 1150.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2704
+    },
+    {
+      "ms": 1160.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2747
+    },
+    {
+      "ms": 1170.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2511
+    },
+    {
+      "ms": 1180.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2718
+    },
+    {
+      "ms": 1190.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2837
+    },
+    {
+      "ms": 1200.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2412
+    },
+    {
+      "ms": 1210.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2882
+    },
+    {
+      "ms": 1220.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2651
+    },
+    {
+      "ms": 1230.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2497
+    },
+    {
+      "ms": 1240.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2849
+    },
+    {
+      "ms": 1250.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2607
+    },
+    {
+      "ms": 1260.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2600
+    },
+    {
+      "ms": 1270.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2755
+    },
+    {
+      "ms": 1280.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2570
+    },
+    {
+      "ms": 1290.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2701
+    },
+    {
+      "ms": 1300.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2726
+    },
+    {
+      "ms": 1310.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2602
+    },
+    {
+      "ms": 1320.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2848
+    },
+    {
+      "ms": 1330.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2349
+    },
+    {
+      "ms": 1340.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2856
+    },
+    {
+      "ms": 1350.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2844
+    },
+    {
+      "ms": 1360.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2439
+    },
+    {
+      "ms": 1370.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2799
+    },
+    {
+      "ms": 1380.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2676
+    },
+    {
+      "ms": 1390.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2628
+    },
+    {
+      "ms": 1400.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2662
+    },
+    {
+      "ms": 1410.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2675
+    },
+    {
+      "ms": 1420.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2723
+    },
+    {
+      "ms": 1430.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2577
+    },
+    {
+      "ms": 1440.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2795
+    },
+    {
+      "ms": 1450.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2594
+    },
+    {
+      "ms": 1460.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2675
+    },
+    {
+      "ms": 1470.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2854
+    },
+    {
+      "ms": 1480.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2480
+    },
+    {
+      "ms": 1490.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2696
+    },
+    {
+      "ms": 1500.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2741
+    },
+    {
+      "ms": 1510.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2564
+    },
+    {
+      "ms": 1520.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2729
+    },
+    {
+      "ms": 1530.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2614
+    },
+    {
+      "ms": 1540.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2821
+    },
+    {
+      "ms": 1550.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2639
+    },
+    {
+      "ms": 1560.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2555
+    },
+    {
+      "ms": 1570.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2957
+    },
+    {
+      "ms": 1580.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2492
+    },
+    {
+      "ms": 1590.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2715
+    },
+    {
+      "ms": 1600.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2776
+    },
+    {
+      "ms": 1610.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2510
+    },
+    {
+      "ms": 1620.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2636
+    },
+    {
+      "ms": 1630.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2735
+    },
+    {
+      "ms": 1640.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2769
+    },
+    {
+      "ms": 1650.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2524
+    },
+    {
+      "ms": 1660.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2811
+    },
+    {
+      "ms": 1670.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2558
+    },
+    {
+      "ms": 1680.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2626
+    },
+    {
+      "ms": 1690.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2801
+    },
+    {
+      "ms": 1700.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2592
+    },
+    {
+      "ms": 1710.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2634
+    },
+    {
+      "ms": 1720.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2768
+    },
+    {
+      "ms": 1730.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2691
+    },
+    {
+      "ms": 1740.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2590
+    },
+    {
+      "ms": 1750.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2693
+    },
+    {
+      "ms": 1760.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2714
+    },
+    {
+      "ms": 1770.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2633
+    },
+    {
+      "ms": 1780.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2752
+    },
+    {
+      "ms": 1790.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2605
+    },
+    {
+      "ms": 1800.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2607
+    },
+    {
+      "ms": 1810.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2874
+    },
+    {
+      "ms": 1820.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2447
+    },
+    {
+      "ms": 1830.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2935
+    },
+    {
+      "ms": 1840.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2579
+    },
+    {
+      "ms": 1850.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2556
+    },
+    {
+      "ms": 1860.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2829
+    },
+    {
+      "ms": 1870.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2463
+    },
+    {
+      "ms": 1880.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2851
+    },
+    {
+      "ms": 1890.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2689
+    },
+    {
+      "ms": 1900.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2578
+    },
+    {
+      "ms": 1910.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2782
+    },
+    {
+      "ms": 1920.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2684
+    },
+    {
+      "ms": 1930.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2553
+    },
+    {
+      "ms": 1940.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2687
+    },
+    {
+      "ms": 1950.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2719
+    },
+    {
+      "ms": 1960.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2673
+    },
+    {
+      "ms": 1970.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2669
+    },
+    {
+      "ms": 1980.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2529
+    },
+    {
+      "ms": 1990.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2844
+    },
+    {
+      "ms": 2000.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2685
+    },
+    {
+      "ms": 2010.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2517
+    },
+    {
+      "ms": 2020.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2763
+    },
+    {
+      "ms": 2030.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2662
+    },
+    {
+      "ms": 2040.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2636
+    },
+    {
+      "ms": 2050.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2765
+    },
+    {
+      "ms": 2060.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2657
+    },
+    {
+      "ms": 2070.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2686
+    },
+    {
+      "ms": 2080.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2533
+    },
+    {
+      "ms": 2090.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2906
+    },
+    {
+      "ms": 2100.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2479
+    },
+    {
+      "ms": 2110.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2725
+    },
+    {
+      "ms": 2120.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2761
+    },
+    {
+      "ms": 2130.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2534
+    },
+    {
+      "ms": 2140.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2659
+    },
+    {
+      "ms": 2150.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2669
+    },
+    {
+      "ms": 2160.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2632
+    },
+    {
+      "ms": 2170.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2690
+    },
+    {
+      "ms": 2180.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2748
+    },
+    {
+      "ms": 2190.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2444
+    },
+    {
+      "ms": 2200.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2854
+    },
+    {
+      "ms": 2210.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2701
+    },
+    {
+      "ms": 2220.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2522
+    },
+    {
+      "ms": 2230.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2673
+    },
+    {
+      "ms": 2240.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2831
+    },
+    {
+      "ms": 2250.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2579
+    },
+    {
+      "ms": 2260.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2533
+    },
+    {
+      "ms": 2270.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2936
+    },
+    {
+      "ms": 2280.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2687
+    },
+    {
+      "ms": 2290.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2365
+    },
+    {
+      "ms": 2300.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2949
+    },
+    {
+      "ms": 2310.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2542
+    },
+    {
+      "ms": 2320.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2617
+    },
+    {
+      "ms": 2330.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2779
+    },
+    {
+      "ms": 2340.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2658
+    },
+    {
+      "ms": 2350.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2599
+    },
+    {
+      "ms": 2360.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2734
+    },
+    {
+      "ms": 2370.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2579
+    },
+    {
+      "ms": 2380.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2890
+    },
+    {
+      "ms": 2390.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2407
+    },
+    {
+      "ms": 2400.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2786
+    },
+    {
+      "ms": 2410.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2674
+    },
+    {
+      "ms": 2420.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2581
+    },
+    {
+      "ms": 2430.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2652
+    },
+    {
+      "ms": 2440.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2858
+    },
+    {
+      "ms": 2450.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2380
+    },
+    {
+      "ms": 2460.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2898
+    },
+    {
+      "ms": 2470.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2718
+    },
+    {
+      "ms": 2480.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2451
+    },
+    {
+      "ms": 2490.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2813
+    },
+    {
+      "ms": 2500.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2719
+    },
+    {
+      "ms": 2510.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2587
+    },
+    {
+      "ms": 2520.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2691
+    },
+    {
+      "ms": 2530.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2633
+    },
+    {
+      "ms": 2540.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2713
+    },
+    {
+      "ms": 2550.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2715
+    },
+    {
+      "ms": 2560.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2554
+    },
+    {
+      "ms": 2570.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2638
+    },
+    {
+      "ms": 2580.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2713
+    },
+    {
+      "ms": 2590.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2707
+    },
+    {
+      "ms": 2600.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2632
+    },
+    {
+      "ms": 2610.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2758
+    },
+    {
+      "ms": 2620.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2628
+    },
+    {
+      "ms": 2630.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2585
+    },
+    {
+      "ms": 2640.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2754
+    },
+    {
+      "ms": 2650.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2742
+    },
+    {
+      "ms": 2660.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2465
+    },
+    {
+      "ms": 2670.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2740
+    },
+    {
+      "ms": 2680.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2629
+    },
+    {
+      "ms": 2690.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2744
+    },
+    {
+      "ms": 2700.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2662
+    },
+    {
+      "ms": 2710.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2623
+    },
+    {
+      "ms": 2720.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2636
+    },
+    {
+      "ms": 2730.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2686
+    },
+    {
+      "ms": 2740.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2667
+    },
+    {
+      "ms": 2750.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2799
+    },
+    {
+      "ms": 2760.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2692
+    },
+    {
+      "ms": 2770.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2573
+    },
+    {
+      "ms": 2780.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2693
+    },
+    {
+      "ms": 2790.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2596
+    },
+    {
+      "ms": 2800.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2667
+    },
+    {
+      "ms": 2810.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2733
+    },
+    {
+      "ms": 2820.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2723
+    },
+    {
+      "ms": 2830.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2550
+    },
+    {
+      "ms": 2840.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2736
+    },
+    {
+      "ms": 2850.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2696
+    },
+    {
+      "ms": 2860.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2522
+    },
+    {
+      "ms": 2870.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2847
+    },
+    {
+      "ms": 2880.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2637
+    },
+    {
+      "ms": 2890.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2669
+    },
+    {
+      "ms": 2900.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2606
+    },
+    {
+      "ms": 2910.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2743
+    },
+    {
+      "ms": 2920.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2671
+    },
+    {
+      "ms": 2930.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2580
+    },
+    {
+      "ms": 2940.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2801
+    },
+    {
+      "ms": 2950.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2582
+    },
+    {
+      "ms": 2960.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2715
+    },
+    {
+      "ms": 2970.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2685
+    },
+    {
+      "ms": 2980.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2643
+    },
+    {
+      "ms": 2990.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2663
+    },
+    {
+      "ms": 3000.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2601
+    },
+    {
+      "ms": 3010.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2697
+    },
+    {
+      "ms": 3020.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2683
+    },
+    {
+      "ms": 3030.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2586
+    },
+    {
+      "ms": 3040.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2691
+    },
+    {
+      "ms": 3050.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2710
+    },
+    {
+      "ms": 3060.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2523
+    },
+    {
+      "ms": 3070.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2786
+    },
+    {
+      "ms": 3080.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2724
+    },
+    {
+      "ms": 3090.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2528
+    },
+    {
+      "ms": 3100.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2694
+    },
+    {
+      "ms": 3110.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2748
+    },
+    {
+      "ms": 3120.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2507
+    },
+    {
+      "ms": 3130.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2721
+    },
+    {
+      "ms": 3140.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2713
+    },
+    {
+      "ms": 3150.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2666
+    },
+    {
+      "ms": 3160.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2685
+    },
+    {
+      "ms": 3170.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2657
+    },
+    {
+      "ms": 3180.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2720
+    },
+    {
+      "ms": 3190.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2552
+    },
+    {
+      "ms": 3200.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2803
+    },
+    {
+      "ms": 3210.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2521
+    },
+    {
+      "ms": 3220.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2685
+    },
+    {
+      "ms": 3230.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2789
+    },
+    {
+      "ms": 3240.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2562
+    },
+    {
+      "ms": 3250.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2715
+    },
+    {
+      "ms": 3260.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2680
+    },
+    {
+      "ms": 3270.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2829
+    },
+    {
+      "ms": 3280.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2465
+    },
+    {
+      "ms": 3290.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2739
+    },
+    {
+      "ms": 3300.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2730
+    },
+    {
+      "ms": 3310.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2711
+    },
+    {
+      "ms": 3320.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2617
+    },
+    {
+      "ms": 3330.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2727
+    },
+    {
+      "ms": 3340.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2705
+    },
+    {
+      "ms": 3350.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2587
+    },
+    {
+      "ms": 3360.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2695
+    },
+    {
+      "ms": 3370.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2796
+    },
+    {
+      "ms": 3380.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2502
+    },
+    {
+      "ms": 3390.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2744
+    },
+    {
+      "ms": 3400.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2774
+    },
+    {
+      "ms": 3410.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2388
+    },
+    {
+      "ms": 3420.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2759
+    },
+    {
+      "ms": 3430.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2726
+    },
+    {
+      "ms": 3440.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2535
+    },
+    {
+      "ms": 3450.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2799
+    },
+    {
+      "ms": 3460.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2570
+    },
+    {
+      "ms": 3470.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2709
+    },
+    {
+      "ms": 3480.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2616
+    },
+    {
+      "ms": 3490.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2773
+    },
+    {
+      "ms": 3500.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2669
+    },
+    {
+      "ms": 3510.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2529
+    },
+    {
+      "ms": 3520.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2839
+    },
+    {
+      "ms": 3530.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2636
+    },
+    {
+      "ms": 3540.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2510
+    },
+    {
+      "ms": 3550.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2812
+    },
+    {
+      "ms": 3560.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2626
+    },
+    {
+      "ms": 3570.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2589
+    },
+    {
+      "ms": 3580.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2937
+    },
+    {
+      "ms": 3590.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2565
+    },
+    {
+      "ms": 3600.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2614
+    },
+    {
+      "ms": 3610.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2790
+    },
+    {
+      "ms": 3620.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2568
+    },
+    {
+      "ms": 3630.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2721
+    },
+    {
+      "ms": 3640.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2648
+    },
+    {
+      "ms": 3650.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2697
+    },
+    {
+      "ms": 3660.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2590
+    },
+    {
+      "ms": 3670.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2637
+    },
+    {
+      "ms": 3680.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2714
+    },
+    {
+      "ms": 3690.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2650
+    },
+    {
+      "ms": 3700.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2651
+    },
+    {
+      "ms": 3710.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2667
+    },
+    {
+      "ms": 3720.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2798
+    },
+    {
+      "ms": 3730.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2631
+    },
+    {
+      "ms": 3740.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2570
+    },
+    {
+      "ms": 3750.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2832
+    },
+    {
+      "ms": 3760.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2598
+    },
+    {
+      "ms": 3770.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2740
+    },
+    {
+      "ms": 3780.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2587
+    },
+    {
+      "ms": 3790.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2797
+    },
+    {
+      "ms": 3800.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2633
+    },
+    {
+      "ms": 3810.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2586
+    },
+    {
+      "ms": 3820.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2851
+    },
+    {
+      "ms": 3830.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2433
+    },
+    {
+      "ms": 3840.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2786
+    },
+    {
+      "ms": 3850.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2748
+    },
+    {
+      "ms": 3860.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2562
+    },
+    {
+      "ms": 3870.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2686
+    },
+    {
+      "ms": 3880.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2606
+    },
+    {
+      "ms": 3890.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2757
+    },
+    {
+      "ms": 3900.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2646
+    },
+    {
+      "ms": 3910.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2614
+    },
+    {
+      "ms": 3920.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2736
+    },
+    {
+      "ms": 3930.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2633
+    },
+    {
+      "ms": 3940.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2664
+    },
+    {
+      "ms": 3950.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2711
+    },
+    {
+      "ms": 3960.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2743
+    },
+    {
+      "ms": 3970.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2520
+    },
+    {
+      "ms": 3980.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2754
+    },
+    {
+      "ms": 3990.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2594
+    },
+    {
+      "ms": 4000.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2651
+    },
+    {
+      "ms": 4010.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2740
+    },
+    {
+      "ms": 4020.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2714
+    },
+    {
+      "ms": 4030.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2587
+    },
+    {
+      "ms": 4040.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2666
+    },
+    {
+      "ms": 4050.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2902
+    },
+    {
+      "ms": 4060.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2313
+    },
+    {
+      "ms": 4070.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2905
+    },
+    {
+      "ms": 4080.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2802
+    },
+    {
+      "ms": 4090.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2349
+    },
+    {
+      "ms": 4100.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2871
+    },
+    {
+      "ms": 4110.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2653
+    },
+    {
+      "ms": 4120.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2594
+    },
+    {
+      "ms": 4130.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2783
+    },
+    {
+      "ms": 4140.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2755
+    },
+    {
+      "ms": 4150.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2472
+    },
+    {
+      "ms": 4160.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2812
+    },
+    {
+      "ms": 4170.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2733
+    },
+    {
+      "ms": 4180.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2639
+    },
+    {
+      "ms": 4190.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2605
+    },
+    {
+      "ms": 4200.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2710
+    },
+    {
+      "ms": 4210.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2779
+    },
+    {
+      "ms": 4220.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2484
+    },
+    {
+      "ms": 4230.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2898
+    },
+    {
+      "ms": 4240.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2599
+    },
+    {
+      "ms": 4250.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2603
+    },
+    {
+      "ms": 4260.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2780
+    },
+    {
+      "ms": 4270.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2592
+    },
+    {
+      "ms": 4280.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2853
+    },
+    {
+      "ms": 4290.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2585
+    },
+    {
+      "ms": 4300.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2723
+    },
+    {
+      "ms": 4310.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2622
+    },
+    {
+      "ms": 4320.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2613
+    },
+    {
+      "ms": 4330.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2800
+    },
+    {
+      "ms": 4340.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2567
+    },
+    {
+      "ms": 4350.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2732
+    },
+    {
+      "ms": 4360.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2816
+    },
+    {
+      "ms": 4370.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2634
+    },
+    {
+      "ms": 4380.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2578
+    },
+    {
+      "ms": 4390.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2789
+    },
+    {
+      "ms": 4400.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2705
+    },
+    {
+      "ms": 4410.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2557
+    },
+    {
+      "ms": 4420.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2812
+    },
+    {
+      "ms": 4430.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2587
+    },
+    {
+      "ms": 4440.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2713
+    },
+    {
+      "ms": 4450.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2696
+    },
+    {
+      "ms": 4460.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2626
+    },
+    {
+      "ms": 4470.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2781
+    },
+    {
+      "ms": 4480.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2627
+    },
+    {
+      "ms": 4490.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2670
+    },
+    {
+      "ms": 4500.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2698
+    },
+    {
+      "ms": 4510.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2552
+    },
+    {
+      "ms": 4520.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2800
+    },
+    {
+      "ms": 4530.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2755
+    },
+    {
+      "ms": 4540.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2500
+    },
+    {
+      "ms": 4550.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2855
+    },
+    {
+      "ms": 4560.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2526
+    },
+    {
+      "ms": 4570.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2542
+    },
+    {
+      "ms": 4580.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2944
+    },
+    {
+      "ms": 4590.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2454
+    },
+    {
+      "ms": 4600.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2663
+    },
+    {
+      "ms": 4610.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2706
+    },
+    {
+      "ms": 4620.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2743
+    },
+    {
+      "ms": 4630.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2580
+    },
+    {
+      "ms": 4640.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2626
+    },
+    {
+      "ms": 4650.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2850
+    },
+    {
+      "ms": 4660.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2453
+    },
+    {
+      "ms": 4670.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2853
+    },
+    {
+      "ms": 4680.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2594
+    },
+    {
+      "ms": 4690.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2753
+    },
+    {
+      "ms": 4700.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2709
+    },
+    {
+      "ms": 4710.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2559
+    },
+    {
+      "ms": 4720.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2863
+    },
+    {
+      "ms": 4730.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2649
+    },
+    {
+      "ms": 4740.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2570
+    },
+    {
+      "ms": 4750.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2675
+    },
+    {
+      "ms": 4760.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2871
+    },
+    {
+      "ms": 4770.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2462
+    },
+    {
+      "ms": 4780.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2749
+    },
+    {
+      "ms": 4790.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2827
+    },
+    {
+      "ms": 4800.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2281
+    },
+    {
+      "ms": 4810.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2875
+    },
+    {
+      "ms": 4820.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2765
+    },
+    {
+      "ms": 4830.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2416
+    },
+    {
+      "ms": 4840.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2855
+    },
+    {
+      "ms": 4850.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2700
+    },
+    {
+      "ms": 4860.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2564
+    },
+    {
+      "ms": 4870.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2710
+    },
+    {
+      "ms": 4880.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2718
+    },
+    {
+      "ms": 4890.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2597
+    },
+    {
+      "ms": 4900.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2633
+    },
+    {
+      "ms": 4910.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2785
+    },
+    {
+      "ms": 4920.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2527
+    },
+    {
+      "ms": 4930.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2763
+    },
+    {
+      "ms": 4940.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2630
+    },
+    {
+      "ms": 4950.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2614
+    },
+    {
+      "ms": 4960.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2754
+    },
+    {
+      "ms": 4970.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2659
+    },
+    {
+      "ms": 4980.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2703
+    },
+    {
+      "ms": 4990.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2585
+    },
+    {
+      "ms": 5000.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2763
+    },
+    {
+      "ms": 5010.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2679
+    },
+    {
+      "ms": 5020.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2603
+    },
+    {
+      "ms": 5030.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2684
+    },
+    {
+      "ms": 5040.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2672
+    },
+    {
+      "ms": 5050.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2609
+    },
+    {
+      "ms": 5060.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2676
+    },
+    {
+      "ms": 5070.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2675
+    },
+    {
+      "ms": 5080.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2652
+    },
+    {
+      "ms": 5090.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2680
+    },
+    {
+      "ms": 5100.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2743
+    },
+    {
+      "ms": 5110.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2728
+    },
+    {
+      "ms": 5120.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2547
+    },
+    {
+      "ms": 5130.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2786
+    },
+    {
+      "ms": 5140.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2765
+    },
+    {
+      "ms": 5150.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2462
+    },
+    {
+      "ms": 5160.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2763
+    },
+    {
+      "ms": 5170.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2684
+    },
+    {
+      "ms": 5180.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2557
+    },
+    {
+      "ms": 5190.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2947
+    },
+    {
+      "ms": 5200.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2621
+    },
+    {
+      "ms": 5210.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2459
+    },
+    {
+      "ms": 5220.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2955
+    },
+    {
+      "ms": 5230.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2516
+    },
+    {
+      "ms": 5240.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2761
+    },
+    {
+      "ms": 5250.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2659
+    },
+    {
+      "ms": 5260.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2753
+    },
+    {
+      "ms": 5270.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2512
+    },
+    {
+      "ms": 5280.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2731
+    },
+    {
+      "ms": 5290.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2727
+    },
+    {
+      "ms": 5300.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2626
+    },
+    {
+      "ms": 5310.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2671
+    },
+    {
+      "ms": 5320.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2707
+    },
+    {
+      "ms": 5330.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2696
+    },
+    {
+      "ms": 5340.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2608
+    },
+    {
+      "ms": 5350.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2622
+    },
+    {
+      "ms": 5360.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2705
+    },
+    {
+      "ms": 5370.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2722
+    },
+    {
+      "ms": 5380.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2503
+    },
+    {
+      "ms": 5390.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2860
+    },
+    {
+      "ms": 5400.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2603
+    },
+    {
+      "ms": 5410.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2605
+    },
+    {
+      "ms": 5420.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2701
+    },
+    {
+      "ms": 5430.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2667
+    },
+    {
+      "ms": 5440.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2587
+    },
+    {
+      "ms": 5450.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2759
+    },
+    {
+      "ms": 5460.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2707
+    },
+    {
+      "ms": 5470.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2536
+    },
+    {
+      "ms": 5480.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2822
+    },
+    {
+      "ms": 5490.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2680
+    },
+    {
+      "ms": 5500.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2550
+    },
+    {
+      "ms": 5510.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2764
+    },
+    {
+      "ms": 5520.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2689
+    },
+    {
+      "ms": 5530.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2601
+    },
+    {
+      "ms": 5540.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2881
+    },
+    {
+      "ms": 5550.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2457
+    },
+    {
+      "ms": 5560.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2790
+    },
+    {
+      "ms": 5570.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2746
+    },
+    {
+      "ms": 5580.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2474
+    },
+    {
+      "ms": 5590.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2947
+    },
+    {
+      "ms": 5600.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2359
+    },
+    {
+      "ms": 5610.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2910
+    },
+    {
+      "ms": 5620.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2617
+    },
+    {
+      "ms": 5630.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2573
+    },
+    {
+      "ms": 5640.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2894
+    },
+    {
+      "ms": 5650.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2531
+    },
+    {
+      "ms": 5660.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2743
+    },
+    {
+      "ms": 5670.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2624
+    },
+    {
+      "ms": 5680.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2705
+    },
+    {
+      "ms": 5690.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2590
+    },
+    {
+      "ms": 5700.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2726
+    },
+    {
+      "ms": 5710.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2685
+    },
+    {
+      "ms": 5720.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2628
+    },
+    {
+      "ms": 5730.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2810
+    },
+    {
+      "ms": 5740.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2586
+    },
+    {
+      "ms": 5750.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2787
+    },
+    {
+      "ms": 5760.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2668
+    },
+    {
+      "ms": 5770.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2585
+    },
+    {
+      "ms": 5780.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2709
+    },
+    {
+      "ms": 5790.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2610
+    },
+    {
+      "ms": 5800.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2830
+    },
+    {
+      "ms": 5810.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2638
+    },
+    {
+      "ms": 5820.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2707
+    },
+    {
+      "ms": 5830.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2668
+    },
+    {
+      "ms": 5840.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2698
+    },
+    {
+      "ms": 5850.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2771
+    },
+    {
+      "ms": 5860.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2577
+    },
+    {
+      "ms": 5870.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2863
+    },
+    {
+      "ms": 5880.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2543
+    },
+    {
+      "ms": 5890.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2613
+    },
+    {
+      "ms": 5900.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2766
+    },
+    {
+      "ms": 5910.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2665
+    },
+    {
+      "ms": 5920.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2657
+    },
+    {
+      "ms": 5930.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2677
+    },
+    {
+      "ms": 5940.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2608
+    },
+    {
+      "ms": 5950.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2662
+    },
+    {
+      "ms": 5960.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2583
+    },
+    {
+      "ms": 5970.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2750
+    },
+    {
+      "ms": 5980.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2735
+    },
+    {
+      "ms": 5990.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        0,
+        0
+      ],
+      "MBON": [
+        0,
+        0
+      ],
+      "all_spikes": 2557
+    },
+    {
+      "ms": 6000.0,
+      "KC": 0,
+      "active_KC": 0,
+      "DAN": [
+        1,
+        1
+      ],
+      "MBON": [
+        1,
+        1
+      ],
+      "all_spikes": 2811
+    }
+  ]
+}

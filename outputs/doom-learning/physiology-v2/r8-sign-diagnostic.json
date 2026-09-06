@@ -1,0 +1,155 @@
+[
+  {
+    "label": "dark",
+    "wall": 2.1397196671459824,
+    "groups": {
+      "aMe12": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -60.254356384277344
+      },
+      "R8p": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -51.57535171508789
+      },
+      "R8y": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -51.10691833496094
+      },
+      "R8_unclear": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -51.582847595214844
+      },
+      "KCg-d": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -52.0
+      },
+      "MBON11": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -52.0
+      },
+      "PPL101": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -52.0
+      },
+      "DNp20": {
+        "spikes": 30,
+        "active": 2,
+        "max_voltage": -51.99049377441406
+      },
+      "DNpe017": {
+        "spikes": 21,
+        "active": 2,
+        "max_voltage": -52.0
+      }
+    }
+  },
+  {
+    "label": "pale_R8_uniform",
+    "wall": 3.576230291975662,
+    "groups": {
+      "aMe12": {
+        "spikes": 773,
+        "active": 6,
+        "max_voltage": -45.90591812133789
+      },
+      "R8p": {
+        "spikes": 43902,
+        "active": 330,
+        "max_voltage": -45.016075134277344
+      },
+      "R8y": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -51.01991271972656
+      },
+      "R8_unclear": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -51.36174011230469
+      },
+      "KCg-d": {
+        "spikes": 286,
+        "active": 14,
+        "max_voltage": -45.14984893798828
+      },
+      "MBON11": {
+        "spikes": 12,
+        "active": 2,
+        "max_voltage": -51.75880432128906
+      },
+      "PPL101": {
+        "spikes": 30,
+        "active": 2,
+        "max_voltage": -57.355224609375
+      },
+      "DNp20": {
+        "spikes": 25,
+        "active": 2,
+        "max_voltage": -53.58478546142578
+      },
+      "DNpe017": {
+        "spikes": 12,
+        "active": 2,
+        "max_voltage": -63.03905487060547
+      }
+    }
+  },
+  {
+    "label": "yellow_R8_uniform",
+    "wall": 2.656458292156458,
+    "groups": {
+      "aMe12": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -51.57651901245117
+      },
+      "R8p": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -50.820945739746094
+      },
+      "R8y": {
+        "spikes": 63977,
+        "active": 481,
+        "max_voltage": -45.131446838378906
+      },
+      "R8_unclear": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -51.20585632324219
+      },
+      "KCg-d": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -52.0
+      },
+      "MBON11": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -52.0
+      },
+      "PPL101": {
+        "spikes": 0,
+        "active": 0,
+        "max_voltage": -52.0
+      },
+      "DNp20": {
+        "spikes": 38,
+        "active": 2,
+        "max_voltage": -51.977413177490234
+      },
+      "DNpe017": {
+        "spikes": 26,
+        "active": 2,
+        "max_voltage": -47.20574188232422
+      }
+    }
+  }
+]

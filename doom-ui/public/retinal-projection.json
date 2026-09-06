@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "mapped": 3335,
+  "unmapped": 42,
+  "left": 1107,
+  "right": 2228,
+  "confidence_below_point8": 15,
+  "cross_side_anchor_edges": 0,
+  "side_annotation_fields": "receptor rootSide, anchor somaSide",
+  "anchor_side_pairs": {
+    "('R', 'R')": 6351,
+    "('L', 'L')": 2199
+  },
+  "algorithm_matches": true,
+  "optically_calibrated": false
+}

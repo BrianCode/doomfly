@@ -1,0 +1,65 @@
+[
+  {
+    "eta": 0.005,
+    "after_MBON": [
+      [
+        0,
+        13
+      ],
+      [
+        37,
+        53
+      ]
+    ],
+    "memory": {
+      "plastic_edges": 4184,
+      "changed_edges": 64,
+      "mean_efficacy": 0.9986250400543213,
+      "minimum_efficacy": 0.9057700634002686,
+      "sha256": "9a11f8f2305a6f9a57c804bb8e7fab1645a8ce92d9dbc837c7245cf1b3124364",
+      "model": "kc-rest-minus60-v3"
+    }
+  },
+  {
+    "eta": 0.02,
+    "after_MBON": [
+      [
+        0,
+        13
+      ],
+      [
+        37,
+        53
+      ]
+    ],
+    "memory": {
+      "plastic_edges": 4184,
+      "changed_edges": 64,
+      "mean_efficacy": 0.9952017068862915,
+      "minimum_efficacy": 0.6730878353118896,
+      "sha256": "228bf7a36249ddf19ae7fd0f65468ca88e2fb36471729cc66e38f37ecc0356ba",
+      "model": "kc-rest-minus60-v3"
+    }
+  },
+  {
+    "eta": 0.05,
+    "after_MBON": [
+      [
+        0,
+        1
+      ],
+      [
+        37,
+        53
+      ]
+    ],
+    "memory": {
+      "plastic_edges": 4184,
+      "changed_edges": 64,
+      "mean_efficacy": 0.9906834363937378,
+      "minimum_efficacy": 0.37169331312179565,
+      "sha256": "92be2a0e2c5791c12d01103b18f825b9cddae9d2885e7f9de15d1d617973190b",
+      "model": "kc-rest-minus60-v3"
+    }
+  }
+]

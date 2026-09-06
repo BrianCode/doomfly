@@ -1,0 +1,177 @@
+{
+  "samples": [
+    {
+      "wall": 1788645328.561907,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2624,
+      "neural_seconds": 170.5714,
+      "generated_at_ms": 1788645328553,
+      "brain_step_ms": 36.447
+    },
+    {
+      "wall": 1788645329.572178,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2632,
+      "neural_seconds": 171.2286,
+      "generated_at_ms": 1788645329508,
+      "brain_step_ms": 32.154
+    },
+    {
+      "wall": 1788645330.58251,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2640,
+      "neural_seconds": 171.9143,
+      "generated_at_ms": 1788645330500,
+      "brain_step_ms": 33.91
+    },
+    {
+      "wall": 1788645331.592334,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2648,
+      "neural_seconds": 172.5714,
+      "generated_at_ms": 1788645331452,
+      "brain_step_ms": 37.276
+    },
+    {
+      "wall": 1788645332.600209,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2657,
+      "neural_seconds": 173.2571,
+      "generated_at_ms": 1788645332578,
+      "brain_step_ms": 32.92
+    },
+    {
+      "wall": 1788645333.607784,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2665,
+      "neural_seconds": 173.9429,
+      "generated_at_ms": 1788645333547,
+      "brain_step_ms": 36.264
+    },
+    {
+      "wall": 1788645334.617881,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2673,
+      "neural_seconds": 174.6286,
+      "generated_at_ms": 1788645334528,
+      "brain_step_ms": 32.586
+    },
+    {
+      "wall": 1788645335.628198,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2681,
+      "neural_seconds": 175.2571,
+      "generated_at_ms": 1788645335556,
+      "brain_step_ms": 42.739
+    },
+    {
+      "wall": 1788645336.637079,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2689,
+      "neural_seconds": 175.9143,
+      "generated_at_ms": 1788645336564,
+      "brain_step_ms": 45.642
+    },
+    {
+      "wall": 1788645337.651639,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2697,
+      "neural_seconds": 176.4857,
+      "generated_at_ms": 1788645337533,
+      "brain_step_ms": 34.967
+    },
+    {
+      "wall": 1788645338.666655,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2706,
+      "neural_seconds": 177.2571,
+      "generated_at_ms": 1788645338597,
+      "brain_step_ms": 32.544
+    },
+    {
+      "wall": 1788645339.673818,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2715,
+      "neural_seconds": 178.0286,
+      "generated_at_ms": 1788645339659,
+      "brain_step_ms": 32.483
+    },
+    {
+      "wall": 1788645340.688473,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2723,
+      "neural_seconds": 178.7143,
+      "generated_at_ms": 1788645340643,
+      "brain_step_ms": 40.305
+    },
+    {
+      "wall": 1788645341.6970031,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2731,
+      "neural_seconds": 179.4,
+      "generated_at_ms": 1788645341652,
+      "brain_step_ms": 34.021
+    },
+    {
+      "wall": 1788645342.71723,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2739,
+      "neural_seconds": 179.9429,
+      "generated_at_ms": 1788645342582,
+      "brain_step_ms": 38.238
+    },
+    {
+      "wall": 1788645343.732352,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2748,
+      "neural_seconds": 180.6857,
+      "generated_at_ms": 1788645343722,
+      "brain_step_ms": 32.899
+    },
+    {
+      "wall": 1788645344.745418,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2756,
+      "neural_seconds": 181.3714,
+      "generated_at_ms": 1788645344684,
+      "brain_step_ms": 33.888
+    },
+    {
+      "wall": 1788645345.752388,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2764,
+      "neural_seconds": 182.0571,
+      "generated_at_ms": 1788645345738,
+      "brain_step_ms": 33.353
+    },
+    {
+      "wall": 1788645346.76718,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2772,
+      "neural_seconds": 182.7429,
+      "generated_at_ms": 1788645346735,
+      "brain_step_ms": 33.723
+    },
+    {
+      "wall": 1788645347.781914,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2780,
+      "neural_seconds": 183.2857,
+      "generated_at_ms": 1788645347672,
+      "brain_step_ms": 36.537
+    },
+    {
+      "wall": 1788645348.7968159,
+      "run_id": "9f09fe4c-8f1b-4842-93c7-0e799940b27b",
+      "sequence": 2788,
+      "neural_seconds": 183.9714,
+      "generated_at_ms": 1788645348679,
+      "brain_step_ms": 34.063
+    }
+  ],
+  "wall_seconds": 20.23490881919861,
+  "neural_seconds": 13.399999999999977,
+  "source_frames_per_wall_second": 8.10480548567627,
+  "speed": 0.6622219116345233,
+  "limits": "Short post-restart local source sample on shared host. Not browser paint FPS or an isolated before/after benchmark."
+}

@@ -1,0 +1,20 @@
+{
+  "annotations.feather": {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "remote_md5_base64": "UKdxh3DFciDxYLpPQxq4ng==",
+    "bytes": 14483314,
+    "matched": true
+  },
+  "neurotransmitters.feather": {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+    "remote_md5_base64": "PYQrEv5cSe763lKNfdJKHw==",
+    "bytes": 43282834,
+    "matched": true
+  },
+  "edges.feather": {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+    "remote_md5_base64": "8w6dzKJc/QIb8eez2XVZng==",
+    "bytes": 1051241946,
+    "matched": true
+  }
+}

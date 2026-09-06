@@ -1,0 +1,14 @@
+**
+!doom/
+!doom/**
+!doom_learning/
+!doom_learning/**
+!doom_learning_v6/
+!doom_learning_v6/**
+!deploy/
+!deploy/doomfly/
+!deploy/doomfly/Dockerfile
+doom/**/__pycache__/
+doom/**/*.pyc
+**/__pycache__/
+**/*.pyc

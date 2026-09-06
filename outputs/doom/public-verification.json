@@ -1,0 +1,62 @@
+{
+  "public_url": "https://doomfly.example/",
+  "authentication": "none",
+  "source_commit": "be03f5db93595298393e578d285d2dcfc4d5915d",
+  "deployment": "appgdep_6a9c6d84bf288191b61ab897b4a71ef9",
+  "samples": [
+    {
+      "http_status": 200,
+      "run_id": "72d24f54-bb73-4fcc-880a-a283321ddb83",
+      "sequence": 437,
+      "generated_at_ms": 1788636679275,
+      "observed_at_ms": 1788636679559,
+      "decoder": "bci",
+      "clocks": {
+        "wall_seconds": 98.24,
+        "neural_seconds": 15.4857,
+        "game_seconds": 15.4857,
+        "speed": 0.158,
+        "brain_step_ms": 108.602
+      },
+      "action": {
+        "turn": 0.8028450903979256,
+        "forward": 13.088834048750932,
+        "attack": true
+      },
+      "input_frame_sha256": "edf0a8cb5335e4cd76259df8d89e715506e2fccc1236133c3b27a0f786e6a055",
+      "reward": {
+        "mode": "off",
+        "sugar_pulses": 0,
+        "active": false,
+        "plasticity": false
+      }
+    },
+    {
+      "http_status": 200,
+      "run_id": "72d24f54-bb73-4fcc-880a-a283321ddb83",
+      "sequence": 448,
+      "generated_at_ms": 1788636681477,
+      "observed_at_ms": 1788636681908,
+      "decoder": "bci",
+      "clocks": {
+        "wall_seconds": 100.443,
+        "neural_seconds": 15.8286,
+        "game_seconds": 15.8286,
+        "speed": 0.158,
+        "brain_step_ms": 78.483
+      },
+      "action": {
+        "turn": 1.519081891986885,
+        "forward": 15.595992647056512,
+        "attack": true
+      },
+      "input_frame_sha256": "b783b98ec7ed4340923f3a861f217bdb2cb7a02899d9f3a39013f3f752a11e8a",
+      "reward": {
+        "mode": "off",
+        "sugar_pulses": 0,
+        "active": false,
+        "plasticity": false
+      }
+    }
+  ]
+}

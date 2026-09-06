@@ -1,0 +1,166 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "cue": "black",
+      "baseline": {
+        "KC_hz_total": 0.0,
+        "DAN_hz": [
+          22.0,
+          18.0
+        ],
+        "MBON_hz": [
+          37.0,
+          37.0
+        ],
+        "all_spikes_hz": 267338.0
+      },
+      "during": {
+        "KC_hz_total": 0.0,
+        "DAN_hz": [
+          23.0,
+          19.0
+        ],
+        "MBON_hz": [
+          37.0,
+          37.0
+        ],
+        "all_spikes_hz": 266756.0
+      },
+      "recovery": {
+        "KC_hz_total": 0.0,
+        "DAN_hz": [
+          22.0,
+          19.0
+        ],
+        "MBON_hz": [
+          38.0,
+          38.0
+        ],
+        "all_spikes_hz": 267611.0
+      },
+      "wall_seconds": 11.290954458061606
+    },
+    {
+      "cue": "left_blue",
+      "baseline": {
+        "KC_hz_total": 0.0,
+        "DAN_hz": [
+          22.0,
+          18.0
+        ],
+        "MBON_hz": [
+          37.0,
+          37.0
+        ],
+        "all_spikes_hz": 267338.0
+      },
+      "during": {
+        "KC_hz_total": 4.0,
+        "DAN_hz": [
+          40.0,
+          38.0
+        ],
+        "MBON_hz": [
+          25.0,
+          26.0
+        ],
+        "all_spikes_hz": 413272.0
+      },
+      "recovery": {
+        "KC_hz_total": 8950.0,
+        "DAN_hz": [
+          106.0,
+          105.0
+        ],
+        "MBON_hz": [
+          13.0,
+          35.0
+        ],
+        "all_spikes_hz": 793164.0
+      },
+      "wall_seconds": 26.684729791944847
+    },
+    {
+      "cue": "right_blue",
+      "baseline": {
+        "KC_hz_total": 0.0,
+        "DAN_hz": [
+          22.0,
+          18.0
+        ],
+        "MBON_hz": [
+          37.0,
+          37.0
+        ],
+        "all_spikes_hz": 267338.0
+      },
+      "during": {
+        "KC_hz_total": 4343.0,
+        "DAN_hz": [
+          66.0,
+          61.0
+        ],
+        "MBON_hz": [
+          35.0,
+          40.0
+        ],
+        "all_spikes_hz": 674435.0
+      },
+      "recovery": {
+        "KC_hz_total": 8935.0,
+        "DAN_hz": [
+          108.0,
+          95.0
+        ],
+        "MBON_hz": [
+          13.0,
+          44.0
+        ],
+        "all_spikes_hz": 787692.0
+      },
+      "wall_seconds": 40.995180000085384
+    },
+    {
+      "cue": "white",
+      "baseline": {
+        "KC_hz_total": 0.0,
+        "DAN_hz": [
+          22.0,
+          18.0
+        ],
+        "MBON_hz": [
+          37.0,
+          37.0
+        ],
+        "all_spikes_hz": 267338.0
+      },
+      "during": {
+        "KC_hz_total": 7005.0,
+        "DAN_hz": [
+          91.0,
+          90.0
+        ],
+        "MBON_hz": [
+          30.0,
+          47.0
+        ],
+        "all_spikes_hz": 1069216.0
+      },
+      "recovery": {
+        "KC_hz_total": 8976.0,
+        "DAN_hz": [
+          108.0,
+          105.0
+        ],
+        "MBON_hz": [
+          19.0,
+          33.0
+        ],
+        "all_spikes_hz": 792154.0
+      },
+      "wall_seconds": 30.069548124913126
+    }
+  ],
+  "survival_learning_demonstrated": false
+}

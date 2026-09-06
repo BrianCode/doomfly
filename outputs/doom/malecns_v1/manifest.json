@@ -1,0 +1,119 @@
+{
+  "dataset": "malecns_v1",
+  "neurons": 166700,
+  "edges": 25582938,
+  "synaptic_contacts": 124177617,
+  "retina_total": 3377,
+  "retina_mapped": 3335,
+  "retina_unmapped": 42,
+  "projection_confidence_median": 1.0,
+  "projection_below_80_percent": 15,
+  "readouts": [
+    {
+      "index": 306,
+      "id": "10331",
+      "type": "MN9",
+      "side": "L"
+    },
+    {
+      "index": 332,
+      "id": "10360",
+      "type": "DNa02",
+      "side": "R"
+    },
+    {
+      "index": 706,
+      "id": "10763",
+      "type": "MDN",
+      "side": "R"
+    },
+    {
+      "index": 725,
+      "id": "10783",
+      "type": "DNp09",
+      "side": "L"
+    },
+    {
+      "index": 1087,
+      "id": "11177",
+      "type": "DNp09",
+      "side": "R"
+    },
+    {
+      "index": 1196,
+      "id": "11288",
+      "type": "MDN",
+      "side": "L"
+    },
+    {
+      "index": 1240,
+      "id": "11332",
+      "type": "MDN",
+      "side": "R"
+    },
+    {
+      "index": 2194,
+      "id": "12348",
+      "type": "MDN",
+      "side": "L"
+    },
+    {
+      "index": 6367,
+      "id": "16949",
+      "type": "MN9",
+      "side": "R"
+    },
+    {
+      "index": 131957,
+      "id": "523769",
+      "type": "DNa02",
+      "side": "L"
+    },
+    {
+      "index": 48,
+      "id": "10059",
+      "type": "DNp20",
+      "side": "R"
+    },
+    {
+      "index": 146,
+      "id": "10162",
+      "type": "DNp20",
+      "side": "L"
+    },
+    {
+      "index": 489,
+      "id": "10527",
+      "type": "DNpe017",
+      "side": "L"
+    },
+    {
+      "index": 142493,
+      "id": "555871",
+      "type": "DNpe017",
+      "side": "R"
+    }
+  ],
+  "source_hashes": {
+    "annotations.feather": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    "neurotransmitters.feather": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621"
+    },
+    "edges.feather": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 1051241946,
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+    }
+  },
+  "uncertain_sign_neurons": 3718,
+  "retina_model": "R1-R6 luminance-only. Column inferred from all contacts onto annotated L1/L2/L3; modal column. Experimental overlapping viewport projection, not calibrated retinal angles.",
+  "visual_dynamics": "Photoreceptors and lamina are graded in vivo. This experiment uses an explicit LIF proxy, low-pass luminance drive and tonic lamina current; it is not validated fly vision.",
+  "motor_interface": "Experimental visual-neuron BCI: DNp20 R-L turns; DNpe017 summed rate moves forward and its spikes press attack. Chosen interface, not natural fly actions. Biological-role readouts retained as comparison.",
+  "training": "No synaptic plasticity. Optional score-contingent sugar input is stimulation, not learning."
+}

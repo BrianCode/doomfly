@@ -1,0 +1,11 @@
+{
+  "status": "recorded",
+  "updated_at": "2026-09-05T21:46:42.020266+00:00",
+  "elapsed_wall_seconds": 3600.100999124814,
+  "scheduled_end_epoch": 1788644801.934159,
+  "snapshots": 716,
+  "frames": 110,
+  "audit_events": 22049,
+  "public_checks": 0,
+  "errors": 59
+}

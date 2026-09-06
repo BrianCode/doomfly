@@ -1,0 +1,31 @@
+{
+  "model": "kc-adaptive-lif-v4",
+  "eta": 0.05,
+  "cue_names": [
+    "vertical",
+    "horizontal"
+  ],
+  "counterbalance": [
+    0,
+    1
+  ],
+  "conditions": [
+    "paired",
+    "backward",
+    "frozen",
+    "no_imposed_US"
+  ],
+  "CS_ms": 1000,
+  "US_pulses_ms": [
+    200,
+    700,
+    1200,
+    1700
+  ],
+  "US_current": 200,
+  "US_pulse_width_ms": 1,
+  "evaluation": "1.4 s including 0.4 s after cue offset; plasticity off; identical reset fast state.",
+  "criterion": "Both cues must evoke MBON spikes. Counterbalanced paired cue-specific suppression must exceed no-imposed-US and backward controls; frozen responses identical. Otherwise fail.",
+  "calibration": "eta is an exploratory conditioning parameter. No game scores used; this assay is development data, not independent confirmation.",
+  "anatomy": "Full retained MaleCNS graph; only existing KC-to-MBON11 weights plastic."
+}

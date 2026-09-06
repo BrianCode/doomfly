@@ -1,0 +1,11 @@
+{
+  "model": "kc-adaptive-lif-v4",
+  "source_sha256": "e2d4d584f4633613277bb1bf6ea7ba20855c01a332ae2e9344ed7782604c8509",
+  "binary_sha256": "04a849158ff8919593bc3144dd9b6980994bd1453e51f7df7e0e9e78afeb44db",
+  "flags": [
+    "-O3",
+    "-std=c++17",
+    "-shared",
+    "-fPIC"
+  ]
+}

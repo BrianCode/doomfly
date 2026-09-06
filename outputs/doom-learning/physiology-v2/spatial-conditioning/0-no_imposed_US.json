@@ -1,0 +1,75 @@
+{
+  "plus": 0,
+  "condition": "no_imposed_US",
+  "before": [
+    {
+      "MBON": [
+        128,
+        139
+      ],
+      "KC": 112547,
+      "DAN": [
+        135,
+        140
+      ],
+      "KC_pattern_sha256": "b408fbc221a0d38b5081e1e7cb28d818fdc42bf7774e69cc0555454b31873cd6"
+    },
+    {
+      "MBON": [
+        67,
+        89
+      ],
+      "KC": 60546,
+      "DAN": [
+        78,
+        87
+      ],
+      "KC_pattern_sha256": "b73a9a23b02a149f9bcea15f6514b78f1c76e216ac00735d0d45cd95a3248280"
+    }
+  ],
+  "after": [
+    {
+      "MBON": [
+        0,
+        0
+      ],
+      "KC": 113031,
+      "DAN": [
+        136,
+        142
+      ],
+      "KC_pattern_sha256": "6c223d2290636aceb61f88983013768ac7cab1fb557bd133351ae2e1a55394b2"
+    },
+    {
+      "MBON": [
+        0,
+        0
+      ],
+      "KC": 197,
+      "DAN": [
+        11,
+        21
+      ],
+      "KC_pattern_sha256": "28c0b44f2c87b4c0bfd7d3833f0bc2f680246c26dee87c02607e3d7525991a99"
+    }
+  ],
+  "suppression": [
+    1.0,
+    1.0
+  ],
+  "selectivity": 0.0,
+  "memory": {
+    "plastic_edges": 4184,
+    "changed_edges": 3544,
+    "mean_efficacy": 0.24983589351177216,
+    "minimum_efficacy": 0.09999999403953552,
+    "sha256": "dbc4948e8a3281675d4eca120ab51fc4314824ffef1ec7595fc7d3975ebf36df",
+    "model": "all-modulators-separated-v2"
+  },
+  "train_KC": 224634,
+  "train_DAN": [
+    259,
+    265
+  ],
+  "wall": 24.714768832782283
+}
