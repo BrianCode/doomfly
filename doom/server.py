@@ -3,7 +3,7 @@
 Only GET /state and /health are exposed. No filesystem, shell, credentials,
 remote controls, or model-mutating endpoint. Stale frames never become replays.
 """
-import argparse,base64,hashlib,io,json,threading,time,uuid,logging
+import argparse,base64,hashlib,io,json,os,threading,time,uuid,logging
 import re,signal
 from logging.handlers import RotatingFileHandler
 from collections import deque
@@ -11,7 +11,7 @@ from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from pathlib import Path
 import numpy as np
 from PIL import Image
-from doom.native import NativeBrain,BUILD
+from doom.native import NativeBrain,BUILD as NATIVE_BUILD
 from doom.engine import NeuralControls
 from doom.game import Game,retinal_samples
 from doom.reward import SugarReinforcement
@@ -35,13 +35,20 @@ def run_loop(args):
         if args.model=='experimental-v6':
             from doom_learning_v6.calibration import calibrated_brain
             from doom.training import DamageTraining,candidate_provenance
-            brain=calibrated_brain();training=DamageTraining(brain,args.learning)
+            brain=calibrated_brain(backend=args.backend);training=DamageTraining(brain,args.learning)
             for r in brain.circuit['report']['DAN']+brain.circuit['report']['MBON']:
                 manifest['readouts'].append({k:r[k] for k in ['index','id','type']}|{'side':r['soma_side']})
             manifest['training']='Experimental v6 plasticity on 4,184 existing KC-to-MBON11 edges; associative learning and survival improvement unvalidated.'
             manifest['visual_dynamics']='R1–R6 luminance and 811 R8 RGB proxies, filtered in <=10 ms bins; inferred projection, simplified spiking physiology; unvalidated.'
             manifest['additional_R8_inputs']=len(brain.r8)
+        elif args.backend=='cutile':
+            from doom.cutile_brain import CuTileBrain
+            brain=CuTileBrain(ROOT/'outputs/doom/malecns_v1/graph.npz')
         else:brain=NativeBrain(ROOT/'outputs/doom/malecns_v1/graph.npz')
+        BUILD=NATIVE_BUILD
+        if args.backend=='cutile':
+            from doom.cutile_brain import BUILD as CUTILE_BUILD
+            BUILD={**NATIVE_BUILD,'backend':'cutile','cutile':CUTILE_BUILD,'model_revision':CUTILE_BUILD['model_revision']}
         phase=('training' if args.learning else 'frozen-control') if training else 'baseline'
         controls=NeuralControls(manifest['readouts'],mode=args.decoder);game=Game(seed=args.seed,scenario=args.scenario)
         origin=provenance(ROOT/'outputs/doom/malecns_v1/graph.npz',BUILD,game.assets)
@@ -53,6 +60,7 @@ def run_loop(args):
         if args.condition=='retina_disconnected':
             for i in brain.retina:brain.weight[brain.ptr[i]:brain.ptr[i+1]]=0
         if args.condition=='all_edges_disconnected':brain.weight.fill(0)
+        if hasattr(brain,'mark_weights_changed'):brain.mark_weights_changed()
         identity={'provenance':origin,'seed':args.seed,'decoder':args.decoder,'condition':args.condition,'reward':args.reward,'phase':phase}
         CheckpointClass=Checkpoints
         if training:
@@ -222,6 +230,7 @@ def main():
     p.add_argument('--checkpoint-dir');p.add_argument('--resume',action='store_true')
     p.add_argument('--checkpoint-seconds',type=int,default=300)
     p.add_argument('--model',choices=['baseline','experimental-v6'],default='baseline')
+    p.add_argument('--backend',choices=['native','cutile'],default=os.environ.get('DOOM_BRAIN_BACKEND','native'),help='Neural kernel: native C++ (CPU) or cuTile (NVIDIA GPU)')
     p.add_argument('--learning',action='store_true',help='Enable explicitly unvalidated v6 memory plasticity')
     p.add_argument('--seed',type=int,default=41027);p.add_argument('--reward',choices=['off','sugar'],default='off')
     p.add_argument('--condition',choices=['intact','blank_vision','frozen_vision','retina_disconnected','all_edges_disconnected','controls_clamped'],default='intact')
