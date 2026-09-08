@@ -102,3 +102,22 @@ The Docker command now explicitly enables `--model experimental-v6 --learning`.
 It uses `/state/training-v1` so old baseline checkpoints are never reused.
 This container remains prepared but unbuilt and undeployed here. The running
 public training worker is on the current Mac until a cloud target is supplied.
+
+## GPU host notes (RTX 3050 laptop, 2026-09-08)
+
+- Memory clock: the driver parks it at 810 MHz of 5501 under a 25 W software cap
+  (`nvidia-smi -pl` is refused on this machine). Lock it before GPU runs with
+  `sudo bash deploy/doomfly/gpu-clocks.sh lock`, or install
+  `deploy/doomfly/nvidia-memory-clock.service` so it is applied at boot. Measured effect on
+  the cuTile kernels: about 7x on every memory-bound kernel (evolve 2.15 -> 0.33 ms per batch).
+- PCIe link: the GPU sits behind a gen 4 x8 slot but the link stays at gen 1 (2.5 GT/s) even
+  during sustained transfers, so host<->device copies run at about 1.6 GB/s. The runtime power
+  policy for the device is `auto` and the kernel ASPM policy is `default`. Things to try, all as
+  root and all reversible: `echo performance > /sys/module/pcie_aspm/parameters/policy`, then
+  `echo on > /sys/bus/pci/devices/0000:01:00.0/power/control`, then re-check with
+  `bash deploy/doomfly/gpu-clocks.sh` under a transfer load; if the link still reports 2.5 GT/s,
+  the limit is in firmware (some laptops keep the dGPU link at gen 1 unless the display is
+  attached to it). The kernels no longer depend on it: only the spike counts (0.67 MB) cross the
+  bus per game tic.
+- Intel iGPU encoders: VAAPI works out of the box; QSV needs `libmfx-gen1.2` and runs only in
+  low-power mode on this Raptor Lake part (see `docs/gpu-optimization-tracker.md`).
