@@ -54,6 +54,7 @@ class CuTileMemoryMixin:
     # CuTileBrain machinery reused explicitly (the mixin is not a CuTileBrain subclass)
     _ensure_device = CuTileBrain._ensure_device
     _pinned_view = CuTileBrain._pinned_view
+    _device_drive = CuTileBrain._device_drive
     _constants = CuTileBrain._constants
     _warm_up = CuTileBrain._warm_up
     _launch_evolve = CuTileBrain._launch_evolve
@@ -64,9 +65,20 @@ class CuTileMemoryMixin:
     def load_state_from_host(self):
         CuTileBrain.load_state_from_host(self)
         self._plastic_dev = cp.asarray(self.circuit['edges'].astype(np.int64))
+        self.dev.tonic[:self.n].set(self.tonic)
+        self._tonic_seen = self.tonic.copy()
+
+    def _compute_drive(self, luminance, duration_ms, *, stimulation=None, lamina_bias=12.):
+        steps = super()._compute_drive(luminance, duration_ms, stimulation=stimulation, lamina_bias=lamina_bias)
+        pulses = [] if stimulation is None else (stimulation if isinstance(stimulation, list) else [stimulation])
+        self._drive_recipe = {'lamina_bias': lamina_bias, 'retina': (30 * self.luminance / (.02 + self.luminance)).astype(np.float32),
+                              'sugar': False, 'tonic': True, 'pulses': [(np.asarray(ix, dtype=np.int32), np.asarray(a, dtype=np.float32)) for ix, a in pulses]}
+        return steps
 
     def _advance(self, steps, learning=False):
         self._ensure_device()
+        if not np.array_equal(self.tonic, self._tonic_seen):     # calibration edits tonic after construction
+            self.dev.tonic[:self.n].set(self.tonic); self._tonic_seen = self.tonic.copy()
         if not self.weights_dirty:
             # The rate rule rewrites only the plastic edges between bins.
             self.dev.weight[self._plastic_dev] = cp.asarray(self.weight[self.circuit['edges']])
