@@ -74,6 +74,7 @@ PY
 ```
 
 First machine (Intel Core Ultra 7 155H, one core): 45 ms per tic.
+GPU machine (Intel Core i7-13620H, one core, 2026-09-08): 28.0 ms per tic (min 26.7, max 30.9).
 
 ## 6. GPU checks
 
@@ -84,8 +85,13 @@ nvidia-smi --query-gpu=name,driver_version,compute_cap,memory.total --format=csv
 RTX 3060 must show compute_cap 8.6 and driver >= 580 for cuTile. Then:
 
 ```sh
-~/.local/bin/uv pip install -p .venv-neural/bin/python cuda-tile
+~/.local/bin/uv pip install -p .venv-neural/bin/python cuda-tile==1.5.0 cupy-cuda13x==13.6.0
 ```
+
+Keep `cupy-cuda13x` at 13.6.0: CuPy 14 requires numpy 2, which breaks the pinned numpy 1.24.4
+that numba and Brian2 need. `/usr/local/cuda` must be CUDA 13.2 (with `bin/tileiras`); an older
+`/usr/bin/nvcc` is fine as long as `/usr/local/cuda/bin` comes first on PATH (see `doom/run_gpu.sh`).
+CuPy needs `LD_LIBRARY_PATH=/usr/local/cuda/lib64`.
 
 Port order, smallest risk first:
 
