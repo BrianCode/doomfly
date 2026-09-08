@@ -2,12 +2,15 @@
 import numpy as np
 import pytest
 
-@pytest.mark.parametrize('backend', ['dense', 'native'])
+@pytest.mark.parametrize('backend', ['dense', 'native', 'cutile'])
 @pytest.mark.parametrize('cadence_ms', [.1,10.])
 def test_kernel_against_brian2_with_refractory_inputs(tmp_path, backend, cadence_ms):
     import brian2 as b2
     from doom.engine import Brain
     from doom.native import NativeBrain
+    if backend == 'cutile':
+        cutile = pytest.importorskip('doom.cutile_brain')
+        if not cutile.AVAILABLE: pytest.skip('cuTile/CuPy stack unavailable')
     b2.start_scope(); b2.prefs.codegen.target = 'numpy'; b2.defaultclock.dt = .1*b2.ms
     n = 4
     pre = np.array([0,0,0,1,1,2,3]); post = np.array([0,1,2,2,3,1,0], dtype=np.int32)
@@ -17,7 +20,7 @@ def test_kernel_against_brian2_with_refractory_inputs(tmp_path, backend, cadence
       post=post, weight=w, ids=np.arange(n,dtype=np.int64), retina=np.array([],dtype=np.int32),
       uv=np.empty((0,2),dtype=np.float32), lamina=np.array([0,3],dtype=np.int32),
       sugar=np.array([],dtype=np.int32), superclass=np.array(['test']*n))
-    brain = (Brain if backend == 'dense' else NativeBrain)(path)
+    brain = {'dense': Brain, 'native': NativeBrain}.get(backend, lambda p: cutile.CuTileBrain(p))(path)
     neurons = b2.NeuronGroup(n, '''
       dv/dt = (-52*mV - v + drive + g)/(20*ms) : volt (unless refractory)
       dg/dt = -g/(5*ms) : volt (unless refractory)
