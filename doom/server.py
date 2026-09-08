@@ -123,7 +123,9 @@ def run_loop(args):
                 episodes.append(before);game.new_episode()
                 if training:training.new_round()
                 before=game.observation()
-            frame=game.pixels();light=retinal_samples(frame,brain.uv)
+            frame=game.pixels()
+            # Same values as retinal_samples (table-driven, verified bit-identical), a third of the CPU time.
+            light=brain.retinal_light(frame) if hasattr(brain,'retinal_light') else retinal_samples(frame,brain.uv)
             if args.condition=='blank_vision':light.fill(0)
             if args.condition=='frozen_vision':
                 if frozen is None:frozen=light.copy()
