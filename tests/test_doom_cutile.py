@@ -127,9 +127,9 @@ def test_cutile_device_drive_equals_host_recipe(tmp_path):
     """The fused device scatter reproduces the host drive bit for bit (baseline with sugar, v6 with tonic and pulses)."""
     b=cutile.CuTileBrain(toy_graph(tmp_path))
     b.step(np.array([.3,.9]),10,sugar=True)
-    np.testing.assert_array_equal(b.dev.drive[:b.n].get(),b.drive)
+    np.testing.assert_array_equal(b.dev.drive[:b.n].get()[b.inv],b.drive)      # device arrays are in permuted neuron order
     c,g=v6_pair(tmp_path);g.tonic[1]=9.87;g.tonic[3]=2.5
     g.step([],20,learning=True,stimulation=[([0,2],20),([3],np.array([1.5],dtype=np.float32))],lamina_bias=0)
-    np.testing.assert_array_equal(g.dev.drive[:g.n].get(),g.drive)
+    np.testing.assert_array_equal(g.dev.drive[:g.n].get()[g.inv],g.drive)
     g.tonic+=1.0;g.step([],10,learning=False,stimulation=([2],4.),lamina_bias=0)
-    np.testing.assert_array_equal(g.dev.drive[:g.n].get(),g.drive);np.testing.assert_array_equal(g.dev.tonic[:g.n].get(),np.asarray(g.tonic))
+    np.testing.assert_array_equal(g.dev.drive[:g.n].get()[g.inv],g.drive);np.testing.assert_array_equal(g.dev.tonic[:g.n].get()[g.inv],np.asarray(g.tonic))
