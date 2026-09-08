@@ -117,7 +117,9 @@ public training worker is on the current Mac until a cloud target is supplied.
   `echo on > /sys/bus/pci/devices/0000:01:00.0/power/control`, then re-check with
   `bash deploy/doomfly/gpu-clocks.sh` under a transfer load; if the link still reports 2.5 GT/s,
   the limit is in firmware (some laptops keep the dGPU link at gen 1 unless the display is
-  attached to it). The kernels no longer depend on it: only the spike counts (0.67 MB) cross the
-  bus per game tic.
+  attached to it). Resolved on this machine by `sudo deploy/doomfly/pcie-link.sh persist` and a
+  reboot (driver runtime power management off, maximum-performance policy): the link then runs
+  at 16 GT/s under load (11.5 GB/s) and the memory clock stays at 5501 MHz without the lock.
+  `pcie-link.sh status` verifies it; `try`/`restore` cover the reversible runtime steps.
 - Intel iGPU encoders: VAAPI works out of the box; QSV needs `libmfx-gen1.2` and runs only in
   low-power mode on this Raptor Lake part (see `docs/gpu-optimization-tracker.md`).

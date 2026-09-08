@@ -107,7 +107,7 @@ K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 
 | 27 | Skip constant per-launch traffic in baseline mode (rest, adapt, kc_mask loads; elig only in v6) | ~40% of the fixed 0.4 ms per launch while bandwidth-starved | elig made conditional on V6; rest/adapt still loaded | Low | no | - | M4 |
 | 28 | Ring in a smaller dtype or ring row prefetch for the whole batch | halves ring traffic / hides latency | - | Medium | fp16 ring changes numerics; prefetch does not | conflicts with exactness if fp16 | M4 |
 | 29 | Host power policy: lock memory clock (`sudo nvidia-smi -lmc 5001,5501`) | up to ~7x on every memory-bound kernel | K1 2.15 -> 0.33 ms, K2 0.39 -> 0.08 ms, baseline tic 43 -> 7.7 ms; `-pl` unsupported on this laptop | Low | no | prerequisite for 11-14 | done (re-apply after reboot) |
-| 30 | PCIe link stuck at gen 1 x8 (1.6 GB/s) | 4-8x on the remaining host<->device copies (~0.4 ms per call) | measured under sustained transfer | needs root (ASPM policy / BIOS) | no | complements 10 | open |
+| 30 | PCIe link stuck at gen 1 x8 (1.6 GB/s) | 4-8x on the remaining host<->device copies (~0.4 ms per call) | resolved with the NVIDIA runtime-PM/perf-policy modprobe options + reboot: 16 GT/s, 11.5-12.6 GB/s; unpaced 1.67 -> 1.70x | needs root | no | complements 10 | done |
 | 31 | One spike-count download per game tic (counts accumulate on the device across bins) | ~0.4 ms x (bins-1) per tic | done together with 23 | Medium | no | needs 10 | done |
 | 32 | Wall-clock pacing control (`--speed`, 0 = unpaced) | exposes the headroom: sim no longer sleeps ~10 ms per tic | 1.32-1.38x realtime for v6 | None | no | - | done |
 | 33 | Move the two per-tic SHA-256 digests (0.9 MB frame, 0.67 MB counts) and the audit line off the sim thread | ~2-3 ms of the ~6 ms per tic spent outside the brain step when unpaced | - | Low (hashlib releases the GIL) | no | independent | later |
@@ -127,6 +127,21 @@ K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 
 | 7 Receptor sampling | **adopted as a CPU lookup table** | sampler 0.47 -> 0.17 ms per call (two calls per tic); v6 total 16.2 -> 15.7 ms | bit-identical on all 111 recorded frames; the device version lost because the 921 KB frame upload over the gen-1 PCIe link costs 0.56 ms |
 | 8 Platform | **adopted** | | `deploy/doomfly/nvidia-memory-clock.service`, `gpu-clocks.sh`, PCIe notes |
 | Combined (2 + 4 + 6a + 7 + 8) | | baseline 6.0 ms/tic; v6 12.1 ms neural, 13.6 ms total; K2 0.141 ms; unpaced server **1.67x** realtime, `brain_step_ms` 13.0 | 113 tests pass in float32, 21 GPU tests in int mode |
+| Combined, after the PCIe link reached gen 4 (see below) | | baseline 5.7 ms/tic; v6 12.1 ms neural, 12.6 ms total; K2 0.137 ms; unpaced server **1.70x**, `brain_step_ms` 12.4 | 113 + 21 + 3 GPU video tests pass |
+
+### PCIe link resolved (2026-09-08)
+
+The card advertised gen 1 in its own Link Capabilities while the driver's runtime power
+management was active; root-port target speed, retraining, clock locks and the kernel ASPM
+policy could not change it (`deploy/doomfly/pcie-link.sh try`). What worked:
+`deploy/doomfly/pcie-link.sh persist` (`/etc/modprobe.d/nvidia-pm.conf` with
+`NVreg_DynamicPowerManagement=0x00` and `NVreg_RegistryDwords="PerfLevelSrc=0x2222;OverrideMaxPerf=0x1"`)
+and a reboot. After it: link 16 GT/s x8 under load, pinned copies 11.5 GB/s up and 12.6 GB/s
+down (was 1.6), the 0.67 MB spike-count download 0.41 -> 0.056 ms, a 921 KB frame upload
+0.56 -> 0.074 ms, and the memory clock stays at 5501 MHz without the `-lmc` lock (the
+max-performance policy holds P0; the clock-lock service remains as a fallback). Reopened by
+this: the device-side receptor sampler (item 7) would now cost ~0.08 ms per call against
+0.17 ms for the lookup table, about 0.2 ms per tic; not yet redone.
 
 ## Video path options
 
