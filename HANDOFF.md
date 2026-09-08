@@ -119,7 +119,9 @@ bash doom/run_gpu.sh --model experimental-v6 --learning --backend cutile --port 
 curl -s localhost:8766/video/health
 ```
 
-`doom/run_gpu.sh` sets the CUDA 13.2 paths and `DOOM_BRAIN_BACKEND=cutile`. The checkpoint
+`doom/run_gpu.sh` sets the CUDA 13.2 paths and `DOOM_BRAIN_BACKEND=cutile`. `--speed 0` removes the
+wall-clock pacing (neural time stays exact); `DOOM_CUTILE_RING=int` selects the deterministic
+integer-accumulation mode (`docs/gpu-numerics-exploration.md`). The checkpoint
 identity hashes every `doom/*.py`, so run the converter after any source change before `--resume`
 (it refuses if the model configuration differs). Video: `--video-mp4 DIR` writes
 `DIR/<run_id>/archive-%05d.mp4` (35 f/s = 1x brain time, 5-minute fragmented segments),

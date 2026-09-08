@@ -66,7 +66,10 @@ After the clock lock (memory clock 5501 MHz), tuned defaults TN=1024, TE=128:
 | Baseline `step()` per 286-substep tic (17 k spikes/tic) | 7.7 ms -> 6.9 ms with the drive assembled on device | `doom.compare_backends`: GPU 7.8 ms median vs CPU 30.7 ms, speedup 2.67x |
 | Host<->device per call | drive H2D removed; counts D2H 0.41 ms (PCIe gen 1) | |
 | v6 server (`--learning --video-mp4`) | `brain_step_ms` 17.7-18.3, speed 1.000x | 3-5 bins per tic; profile per 100-substep bin: 6 batches 4.9 ms GPU, plastic upload 0.10, device drive 0.17, counts D2H 0.41 ms |
-| v6 `rgb_step` wall incl. retina sampling and rate rule | 15.3 ms neural, 19.7 ms total per tic (bench, 28.6 k spikes/tic) | |
+| v6 `rgb_step` wall incl. retina sampling and rate rule | 15.3 ms neural, 19.7 ms total per tic (bench, 28.6 k spikes/tic) | before the device rule |
+| v6 `rgb_step` with the rate rule on the device (one download per tic) | 13.9 ms neural, 16.2 ms total per tic | nsys: deliver 6.1 ms + evolve 5.4 ms per tic, GPU ~80% busy inside the brain step: now GPU-bound |
+| v6 server unpaced (`--speed 0`) | 1.32x realtime with the video archive, 1.38x without; `brain_step_ms` 15.5 | the rest of the tic is ViZDoom, two SHA-256 hashes (~2-3 ms), retina sampling, decode |
+| int32 fixed-point ring (`DOOM_CUTILE_RING=int`) | 6.89 ms/tic median, same as float32; 3 repeated runs bit-identical; oracle passes | see `docs/gpu-numerics-exploration.md` |
 
 Tile sweep after the lock (K1 18 substeps): TN 256: 0.360, 512: 0.333, 1024: 0.302, 2048: 0.330 ms.
 K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 1024: 0.103; grid 8192: 0.100 ms.
@@ -89,7 +92,7 @@ K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 
 | 12 | CUDA graph / stream capture per distinct `steps` | 0.3-0.5 ms/tic | - | Medium | No | requires 6 | M4 |
 | 13 | Edge-balanced delivery (row split across `DELIVER_SPLIT` CTAs, implemented as a 2-D grid) | cuts the 11k-degree tail | real v6 batches have max degree ~2.5 k and no tail; the split adds empty CTAs (see the K2 sweep) so it defaults low; an earlier 2.2 ms K2 reading was a profiling artifact | Medium | No | complements 14 | M4 done, kept configurable |
 | 14 | CSR locality: sort `post` within rows; neuron permutation for atomic locality | 10-30% of K2 | - | Medium | rounding order only | complements 13 | M4 |
-| 15 | Integer contact accumulation (deterministic) | deterministic run-to-run | note: two runs were already bit-identical over 100 tics; still not guaranteed | Medium | yes (documented) | alternative to 16; conflicts 18 | optional |
+| 15 | Integer fixed-point ring (Q10 contact units, int32 atomics; plastic weights quantised to 1.3e-4 mV) | deterministic run-to-run at no cost | implemented as `DOOM_CUTILE_RING=int`: same speed as float32, oracle passes, repeats bit-identical; float32 stays the default for CPU-like sums | Low | yes (last bits of g; documented) | alternative to 16; conflicts 18 | done, optional |
 | 16 | Deterministic sort + segmented sum | determinism at 0.5-1 ms/batch | - | Low | yes | superseded by 15 | not recommended |
 | 17 | Weight code uint16 + LUT | halves weight reads | - | Medium | no | conflicts plastic scatter | not now |
 | 18 | fp16 weights | bandwidth only | - | Low | yes | - | not recommended |
@@ -97,7 +100,7 @@ K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 
 | 20 | Batch > 18 via refractory | impossible (delay-limited) | - | - | - | - | rejected |
 | 21 | Pull/CSC delivery | no benefit vs atomics | - | High | rounding | - | rejected |
 | 22 | Drive assembled on the device from the same recipe (lamina, retina, sugar, tonic, pulses in the same float32 order); retina sampling and the low-pass stay on the CPU | removes the 0.67 MB drive upload per call (0.4 ms at PCIe gen 1) | baseline 7.7 -> 6.9 ms/tic; v6 unchanged (transfer was not its bottleneck) | Low | No (identical values; `light` hash unchanged) | complements 9 | M4 done |
-| 23 | Plasticity rule on device | none (4,184 elements) | - | - | no | - | rejected |
+| 23 | Rate rule on the device (CuPy float64, same closed form) | the FLOPs are nothing, but it removes a download, a host update and an upload per <=10 ms bin | v6 neural time 15.3 -> 13.9 ms/tic; total 19.7 -> 16.2 | Low | ulp-level float64 differences in `memory_w` (tests use rtol 1e-9) | supersedes 31 | done |
 | 24 | Move 10 Hz JPEG/JSON publish off the sim thread | 5-10 ms per publish | - | Low | no | independent of GPU; the video service already moves compositing off-thread | later |
 | 25 | Multi-stream tic pipelining | N/A (serial dependency) | - | - | - | - | rejected |
 | 26 | Skip K2 when a batch has no spikes | trivial | automatic under 6 (8 us) | None | no | - | done |
@@ -105,7 +108,10 @@ K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 
 | 28 | Ring in a smaller dtype or ring row prefetch for the whole batch | halves ring traffic / hides latency | - | Medium | fp16 ring changes numerics; prefetch does not | conflicts with exactness if fp16 | M4 |
 | 29 | Host power policy: lock memory clock (`sudo nvidia-smi -lmc 5001,5501`) | up to ~7x on every memory-bound kernel | K1 2.15 -> 0.33 ms, K2 0.39 -> 0.08 ms, baseline tic 43 -> 7.7 ms; `-pl` unsupported on this laptop | Low | no | prerequisite for 11-14 | done (re-apply after reboot) |
 | 30 | PCIe link stuck at gen 1 x8 (1.6 GB/s) | 4-8x on the remaining host<->device copies (~0.4 ms per call) | measured under sustained transfer | needs root (ASPM policy / BIOS) | no | complements 10 | open |
-| 31 | Fewer host syncs per v6 bin: keep counts on device, gather only the 4,186 rule inputs per bin, full D2H once per tic | ~0.4 ms x (bins-1) per tic | - | Medium (touches `MemoryBrain.step`) | no | needs 10 | later |
+| 31 | One spike-count download per game tic (counts accumulate on the device across bins) | ~0.4 ms x (bins-1) per tic | done together with 23 | Medium | no | needs 10 | done |
+| 32 | Wall-clock pacing control (`--speed`, 0 = unpaced) | exposes the headroom: sim no longer sleeps ~10 ms per tic | 1.32-1.38x realtime for v6 | None | no | - | done |
+| 33 | Move the two per-tic SHA-256 digests (0.9 MB frame, 0.67 MB counts) and the audit line off the sim thread | ~2-3 ms of the ~6 ms per tic spent outside the brain step when unpaced | - | Low (hashlib releases the GIL) | no | independent | later |
+| 34 | Neuron permutation for delivery locality (targets of one presynaptic cell contiguous) | delivery is 6 ms/tic of random atomics into a 12 MB working set (L2 is 2 MB) | - | Medium | rounding order only | same as 14 | later |
 
 ## Video path options
 

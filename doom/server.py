@@ -203,7 +203,7 @@ def run_loop(args):
                     'broadcast_capture_fps_limit':DISPLAY_FPS,'phase':phase,'study_id':study_id,
                     'learning_enabled':args.learning,'scientifically_validated':False,'model':origin['model_revision'],
                     'continuation_of':run_record['continuation_of'],'recovery':run_record['recovery'],
-                    'hosting':'local broadcaster; unavailable if host sleeps or disconnects',
+                    'hosting':'local broadcaster; unavailable if host sleeps or disconnects','pacing':args.speed,
                     'video':({'archive_fps':35,'archive_contract':'neural time; one frame per game tic; replay label burned in','encoder':video.encoder,
                       'overlay_is_not_neural_input':True} if video is not None else None)}}
                 if training:latest['learning']=event['learning']
@@ -211,8 +211,10 @@ def run_loop(args):
                 last_publish=now;window_counts.fill(0);window_ms=0
             if checkpoints and now-last_checkpoint>=args.checkpoint_seconds:
                 checkpoint();last_checkpoint=time.monotonic()
-            remaining=start+(brain.sim_ms/1000-neural_start)-time.monotonic()
-            if remaining>0:stop.wait(remaining)
+            # Pace to wall time unless --speed 0 (run as fast as the host allows).
+            if args.speed>0:
+                remaining=start+(brain.sim_ms/1000-neural_start)/args.speed-time.monotonic()
+                if remaining>0:stop.wait(remaining)
         finally:
             try:checkpoint()
             finally:
@@ -255,6 +257,7 @@ def main():
     p.add_argument('--backend',choices=['native','cutile'],default=os.environ.get('DOOM_BRAIN_BACKEND','native'),help='Neural kernel: native C++ (CPU) or cuTile (NVIDIA GPU)')
     p.add_argument('--learning',action='store_true',help='Enable explicitly unvalidated v6 memory plasticity')
     p.add_argument('--seed',type=int,default=41027);p.add_argument('--reward',choices=['off','sugar'],default='off')
+    p.add_argument('--speed',type=float,default=1.0,help='Wall-clock pacing target: 1 = realtime, 2 = twice realtime, 0 = as fast as possible (neural time is always exact)')
     p.add_argument('--video-mp4',help='Directory for MP4 archive segments, video-metrics.jsonl and video-manifest.json (one subdirectory per run)')
     p.add_argument('--video-size',default='1280x720');p.add_argument('--video-overlay',default='hud,bars,raster,learning')
     p.add_argument('--video-encoder',choices=['auto','vaapi','qsv','nvenc','x264'],default='auto',help='auto = first working of vaapi (Intel iGPU), qsv, nvenc, x264')
@@ -265,6 +268,7 @@ def main():
     if args.model=='experimental-v6' and (args.condition!='intact' or args.reward!='off' or args.decoder!='bci'):
         p.error('Live candidate requires intact RGB, damage reinforcement only, and the fixed BCI')
     if args.checkpoint_seconds<30:p.error('Checkpoint interval must be at least 30 seconds')
+    if args.speed<0:p.error('--speed must be 0 or positive')
     if args.resume and not args.checkpoint_dir:p.error('--resume requires --checkpoint-dir')
     if args.checkpoint_dir and args.scenario!='combat_survival':p.error('Recovery requires the unlimited combat arena')
     def shutdown_signal(*_):raise KeyboardInterrupt
