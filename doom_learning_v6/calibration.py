@@ -2,8 +2,12 @@
 from .visual import VisualMemoryBrain
 
 
-def calibrated_brain(eta=.001):
-    b=VisualMemoryBrain(eta=eta)
+def calibrated_brain(eta=.001,backend='native'):
+    if backend=='cutile':
+        from .cutile import CuTileVisualMemoryBrain
+        b=CuTileVisualMemoryBrain(eta=eta)
+    elif backend=='native':b=VisualMemoryBrain(eta=eta)
+    else:raise ValueError('Unknown brain backend')
     b.tonic[b.circuit['mb']]=9.87
     # Best *observed* point in the recorded current sweep, not a bisection
     # interpolation: this recurrent spiking system is not monotonic in bias.

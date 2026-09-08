@@ -82,7 +82,7 @@ class MemoryBrain(NativeBrain):
         if not keep_memory:self.weight[self.circuit['edges']]=self.baseline_plastic
         else:self.memory_u[:],self.memory_w[:]=saved
 
-    def _neural_step(self,luminance,duration_ms,*,learning=False,stimulation=None,lamina_bias=12.):
+    def _compute_drive(self,luminance,duration_ms,*,stimulation=None,lamina_bias=12.):
         light=np.asarray(luminance)
         if light.shape!=(len(self.retina),) or not np.isfinite(light).all():raise ValueError('Invalid retinal input')
         steps=round(duration_ms/self.dt)
@@ -98,9 +98,12 @@ class MemoryBrain(NativeBrain):
                 amplitude=np.asarray(current,dtype=np.float32)
                 if ix.ndim!=1 or np.any(ix<0) or np.any(ix>=self.n) or not np.isfinite(amplitude).all() or amplitude.shape not in [(),ix.shape]:raise ValueError('Invalid external stimulation')
                 self.drive[ix]+=amplitude
+        return steps
+
+    def _advance(self,steps,learning=False):
+        """Advance the compiled kernel by `steps` substeps using the current drive."""
         self.counts.fill(0);clock=np.asarray([self.cursor],dtype=np.int64);c=self.circuit
         arrays=[self.ptr,self.post,self.weight,self.v,self.g,self.refractory,self.drive,self.previous_drive,self.queue,self.queue_count,clock]
-        start=time.perf_counter()
         self.advance(self.n,*[x.ctypes.data for x in arrays],steps,self.dt,
             *[getattr(self,k).ctypes.data for k in ['counts','active','active_flag','nactive','last']],
             c['kc_mask'].ctypes.data,c['dan_index'].ctypes.data,self.eligibility.ctypes.data,self.eligibility_last.ctypes.data,
@@ -108,8 +111,14 @@ class MemoryBrain(NativeBrain):
             self.eta,PARAMETERS['trace_kc_seconds']*1000,PARAMETERS['minimum_fraction'],int(learning),
             self.modulation.ctypes.data,self.modulation_last.ctypes.data,self.modulation_mask.ctypes.data,self.rest.ctypes.data,
             self.adaptation.ctypes.data,self.adaptation_jump,self.adaptation_tau)
+        self.cursor=int(clock[0])
+
+    def _neural_step(self,luminance,duration_ms,*,learning=False,stimulation=None,lamina_bias=12.):
+        steps=self._compute_drive(luminance,duration_ms,stimulation=stimulation,lamina_bias=lamina_bias)
+        start=time.perf_counter()
+        self._advance(steps,learning)
         elapsed=time.perf_counter()-start
-        self.cursor=int(clock[0]);self.sim_ms=self.cursor*self.dt;self.total_spikes+=int(self.counts.sum())
+        self.sim_ms=self.cursor*self.dt;self.total_spikes+=int(self.counts.sum())
         return self.counts.copy(),elapsed
 
     def step(self,luminance,duration_ms,*,learning=False,stimulation=None,lamina_bias=12.):
