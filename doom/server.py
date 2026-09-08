@@ -22,6 +22,7 @@ from doom.archive import AuditArchive
 ROOT=Path(__file__).resolve().parents[1]
 latest={'status':'starting','generated_at_ms':0}; stop=threading.Event()
 broadcast=Broadcast()
+video=None
 
 def encoded_frame(rgb):
     f=io.BytesIO();Image.fromarray(rgb).save(f,format='JPEG',quality=75)
@@ -87,6 +88,13 @@ def run_loop(args):
             display.extend(inds[np.linspace(0,len(inds)-1,min(32,len(inds)),dtype=int)].tolist())
         if training:display[-4:]=list(brain.circuit['dan'])+list(brain.circuit['mb'])
         display=np.asarray(display);window_counts=np.zeros(brain.n,dtype=np.int32);window_ms=0
+        global video
+        if args.video_mp4:
+            from doom.video import VideoService
+            video=VideoService(args.video_mp4,run_id=run_id,study_id=study_id,phase=phase,model_revision=origin['model_revision'],
+                group_names=group_names,groups=groups,display=display,size=tuple(int(x) for x in args.video_size.split('x')),
+                overlays=tuple(args.video_overlay.split(',')),encoder=args.video_encoder,device=args.video_device,backend=args.video_backend,
+                extra_manifest={'scenario':args.scenario,'decoder':args.decoder,'condition':args.condition,'seed':args.seed,'audit_dir':str(Path(args.audit_dir))})
         audit_dir=Path(args.audit_dir);audit_dir.mkdir(parents=True,exist_ok=True)
         audit_path=audit_dir/'audit.jsonl'
         audit_handler=RotatingFileHandler(audit_path,maxBytes=20_000_000,backupCount=4)
@@ -148,6 +156,13 @@ def run_loop(args):
               'neural_interval_ms':round(steps*.1,3)}
             if training:event['learning']=training.telemetry()
             audit_logger.info(json.dumps(event,separators=(',',':')))
+            if video is not None:
+                from doom.video import VideoTick
+                age_now=time.monotonic()-start
+                video.offer(VideoTick(tick=tick,frame=frame,counts=counts,game=after,action=event['applied'],neural_ms=brain.sim_ms,
+                    wall_s=age_now,brain_step_ms=neural_wall*1000,sim_speed=(brain.sim_ms/1000-neural_start)/max(age_now,1e-6),
+                    source_frame_sha256=event['source_frame_sha256'],episode=game.episode,learning=event.get('learning'),
+                    readouts=action['readouts'],episodes=list(episodes),run_id=run_id,study_id=study_id,phase=phase,window_ms=steps*.1))
             timeline.append({'tick':tick,'spikes':int(counts.sum()),'action':event['applied']})
             window_counts+=counts;window_ms+=steps*.1
             now=time.monotonic()
@@ -188,7 +203,9 @@ def run_loop(args):
                     'broadcast_capture_fps_limit':DISPLAY_FPS,'phase':phase,'study_id':study_id,
                     'learning_enabled':args.learning,'scientifically_validated':False,'model':origin['model_revision'],
                     'continuation_of':run_record['continuation_of'],'recovery':run_record['recovery'],
-                    'hosting':'local broadcaster; unavailable if host sleeps or disconnects'}}
+                    'hosting':'local broadcaster; unavailable if host sleeps or disconnects',
+                    'video':({'archive_fps':35,'archive_contract':'neural time; one frame per game tic; replay label burned in','encoder':video.encoder,
+                      'overlay_is_not_neural_input':True} if video is not None else None)}}
                 if training:latest['learning']=event['learning']
                 broadcast.publish(latest)
                 last_publish=now;window_counts.fill(0);window_ms=0
@@ -198,7 +215,11 @@ def run_loop(args):
             if remaining>0:stop.wait(remaining)
         finally:
             try:checkpoint()
-            finally:game.close();audit_handler.close();archive.close()
+            finally:
+                if video is not None:
+                    try:video.close()
+                    except Exception:import traceback;traceback.print_exc()
+                game.close();audit_handler.close();archive.close()
     except Exception as e:
         latest={'status':'error','generated_at_ms':int(time.time()*1000),'message':'The simulation stopped. No live data is available.'}
         broadcast.offline(latest)
@@ -209,7 +230,8 @@ class Handler(BaseHTTPRequestHandler):
         cache='no-store'
         if self.path=='/state':body=broadcast.state
         elif self.path=='/index':body=broadcast.index
-        elif self.path=='/health':body=json.dumps({k:latest.get(k) for k in ['status','run_id','sequence','generated_at_ms']},separators=(',',':')).encode()
+        elif self.path=='/health':body=json.dumps({**{k:latest.get(k) for k in ['status','run_id','sequence','generated_at_ms']},'video':video.stats() if video is not None else None},separators=(',',':')).encode()
+        elif self.path=='/video/health':body=json.dumps(video.stats() if video is not None else {'status':'disabled'},separators=(',',':')).encode()
         else:
             match=re.fullmatch(r'/segments/([a-f0-9-]{36})/([0-9]{10,14})',self.path)
             body=broadcast.get_segment(*match.groups()) if match else None
@@ -233,6 +255,10 @@ def main():
     p.add_argument('--backend',choices=['native','cutile'],default=os.environ.get('DOOM_BRAIN_BACKEND','native'),help='Neural kernel: native C++ (CPU) or cuTile (NVIDIA GPU)')
     p.add_argument('--learning',action='store_true',help='Enable explicitly unvalidated v6 memory plasticity')
     p.add_argument('--seed',type=int,default=41027);p.add_argument('--reward',choices=['off','sugar'],default='off')
+    p.add_argument('--video-mp4',help='Directory for MP4 archive segments, video-metrics.jsonl and video-manifest.json (one subdirectory per run)')
+    p.add_argument('--video-size',default='1280x720');p.add_argument('--video-overlay',default='hud,bars,raster,learning')
+    p.add_argument('--video-encoder',choices=['auto','vaapi','qsv','nvenc','x264'],default='auto',help='auto = first working of vaapi (Intel iGPU), qsv, nvenc, x264')
+    p.add_argument('--video-device',help='VAAPI/QSV render node (default: the Intel iGPU node)');p.add_argument('--video-backend',choices=['numpy'],default='numpy')
     p.add_argument('--condition',choices=['intact','blank_vision','frozen_vision','retina_disconnected','all_edges_disconnected','controls_clamped'],default='intact')
     args=p.parse_args()
     if args.learning and args.model!='experimental-v6':p.error('Learning requires the explicit experimental-v6 model')
