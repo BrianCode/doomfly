@@ -72,9 +72,21 @@ def test_cutile_v6_matches_cpu_memory_kernel(tmp_path):
         np.testing.assert_array_equal(a,d)
         np.testing.assert_allclose(c.v,g.v,atol=.002,rtol=0)
         np.testing.assert_allclose(c.adaptation,g.adaptation,atol=.002,rtol=0)
-        np.testing.assert_array_equal(c.weight,g.weight)
-        np.testing.assert_array_equal(c.memory_w,g.memory_w)
+        np.testing.assert_allclose(c.weight,g.weight,rtol=1e-6,atol=0)     # device rule: float64 ulp-level differences
+        np.testing.assert_allclose(c.memory_w,g.memory_w,rtol=1e-9,atol=1e-15)
     assert g.memory_u[0]<0 and g.weight[0]<20
+
+def test_cutile_v6_multi_bin_call_matches_cpu(tmp_path):
+    """A 300 ms call queues three rate-rule bins on the device before one download."""
+    c,g=v6_pair(tmp_path)
+    for stimulus in [([0],20),([2],20),([0,2],20)]:
+        a,_=c.step([],300,learning=True,stimulation=stimulus,lamina_bias=0)
+        d,_=g.step([],300,learning=True,stimulation=stimulus,lamina_bias=0)
+        np.testing.assert_array_equal(a,d)
+        np.testing.assert_allclose(c.v,g.v,atol=.002,rtol=0)
+        np.testing.assert_allclose(c.memory_u,g.memory_u,rtol=1e-9,atol=1e-15)
+        np.testing.assert_allclose(c.weight,g.weight,rtol=1e-6,atol=0)
+    assert g.total_spikes==c.total_spikes and g.cursor==c.cursor
 
 def test_cutile_v6_full_state_checkpoint_reproduces_ongoing_memory(tmp_path):
     _,b=v6_pair(tmp_path)

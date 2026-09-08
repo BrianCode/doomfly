@@ -45,6 +45,14 @@ THRESHOLD = -45.0
 DELIVER_GRID = int(os.environ.get('DOOM_CUTILE_GRID', 2048))
 DELIVER_SPLIT = int(os.environ.get('DOOM_CUTILE_SPLIT', 4))   # CTAs sharing one spike's row (tail of 11k-edge hubs)
 MODEL_REVISION = 'lif-r2-refractory-write-protection-cutile'
+# Conductance ring numerics: 'float32' reproduces the CPU kernel's float32 sums (atomics make the
+# order unspecified); 'int' accumulates fixed-point contact units so every sum is exact and the
+# result is independent of the order of arrivals (bit-reproducible run to run).
+RING_MODE = os.environ.get('DOOM_CUTILE_RING', 'float32')
+RING_INT = 1 if RING_MODE == 'int' else 0
+CONTACT_MV = 0.275                           # mV per synaptic contact in this graph
+RING_Q = 10                                   # fixed-point fraction bits below one contact
+RING_UNIT = CONTACT_MV / (1 << RING_Q)        # 2.7e-4 mV per unit; int32 holds +-2.1e6 contacts per cell
 
 
 def _log_capacity(npad):
@@ -59,7 +67,7 @@ if AVAILABLE:
                      log_neuron, log_step, log_counter,
                      t0: ct.int32, nsteps: ct.int32, a: ct.float32, b: ct.float32, coup: ct.float32,
                      c: ct.float32, k_adapt: ct.float32, jump: ct.float32, elig_scale: ct.float32,
-                     LOG: ct.Constant[int], V6: ct.Constant[int]):
+                     LOG: ct.Constant[int], V6: ct.Constant[int], RINGI: ct.Constant[int], unit: ct.float32):
         blk = ct.bid(0)
         ids = blk * TN + ct.arange(TN, dtype=ct.int32)
         idx = (blk,)
@@ -97,9 +105,13 @@ if AVAILABLE:
                 elt = ct.where(kcs, ct.full((TN,), 0, dtype=ct.int64) + t, elt)
             # 3. arrivals emitted DELAY substeps ago; dropped while refractory
             slot = t & (RING - 1)
-            inc = ct.reshape(ct.load(ginc, index=(slot, blk), shape=(1, TN)), (TN,))
+            raw = ct.reshape(ct.load(ginc, index=(slot, blk), shape=(1, TN)), (TN,))
+            if RINGI == 1:
+                inc = raw.astype(ct.float32) * unit
+            else:
+                inc = raw
             gt = ct.where(integ, gt + inc, gt)
-            ct.store(ginc, index=(slot, blk), tile=ct.zeros((1, TN), dtype=ct.float32))
+            ct.store(ginc, index=(slot, blk), tile=ct.zeros((1, TN), dtype=ginc.dtype))
             # 4. reset this substep's spikers (also discards their arrival)
             vt = ct.where(spike, rest_t, vt)
             gt = ct.where(spike, 0.0, gt)
@@ -142,13 +154,14 @@ if AVAILABLE:
                     eidx = e + ct.arange(TE, dtype=ct.int32)
                     j = ct.where(eidx < e1, ct.gather(post, eidx), -1)
                     w = ct.gather(weight, eidx)
-                    ct.atomic_add(ginc, (slot, j), w)
+                    ct.atomic_add(ginc, (slot, j), w)      # weight and ginc share a dtype (float32, or int32 fixed-point)
 
 
 def build_record():
     record = {'model_revision': MODEL_REVISION, 'backend': 'cutile',
               'kernel_source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-              'compile_flags': [], 'tile_neurons': TN, 'tile_edges': TE, 'ring_slots': RING, 'deliver_grid': DELIVER_GRID, 'deliver_split': DELIVER_SPLIT}
+              'compile_flags': [], 'tile_neurons': TN, 'tile_edges': TE, 'ring_slots': RING, 'deliver_grid': DELIVER_GRID, 'deliver_split': DELIVER_SPLIT,
+              'ring_mode': RING_MODE, 'ring_unit_mV': RING_UNIT if RING_INT else None}
     if AVAILABLE:
         try:
             device = cp.cuda.Device()
@@ -241,7 +254,8 @@ class CuTileBrain(Brain):
                 setattr(d, name, cp.zeros(d.npad, dtype))
             d.elig = cp.zeros(d.npad, np.float64)
             d.elig_last = cp.zeros(d.npad, np.int64)
-            d.ginc = cp.zeros((RING, d.npad), np.float32)
+            d.ginc = cp.zeros((RING, d.npad), np.int32 if RING_INT else np.float32)
+            d.weight_ring = d.weight if not RING_INT else cp.zeros(len(self.weight), np.int32)
             d.log_neuron = cp.zeros(d.log, np.int32)
             d.log_step = cp.full(d.log, -1, np.int32)
             d.log_counter = cp.zeros(1, np.int32)
@@ -289,13 +303,21 @@ class CuTileBrain(Brain):
         ct.launch(self.stream, (d.grid,), evolve_batch,
                   (d.v, d.g, d.ref, d.adapt, d.rest, d.drive, d.kc_mask, d.elig, d.elig_last, d.ginc, d.counts,
                    d.log_neuron, d.log_step, d.log_counter, int(t0), int(nsteps), cst['a'], cst['b'], cst['coup'],
-                   cst['c'], cst['k_adapt'], cst['jump'], cst['elig_scale'], d.log, cst['v6']))
+                   cst['c'], cst['k_adapt'], cst['jump'], cst['elig_scale'], d.log, cst['v6'], RING_INT, float(np.float32(RING_UNIT))))
 
     def _launch_deliver(self):
         d = self.dev
         ct.launch(self.stream, (DELIVER_GRID, DELIVER_SPLIT), deliver,
-                  (d.log_neuron, d.log_step, d.batch_start, d.log_counter, d.ptr, d.post, d.weight, d.mod_mask,
+                  (d.log_neuron, d.log_step, d.batch_start, d.log_counter, d.ptr, d.post, d.weight_ring, d.mod_mask,
                    d.ginc, d.log, DELIVER_GRID, DELIVER_SPLIT))
+
+    def _refresh_weight_ring(self, d, indices=None):
+        """Keep the ring-side weights in sync with d.weight (fixed-point copy in int mode)."""
+        if not RING_INT: return
+        src = d.weight if indices is None else d.weight[indices]
+        q = cp.rint(src.astype(np.float64) / RING_UNIT).astype(np.int32)
+        if indices is None: d.weight_ring[:] = q
+        else: d.weight_ring[indices] = q
 
     def load_state_from_host(self):
         """Upload host state (after a checkpoint restore or reset) and rebuild the ring."""
@@ -312,6 +334,7 @@ class CuTileBrain(Brain):
             d.mod_mask[:n].set(phys['modulation_mask'].astype(np.int32))
             d.elig[:n].set(phys['eligibility']); d.elig_last[:n].set(phys['eligibility_last'])
             d.weight.set(self.weight); self.weights_dirty = False
+            self._refresh_weight_ring(d)
             d.counts.fill(0); d.ginc.fill(0); d.log_counter.fill(0)
             # Pending CPU-format deliveries: slot s of the 19-slot queue holds spikes
             # delivered at the unique substep T in [cursor, cursor+17] with T%19==s.
@@ -358,6 +381,7 @@ class CuTileBrain(Brain):
         with self.stream:
             if self.weights_dirty:
                 d.weight.set(self.weight); self.weights_dirty = False
+                self._refresh_weight_ring(d)
             self._device_drive(d)
             d.counts.fill(0)
             t = self.cursor
