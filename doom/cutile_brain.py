@@ -36,13 +36,14 @@ except Exception as error:  # pragma: no cover - exercised only without a GPU st
     IMPORT_ERROR = error
 
 import os
-TN = int(os.environ.get('DOOM_CUTILE_TN', 512))    # neurons per evolve tile (power of two)
-TE = int(os.environ.get('DOOM_CUTILE_TE', 256))    # edges per delivery iteration (power of two)
+TN = int(os.environ.get('DOOM_CUTILE_TN', 1024))    # neurons per evolve tile (power of two)
+TE = int(os.environ.get('DOOM_CUTILE_TE', 128))    # edges per delivery iteration (power of two)
 RING = 32          # conductance ring slots, power of two >= 2*DELAY
 DELAY = 18         # 1.8 ms / 0.1 ms
 REFRACTORY = 22    # 2.2 ms / 0.1 ms
 THRESHOLD = -45.0
 DELIVER_GRID = int(os.environ.get('DOOM_CUTILE_GRID', 2048))
+DELIVER_SPLIT = int(os.environ.get('DOOM_CUTILE_SPLIT', 4))   # CTAs sharing one spike's row (tail of 11k-edge hubs)
 MODEL_REVISION = 'lif-r2-refractory-write-protection-cutile'
 
 
@@ -123,18 +124,21 @@ if AVAILABLE:
 
     @ct.kernel
     def deliver(log_neuron, log_step, batch_start, log_counter, ptr, post, weight, mod_mask, ginc,
-                LOG: ct.Constant[int], G: ct.Constant[int]):
+                LOG: ct.Constant[int], G: ct.Constant[int], SPLIT: ct.Constant[int]):
+        # Grid (G, SPLIT): CTAs along axis 0 stride over the batch's spikes; the SPLIT CTAs
+        # along axis 1 share one spike's edge list so an 11k-edge hub does not serialise a batch.
         start = ct.load(batch_start, index=(0,), shape=(1,)).item()
         end = ct.load(log_counter, index=(0,), shape=(1,)).item()
+        part = ct.bid(1)
         for k in range(start + ct.bid(0), end, G):
             pos = k & (LOG - 1)
             i = ct.gather(log_neuron, pos).item()
             t = ct.gather(log_step, pos).item()
             if ct.gather(mod_mask, i).item() == 0:
                 slot = (t + DELAY) & (RING - 1)
-                e0 = ct.gather(ptr, i).item()
+                e0 = ct.gather(ptr, i).item() + part * TE
                 e1 = ct.gather(ptr, i + 1).item()
-                for e in range(e0, e1, TE):
+                for e in range(e0, e1, SPLIT * TE):
                     eidx = e + ct.arange(TE, dtype=ct.int32)
                     j = ct.where(eidx < e1, ct.gather(post, eidx), -1)
                     w = ct.gather(weight, eidx)
@@ -144,7 +148,7 @@ if AVAILABLE:
 def build_record():
     record = {'model_revision': MODEL_REVISION, 'backend': 'cutile',
               'kernel_source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-              'compile_flags': [], 'tile_neurons': TN, 'tile_edges': TE, 'ring_slots': RING}
+              'compile_flags': [], 'tile_neurons': TN, 'tile_edges': TE, 'ring_slots': RING, 'deliver_grid': DELIVER_GRID, 'deliver_split': DELIVER_SPLIT}
     if AVAILABLE:
         try:
             device = cp.cuda.Device()
@@ -242,6 +246,8 @@ class CuTileBrain(Brain):
             d.log_step = cp.full(d.log, -1, np.int32)
             d.log_counter = cp.zeros(1, np.int32)
             d.batch_start = cp.zeros(1, np.int32)
+            d.retina = cp.asarray(self.retina); d.lamina = cp.asarray(self.lamina); d.sugar = cp.asarray(self.sugar)
+            d.tonic = cp.zeros(d.npad, np.float32)
         # Pinned staging buffers: pageable copies of these arrays cost ~0.5 ms each.
         d.pinned = {}
         for name, dtype in [('drive', np.float32), ('counts', np.int32), ('v', np.float32), ('g', np.float32), ('ref', np.int32), ('adapt', np.float32), ('elig', np.float64), ('elig_last', np.int64)]:
@@ -287,9 +293,9 @@ class CuTileBrain(Brain):
 
     def _launch_deliver(self):
         d = self.dev
-        ct.launch(self.stream, (DELIVER_GRID,), deliver,
+        ct.launch(self.stream, (DELIVER_GRID, DELIVER_SPLIT), deliver,
                   (d.log_neuron, d.log_step, d.batch_start, d.log_counter, d.ptr, d.post, d.weight, d.mod_mask,
-                   d.ginc, d.log, DELIVER_GRID))
+                   d.ginc, d.log, DELIVER_GRID, DELIVER_SPLIT))
 
     def load_state_from_host(self):
         """Upload host state (after a checkpoint restore or reset) and rebuild the ring."""
@@ -326,6 +332,25 @@ class CuTileBrain(Brain):
         self.stream.synchronize()
 
     # --- simulation ------------------------------------------------------
+    def _device_drive(self, d):
+        """Rebuild the device drive from the same recipe as the host array (same float32 operations)."""
+        recipe = getattr(self, '_drive_recipe', None)
+        if recipe is None:      # unknown provenance (tests writing brain.drive directly): upload the host array
+            d.pinned['drive'][:self.n] = self.drive
+            d.drive[:self.n].set(d.pinned['drive'][:self.n])
+            return
+        d.drive.fill(0)
+        if len(self.lamina): d.drive[d.lamina] = np.float32(recipe['lamina_bias'])
+        if len(self.retina): d.drive[d.retina] = cp.asarray(np.asarray(recipe['retina'], dtype=np.float32))
+        if recipe.get('sugar') and len(self.sugar): d.drive[d.sugar] = np.float32(30)
+        if recipe.get('tonic') is not None: d.drive[:self.n] += d.tonic[:self.n]
+        for indices, amplitude in recipe.get('pulses', ()):
+            ix = np.asarray(indices, dtype=np.int32)
+            if not len(ix): continue
+            amp = np.asarray(amplitude, dtype=np.float32)
+            d.drive[cp.asarray(ix)] += (cp.asarray(amp) if amp.shape else float(amp))
+        self._drive_recipe = None
+
     def _advance(self, steps):
         self._ensure_device()
         d = self.dev
@@ -333,8 +358,7 @@ class CuTileBrain(Brain):
         with self.stream:
             if self.weights_dirty:
                 d.weight.set(self.weight); self.weights_dirty = False
-            d.pinned['drive'][:self.n] = self.drive
-            d.drive[:self.n].set(d.pinned['drive'][:self.n])
+            self._device_drive(d)
             d.counts.fill(0)
             t = self.cursor
             remaining = int(steps)
@@ -368,6 +392,7 @@ class CuTileBrain(Brain):
         self.luminance += (1 - math.exp(-steps * self.dt / 10)) * (np.clip(luminance, 0, 1) - self.luminance)
         self.drive.fill(0); self.drive[self.lamina] = lamina_bias; self.drive[self.retina] = 30 * self.luminance / (.02 + self.luminance)
         if sugar: self.drive[self.sugar] = 30
+        self._drive_recipe = {'lamina_bias': lamina_bias, 'retina': self.drive[self.retina].copy(), 'sugar': bool(sugar)}
         start = time.perf_counter()
         self._advance(steps)
         wall = time.perf_counter() - start

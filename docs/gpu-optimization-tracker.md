@@ -20,7 +20,7 @@ i7-13620H host unless stated otherwise.
 | 2026-09-08 | v6 server on the GPU with `--video-mp4` (1280x720 archive, VAAPI on the Intel iGPU), first compositor (FreeType text, fancy-index resize) | compositing 25-29 ms/frame on the video thread; the interpreter lock it held cut the sim to **0.876x**, `brain_step_ms` 22.5 |
 | 2026-09-08 | same with the glyph-atlas compositor (all pixel work in NumPy) | compositing 3.4-5.6 ms/frame, encoder 35.4 f/s, 0 drops, sim back at **1.000x**, `brain_step_ms` 16.4-16.8 |
 
-## Host power state (blocks all GPU speedups until fixed)
+## Host power state (resolved 2026-09-08 with a memory clock lock)
 
 Measured 2026-09-08 under a sustained CuPy copy load: pstate P5, SM 1762 MHz,
 **memory clock 810 MHz of 5501 MHz max**, power 22 W against a current limit of
@@ -28,11 +28,21 @@ Measured 2026-09-08 under a sustained CuPy copy load: pstate P5, SM 1762 MHz,
 `SW Thermal Slowdown` active at 51 C, PCIe link gen 1 x8. Achieved bandwidth:
 6-14 GB/s for plain CuPy copies (device peak is about 190 GB/s); a raw CUDA
 kernel doing the same work as the cuTile evolve kernel was equally slow, so the
-kernels are not the cause. `nvidia-smi -lmc` / `-pl` need root; `nvidia-powerd`
-is not installed. Every kernel figure below was measured in this state and
-should scale by roughly the memory clock ratio once the cap is lifted.
+kernels are not the cause.
 
-## Kernel time budget (milestone 1, power-capped)
+Resolution: `sudo nvidia-smi -lmc 5001,5501` locks the memory clock (verified: P0,
+5501 MHz, no throttle reasons, 115 GB/s CuPy copies, 28 W). `sudo nvidia-smi -pl 35`
+is refused on this laptop ("not supported"), and `nvidia-powerd` is not packaged
+for it. The lock does not survive a reboot; re-apply it (or a udev/systemd unit)
+before GPU runs. Still open: the PCIe link stays at gen 1 x8 (2.5 GT/s of a 16 GT/s
+maximum) even during transfers, so host<->device copies run at 1.6 GB/s; a
+0.67 MB array costs ~0.4 ms each way (ASPM policy is `default`; changing it needs
+root and was not tried). The kernel figures below are split into before and after
+the clock lock.
+
+## Kernel time budget
+
+Before the clock lock (milestone 1, memory clock 810 MHz):
 
 | Component | Measured | Note |
 |---|---|---|
@@ -45,6 +55,21 @@ should scale by roughly the memory clock ratio once the cap is lifted.
 | Host cost per `ct.launch` | 12-18 us | negligible |
 | Drive H2D / counts D2H, pageable | 0.41 / 0.55 ms | replaced by pinned buffers (not yet re-measured) |
 | Per tic (16 batches) | ~40-85 ms depending on spike rate | CPU: 28-32 ms |
+
+After the clock lock (memory clock 5501 MHz), tuned defaults TN=1024, TE=128:
+
+| Component | Measured | Note |
+|---|---|---|
+| K1 `evolve_batch`, 1 substep / 18 substeps | 0.079 / 0.30-0.33 ms | per-substep ring cost ~11-14 us (1.3 MB at ~115 GB/s) plus ~0.06 ms fixed |
+| K2 `deliver`, real v6 batch (1,054 spikes, 122 k edges) | 0.20 ms | no hub tail, no target contention (max 46 arrivals to one target) |
+| K2, baseline bench batch (1,547 spikes, 0.24 M edges) | 0.076-0.084 ms | |
+| Baseline `step()` per 286-substep tic (17 k spikes/tic) | 7.7 ms -> 6.9 ms with the drive assembled on device | `doom.compare_backends`: GPU 7.8 ms median vs CPU 30.7 ms, speedup 2.67x |
+| Host<->device per call | drive H2D removed; counts D2H 0.41 ms (PCIe gen 1) | |
+| v6 server (`--learning --video-mp4`) | `brain_step_ms` 17.7-18.3, speed 1.000x | 3-5 bins per tic; profile per 100-substep bin: 6 batches 4.9 ms GPU, plastic upload 0.10, device drive 0.17, counts D2H 0.41 ms |
+| v6 `rgb_step` wall incl. retina sampling and rate rule | 15.3 ms neural, 19.7 ms total per tic (bench, 28.6 k spikes/tic) | |
+
+Tile sweep after the lock (K1 18 substeps): TN 256: 0.360, 512: 0.333, 1024: 0.302, 2048: 0.330 ms.
+K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 1024: 0.103; grid 8192: 0.100 ms.
 
 ## Neural kernel options
 
@@ -60,9 +85,9 @@ should scale by roughly the memory clock ratio once the cap is lifted.
 | 8 | Lazy host mirror (D2H v,g,ref,adaptation,eligibility only on access/checkpoint) | ~1 ms/tic | **89 -> 16.5 ms/tic** on the power-capped host (pageable 0.5 ms per array x 6 arrays x 3-4 bins) | Low | No | `server.py:161` reads `brain.v` once per publish | M3 done |
 | 9 | Pinned host buffers + async copies | 0.1-0.2 ms/tic; pageable copies measured 0.4-0.55 ms each | implemented (drive, counts, mirrored state) | Low | No | complements 22 | M1 done |
 | 10 | Counts stay on device across v6 bins | ~0.2 ms/tic | - | Low | No | - | M4 |
-| 11 | Tile/occupancy tuning (TN, TE, grid, hints) | 10-30% kernel time | TN had no effect while bandwidth-starved; retest after the power fix | Low | No | - | M4 |
+| 11 | Tile/occupancy tuning (TN, TE, grid, hints) | 10-30% kernel time | after the clock lock: TN=1024 -9% on K1, TE=128/grid 4096 -10% on K2; hints untested | Low | No | - | M4 done |
 | 12 | CUDA graph / stream capture per distinct `steps` | 0.3-0.5 ms/tic | - | Medium | No | requires 6 | M4 |
-| 13 | Edge-balanced delivery | cuts the 11k-degree tail | - | Medium | No | complements 14 | M4 |
+| 13 | Edge-balanced delivery (row split across `DELIVER_SPLIT` CTAs, implemented as a 2-D grid) | cuts the 11k-degree tail | real v6 batches have max degree ~2.5 k and no tail; the split adds empty CTAs (see the K2 sweep) so it defaults low; an earlier 2.2 ms K2 reading was a profiling artifact | Medium | No | complements 14 | M4 done, kept configurable |
 | 14 | CSR locality: sort `post` within rows; neuron permutation for atomic locality | 10-30% of K2 | - | Medium | rounding order only | complements 13 | M4 |
 | 15 | Integer contact accumulation (deterministic) | deterministic run-to-run | note: two runs were already bit-identical over 100 tics; still not guaranteed | Medium | yes (documented) | alternative to 16; conflicts 18 | optional |
 | 16 | Deterministic sort + segmented sum | determinism at 0.5-1 ms/batch | - | Low | yes | superseded by 15 | not recommended |
@@ -71,14 +96,16 @@ should scale by roughly the memory clock ratio once the cap is lifted.
 | 19 | Sleeping-neuron / sleeping-tile skip | ~none (ring traffic dominates) | - | Medium | no | - | not recommended |
 | 20 | Batch > 18 via refractory | impossible (delay-limited) | - | - | - | - | rejected |
 | 21 | Pull/CSC delivery | no benefit vs atomics | - | High | rounding | - | rejected |
-| 22 | On-device retina transform, low-pass, drive assembly | 0.5-1 ms CPU per bin; removes drive H2D | - | Medium | tiny float diffs (hash of `light` changes) | complements 9 | M4 |
+| 22 | Drive assembled on the device from the same recipe (lamina, retina, sugar, tonic, pulses in the same float32 order); retina sampling and the low-pass stay on the CPU | removes the 0.67 MB drive upload per call (0.4 ms at PCIe gen 1) | baseline 7.7 -> 6.9 ms/tic; v6 unchanged (transfer was not its bottleneck) | Low | No (identical values; `light` hash unchanged) | complements 9 | M4 done |
 | 23 | Plasticity rule on device | none (4,184 elements) | - | - | no | - | rejected |
 | 24 | Move 10 Hz JPEG/JSON publish off the sim thread | 5-10 ms per publish | - | Low | no | independent of GPU; the video service already moves compositing off-thread | later |
 | 25 | Multi-stream tic pipelining | N/A (serial dependency) | - | - | - | - | rejected |
 | 26 | Skip K2 when a batch has no spikes | trivial | automatic under 6 (8 us) | None | no | - | done |
 | 27 | Skip constant per-launch traffic in baseline mode (rest, adapt, kc_mask loads; elig only in v6) | ~40% of the fixed 0.4 ms per launch while bandwidth-starved | elig made conditional on V6; rest/adapt still loaded | Low | no | - | M4 |
 | 28 | Ring in a smaller dtype or ring row prefetch for the whole batch | halves ring traffic / hides latency | - | Medium | fp16 ring changes numerics; prefetch does not | conflicts with exactness if fp16 | M4 |
-| 29 | Host power policy: raise GPU power limit / lock memory clock (`sudo nvidia-smi -pl`, `-lmc`), install `nvidia-powerd` | up to ~7x on every memory-bound kernel | blocked: needs root | Low | no | prerequisite for measuring 11-14 | open |
+| 29 | Host power policy: lock memory clock (`sudo nvidia-smi -lmc 5001,5501`) | up to ~7x on every memory-bound kernel | K1 2.15 -> 0.33 ms, K2 0.39 -> 0.08 ms, baseline tic 43 -> 7.7 ms; `-pl` unsupported on this laptop | Low | no | prerequisite for 11-14 | done (re-apply after reboot) |
+| 30 | PCIe link stuck at gen 1 x8 (1.6 GB/s) | 4-8x on the remaining host<->device copies (~0.4 ms per call) | measured under sustained transfer | needs root (ASPM policy / BIOS) | no | complements 10 | open |
+| 31 | Fewer host syncs per v6 bin: keep counts on device, gather only the 4,186 rule inputs per bin, full D2H once per tic | ~0.4 ms x (bins-1) per tic | - | Medium (touches `MemoryBrain.step`) | no | needs 10 | later |
 
 ## Video path options
 
@@ -88,7 +115,7 @@ should scale by roughly the memory clock ratio once the cap is lifted.
 | Compositor + encoder in a separate process (pipe or shared memory) | removes all GIL contention with the sim thread | - | 1.6 MB/tic over a pipe (55 MB/s) | complements everything above | later |
 | CuPy compositor | <1 ms GPU; frees CPU | - | shares GPU with sim: own stream + events | needs device `counts` | V3 |
 | ffmpeg rgb24 pipe + h264_vaapi on the Intel iGPU | ~730 fps at 720p in the probe; zero load on the RTX | live: 35.4 f/s sustained, 1.5 ms write per frame, no sim impact; note: `-count_frames` reports 2 fewer frames than written at EOF (B-frame flush), to investigate | render node must be the Intel one | primary; conflicts with PyNvVideoCodec zero-copy | V1 done |
-| ffmpeg rgb24 pipe + h264_qsv (oneVPL) | same iGPU with lookahead/ICQ | init fails until `libmfx-gen1.2` is installed | needs sudo | alternative to VAAPI | optional |
+| ffmpeg rgb24 pipe + h264_qsv (oneVPL) | same iGPU | works after `libmfx-gen1.2` with `-low_power 1` only (lookahead rejected); 600 frames 720p in 0.81 s; live server: 35.2 f/s, 0 drops | needs sudo for the package | alternative to VAAPI; auto order is vaapi, qsv, nvenc, x264 | done |
 | ffmpeg rgb24 pipe + h264_nvenc | ~385 fps at 720p in the probe | probe: 600 frames in 1.56 s | shares the RTX | alternative; live sink | V1 fallback |
 | Split encoders across GPUs (archive on iGPU, live on NVENC) | no single-engine queueing | - | two contexts to monitor | complements | V4 |
 | PyNvVideoCodec zero-copy NV12 | removes D2H + swscale | - | context discipline; untestable in CI | needs CuPy compositor | V3 optional |
