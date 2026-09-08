@@ -167,18 +167,45 @@ class _Device:
     """Device-side state; created on first use so construction needs no GPU."""
 
 
+def _mirrored(name, device_attr, convert=None):
+    """Host array property that is refreshed from the device lazily after each advance."""
+    store = '_host_' + name
+
+    def get(self):
+        d = getattr(self, 'dev', None)
+        if d is not None and name in self._stale:
+            getattr(d, device_attr)[:self.n].get(out=self._pinned_view(device_attr), stream=self.stream)
+            self.stream.synchronize()
+            src = self._pinned_view(device_attr)
+            getattr(self, store)[:] = src if convert is None else convert(src)
+            self._stale.discard(name)
+        return getattr(self, store)
+
+    def set(self, value):
+        setattr(self, store, value)
+    return property(get, set)
+
+
 class CuTileBrain(Brain):
     backend = 'cutile'
+    v = _mirrored('v', 'v')
+    g = _mirrored('g', 'g')
+    refractory = _mirrored('refractory', 'ref')
+    MIRRORED = ('v', 'g', 'refractory')
 
     def __init__(self, path, dt=.1):
         if not AVAILABLE:
             raise RuntimeError(f'cuTile backend unavailable: {IMPORT_ERROR}')
+        self._stale = set()
         super().__init__(path, dt)
         self.previous_drive = np.zeros(self.n, dtype=np.float32)
         self.last = np.full(self.n, -1, dtype=np.int64)
         self.weights_dirty = True
         self.dev = None
         self.stream = cp.cuda.Stream(non_blocking=True)
+
+    def _pinned_view(self, device_attr):
+        return self.dev.pinned[device_attr][:self.n]
 
     # --- physiology hooks (the v6 mixin overrides these) -------------------
     def _physiology(self):
@@ -187,9 +214,6 @@ class CuTileBrain(Brain):
                 'kc_mask': np.zeros(n, np.uint8), 'modulation_mask': np.zeros(n, np.uint8),
                 'eligibility': np.zeros(n, np.float64), 'eligibility_last': np.full(n, -1, np.int64),
                 'adaptation_tau': 200.0, 'adaptation_jump': 0.0, 'eligibility_tau_ms': 1000.0, 'v6': 0}
-
-    def _store_physiology(self, phys):
-        """Copy device-resident physiology (adaptation, eligibility) back to host."""
 
     def mark_weights_changed(self):
         self.weights_dirty = True
@@ -220,7 +244,7 @@ class CuTileBrain(Brain):
             d.batch_start = cp.zeros(1, np.int32)
         # Pinned staging buffers: pageable copies of these arrays cost ~0.5 ms each.
         d.pinned = {}
-        for name, dtype in [('drive', np.float32), ('counts', np.int32), ('v', np.float32), ('g', np.float32), ('ref', np.int32)]:
+        for name, dtype in [('drive', np.float32), ('counts', np.int32), ('v', np.float32), ('g', np.float32), ('ref', np.int32), ('adapt', np.float32), ('elig', np.float64), ('elig_last', np.int64)]:
             mem = cp.cuda.alloc_pinned_memory(d.npad * np.dtype(dtype).itemsize)
             d.pinned[name] = np.frombuffer(mem, dtype, d.npad)
         self.dev = d
@@ -274,6 +298,7 @@ class CuTileBrain(Brain):
         n = self.n
         phys = self._physiology()
         with self.stream:
+            self._stale.clear()
             d.v[:n].set(self.v); d.v[n:] = -52.0; d.g[:n].set(self.g); d.ref[:n].set(self.refractory.astype(np.int32))
             d.drive[:n].set(self.drive)
             d.rest[:n].set(phys['rest']); d.rest[n:] = -52.0
@@ -324,19 +349,16 @@ class CuTileBrain(Brain):
             self._sync_to_host()
 
     def _sync_to_host(self):
+        """Download spike counts now; other state is pulled lazily on access."""
         d = self.dev
         n = self.n
-        for name, target in [('counts', self.counts), ('v', self.v), ('g', self.g), ('ref', None)]:
-            getattr(d, name).get(out=d.pinned[name], stream=self.stream)
+        d.counts.get(out=d.pinned['counts'], stream=self.stream)
         self.stream.synchronize()
         self.counts[:] = d.pinned['counts'][:n]
-        self.v[:] = d.pinned['v'][:n]
-        self.g[:] = d.pinned['g'][:n]
-        self.refractory[:] = d.pinned['ref'][:n]
+        self._stale.update(self.MIRRORED)
         logged = int(d.log_counter.get())
         if logged >= (1 << 30):
             d.log_counter.fill(logged % d.log)
-        self._store_physiology(d)
 
     def step(self, luminance, duration_ms, sugar=False, lamina_bias=12.0):
         if len(luminance) != len(self.retina) or not np.all(np.isfinite(luminance)): raise ValueError('Invalid retinal input')

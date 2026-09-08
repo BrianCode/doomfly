@@ -15,6 +15,8 @@ i7-13620H host unless stated otherwise.
 | 2026-09-08 | cuTile milestone 1 (`doom.compare_backends --tics 100`), GPU power-capped (see below) | GPU 43.2 ms/tic median (mean 50.3 incl. JIT), CPU 31.8 ms/tic median in the same run; speedup 0.65x |
 | 2026-09-08 | Agreement over 100 tics, identical inputs | first differing tic 2; 98.7-99.0% of neurons have identical per-tic counts; total spikes ratio 1.00012; all per-superclass totals within 0.3%; two GPU runs were bit-identical for all 100 tics |
 | 2026-09-08 | Brian2 oracle (`tests/test_doom_reference.py`) on the cutile backend | passes at 0.1 ms and 10 ms cadence (exact spike bins, v and g within 0.002 mV) |
+| 2026-09-08 | v6 server, `--backend cutile --learning --resume` from the converted CPU checkpoint, before the lazy mirror | speed 0.29x, `brain_step_ms` 89 (six pageable state downloads per <=10 ms bin, 3-4 bins per tic) |
+| 2026-09-08 | v6 server, same, with the lazy host mirror (only spike counts downloaded per bin) | **speed 1.000x, `brain_step_ms` 16.3-16.8** over 60 s, still power-capped; CPU v6 kernel on this host would be about 45 ms/tic |
 
 ## Host power state (blocks all GPU speedups until fixed)
 
@@ -53,8 +55,8 @@ should scale by roughly the memory clock ratio once the cap is lifted.
 | 5 | Host sync per batch for K2 grid | ~16 syncs/tic | not used | None | No | replaced by 6 | dropped |
 | 6 | Sync-free delivery (fixed grid, device-read spike count, grid-stride loop) | -1 ms/tic; prerequisite for 12 | implemented from the start; empty launch 8 us | Medium | No | enables 12 | M1 done |
 | 7 | JIT warm-up at construction (zero-length batch) | removes first-tic stall | implemented | None | No | - | M1 done |
-| 8 | Lazy host mirror (D2H v,g,ref only on access/checkpoint) | ~1 ms/tic in v6 (3 calls per tic) | - | Low | No | `server.py:161` reads `brain.v` | M2 |
-| 9 | Pinned host buffers + async copies | 0.1-0.2 ms/tic; pageable copies measured 0.4-0.55 ms each | implemented, re-measure | Low | No | complements 22 | M1 done |
+| 8 | Lazy host mirror (D2H v,g,ref,adaptation,eligibility only on access/checkpoint) | ~1 ms/tic | **89 -> 16.5 ms/tic** on the power-capped host (pageable 0.5 ms per array x 6 arrays x 3-4 bins) | Low | No | `server.py:161` reads `brain.v` once per publish | M3 done |
+| 9 | Pinned host buffers + async copies | 0.1-0.2 ms/tic; pageable copies measured 0.4-0.55 ms each | implemented (drive, counts, mirrored state) | Low | No | complements 22 | M1 done |
 | 10 | Counts stay on device across v6 bins | ~0.2 ms/tic | - | Low | No | - | M4 |
 | 11 | Tile/occupancy tuning (TN, TE, grid, hints) | 10-30% kernel time | TN had no effect while bandwidth-starved; retest after the power fix | Low | No | - | M4 |
 | 12 | CUDA graph / stream capture per distinct `steps` | 0.3-0.5 ms/tic | - | Medium | No | requires 6 | M4 |
