@@ -100,16 +100,16 @@ class CuTileMemoryMixin:
         d = self.dev
         c = self.circuit
         with self.stream:
-            d.plastic = cp.asarray(c['edges'].astype(np.int64))
-            d.pre = cp.asarray(c['pre'].astype(np.int64))
-            d.dan = cp.asarray(c['dan'].astype(np.int64))
+            d.plastic = cp.asarray(self.edge_map[c['edges']].astype(np.int64))
+            d.pre = cp.asarray(self.inv[c['pre']].astype(np.int64))
+            d.dan = cp.asarray(self.inv[c['dan']].astype(np.int64))
             d.gain_t = cp.asarray(c['gain']).T                     # (plastic, dan) float32, as gain.T on the CPU
             d.baseline = cp.asarray(self.baseline_plastic)
             d.dan_baseline = cp.asarray(self.dan_baseline_hz)
             for name in RULE_FIELDS:
                 setattr(d, name, cp.asarray(getattr(self, '_host_' + name)))
             d.counts_total = cp.zeros(d.npad, np.int32)
-            d.tonic[:self.n].set(self.tonic)
+            d.tonic[:self.n].set(self.tonic[self.perm])
         self.stream.synchronize()
         self._tonic_seen = self.tonic.copy()
 
@@ -129,10 +129,10 @@ class CuTileMemoryMixin:
         cst = self._constants()
         with self.stream:
             if self.weights_dirty:
-                d.weight.set(self._host_weight); self.weights_dirty = False
+                d.weight.set(self._host_weight[self.edge_order]); self.weights_dirty = False
                 self._refresh_weight_ring(d)
             if not np.array_equal(self.tonic, self._tonic_seen):     # calibration edits tonic after construction
-                d.tonic[:self.n].set(self.tonic); self._tonic_seen = self.tonic.copy()
+                d.tonic[:self.n].set(self.tonic[self.perm]); self._tonic_seen = self.tonic.copy()
             self._device_drive(d)
             d.counts.fill(0)
             t = self.cursor
@@ -178,7 +178,7 @@ class CuTileMemoryMixin:
         with self.stream:
             d.counts_total.get(out=d.pinned['counts'], stream=self.stream)
         self.stream.synchronize()
-        self.counts[:] = d.pinned['counts'][:n]
+        self.counts[:] = d.pinned['counts'][:n][self.inv]
         with self.stream:
             d.counts_total.fill(0)
         logged = int(d.log_counter.get())
