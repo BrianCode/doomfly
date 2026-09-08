@@ -38,7 +38,7 @@ class VideoTick:
     wall_s: float
     brain_step_ms: float
     sim_speed: float
-    source_frame_sha256: str
+    source_frame_sha256: Any                # str, or an AuditHandle resolved on the video thread
     episode: int = 0
     learning: Optional[dict] = None
     readouts: Optional[list] = None
@@ -140,11 +140,13 @@ class VideoService:
         self.frame_index += 1
         segment_frames = self.segment_seconds * ARCHIVE_FPS
         learning = item.learning or None
+        source = item.source_frame_sha256
+        if not isinstance(source, str): source = source.result()['source_frame_sha256']
         row = {'frame_index': index, 'archive_file': 'archive-%05d.mp4' % (index // segment_frames), 'archive_frame': index % segment_frames,
                'tick': item.tick, 'episode': item.episode, 'neural_ms': round(item.neural_ms, 3), 'wall_s': round(item.wall_s, 3),
                'sim_speed': round(item.sim_speed, 4), 'brain_step_ms': round(item.brain_step_ms, 3),
                'game': {k: item.game.get(k) for k in ('health', 'kills', 'ammo', 'enemies', 'tick', 'finished') if k in item.game},
-               'action': item.action, 'source_frame_sha256': item.source_frame_sha256, 'held': False}
+               'action': item.action, 'source_frame_sha256': source, 'held': False}
         if learning:
             row['learning'] = {k: learning.get(k) for k in ('changed_edges', 'mean_efficacy', 'minimum_efficacy', 'maximum_efficacy',
                                                               'mean_absolute_change', 'bound_edges', 'efficacy_histogram', 'damage_events',

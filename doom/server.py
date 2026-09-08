@@ -19,10 +19,11 @@ from doom.provenance import provenance
 from doom.broadcast import Broadcast,DISPLAY_FPS
 from doom.checkpoint import Checkpoints
 from doom.archive import AuditArchive
+from doom.audit_worker import AuditWorker
 ROOT=Path(__file__).resolve().parents[1]
 latest={'status':'starting','generated_at_ms':0}; stop=threading.Event()
 broadcast=Broadcast()
-video=None
+video=None;audit=None
 
 def encoded_frame(rgb):
     f=io.BytesIO();Image.fromarray(rgb).save(f,format='JPEG',quality=75)
@@ -100,6 +101,7 @@ def run_loop(args):
         audit_handler=RotatingFileHandler(audit_path,maxBytes=20_000_000,backupCount=4)
         archive=AuditArchive(audit_dir/'archive',run_id)
         audit_logger=logging.getLogger('doom-audit');audit_logger.handlers=[audit_handler,archive];audit_logger.setLevel(logging.INFO);audit_logger.propagate=False
+        global audit;audit=AuditWorker(audit_logger)
         run_record={'run_id':run_id,'study_id':study_id,'phase':phase,'started_at_ms':int(time.time()*1000),
             'continuation_of':recovered.get('run_id') if recovered else None,
             'interrupted_round':recovered.get('interrupted_round') if recovered else None,
@@ -147,9 +149,7 @@ def run_loop(args):
             total_actions+=int(nonzero)
             event={'run_id':run_id,'recorded_at_ms':int(time.time()*1000),'scenario':args.scenario,'decoder':args.decoder,'condition':args.condition,'reward_mode':args.reward,'tick':tick,'neural_ms':round(brain.sim_ms,3),'episode':game.episode,
               'game':after,
-              'input_sha256':hashlib.sha256(light.tobytes()).hexdigest(),
-              'source_frame_sha256':hashlib.sha256(frame.tobytes()).hexdigest(),
-              'spike_counts_sha256':hashlib.sha256(counts.tobytes()).hexdigest(),
+              'input_sha256':None,'source_frame_sha256':None,'spike_counts_sha256':None,
               'requested':{k:action[k] for k in ['turn','forward','attack']},
               'applied':{k:applied[k] for k in ['turn','forward','attack']},
               'readouts':action['readouts'],'reward':score,'sugar_applied':sugar_applied,
@@ -157,13 +157,15 @@ def run_loop(args):
               'input_episode':game.episode,'input_game_tick':game.tick-1,'output_game_tick':game.tick,
               'neural_interval_ms':round(steps*.1,3)}
             if training:event['learning']=training.telemetry()
-            audit_logger.info(json.dumps(event,separators=(',',':')))
+            # Digests and the audit line are produced off-thread, in tic order;
+            # `pending.result()` waits for them where a consumer needs them.
+            pending=audit.submit(event,light,frame,counts)
             if video is not None:
                 from doom.video import VideoTick
                 age_now=time.monotonic()-start
                 video.offer(VideoTick(tick=tick,frame=frame,counts=counts,game=after,action=event['applied'],neural_ms=brain.sim_ms,
                     wall_s=age_now,brain_step_ms=neural_wall*1000,sim_speed=(brain.sim_ms/1000-neural_start)/max(age_now,1e-6),
-                    source_frame_sha256=event['source_frame_sha256'],episode=game.episode,learning=event.get('learning'),
+                    source_frame_sha256=pending,episode=game.episode,learning=event.get('learning'),
                     readouts=action['readouts'],episodes=list(episodes),run_id=run_id,study_id=study_id,phase=phase,window_ms=steps*.1))
             timeline.append({'tick':tick,'spikes':int(counts.sum()),'action':event['applied']})
             window_counts+=counts;window_ms+=steps*.1
@@ -173,7 +175,7 @@ def run_loop(args):
                 history.append({'neural_ms':round(brain.sim_ms,1),'window_ms':round(window_ms,3),'counts':window_counts[display].tolist(),'population_spikes':int(window_counts.sum())})
                 # Show the frame that actually supplied this action's input,
                 # avoiding an image/telemetry mismatch or invented interpolation.
-                jpeg=encoded_frame(frame)
+                jpeg=encoded_frame(frame);pending.result()
                 latest={'schema':1,'status':'running','run_id':run_id,'sequence':seq,
                   'generated_at_ms':int(time.time()*1000),'condition':args.condition,'decoder':args.decoder,
                   'frame':jpeg,'input_frame_sha256':event['source_frame_sha256'],
@@ -223,7 +225,9 @@ def run_loop(args):
                 if video is not None:
                     try:video.close()
                     except Exception:import traceback;traceback.print_exc()
-                game.close();audit_handler.close();archive.close()
+                game.close()
+                try:audit.close()
+                finally:audit_handler.close();archive.close()
     except Exception as e:
         latest={'status':'error','generated_at_ms':int(time.time()*1000),'message':'The simulation stopped. No live data is available.'}
         broadcast.offline(latest)
@@ -234,7 +238,7 @@ class Handler(BaseHTTPRequestHandler):
         cache='no-store'
         if self.path=='/state':body=broadcast.state
         elif self.path=='/index':body=broadcast.index
-        elif self.path=='/health':body=json.dumps({**{k:latest.get(k) for k in ['status','run_id','sequence','generated_at_ms']},'video':video.stats() if video is not None else None},separators=(',',':')).encode()
+        elif self.path=='/health':body=json.dumps({**{k:latest.get(k) for k in ['status','run_id','sequence','generated_at_ms']},'video':video.stats() if video is not None else None,'audit':audit.stats() if audit is not None else None},separators=(',',':')).encode()
         elif self.path=='/video/health':body=json.dumps(video.stats() if video is not None else {'status':'disabled'},separators=(',',':')).encode()
         else:
             match=re.fullmatch(r'/segments/([a-f0-9-]{36})/([0-9]{10,14})',self.path)
