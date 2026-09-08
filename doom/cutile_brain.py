@@ -74,12 +74,13 @@ if AVAILABLE:
         vt = ct.load(v, index=idx, shape=(TN,))
         gt = ct.load(g, index=idx, shape=(TN,))
         rt = ct.load(ref, index=idx, shape=(TN,))
-        at = ct.load(adapt, index=idx, shape=(TN,))
-        rest_t = ct.load(rest, index=idx, shape=(TN,))
         dt = ct.load(drive, index=idx, shape=(TN,))
         cnt = ct.zeros((TN,), dtype=ct.int32)
         spike_at = ct.full((TN,), -1, dtype=ct.int32)
         if V6 == 1:
+            # v6 physiology only: per-neuron rest, KC adaptation, eligibility trace
+            at = ct.load(adapt, index=idx, shape=(TN,))
+            rest_t = ct.load(rest, index=idx, shape=(TN,))
             kc = ct.load(kc_mask, index=idx, shape=(TN,)) > 0
             et = ct.load(elig, index=idx, shape=(TN,))
             elt = ct.load(elig_last, index=idx, shape=(TN,))
@@ -88,16 +89,19 @@ if AVAILABLE:
             # 1. refractory countdown, then exact subthreshold integration
             rt = ct.maximum(rt - 1, 0)
             integ = rt == 0
-            vn = rest_t + (vt - rest_t) * a + dt * (1.0 - a) + gt * coup - at * (k_adapt * (c - a))
+            if V6 == 1:
+                vn = rest_t + (vt - rest_t) * a + dt * (1.0 - a) + gt * coup - at * (k_adapt * (c - a))
+            else:
+                vn = -52.0 + (vt + 52.0) * a + dt * (1.0 - a) + gt * coup
             vt = ct.where(integ, vn, vt)
             gt = ct.where(integ, gt * b, gt)
-            at = at * c
             # 2. threshold; each neuron spikes at most once per batch (refractory > DELAY),
             #    so the spike list is compacted once after the loop
             spike = integ & (vt > THRESHOLD)
             cnt = cnt + spike.astype(ct.int32)
             spike_at = ct.where(spike, t, spike_at)
             if V6 == 1:
+                at = at * c
                 kcs = spike & kc
                 at = ct.where(kcs, at + jump, at)
                 decayed = et * ct.exp(-(t - elt).astype(ct.float32) * elig_scale).astype(ct.float64) + 1.0
@@ -113,7 +117,10 @@ if AVAILABLE:
             gt = ct.where(integ, gt + inc, gt)
             ct.store(ginc, index=(slot, blk), tile=ct.zeros((1, TN), dtype=ginc.dtype))
             # 4. reset this substep's spikers (also discards their arrival)
-            vt = ct.where(spike, rest_t, vt)
+            if V6 == 1:
+                vt = ct.where(spike, rest_t, vt)
+            else:
+                vt = ct.where(spike, -52.0, vt)
             gt = ct.where(spike, 0.0, gt)
             rt = ct.where(spike, REFRACTORY, rt)
         spiked = spike_at >= 0
@@ -128,8 +135,8 @@ if AVAILABLE:
         ct.store(v, index=idx, tile=vt)
         ct.store(g, index=idx, tile=gt)
         ct.store(ref, index=idx, tile=rt)
-        ct.store(adapt, index=idx, tile=at)
         if V6 == 1:
+            ct.store(adapt, index=idx, tile=at)
             ct.store(elig, index=idx, tile=et)
             ct.store(elig_last, index=idx, tile=elt)
         ct.store(counts, index=idx, tile=ct.load(counts, index=idx, shape=(TN,)) + cnt)
