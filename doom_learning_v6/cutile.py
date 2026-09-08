@@ -16,12 +16,23 @@ if AVAILABLE:
     import cupy as cp
 
 
+from doom.cutile_brain import _mirrored
+
+
 class CuTileMemoryMixin:
     backend = 'cutile'
+    v = _mirrored('v', 'v')
+    g = _mirrored('g', 'g')
+    refractory = _mirrored('refractory', 'ref')
+    adaptation = _mirrored('adaptation', 'adapt')
+    eligibility = _mirrored('eligibility', 'elig')
+    eligibility_last = _mirrored('eligibility_last', 'elig_last')
+    MIRRORED = ('v', 'g', 'refractory', 'adaptation', 'eligibility', 'eligibility_last')
 
     def __init__(self, *args, **kwargs):
         if not AVAILABLE:
             raise RuntimeError(f'cuTile backend unavailable: {IMPORT_ERROR}')
+        self._stale = set()
         super().__init__(*args, **kwargs)
         self.build = {**self.build, 'backend': 'cutile', 'cutile': CUTILE_BUILD}
         self.weights_dirty = True
@@ -37,18 +48,12 @@ class CuTileMemoryMixin:
                 'adaptation_jump': self.adaptation_jump, 'eligibility_tau_ms': PARAMETERS['trace_kc_seconds'] * 1000,
                 'v6': 1}
 
-    def _store_physiology(self, d):
-        n = self.n
-        self.adaptation[:] = cp.asnumpy(d.adapt[:n], stream=self.stream)
-        self.eligibility[:] = cp.asnumpy(d.elig[:n], stream=self.stream)
-        self.eligibility_last[:] = cp.asnumpy(d.elig_last[:n], stream=self.stream)
-        self.stream.synchronize()
-
     def mark_weights_changed(self):
         self.weights_dirty = True
 
     # CuTileBrain machinery reused explicitly (the mixin is not a CuTileBrain subclass)
     _ensure_device = CuTileBrain._ensure_device
+    _pinned_view = CuTileBrain._pinned_view
     _constants = CuTileBrain._constants
     _warm_up = CuTileBrain._warm_up
     _launch_evolve = CuTileBrain._launch_evolve
