@@ -49,10 +49,37 @@ MODEL_REVISION = 'lif-r2-refractory-write-protection-cutile'
 # order unspecified); 'int' accumulates fixed-point contact units so every sum is exact and the
 # result is independent of the order of arrivals (bit-reproducible run to run).
 RING_MODE = os.environ.get('DOOM_CUTILE_RING', 'float32')
+# Device neuron order: 'rcm' renumbers neurons with reverse Cuthill-McKee on the symmetrised graph so a
+# presynaptic cell's targets sit close together (fewer cache lines per delivery); 'identity' keeps graph order.
+# Host arrays, checkpoints and every API index stay in graph order; the permutation is applied at upload/download.
+ORDER_MODE = os.environ.get('DOOM_CUTILE_ORDER', 'rcm')
 RING_INT = 1 if RING_MODE == 'int' else 0
 CONTACT_MV = 0.275                           # mV per synaptic contact in this graph
 RING_Q = 10                                   # fixed-point fraction bits below one contact
 RING_UNIT = CONTACT_MV / (1 << RING_Q)        # 2.7e-4 mV per unit; int32 holds +-2.1e6 contacts per cell
+
+
+def neuron_permutation(ptr, post, mode=ORDER_MODE, cache_dir=None):
+    """Return perm (device index -> graph index) for the CSR graph; cached on disk for large graphs."""
+    n = len(ptr) - 1
+    if mode == 'identity' or n < 3:
+        return np.arange(n, dtype=np.int64)
+    if mode != 'rcm':
+        raise ValueError(f'Unknown DOOM_CUTILE_ORDER {mode!r}')
+    cache = None
+    if cache_dir is not None and n >= 10000:
+        digest = hashlib.sha256(np.ascontiguousarray(ptr).tobytes()); digest.update(np.ascontiguousarray(post).tobytes())
+        cache = Path(cache_dir) / f'permutation-rcm-{digest.hexdigest()[:16]}.npy'
+        if cache.exists():
+            perm = np.load(cache)
+            if perm.shape == (n,): return perm.astype(np.int64)
+    import scipy.sparse as sp
+    from scipy.sparse.csgraph import reverse_cuthill_mckee
+    a = sp.csr_matrix((np.ones(len(post), np.int8), post.astype(np.int64), ptr.astype(np.int64)), shape=(n, n))
+    perm = reverse_cuthill_mckee((a + a.T).tocsr(), symmetric_mode=True).astype(np.int64)
+    if cache is not None:
+        cache.parent.mkdir(parents=True, exist_ok=True); np.save(cache, perm)
+    return perm
 
 
 def _log_capacity(npad):
@@ -161,7 +188,7 @@ def build_record():
     record = {'model_revision': MODEL_REVISION, 'backend': 'cutile',
               'kernel_source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
               'compile_flags': [], 'tile_neurons': TN, 'tile_edges': TE, 'ring_slots': RING, 'deliver_grid': DELIVER_GRID, 'deliver_split': DELIVER_SPLIT,
-              'ring_mode': RING_MODE, 'ring_unit_mV': RING_UNIT if RING_INT else None}
+              'ring_mode': RING_MODE, 'ring_unit_mV': RING_UNIT if RING_INT else None, 'neuron_order': ORDER_MODE}
     if AVAILABLE:
         try:
             device = cp.cuda.Device()
@@ -193,7 +220,7 @@ def _mirrored(name, device_attr, convert=None):
         if d is not None and name in self._stale:
             getattr(d, device_attr)[:self.n].get(out=self._pinned_view(device_attr), stream=self.stream)
             self.stream.synchronize()
-            src = self._pinned_view(device_attr)
+            src = self._pinned_view(device_attr)[self.inv]
             getattr(self, store)[:] = src if convert is None else convert(src)
             self._stale.discard(name)
         return getattr(self, store)
@@ -244,10 +271,17 @@ class CuTileBrain(Brain):
         d.grid = -(-n // TN)
         d.npad = d.grid * TN
         d.log = _log_capacity(d.npad)
+        self.perm = neuron_permutation(self.ptr, self.post, cache_dir=ROOT / 'outputs/doom/gpu-port')
+        self.inv = np.empty(n, np.int64); self.inv[self.perm] = np.arange(n)
+        degree = np.diff(self.ptr)[self.perm]
+        dptr = np.r_[0, np.cumsum(degree)].astype(np.int64)
+        # edge_order: permuted edge position -> original edge; edge_map: original edge -> permuted position
+        self.edge_order = (np.repeat(self.ptr[self.perm] - dptr[:-1], degree) + np.arange(len(self.post))).astype(np.int32)
+        self.edge_map = np.empty(len(self.post), np.int32); self.edge_map[self.edge_order] = np.arange(len(self.post), dtype=np.int32)
         with self.stream:
-            d.ptr = cp.asarray(self.ptr.astype(np.int32))
-            d.post = cp.asarray(self.post)
-            d.weight = cp.asarray(self.weight)
+            d.ptr = cp.asarray(dptr.astype(np.int32))
+            d.post = cp.asarray(self.inv[self.post[self.edge_order]].astype(np.int32))
+            d.weight = cp.asarray(self.weight[self.edge_order])
             for name, dtype in [('v', np.float32), ('g', np.float32), ('ref', np.int32), ('adapt', np.float32),
                                 ('rest', np.float32), ('drive', np.float32), ('kc_mask', np.int32),
                                 ('mod_mask', np.int32), ('counts', np.int32)]:
@@ -260,7 +294,7 @@ class CuTileBrain(Brain):
             d.log_step = cp.full(d.log, -1, np.int32)
             d.log_counter = cp.zeros(1, np.int32)
             d.batch_start = cp.zeros(1, np.int32)
-            d.retina = cp.asarray(self.retina); d.lamina = cp.asarray(self.lamina); d.sugar = cp.asarray(self.sugar)
+            d.retina = cp.asarray(self.inv[self.retina].astype(np.int32)); d.lamina = cp.asarray(self.inv[self.lamina].astype(np.int32)); d.sugar = cp.asarray(self.inv[self.sugar].astype(np.int32))
             d.tonic = cp.zeros(d.npad, np.float32)
         # Pinned staging buffers: pageable copies of these arrays cost ~0.5 ms each.
         d.pinned = {}
@@ -327,13 +361,14 @@ class CuTileBrain(Brain):
         phys = self._physiology()
         with self.stream:
             self._stale.clear()
-            d.v[:n].set(self.v); d.v[n:] = -52.0; d.g[:n].set(self.g); d.ref[:n].set(self.refractory.astype(np.int32))
-            d.drive[:n].set(self.drive)
-            d.rest[:n].set(phys['rest']); d.rest[n:] = -52.0
-            d.adapt[:n].set(phys['adaptation']); d.kc_mask[:n].set(phys['kc_mask'].astype(np.int32))
-            d.mod_mask[:n].set(phys['modulation_mask'].astype(np.int32))
-            d.elig[:n].set(phys['eligibility']); d.elig_last[:n].set(phys['eligibility_last'])
-            d.weight.set(self.weight); self.weights_dirty = False
+            P = self.perm
+            d.v[:n].set(self.v[P]); d.v[n:] = -52.0; d.g[:n].set(self.g[P]); d.ref[:n].set(self.refractory[P].astype(np.int32))
+            d.drive[:n].set(self.drive[P])
+            d.rest[:n].set(phys['rest'][P]); d.rest[n:] = -52.0
+            d.adapt[:n].set(phys['adaptation'][P]); d.kc_mask[:n].set(phys['kc_mask'][P].astype(np.int32))
+            d.mod_mask[:n].set(phys['modulation_mask'][P].astype(np.int32))
+            d.elig[:n].set(phys['eligibility'][P]); d.elig_last[:n].set(phys['eligibility_last'][P])
+            d.weight.set(self.weight[self.edge_order]); self.weights_dirty = False
             self._refresh_weight_ring(d)
             d.counts.fill(0); d.ginc.fill(0); d.log_counter.fill(0)
             # Pending CPU-format deliveries: slot s of the 19-slot queue holds spikes
@@ -347,7 +382,7 @@ class CuTileBrain(Brain):
                     for i in self.queue[s, :count]:
                         pending.append((int(i), T - DELAY))
             if pending:
-                neurons = np.asarray([p[0] for p in pending], np.int32)
+                neurons = self.inv[np.asarray([p[0] for p in pending])].astype(np.int32)
                 steps = np.asarray([p[1] for p in pending], np.int32)
                 d.log_neuron[:len(pending)].set(neurons); d.log_step[:len(pending)].set(steps)
                 d.batch_start.fill(0); d.log_counter.fill(len(pending))
@@ -359,7 +394,7 @@ class CuTileBrain(Brain):
         """Rebuild the device drive from the same recipe as the host array (same float32 operations)."""
         recipe = getattr(self, '_drive_recipe', None)
         if recipe is None:      # unknown provenance (tests writing brain.drive directly): upload the host array
-            d.pinned['drive'][:self.n] = self.drive
+            d.pinned['drive'][:self.n] = self.drive[self.perm]
             d.drive[:self.n].set(d.pinned['drive'][:self.n])
             return
         d.drive.fill(0)
@@ -368,10 +403,10 @@ class CuTileBrain(Brain):
         if recipe.get('sugar') and len(self.sugar): d.drive[d.sugar] = np.float32(30)
         if recipe.get('tonic') is not None: d.drive[:self.n] += d.tonic[:self.n]
         for indices, amplitude in recipe.get('pulses', ()):
-            ix = np.asarray(indices, dtype=np.int32)
+            ix = np.asarray(indices, dtype=np.int64)
             if not len(ix): continue
             amp = np.asarray(amplitude, dtype=np.float32)
-            d.drive[cp.asarray(ix)] += (cp.asarray(amp) if amp.shape else float(amp))
+            d.drive[cp.asarray(self.inv[ix].astype(np.int32))] += (cp.asarray(amp) if amp.shape else float(amp))
         self._drive_recipe = None
 
     def _advance(self, steps):
@@ -380,7 +415,7 @@ class CuTileBrain(Brain):
         cst = self._constants()
         with self.stream:
             if self.weights_dirty:
-                d.weight.set(self.weight); self.weights_dirty = False
+                d.weight.set(self.weight[self.edge_order]); self.weights_dirty = False
                 self._refresh_weight_ring(d)
             self._device_drive(d)
             d.counts.fill(0)
@@ -402,7 +437,7 @@ class CuTileBrain(Brain):
         n = self.n
         d.counts.get(out=d.pinned['counts'], stream=self.stream)
         self.stream.synchronize()
-        self.counts[:] = d.pinned['counts'][:n]
+        self.counts[:] = d.pinned['counts'][:n][self.inv]
         self._stale.update(self.MIRRORED)
         logged = int(d.log_counter.get())
         if logged >= (1 << 30):
@@ -436,7 +471,7 @@ class CuTileBrain(Brain):
         self.last[:] = cursor - 1
         # The log keeps every spike of the last DELAY substeps (see _log_capacity);
         # entries older than that, and the -1 initial fill, fall outside the window.
-        neurons = d.log_neuron.get(); steps = d.log_step.get()
+        neurons = self.perm[d.log_neuron.get()].astype(np.int32); steps = d.log_step.get()
         keep = (steps >= cursor - DELAY) & (steps < cursor)
         self.queue.fill(0); self.queue_count.fill(0)
         slots = self.queue.shape[0]
