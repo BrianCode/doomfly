@@ -1,0 +1,17 @@
+# Lock the NVIDIA memory clock at boot so the neural kernels are not bandwidth-starved.
+# Install:  sudo cp deploy/doomfly/nvidia-memory-clock.service /etc/systemd/system/
+#           sudo systemctl daemon-reload && sudo systemctl enable --now nvidia-memory-clock.service
+# Verify:   bash deploy/doomfly/gpu-clocks.sh
+[Unit]
+Description=Lock the NVIDIA GPU memory clock for the Doomfly neural kernels
+After=multi-user.target
+ConditionPathExists=/usr/bin/nvidia-smi
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/nvidia-smi -lmc 5001,5501
+ExecStop=/usr/bin/nvidia-smi -rmc
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
