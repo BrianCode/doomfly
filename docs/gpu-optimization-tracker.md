@@ -118,7 +118,7 @@ K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 
 | Item | Outcome | Measured | Notes |
 |---|---|---|---|
 | 1 Substep-major delivery | rejected | K2 0.170 -> 0.194-0.252 ms; v6 tic 13.9 -> 18.1 ms | delivery is bound by atomic-unit throughput (~0.7 G atomics/s), not ring locality; per-substep scans in the evolve kernel are expensive at full clock. Only fewer atomics can help (combine same-target arrivals) |
-| 2 Off-thread audit hashing | see below | | |
+| 2 Off-thread audit hashing (`doom/audit_worker.py`, bounded FIFO, never drops) | **adopted** | unpaced server 1.39 -> 1.44x alone | audit lines stay in tic order with the same keys; `/health` reports `audit` queue stats |
 | 3 CUDA graph capture | works, not adopted | v6 13.8 -> 13.8 ms, baseline 6.9 -> 6.8 ms | cuTile launches capture and replay correctly; the device-side time origin is kept in reserve for when GPU time shrinks enough for launch gaps to show |
 | 4 Neuron permutation (reverse Cuthill-McKee, cached) | **adopted** | K2 0.170 -> 0.140 ms; v6 13.9 -> 12.2 ms/tic; baseline 6.9 -> 6.7 ms | bandwidth median 31,882 -> 17,206; `DOOM_CUTILE_ORDER=identity` restores graph order; ~100 MB extra host memory |
 | 5 Block-wise ring loads | rejected | K1 16 substeps 0.251 -> 0.228 ms (~0.27 ms/tic) | the per-substep ring cost is exactly bandwidth (11.6 us for 1.3 MB); only fewer bytes would help, and fp16/int16 are rejected |
@@ -126,7 +126,7 @@ K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 
 | 6b/6c Fused drive scatter, tonic dirty flag | rejected | ~0.25 ms/tic, below noise | the fused scatter also needed a pinned-buffer pool with events to avoid a race |
 | 7 Receptor sampling | **adopted as a CPU lookup table** | sampler 0.47 -> 0.17 ms per call (two calls per tic); v6 total 16.2 -> 15.7 ms | bit-identical on all 111 recorded frames; the device version lost because the 921 KB frame upload over the gen-1 PCIe link costs 0.56 ms |
 | 8 Platform | **adopted** | | `deploy/doomfly/nvidia-memory-clock.service`, `gpu-clocks.sh`, PCIe notes |
-| Combined (4 + 6a + 7 + 8) | | baseline 5.9 ms/tic; v6 12.1 ms neural, 13.6 ms total; K2 0.140 ms; unpaced server **1.61x** realtime, `brain_step_ms` 13.4 | 108 tests pass in both ring modes |
+| Combined (2 + 4 + 6a + 7 + 8) | | baseline 6.0 ms/tic; v6 12.1 ms neural, 13.6 ms total; K2 0.141 ms; unpaced server **1.67x** realtime, `brain_step_ms` 13.0 | 113 tests pass in float32, 21 GPU tests in int mode |
 
 ## Video path options
 
