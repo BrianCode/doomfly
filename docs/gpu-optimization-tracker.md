@@ -17,6 +17,8 @@ i7-13620H host unless stated otherwise.
 | 2026-09-08 | Brian2 oracle (`tests/test_doom_reference.py`) on the cutile backend | passes at 0.1 ms and 10 ms cadence (exact spike bins, v and g within 0.002 mV) |
 | 2026-09-08 | v6 server, `--backend cutile --learning --resume` from the converted CPU checkpoint, before the lazy mirror | speed 0.29x, `brain_step_ms` 89 (six pageable state downloads per <=10 ms bin, 3-4 bins per tic) |
 | 2026-09-08 | v6 server, same, with the lazy host mirror (only spike counts downloaded per bin) | **speed 1.000x, `brain_step_ms` 16.3-16.8** over 60 s, still power-capped; CPU v6 kernel on this host would be about 45 ms/tic |
+| 2026-09-08 | v6 server on the GPU with `--video-mp4` (1280x720 archive, VAAPI on the Intel iGPU), first compositor (FreeType text, fancy-index resize) | compositing 25-29 ms/frame on the video thread; the interpreter lock it held cut the sim to **0.876x**, `brain_step_ms` 22.5 |
+| 2026-09-08 | same with the glyph-atlas compositor (all pixel work in NumPy) | compositing 3.4-5.6 ms/frame, encoder 35.4 f/s, 0 drops, sim back at **1.000x**, `brain_step_ms` 16.4-16.8 |
 
 ## Host power state (blocks all GPU speedups until fixed)
 
@@ -82,9 +84,10 @@ should scale by roughly the memory clock ratio once the cap is lifted.
 
 | Option | Expected | Measured | Risk | Interactions | Status |
 |---|---|---|---|---|---|
-| NumPy+Pillow compositor | 3-6 ms/frame at 720p | - | CPU contention with sim | baseline; required for tests | V1 |
+| NumPy compositor with a pre-rendered glyph atlas | 3-6 ms/frame at 720p | 3.4 ms (bench), 5.6 ms (live); FreeType text per frame was 11 ms and the fancy-index resize 4.5 ms | holds the GIL: a 26 ms compositor cost the sim 12% | baseline; required for tests | V1 done |
+| Compositor + encoder in a separate process (pipe or shared memory) | removes all GIL contention with the sim thread | - | 1.6 MB/tic over a pipe (55 MB/s) | complements everything above | later |
 | CuPy compositor | <1 ms GPU; frees CPU | - | shares GPU with sim: own stream + events | needs device `counts` | V3 |
-| ffmpeg rgb24 pipe + h264_vaapi on the Intel iGPU | ~730 fps at 720p in the probe; zero load on the RTX | probe: 600 frames 720p in 0.82 s | render node must be the Intel one | primary; conflicts with PyNvVideoCodec zero-copy | V1 |
+| ffmpeg rgb24 pipe + h264_vaapi on the Intel iGPU | ~730 fps at 720p in the probe; zero load on the RTX | live: 35.4 f/s sustained, 1.5 ms write per frame, no sim impact; note: `-count_frames` reports 2 fewer frames than written at EOF (B-frame flush), to investigate | render node must be the Intel one | primary; conflicts with PyNvVideoCodec zero-copy | V1 done |
 | ffmpeg rgb24 pipe + h264_qsv (oneVPL) | same iGPU with lookahead/ICQ | init fails until `libmfx-gen1.2` is installed | needs sudo | alternative to VAAPI | optional |
 | ffmpeg rgb24 pipe + h264_nvenc | ~385 fps at 720p in the probe | probe: 600 frames in 1.56 s | shares the RTX | alternative; live sink | V1 fallback |
 | Split encoders across GPUs (archive on iGPU, live on NVENC) | no single-engine queueing | - | two contexts to monitor | complements | V4 |

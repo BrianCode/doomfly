@@ -1,0 +1,6 @@
+# GPU backend and video export, on top of requirements-neural.txt + doom/requirements.txt.
+# Keep numpy at the project pin: CuPy 14 and matplotlib >= 3.9 pull numpy 2, which breaks numba/Brian2.
+numpy==1.24.4
+cuda-tile==1.5.0
+cupy-cuda13x==13.6.0
+matplotlib<3.9
