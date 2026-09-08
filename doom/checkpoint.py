@@ -15,6 +15,17 @@ FIELDS=['weight','v','g','refractory','drive','previous_drive','queue','queue_co
         'counts','luminance','active','active_flag','nactive','last']
 
 
+def _fixed_baseline(brain):
+    """Only the unmodified baseline model (CPU or GPU kernel), never a learning subclass."""
+    from doom.native import NativeBrain
+    accepted=[NativeBrain]
+    try:
+        from doom.cutile_brain import CuTileBrain
+        accepted.append(CuTileBrain)
+    except Exception:pass
+    return type(brain) in accepted
+
+
 def digest(path):
     h=hashlib.sha256()
     with Path(path).open('rb') as f:
@@ -28,9 +39,9 @@ class Checkpoints:
         self.directory.mkdir(parents=True,exist_ok=True)
 
     def save(self,brain,controls,game,record):
-        from doom.native import NativeBrain
-        if type(brain) is not NativeBrain or game.scenario!='combat_survival':
+        if not _fixed_baseline(brain) or game.scenario!='combat_survival':
             raise ValueError('Only the fixed baseline and unlimited combat arena support this recovery format')
+        if hasattr(brain,'materialize_host_state'):brain.materialize_host_state()
         generation=uuid.uuid4().hex
         stage=self.directory/(generation+'.partial');stage.mkdir()
         try:
@@ -50,8 +61,7 @@ class Checkpoints:
             raise
 
     def restore(self,brain,controls,game):
-        from doom.native import NativeBrain
-        if type(brain) is not NativeBrain or game.scenario!='combat_survival':raise ValueError('Unsupported recovery model')
+        if not _fixed_baseline(brain) or game.scenario!='combat_survival':raise ValueError('Unsupported recovery model')
         pointer=self.directory/'latest.json'
         if not pointer.exists():return None
         generation=json.loads(pointer.read_text())['generation']
@@ -74,4 +84,5 @@ class Checkpoints:
         for name in FIELDS:getattr(brain,name)[:]=arrays[name]
         controls.rates[:]=arrays['decoder_rates']
         for key in ['cursor','sim_ms','total_spikes']:setattr(brain,key,data['brain'][key])
+        if hasattr(brain,'load_state_from_host'):brain.load_state_from_host()
         return {**data['record'],'interrupted_round':data['game'],'recovery':'neural-state-with-new-arena'}

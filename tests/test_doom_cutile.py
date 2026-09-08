@@ -55,3 +55,58 @@ def test_cutile_single_substep_calls_match_batched_calls(tmp_path):
     cb,_=b.step(light,4.,lamina_bias=25.)
     np.testing.assert_array_equal(total,cb)
     np.testing.assert_allclose(a.v,b.v,atol=1e-4,rtol=0);np.testing.assert_allclose(a.g,b.g,atol=1e-4,rtol=0)
+
+
+def v6_pair(tmp_path):
+    from tests.test_doom_learning_v6 import brain as cpu_brain
+    from doom_learning_v6.cutile import CuTileMemoryBrain
+    c=cpu_brain(tmp_path)
+    g=CuTileMemoryBrain(tmp_path/'graph.npz',eta=.001,circuit=c.circuit,modulation_mask=c.modulation_mask)
+    return c,g
+
+def test_cutile_v6_matches_cpu_memory_kernel(tmp_path):
+    c,g=v6_pair(tmp_path)
+    for stimulus in [([0],20),([2],20),([0,2],20),([0],20)]:
+        a,_=c.step([],100,learning=True,stimulation=stimulus,lamina_bias=0)
+        d,_=g.step([],100,learning=True,stimulation=stimulus,lamina_bias=0)
+        np.testing.assert_array_equal(a,d)
+        np.testing.assert_allclose(c.v,g.v,atol=.002,rtol=0)
+        np.testing.assert_allclose(c.adaptation,g.adaptation,atol=.002,rtol=0)
+        np.testing.assert_array_equal(c.weight,g.weight)
+        np.testing.assert_array_equal(c.memory_w,g.memory_w)
+    assert g.memory_u[0]<0 and g.weight[0]<20
+
+def test_cutile_v6_full_state_checkpoint_reproduces_ongoing_memory(tmp_path):
+    _,b=v6_pair(tmp_path)
+    b.step([],100,learning=True,stimulation=([0],20),lamina_bias=0)
+    b.step([],100,learning=True,stimulation=([2],12),lamina_bias=0)
+    assert b.memory_u[0]<0 and b.weight[0]<20
+    p=tmp_path/'checkpoint.npz';b.checkpoint(p)
+    c,_=b.step([],200,learning=True,stimulation=([0,2],20),lamina_bias=0)
+    expected={k:getattr(b,k).copy() for k in ['weight',*b.fields]}
+    b.restore(p);d,_=b.step([],200,learning=True,stimulation=([0,2],20),lamina_bias=0)
+    np.testing.assert_array_equal(c,d)
+    for k,v in expected.items():np.testing.assert_array_equal(v,getattr(b,k),err_msg=k)
+
+def test_cutile_v6_checkpoint_is_loadable_by_the_cpu_brain_after_build_rewrite(tmp_path):
+    """Same arrays, same provenance; only the kernel build record differs."""
+    import json
+    c,g=v6_pair(tmp_path)
+    g.step([],100,learning=True,stimulation=([0],20),lamina_bias=0)
+    p=tmp_path/'gpu.npz';g.checkpoint(p)
+    with np.load(p,allow_pickle=False) as a:
+        arrays={k:a[k] for k in a.files if k!='metadata'};m=json.loads(str(a['metadata']))
+    m['build']=c.build;q=tmp_path/'cpu.npz';np.savez(q,metadata=json.dumps(m),**arrays)
+    c.restore(q)
+    x,_=g.step([],100,learning=True,stimulation=([2],12),lamina_bias=0)
+    y,_=c.step([],100,learning=True,stimulation=([2],12),lamina_bias=0)
+    np.testing.assert_array_equal(x,y);np.testing.assert_allclose(g.v,c.v,atol=.002,rtol=0)
+
+def test_cutile_v6_reset_keeps_only_memory(tmp_path):
+    _,b=v6_pair(tmp_path)
+    b.step([],100,learning=True,stimulation=([0],20),lamina_bias=0)
+    b.memory_u[:]=-.2;b.memory_w[:]=-.1;b.weight[0]=18;b.reset(keep_memory=True)
+    assert b.memory_u[0]==-.2 and b.weight[0]==18 and b.cursor==0
+    c,_=b.step([],50,learning=False,stimulation=([0],20),lamina_bias=0)
+    assert c.sum()>0
+    b.reset();assert b.weight[0]==20 and not b.memory_u.any()
