@@ -41,9 +41,10 @@ def encoder_args(encoder, *, device, rate_control):
     if encoder == 'qsv':
         pre = ['-init_hw_device', f'qsv=hw,child_device={device}', '-filter_hw_device', 'hw']
         vf = ['-vf', 'format=nv12,hwupload=extra_hw_frames=64']
-        rc = ['-preset', 'medium', '-b:v', '6M', '-maxrate', '12M', '-look_ahead', '1', '-g', '70', '-bf', '2'] if rate_control == 'archive' \
+        # Raptor Lake iGPU + libmfx-gen: only the low-power (VDENC) path encodes; lookahead is rejected there.
+        rc = ['-preset', 'medium', '-b:v', '6M', '-maxrate', '12M', '-g', '70', '-bf', '2'] if rate_control == 'archive' \
             else ['-preset', 'veryfast', '-b:v', '4500k', '-maxrate', '4500k', '-bufsize', '9000k', '-g', '60', '-bf', '0']
-        return pre, vf + ['-c:v', 'h264_qsv', '-profile:v', 'high'] + rc
+        return pre, vf + ['-c:v', 'h264_qsv', '-low_power', '1', '-profile:v', 'high'] + rc
     if encoder == 'nvenc':
         vf = ['-vf', 'format=nv12']
         rc = ['-preset', 'p5', '-rc', 'vbr', '-cq', '23', '-b:v', '0', '-maxrate', '12M', '-bufsize', '24M', '-g', '70', '-bf', '2',
