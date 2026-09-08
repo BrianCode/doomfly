@@ -113,6 +113,21 @@ K2 (bench batch): TE 128/grid 4096: 0.076; TE 256/grid 2048: 0.084; TE 512/grid 
 | 33 | Move the two per-tic SHA-256 digests (0.9 MB frame, 0.67 MB counts) and the audit line off the sim thread | ~2-3 ms of the ~6 ms per tic spent outside the brain step when unpaced | - | Low (hashlib releases the GIL) | no | independent | later |
 | 34 | Neuron permutation for delivery locality (targets of one presynaptic cell contiguous) | delivery is 6 ms/tic of random atomics into a 12 MB working set (L2 is 2 MB) | - | Medium | rounding order only | same as 14 | later |
 
+## Parallel optimization round (2026-09-08, one worktree per item, combined on `opt-combined`)
+
+| Item | Outcome | Measured | Notes |
+|---|---|---|---|
+| 1 Substep-major delivery | rejected | K2 0.170 -> 0.194-0.252 ms; v6 tic 13.9 -> 18.1 ms | delivery is bound by atomic-unit throughput (~0.7 G atomics/s), not ring locality; per-substep scans in the evolve kernel are expensive at full clock. Only fewer atomics can help (combine same-target arrivals) |
+| 2 Off-thread audit hashing | see below | | |
+| 3 CUDA graph capture | works, not adopted | v6 13.8 -> 13.8 ms, baseline 6.9 -> 6.8 ms | cuTile launches capture and replay correctly; the device-side time origin is kept in reserve for when GPU time shrinks enough for launch gaps to show |
+| 4 Neuron permutation (reverse Cuthill-McKee, cached) | **adopted** | K2 0.170 -> 0.140 ms; v6 13.9 -> 12.2 ms/tic; baseline 6.9 -> 6.7 ms | bandwidth median 31,882 -> 17,206; `DOOM_CUTILE_ORDER=identity` restores graph order; ~100 MB extra host memory |
+| 5 Block-wise ring loads | rejected | K1 16 substeps 0.251 -> 0.228 ms (~0.27 ms/tic) | the per-substep ring cost is exactly bandwidth (11.6 us for 1.3 MB); only fewer bytes would help, and fp16/int16 are rejected |
+| 6a Skip v6-only state in the baseline evolve kernel | **adopted** | K1 0.302 -> 0.248 ms; baseline tic 6.9 -> 6.0 ms | v6 unchanged |
+| 6b/6c Fused drive scatter, tonic dirty flag | rejected | ~0.25 ms/tic, below noise | the fused scatter also needed a pinned-buffer pool with events to avoid a race |
+| 7 Receptor sampling | **adopted as a CPU lookup table** | sampler 0.47 -> 0.17 ms per call (two calls per tic); v6 total 16.2 -> 15.7 ms | bit-identical on all 111 recorded frames; the device version lost because the 921 KB frame upload over the gen-1 PCIe link costs 0.56 ms |
+| 8 Platform | **adopted** | | `deploy/doomfly/nvidia-memory-clock.service`, `gpu-clocks.sh`, PCIe notes |
+| Combined (4 + 6a + 7 + 8) | | baseline 5.9 ms/tic; v6 12.1 ms neural, 13.6 ms total; K2 0.140 ms; unpaced server **1.61x** realtime, `brain_step_ms` 13.4 | 108 tests pass in both ring modes |
+
 ## Video path options
 
 | Option | Expected | Measured | Risk | Interactions | Status |
