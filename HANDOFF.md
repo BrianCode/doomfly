@@ -129,6 +129,6 @@ qsv, nvenc, x264. Afterwards: `python -m doom.video_charts --run DIR/<run_id> --
 `python -m doom.video_clips --run DIR/<run_id> --events damage,kill,round_end`.
 Extra packages: `requirements-gpu.txt`. Optimization notes: `docs/gpu-optimization-tracker.md`.
 
-GPU speed on this laptop is limited by its power policy (memory clock held at 810 MHz, 25 W cap);
-`sudo nvidia-smi -pl 35` / `sudo nvidia-smi -lmc 5001,5501` or installing `nvidia-powerd` may lift it.
-QSV needs `sudo apt install libmfx-gen1.2`; VAAPI works without it.
+Before GPU runs, lock the memory clock (the laptop otherwise holds it at 810 MHz; the setting does
+not survive a reboot): `sudo nvidia-smi -lmc 5001,5501`. `nvidia-smi -pl` is not supported here.
+QSV needs `sudo apt install libmfx-gen1.2` (used in low-power mode); VAAPI works without it.
