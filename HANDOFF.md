@@ -107,3 +107,28 @@ Validate every port against `tests/test_doom_reference.py`, which is the Brian2 
 `weight` float32[25.6M] (signed mV), `ids`, `retina`, `lamina`, `sugar`, `uv`, `superclass`.
 Model constants: tau_m 20 ms, tau_g 5 ms, rest -52 mV, threshold -45 mV,
 refractory 2.2 ms, delay 1.8 ms, dt 0.1 ms.
+
+## 7. GPU backend and video export (added 2026-09-08 on the fork)
+
+```sh
+# relabel the checkpoint identity for the current source tree and backend, then resume on the GPU
+.venv-neural/bin/python -m doom.convert_checkpoint --checkpoint-dir outputs/doom/local-training/checkpoints --model experimental-v6 --backend cutile
+bash doom/run_gpu.sh --model experimental-v6 --learning --backend cutile --port 8766 \
+  --audit-dir outputs/doom/local-training --checkpoint-dir outputs/doom/local-training/checkpoints \
+  --checkpoint-seconds 300 --resume --video-mp4 outputs/doom/video
+curl -s localhost:8766/video/health
+```
+
+`doom/run_gpu.sh` sets the CUDA 13.2 paths and `DOOM_BRAIN_BACKEND=cutile`. The checkpoint
+identity hashes every `doom/*.py`, so run the converter after any source change before `--resume`
+(it refuses if the model configuration differs). Video: `--video-mp4 DIR` writes
+`DIR/<run_id>/archive-%05d.mp4` (35 f/s = 1x brain time, 5-minute fragmented segments),
+`video-metrics.jsonl` (one row per frame, joinable to `audit.jsonl` on run_id + tick) and
+`video-manifest.json`. `--video-encoder auto` picks the first working of vaapi (Intel iGPU),
+qsv, nvenc, x264. Afterwards: `python -m doom.video_charts --run DIR/<run_id> --movie` and
+`python -m doom.video_clips --run DIR/<run_id> --events damage,kill,round_end`.
+Extra packages: `requirements-gpu.txt`. Optimization notes: `docs/gpu-optimization-tracker.md`.
+
+GPU speed on this laptop is limited by its power policy (memory clock held at 810 MHz, 25 W cap);
+`sudo nvidia-smi -pl 35` / `sudo nvidia-smi -lmc 5001,5501` or installing `nvidia-powerd` may lift it.
+QSV needs `sudo apt install libmfx-gen1.2`; VAAPI works without it.
