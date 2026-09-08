@@ -100,16 +100,16 @@ class CuTileMemoryMixin:
         d = self.dev
         c = self.circuit
         with self.stream:
-            d.plastic = cp.asarray(c['edges'].astype(np.int64))
-            d.pre = cp.asarray(c['pre'].astype(np.int64))
-            d.dan = cp.asarray(c['dan'].astype(np.int64))
+            d.plastic = cp.asarray(self.edge_map[c['edges']].astype(np.int64))
+            d.pre = cp.asarray(self.inv[c['pre']].astype(np.int64))
+            d.dan = cp.asarray(self.inv[c['dan']].astype(np.int64))
             d.gain_t = cp.asarray(c['gain']).T                     # (plastic, dan) float32, as gain.T on the CPU
             d.baseline = cp.asarray(self.baseline_plastic)
             d.dan_baseline = cp.asarray(self.dan_baseline_hz)
             for name in RULE_FIELDS:
                 setattr(d, name, cp.asarray(getattr(self, '_host_' + name)))
             d.counts_total = cp.zeros(d.npad, np.int32)
-            d.tonic[:self.n].set(self.tonic)
+            d.tonic[:self.n].set(self.tonic[self.perm])
         self.stream.synchronize()
         self._tonic_seen = self.tonic.copy()
 
@@ -129,10 +129,10 @@ class CuTileMemoryMixin:
         cst = self._constants()
         with self.stream:
             if self.weights_dirty:
-                d.weight.set(self._host_weight); self.weights_dirty = False
+                d.weight.set(self._host_weight[self.edge_order]); self.weights_dirty = False
                 self._refresh_weight_ring(d)
             if not np.array_equal(self.tonic, self._tonic_seen):     # calibration edits tonic after construction
-                d.tonic[:self.n].set(self.tonic); self._tonic_seen = self.tonic.copy()
+                d.tonic[:self.n].set(self.tonic[self.perm]); self._tonic_seen = self.tonic.copy()
             self._device_drive(d)
             d.counts.fill(0)
             t = self.cursor
@@ -178,7 +178,7 @@ class CuTileMemoryMixin:
         with self.stream:
             d.counts_total.get(out=d.pinned['counts'], stream=self.stream)
         self.stream.synchronize()
-        self.counts[:] = d.pinned['counts'][:n]
+        self.counts[:] = d.pinned['counts'][:n][self.inv]
         with self.stream:
             d.counts_total.fill(0)
         logged = int(d.log_counter.get())
@@ -213,22 +213,34 @@ class CuTileMemoryMixin:
         counts = self._finish()
         return counts, wall + time.perf_counter() - start
 
+    def _samplers(self, shape):
+        """Table-driven samplers (bit-identical to retinal_samples / rgb_step), rebuilt if the frame shape changes."""
+        from doom.retina_lut import RetinaSampler, ChannelSampler
+        cached = getattr(self, '_sampler_cache', None)
+        if cached is None or cached[0] != tuple(shape):
+            r8 = ChannelSampler(self.r8_uv, self.r8_channel, shape) if hasattr(self, 'r8') else None
+            cached = (tuple(shape), RetinaSampler(self.uv, shape), r8)
+            self._sampler_cache = cached
+        return cached[1], cached[2]
+
+    def retinal_light(self, frame):
+        """Receptor luminance of a frame, bit-identical to doom.game.retinal_samples but ~3x faster."""
+        frame = np.asarray(frame)
+        if frame.ndim != 3 or frame.shape[2] != 3 or frame.dtype != np.uint8: raise ValueError('RGB uint8 required')
+        return self._samplers(frame.shape[:2])[0](frame)
+
     def rgb_step(self, frame, duration_ms, **kwargs):
         """VisualMemoryBrain.rgb_step with every <=10 ms chunk queued before one download."""
         if not hasattr(self, 'r8'): raise AttributeError('rgb_step needs the visual model')
-        from doom.game import retinal_samples
         frame = np.asarray(frame)
         if frame.ndim != 3 or frame.shape[2] != 3 or frame.dtype != np.uint8: raise ValueError('RGB uint8 required')
         ticks = round(duration_ms / self.dt)
         if not math.isfinite(duration_ms) or ticks < 1: raise ValueError('Invalid duration')
-        h, w = frame.shape[:2]
-        x = np.minimum((self.r8_uv[:, 0] * (w - 1)).astype(int), w - 1)
-        y = np.minimum((self.r8_uv[:, 1] * (h - 1)).astype(int), h - 1)
-        values = frame[y, x, self.r8_channel].astype(np.float32) / 255
-        values = np.where(values <= .04045, values / 12.92, ((values + .055) / 1.055) ** 2.4)
+        retina, r8 = self._samplers(frame.shape[:2])
+        values = r8(frame)
         extra = kwargs.pop('stimulation', None)
         base = [] if extra is None else list(extra) if isinstance(extra, list) else [extra]
-        light = retinal_samples(frame, self.uv)
+        light = retina(frame)
         wall = 0.
         while ticks:
             n = min(100, ticks)
